@@ -1,0 +1,55 @@
+Previewing update (prod):
+Compiling the program ...
+Finished compiling
+  pulumi:pulumi:Stack: (same)
+    [urn=urn:pulumi:prod::g680::pulumi:pulumi:Stack::g680-prod]
+    ~ aws:iam/policy:Policy: (update)
+        [id=arn:aws:iam::123456789012:policy/g680-app-prod]
+        [urn=urn:pulumi:prod::g680::aws:iam/policy:Policy::app]
+        [provider=urn:pulumi:prod::g680::pulumi:providers:aws::default_7_51_1::44d3aef3-8c7b-46a3-85fa-75c08a2fbe76]
+      ~ policy: (json) {
+          ~ Statement: [
+              ~ [0]: {
+                        Action  : [
+                            [0]: "sqs:SendMessage"
+                        ]
+                        Effect  : "Allow"
+                      ~ Resource: [
+                          ~ [0]: "arn:aws:sqs:us-east-1:123456789012:g680-pedidos" => "arn:aws:sqs:us-east-1:123456789012:g680-pagos"
+                          ~ [1]: "arn:aws:sqs:us-east-1:123456789012:g680-pagos" => "arn:aws:sqs:us-east-1:123456789012:g680-avisos"
+                          - [2]: "arn:aws:sqs:us-east-1:123456789012:g680-avisos"
+                        ]
+                    }
+                [1]: {
+                        Action  : [
+                            [0]: "s3:GetObject"
+                            [1]: "s3:PutObject"
+                        ]
+                        Effect  : "Allow"
+                        Resource: [
+                            [0]: "arn:aws:s3:::g680-datos-prod/*"
+                        ]
+                    }
+            ]
+            Version  : "2012-10-17"
+        }
+    - aws:sqs/queue:Queue: (delete)
+        [id=http://moto:5000/123456789012/g680-pedidos]
+        [urn=urn:pulumi:prod::g680::aws:sqs/queue:Queue::cola-pedidos]
+        [provider=urn:pulumi:prod::g680::pulumi:providers:aws::default_7_51_1::44d3aef3-8c7b-46a3-85fa-75c08a2fbe76]
+        maxMessageSize          : 262144
+        messageRetentionSeconds : 345600
+        name                    : "g680-pedidos"
+        region                  : "us-east-1"
+        tagsAll                 : {}
+        visibilityTimeoutSeconds: 30
+    --outputs:--
+  ~ colas   : {
+        avisos : "http://moto:5000/123456789012/g680-avisos"
+        pagos  : "http://moto:5000/123456789012/g680-pagos"
+      - pedidos: "http://moto:5000/123456789012/g680-pedidos"
+    }
+Resources:
+    ~ 1 to update
+    - 1 to delete
+    2 changes. 6 unchanged

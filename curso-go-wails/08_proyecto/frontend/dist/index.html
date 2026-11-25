@@ -1,0 +1,22 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>nubecita · colas</title>
+<style>body{font:20px system-ui,sans-serif;background:#0d1117;color:#e6edf3;padding:28px}h1{color:#00ADD8;margin:0 0 6px}
+table{border-collapse:collapse;margin-top:14px;min-width:520px}td,th{padding:8px 16px;border-bottom:1px solid #30363d;text-align:left}
+td.n{text-align:right;font-variant-numeric:tabular-nums}#estado{color:#8b949e;font-size:16px}#estado.err{color:#ff7b72}.alto{color:#ffa657;font-weight:700}</style>
+<body><h1>☁ nubecita · colas</h1><div id="estado">conectando…</div>
+<table><thead><tr><th>cola</th><th>mensajes</th></tr></thead><tbody id="t"></tbody></table>
+<script>
+let refrescos = 0
+const pinta = colas => {
+  refrescos++
+  document.getElementById('t').innerHTML = colas.map(c =>
+    `<tr><td>${c.nombre}</td><td class="n ${c.mensajes > 10 ? 'alto' : ''}">${c.mensajes}</td></tr>`).join('')
+  document.getElementById('estado').className = ''
+  document.getElementById('estado').innerText = `${colas.length} colas · refrescos: ${refrescos}`
+  window.go.main.App.Reportar(`  refresco ${refrescos}: ` + colas.map(c => `${c.nombre}=${c.mensajes}`).join(' '))
+}
+window.onload = async () => {
+  window.runtime.EventsOn('colas', pinta)
+  window.runtime.EventsOn('error', e => { const s = document.getElementById('estado'); s.className = 'err'; s.innerText = 'sin conexión: ' + e.slice(0, 90) })
+  await window.go.main.App.Listo()
+}
+</script></body></html>

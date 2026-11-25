@@ -1,0 +1,6 @@
+{
+  "server": {
+    "host": "desde-json",
+    "port": 7000
+  }
+}

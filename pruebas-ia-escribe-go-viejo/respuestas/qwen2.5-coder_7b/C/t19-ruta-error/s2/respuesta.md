@@ -1,0 +1,17 @@
+```go
+package tarea
+
+import (
+	"errors"
+	"io/fs"
+	"strings"
+)
+
+func RutaDelError(err error) (string, bool) {
+	var pathErr *fs.PathError
+	if errors.AsType[fs.PathError](err, &pathErr) {
+		return pathErr.Path, true
+	}
+	return "", false
+}
+```

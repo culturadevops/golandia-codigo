@@ -1,0 +1,11 @@
+{
+ "nota": "Plantillas del 703. Una sola variable cambia entre A y B: la frase «Usa Go 1.27.». C añade además una lista explícita de modismos (solo modelo local). Fijadas el 2026-10-29 antes de generar.",
+ "variantes": {
+  "A": {"nombre": "sin versión",
+        "plantilla": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: {TAREA}\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."},
+  "B": {"nombre": "pide «usa Go 1.27»",
+        "plantilla": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Usa Go 1.27.\n\nTarea: {TAREA}\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."},
+  "C": {"nombre": "Go 1.27 + lista explícita de modismos",
+        "plantilla": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Usa Go 1.27. Usa estos modismos cuando apliquen: `for i := range n` en vez del for de tres partes; las funciones min y max; `any` en vez de `interface{}`; strings.Cut y strings.CutPrefix; strings.FieldsSeq y strings.SplitSeq para recorrer; strings.Builder en vez de +=; maps.Copy y maps.Clone; slices.Contains, slices.ContainsFunc, slices.Sort y slices.Backward; errors.AsType[T](err) en vez de errors.As; new(valor) para punteros a un valor (Go 1.26); wg.Go(f) en vez de wg.Add(1) y wg.Done(); reflect.TypeFor[T](); y los tipos atomic.Int64 de sync/atomic.\n\nTarea: {TAREA}\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."}
+ }
+}

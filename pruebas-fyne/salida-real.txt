@@ -1,0 +1,81 @@
+# Salida literal — curso MIEMBROS de Fyne (idea #83)
+# Corrida: 2026-09-03. Sin retocar.
+# Fyne 2.8.1 · go1.26.8 · Docker + Xvfb 2560x1600 + FYNE_SCALE=3 (capturas a 1920 de ancho).
+
+############ ENTORNO ############
+go version go1.26.8 linux/amd64
+fyne.io/fyne/v2 v2.8.1
+
+############ e01 · la primera ventana ############
+
+-- e01-ventana --
+  binario: 32343016 bytes
+  (no imprimio nada)
+
+############ e02 · contenedores: quien decide el tamano ############
+
+-- e02-contenedores --
+  binario: 32365456 bytes
+  (no imprimio nada)
+
+############ e03 · binding: se toca el DATO, no la etiqueta ############
+
+-- e03-binding --
+  binario: 32385736 bytes
+  (no imprimio nada)
+
+############ e04 · MAL: tocar la interfaz desde una gorrutina ############
+
+-- e04-mal --
+  binario: 32343824 bytes
+  lo que imprimio:
+    2026/09/03 22:11:24 *** This application has not been migrated to the fyne.Do threading model ***
+    2026/09/03 22:11:24 *** The next major Fyne release will remove this safety! ***
+    2026/09/03 22:11:24 *** Read more at https://docs.fyne.io/started/goroutines ***
+    2026/09/03 22:11:24 *** Error in Fyne call thread, this should have been called in fyne.Do[AndWait] ***
+    2026/09/03 22:11:24 *** This error needs to be addressed as it could cause concurrent errors soon ***
+    2026/09/03 22:11:24 *** The next major Fyne release will disable this safety by default! ***
+    2026/09/03 22:11:24   From: /app/etapas/e04-mal/main.go:27
+    2026/09/03 22:11:24 *** Error in Fyne call thread, this should have been called in fyne.Do[AndWait] ***
+
+############ e04 · BIEN: el retoque dentro de fyne.Do ############
+
+-- e04-bien --
+  binario: 32344192 bytes
+  (no imprimio nada)
+
+############ e05 · 50.000 objetos, y cuantas filas construye de verdad ############
+
+-- e05-lista --
+  binario: 32423312 bytes
+  (no imprimio nada)
+
+############ e07 · formulario con validacion ############
+
+-- e07-formulario --
+  binario: 32575040 bytes
+  (no imprimio nada)
+
+############ FIN ############
+
+############ e06 · el cliente conectado a nubecita ############
+  binario CON el kit de AWS: 40.651.320 bytes
+  (la ventana sola del e01: 32.343.016 bytes -> +8,3 MB por el SDK)
+  la ventana lista 5 buckets reales servidos por nubecita
+  el programa NO imprime nada: el patron gorrutina + fyne.Do esta bien
+
+############ e08 · tema propio y recursos empotrados ############
+  el icono en disco:         235 bytes
+  binario de la ventana e01: 32.343.016 bytes
+  binario CON tema + icono:  32.377.552 bytes
+  -> empotrar el icono y el tema cuesta 34.536 bytes
+
+############ e09 · empaquetar y repartir ############
+  1 · binario tal cual                 32.343.016 bytes
+  2 · con -ldflags='-s -w'             23.994.000 bytes   (-8.349.016, un 26%)
+  3 · ese mismo, comprimido            11.456.996 bytes   (lo que se DESCARGA)
+  4 · CGO_ENABLED=0                    NO compila: Fyne necesita cgo
+  5 · cruzar a Windows con cgo         NO compila:
+        gcc: error: unrecognized command-line option '-mthreads'
+  6 · un hola mundo SIN Fyne a Windows  2.461.184 bytes  [ok] sin instalar nada
+  -> mismo ordenador: uno cruza gratis y el otro no. La diferencia es cgo.

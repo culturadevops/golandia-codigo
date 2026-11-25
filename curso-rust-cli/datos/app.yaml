@@ -1,0 +1,6 @@
+base_de_datos:
+  host: db.interna
+  usuario: app
+  password: Sup3rSecreta!
+cache:
+  ttl: 300

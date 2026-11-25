@@ -1,0 +1,5 @@
+Docker 29.6.2
+prom/prometheus:v3.15.1
+prom/alertmanager:v0.34.0
+prom/blackbox-exporter:v0.29.0
+golang:1.27.2

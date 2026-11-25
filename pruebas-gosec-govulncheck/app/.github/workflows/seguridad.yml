@@ -1,0 +1,38 @@
+# gosec revisa TU código; govulncheck, las dependencias (y la versión de Go) que tu código llama.
+# No se sustituyen: un trabajo para cada uno. Versiones fijas: el pipeline cambia cuando tú lo decides.
+name: seguridad-go
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * *" # la base de vulnerabilidades cambia aunque tu código no
+
+permissions:
+  contents: read
+
+jobs:
+  gosec:
+    runs-on: ubuntu-latest
+    container: golang:1.27.3
+    permissions:
+      contents: read
+      security-events: write # para subir el SARIF a Code Scanning
+    steps:
+      - uses: actions/checkout@v4
+      - name: gosec a SARIF (no rompe)
+        run: go run github.com/securego/gosec/v2/cmd/gosec@v2.30.0 -quiet -no-fail -fmt sarif -out gosec.sarif ./...
+      - name: subir a Code Scanning
+        if: ${{ !env.ACT }} # act no tiene Code Scanning: este paso solo corre en GitHub
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: gosec.sarif
+      - name: gosec (rompe con severidad alta)
+        run: go run github.com/securego/gosec/v2/cmd/gosec@v2.30.0 -quiet -severity high -confidence medium ./...
+
+  govulncheck:
+    runs-on: ubuntu-latest
+    container: golang:1.27.3
+    steps:
+      - uses: actions/checkout@v4
+      - name: govulncheck (rompe si tu código llama a algo vulnerable)
+        run: go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...

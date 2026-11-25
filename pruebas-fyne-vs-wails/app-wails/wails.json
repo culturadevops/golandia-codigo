@@ -1,0 +1,5 @@
+{
+  "name": "contador",
+  "outputfilename": "contador",
+  "frontend:dir": "frontend"
+}

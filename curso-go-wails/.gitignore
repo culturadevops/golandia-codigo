@@ -1,0 +1,28 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
+
+# Go
+bin/
+*.exe
+*.test
+*.out
+/vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.env
+
+# Node
+node_modules/
+
+# OJO: frontend/dist/index.html SÍ va al repo (go:embed lo necesita para compilar).
+!**/frontend/dist/

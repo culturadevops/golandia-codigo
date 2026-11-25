@@ -1,0 +1,22 @@
+$ helm template demo 04-default  # bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: default
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      automountServiceAccountToken: false
+      containers:
+        - name: web
+          image: nginx:1.30.5-alpine
+[código de salida: 0]

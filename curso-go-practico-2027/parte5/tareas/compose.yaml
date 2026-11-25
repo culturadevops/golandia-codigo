@@ -1,0 +1,47 @@
+name: gl-curso-p5
+
+services:
+  db:
+    image: postgres:18.6-alpine
+    environment:
+      POSTGRES_USER: tareas
+      POSTGRES_PASSWORD: tareas
+      POSTGRES_DB: tareas
+    volumes:
+      - datos:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tareas -d tareas"]
+      interval: 2s
+      timeout: 3s
+      retries: 15
+    ulimits:
+      core: 1
+
+  api:
+    build: .
+    image: gl-curso-tareas:p5
+    environment:
+      DATABASE_URL: postgres://tareas:tareas@db:5432/tareas?sslmode=disable
+      TAREAS_TIMEOUT_BD: 2s
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "/tareas", "salud"]
+      interval: 3s
+      timeout: 3s
+      retries: 2
+      start_period: 5s
+    ulimits:
+      core: 1
+
+volumes:
+  datos:
+
+# Subred fija solo porque el Docker donde se grabó ya no tenía subredes libres.
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 10.231.1.0/24

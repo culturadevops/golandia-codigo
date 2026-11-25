@@ -1,0 +1,204 @@
+{
+	"Golang errors": {},
+	"Issues": [
+		{
+			"severity": "HIGH",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G703",
+			"details": "Path traversal via taint analysis: os.OpenFile",
+			"file": "/cobra/completions.go",
+			"code": "957: \tif path := os.Getenv(\"BASH_COMP_DEBUG_FILE\"); path != \"\" {\n958: \t\tf, err := os.OpenFile(path,\n959: \t\t\tos.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)\n",
+			"line": "958",
+			"column": "24",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/zsh_completions.go",
+			"code": "70: func (c *Command) genZshCompletionFile(filename string, includeDesc bool) error {\n71: \toutFile, err := os.Create(filename)\n72: \tif err != nil {\n",
+			"line": "71",
+			"column": "18",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/powershell_completions.go",
+			"code": "320: func (c *Command) genPowerShellCompletionFile(filename string, includeDesc bool) error {\n321: \toutFile, err := os.Create(filename)\n322: \tif err != nil {\n",
+			"line": "321",
+			"column": "18",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/fish_completions.go",
+			"code": "284: func (c *Command) GenFishCompletionFile(filename string, includeDesc bool) error {\n285: \toutFile, err := os.Create(filename)\n286: \tif err != nil {\n",
+			"line": "285",
+			"column": "18",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/doc/yaml_docs.go",
+			"code": "71: \tfilename := filepath.Join(dir, basename)\n72: \tf, err := os.Create(filename)\n73: \tif err != nil {\n",
+			"line": "72",
+			"column": "12",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/doc/rest_docs.go",
+			"code": "156: \tfilename := filepath.Join(dir, basename)\n157: \tf, err := os.Create(filename)\n158: \tif err != nil {\n",
+			"line": "157",
+			"column": "12",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/doc/md_docs.go",
+			"code": "144: \tfilename := filepath.Join(dir, basename)\n145: \tf, err := os.Create(filename)\n146: \tif err != nil {\n",
+			"line": "145",
+			"column": "12",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/doc/man_docs.go",
+			"code": "71: \tfilename := filepath.Join(opts.Path, basename+\".\"+section)\n72: \tf, err := os.Create(filename)\n73: \tif err != nil {\n",
+			"line": "72",
+			"column": "12",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/completions.go",
+			"code": "957: \tif path := os.Getenv(\"BASH_COMP_DEBUG_FILE\"); path != \"\" {\n958: \t\tf, err := os.OpenFile(path,\n959: \t\t\tos.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)\n960: \t\tif err == nil {\n",
+			"line": "958-959",
+			"column": "13",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/bash_completionsV2.go",
+			"code": "470: func (c *Command) GenBashCompletionFileV2(filename string, includeDesc bool) error {\n471: \toutFile, err := os.Create(filename)\n472: \tif err != nil {\n",
+			"line": "471",
+			"column": "18",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "22",
+				"url": "https://cwe.mitre.org/data/definitions/22.html"
+			},
+			"rule_id": "G304",
+			"details": "Potential file inclusion via variable",
+			"file": "/cobra/bash_completions.go",
+			"code": "701: func (c *Command) GenBashCompletionFile(filename string) error {\n702: \toutFile, err := os.Create(filename)\n703: \tif err != nil {\n",
+			"line": "702",
+			"column": "18",
+			"nosec": false,
+			"suppressions": null
+		},
+		{
+			"severity": "MEDIUM",
+			"confidence": "HIGH",
+			"cwe": {
+				"id": "276",
+				"url": "https://cwe.mitre.org/data/definitions/276.html"
+			},
+			"rule_id": "G302",
+			"details": "Expect file permissions to be 0600 or less",
+			"file": "/cobra/completions.go",
+			"code": "957: \tif path := os.Getenv(\"BASH_COMP_DEBUG_FILE\"); path != \"\" {\n958: \t\tf, err := os.OpenFile(path,\n959: \t\t\tos.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)\n960: \t\tif err == nil {\n",
+			"line": "958-959",
+			"column": "13",
+			"nosec": false,
+			"suppressions": null
+		}
+	],
+	"Stats": {
+		"files": 18,
+		"lines": 6897,
+		"nosec": 1,
+		"found": 12
+	},
+	"GosecVersion": "dev"
+}

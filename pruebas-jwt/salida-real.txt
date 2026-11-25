@@ -1,0 +1,24 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== corrido ==
+=== bcrypt: contraseñas ===
+hash 1: $2a$10$kyYlYeQH70UU69XVk6VT5eKvk5w1MVFTPdkLHF1lc3N4z05H37mUi
+hash 2: $2a$10$88f/7H3lO1/zYHiFj4I53u0Yra0vxZ0MwlV74D1GX35g6pKk3.4US
+misma contraseña, hashes distintos: true
+verificar con la contraseña correcta: true
+verificar con una contraseña incorrecta: false
+bcrypt tardo: 35ms
+sha256 (NO usar para contraseñas): bd3646dc88638079, tardo 1.06µs
+
+=== JWT: firma y verificacion ===
+token real (admin=false): eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ...
+
+--- verificarInseguro (ParseUnverified, sin comprobar firma) ---
+admin segun el token falsificado: true
+
+--- verificarSeguro (jwt.Parse, comprobando la firma real) ---
+token falsificado, verificacion segura: token signature is invalid: signature is invalid
+
+--- verificarSeguro con el token real, sin tocar ---
+token real, error: <nil>, admin: false

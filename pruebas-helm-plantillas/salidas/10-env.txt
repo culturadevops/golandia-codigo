@@ -1,0 +1,5 @@
+$ helm template demo 10-env  # mal.yaml + values.yaml
+Error: parse error at (caso/templates/caso.yaml:6): function "env" not defined
+
+Use --debug flag to render out invalid YAML
+[código de salida: 1]

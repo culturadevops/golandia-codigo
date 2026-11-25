@@ -1,0 +1,5 @@
+FROM node:24-slim
+WORKDIR /app
+COPY servidor.js /app/servidor.js
+EXPOSE 8080
+ENTRYPOINT ["node", "servidor.js"]

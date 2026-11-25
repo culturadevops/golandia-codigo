@@ -1,0 +1,15 @@
+vigia revisa endpoints HTTP.
+
+uso:
+  vigia revisar [flags] URL...     (o "-" para leer las URLs de stdin)
+  vigia config  [flags]            la configuración efectiva, y de dónde sale
+  vigia version                    versión, commit y con qué se compiló
+
+configuración (gana la primera que exista):
+  1. flags          -timeout 3s  -concurrencia 8  -config archivo.json
+  2. entorno        VIGIA_TIMEOUT  VIGIA_CONCURRENCIA  VIGIA_CONFIG
+  3. archivo        vigia.json en el directorio actual, o el de -config / VIGIA_CONFIG
+  4. por defecto    timeout 10s, concurrencia 4
+
+códigos de salida:
+  0 todo arriba · 1 hay endpoints caídos · 2 uso o configuración mal · 130 interrumpido

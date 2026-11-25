@@ -1,0 +1,12 @@
+FROM gradle:9.9.1-jdk21 AS jar
+WORKDIR /src
+COPY settings.gradle.kts build.gradle.kts gradle.properties /src/
+COPY src /src/src
+RUN gradle --no-daemon -q jarCompleto && cp build/libs/servidor.jar /servidor.jar
+FROM ghcr.io/graalvm/native-image-community:25 AS build
+COPY --from=jar /servidor.jar /servidor.jar
+RUN cd /tmp && native-image --no-fallback -jar /servidor.jar -o /servidor-graal
+FROM debian:trixie-slim
+COPY --from=build /servidor-graal /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

@@ -1,0 +1,8 @@
+FROM golang:1.25-bookworm
+# ⚠️ La documentación de Fyne dice `libgl1-mesa-dev xorg-dev`. NO BASTA: glfw pide
+#    wayland-client-core.h y la compilación se cae. Las tres últimas son el añadido.
+RUN apt-get update -qq && apt-get install -y -qq \
+      libgl1-mesa-dev xorg-dev \
+      libwayland-dev libxkbcommon-dev wayland-protocols \
+      xvfb procps && rm -rf /var/lib/apt/lists/*
+WORKDIR /app

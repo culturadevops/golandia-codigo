@@ -1,0 +1,11 @@
+$ helm template demo 07-scope  # with-bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: with
+data:
+  host: db.default.svc
+  release: demo
+[código de salida: 0]

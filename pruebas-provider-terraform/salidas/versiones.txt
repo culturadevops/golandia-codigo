@@ -1,0 +1,24 @@
+$ go version
+go version go1.27.2 linux/amd64
+$ terraform version
+Terraform v1.16.2
+on linux_amd64
+$ go list -m (framework)
+github.com/hashicorp/terraform-plugin-framework v1.19.0
+github.com/hashicorp/terraform-plugin-go v0.31.0
+$ go list -m all | wc -l
+69
+$ go list -deps . | wc -l
+437
+$ wc -l *.go (provider)
+   74 cliente.go
+   41 main.go
+  162 nota.go
+   57 provider.go
+  334 total
+$ wc -l main.go (api)
+147 main.go
+$ ls -l (binarios, -s -w)
+19079431 /build/bien/terraform-provider-notas
+9815554 /build/notas-api
+27691565 sin -s -w

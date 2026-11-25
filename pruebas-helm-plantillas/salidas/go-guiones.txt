@@ -1,0 +1,29 @@
+$ go run . guiones
+--- plantilla:
+a:
+  {{ if true }}
+  b: 1
+  {{ end }}
+--- salida (· = espacio):
+a:
+··
+··b:·1
+··
+
+--- plantilla:
+a:
+  {{- if true }}
+  b: 1
+  {{- end }}
+--- salida (· = espacio):
+a:
+··b:·1
+
+--- plantilla:
+a:
+  {{- if true -}}
+  b: 1
+  {{- end }}
+--- salida (· = espacio):
+a:b:·1
+[código de salida: 0]

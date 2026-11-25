@@ -1,0 +1,15 @@
+gc 1 @0.002s 3%: 0.36+0.96+0.009 ms clock, 8.8+0.040/1.6/0+0.23 ms cpu, 3->4->3 MB, 4 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 2 @0.006s 4%: 0.049+1.2+0.038 ms clock, 1.1+0/3.0/0.56+0.91 ms cpu, 6->7->7 MB, 7 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 3 @0.012s 4%: 0.035+2.4+0.033 ms clock, 0.85+0.040/5.3/1.2+0.80 ms cpu, 13->15->14 MB, 14 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 4 @0.024s 3%: 0.041+3.1+0.045 ms clock, 1.0+0.045/9.5/4.1+1.1 ms cpu, 27->29->27 MB, 29 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 5 @0.048s 3%: 0.046+3.0+0.027 ms clock, 1.1+0.026/13/21+0.65 ms cpu, 51->53->50 MB, 55 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 6 @0.091s 3%: 0.043+8.6+0.009 ms clock, 1.0+0.031/43/61+0.23 ms cpu, 93->94->89 MB, 100 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 7 @0.188s 3%: 0.045+14+0.054 ms clock, 1.1+0.028/80/164+1.2 ms cpu, 167->172->162 MB, 178 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 8 @0.412s 6%: 0.048+186+0.011 ms clock, 1.1+0.034/745/1806+0.27 ms cpu, 304->311->291 MB, 324 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 9 @0.890s 8%: 0.042+407+0.034 ms clock, 1.0+0.039/1889/5380+0.82 ms cpu, 554->564->524 MB, 582 MB goal, 0 MB stacks, 0 MB globals, 24 P
+gc 10 @1.571s 12%: 0.044+627+0.005 ms clock, 1.0+0/3765/11212+0.13 ms cpu, 718->718->713 MB, 1048 MB goal, 0 MB stacks, 0 MB globals, 24 P (forced)
+LISTO go1.26.9 · modo=punteros · usuarios=3000000 · montón vivo=713 MiB · llenar la caché tardó 2.2 s
+GC forced
+gc 11 @122.199s 0%: 0.19+799+0.18 ms clock, 4.6+0.043/4795/0+4.5 ms cpu, 1161->1165->716 MB, 1427 MB goal, 0 MB stacks, 0 MB globals, 24 P
+GC forced
+gc 12 @243.000s 0%: 0.095+801+0.48 ms clock, 2.2+0/4716/0+11 ms cpu, 1168->1172->716 MB, 1433 MB goal, 0 MB stacks, 0 MB globals, 24 P

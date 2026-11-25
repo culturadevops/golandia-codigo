@@ -1,0 +1,4 @@
+$ helm template … | kubeconform -strict -summary -
+stdin - ConfigMap include is invalid: problem validating schema. Check JSON formatting: jsonschema validation failed with 'https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/master-standalone-strict/configmap-v1.json#' - at '': additional properties 'equipo' not allowed
+Summary: 1 resource found parsing stdin - Valid: 0, Invalid: 1, Errors: 0, Skipped: 0
+[código de salida: 1]

@@ -1,0 +1,9 @@
+$ kgo watch-ingenuo
+   0.0s  → WATCH /api/v1/namespaces/demo/pods?labelSelector=app%3Dweb&timeout=5s&timeoutSeconds=5&watch=true
+   0.0s  ADDED    web-78c5486d8f-jppvl
+   1.0s  [escalador] replicas=3 ok
+   1.1s  ADDED    web-78c5486d8f-z2grj
+   1.1s  ADDED    web-78c5486d8f-mxhdr
+   5.0s  el canal se cerró (6 MODIFIED) · el bucle terminó, el programa ya no ve nada
+   8.0s  [escalador] replicas=1 ok
+  19.0s  realidad al final: 1 pods de web

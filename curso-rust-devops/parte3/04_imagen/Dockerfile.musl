@@ -1,0 +1,12 @@
+# Imagen mínima: binario estático con musl, sobre scratch (nada más dentro).
+FROM rust:1.99.1-trixie AS build
+RUN rustup target add x86_64-unknown-linux-musl
+WORKDIR /src
+COPY Cargo.toml Cargo.lock ./
+COPY src ./src
+RUN cargo build --release --locked --bin servicio --target x86_64-unknown-linux-musl
+
+FROM scratch
+COPY --from=build /src/target/x86_64-unknown-linux-musl/release/servicio /servicio
+EXPOSE 8090
+ENTRYPOINT ["/servicio"]

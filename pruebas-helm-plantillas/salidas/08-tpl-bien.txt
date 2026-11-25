@@ -1,0 +1,10 @@
+$ helm template demo 08-tpl  # bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tpl
+data:
+  DB_HOST: "demo-db.default.svc"
+[código de salida: 0]

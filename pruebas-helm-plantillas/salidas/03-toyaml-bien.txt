@@ -1,0 +1,16 @@
+$ helm template demo 03-toyaml  # bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: toyaml
+spec:
+  containers:
+    - name: web
+      image: nginx:1.30.5-alpine
+      resources:
+        limits:
+          cpu: 200m
+          memory: 128Mi
+[código de salida: 0]

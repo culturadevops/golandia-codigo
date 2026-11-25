@@ -1,0 +1,5 @@
+$ helm template demo 02-nindent  # mal.yaml + values.yaml
+Error: YAML parse error on caso/templates/caso.yaml: error converting YAML to JSON: yaml: line 6: did not find expected key
+
+Use --debug flag to render out invalid YAML
+[código de salida: 1]

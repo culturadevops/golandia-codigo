@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+// El paquete se llama distinto SOLO porque las tres variantes se enlazan en el mismo binario
+// de prueba y el registro de protobuf de Go no admite dos `pedidos.Pedido`. En el cable no
+// viaja el nombre del paquete: solo los NUMEROS de campo y su tipo. La demostracion es valida.
+package pedidosv2;
+option go_package = "banco/pbv2";
+
+// La MISMA version de antes MAS un campo nuevo, el 8. Nada mas cambia.
+message Pedido {
+  int64  id       = 1;
+  string cliente  = 2;
+  string articulo = 3;
+  int32  unidades = 4;
+  int64  centimos = 5;
+  string estado   = 6;
+  string creado   = 7;
+  string almacen  = 8;   // <- lo nuevo
+}

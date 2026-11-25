@@ -1,0 +1,19 @@
+$ helm template demo 05-quote  # bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quote
+spec:
+  containers:
+    - name: web
+      image: nginx:1.30.5-alpine
+      env:
+        - name: PUERTO
+          value: "8080"
+        - name: DEBUG
+          value: "true"
+        - name: VERSION
+          value: "1.1"
+[código de salida: 0]

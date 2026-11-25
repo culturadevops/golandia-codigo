@@ -1,0 +1,29 @@
+{
+ "segundos": 3.16,
+ "costo_usd": 0.014567600000000002,
+ "modelos": {
+  "claude-haiku-5-5": 21,
+  "claude-opus-5-5": 110
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "t07-clave-valor",
+ "variante": "B",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Usa Go 1.27.\n\nTarea: Escribe la función ParClaveValor(s string) (clave, valor string, ok bool) que separa un texto de la forma \"clave=valor\" por el primer signo igual. Si no hay signo igual, ok es false.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

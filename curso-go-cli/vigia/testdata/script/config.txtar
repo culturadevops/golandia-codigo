@@ -1,0 +1,19 @@
+# Precedencia: flag > entorno > archivo > por defecto. Cada script corre en su propio
+# directorio temporal, con un entorno limpio: nada del tuyo se cuela.
+exec vigia config
+stdout 'timeout       5s     \(archivo vigia.json\)'
+
+env VIGIA_TIMEOUT=3s
+exec vigia config
+stdout 'timeout       3s     \(entorno VIGIA_TIMEOUT\)'
+
+exec vigia config -timeout 10s
+stdout 'timeout       10s    \(flag -timeout\)'
+
+# Un valor mal escrito no se ignora: código 2 y dice cuál.
+env VIGIA_TIMEOUT=3
+! exec vigia config
+stderr 'VIGIA_TIMEOUT="3"'
+
+-- vigia.json --
+{"timeout": "5s"}

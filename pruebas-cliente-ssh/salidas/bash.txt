@@ -1,0 +1,24 @@
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (./bucle.sh hosts-sanos.txt | tail -2)
+s46 0 s46 disco 41%
+s47 0 s47 disco 41%
+tiempo: 52.752s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (./paralelo.sh hosts-sanos.txt 10 | tail -2)
+s47 0 s47 disco 41%
+s46 0 s46 disco 41%
+tiempo: 5.647s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (./paralelo.sh hosts-sanos.txt 50 | tail -2)
+s39 0 s39 disco 41%
+s41 0 s41 disco 41%
+tiempo: 1.167s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (./bucle.sh hosts-50.txt | tail -4)
+s48 255 Connection timed out during banner exchange
+Connection to 10.68.2.58 port 22 timed out
+s49 124 
+s50 255 ssh: connect to host s50 port 22: Connection timed out
+tiempo: 68.791s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (./paralelo.sh hosts-50.txt 50 | sort | tail -4)
+s47 0 s47 disco 41%
+s48 255 Connection timed out during banner exchange
+s49 124 
+s50 255 ssh: connect to host s50 port 22: Connection timed out
+tiempo: 10.046s

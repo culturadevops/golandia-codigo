@@ -1,0 +1,4 @@
+objetivos: 3 sanos/por vencer + 2 lentos (g679-srv:9444,g679-srv2:9444)
+-timeout 0 (sin límite)    scrape 15.02 s · sin respuesta (TimeoutError: timed out)
+-timeout 2s -secuencial    scrape  4.02 s · 3 sondas bien, 13 líneas
+-timeout 2s en paralelo    scrape  2.03 s · 3 sondas bien, 13 líneas

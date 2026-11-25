@@ -1,0 +1,12 @@
+[package]
+name = "bootstrap"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lambda_runtime = "1.5.0"
+serde = { version = "1.0.229", features = ["derive"] }
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread", "time"] }
+
+[profile.release]
+strip = true

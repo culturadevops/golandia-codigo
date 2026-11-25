@@ -1,0 +1,13 @@
+# con el webhook mutante (/mutar) delante del validador (/validar)
+$ kubectl apply -f pod-sin-limites.yaml   # nginx:1.30.5-alpine, sin limits
+pod/sinlim created
+  (código 0, 0.11 s)
+
+$ kubectl get pod sinlim -o jsonpath='{.spec.containers[0].resources}'
+{"limits":{"cpu":"500m","memory":"256Mi"},"requests":{"cpu":"500m","memory":"256Mi"}}
+
+$ kubectl apply -f pod-latest-sin-limites.yaml --dry-run=server
+Error from server: error when creating "pod-latest-sin-limites.yaml": admission webhook "pods.admision.golandia" denied the request: admision: contenedor "web": la imagen "nginx:latest" usa :latest; fija una versión
+  (código 1, 0.10 s)
+
+patch (base64 → texto): [{"op":"add","path":"/spec/containers/0/resources","value":{"limits":{"cpu":"500m","memory":"256Mi"}}}]

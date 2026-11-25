@@ -1,0 +1,16 @@
+{
+ "segundos": 4.9,
+ "eval_count": 308,
+ "opciones": {
+  "temperature": 0.7,
+  "seed": 1,
+  "num_predict": 2048
+ },
+ "backend": "ollama",
+ "modelo": "qwen2.5-coder:7b",
+ "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+ "tarea": "c01-worker-pool",
+ "variante": "B",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Asegúrate de que no quede ninguna goroutine bloqueada cuando la función termine.\n\nTarea: Escribe la función ProcesarConWorkers(ctx context.Context, trabajos []int, workers int, f func(int) int) ([]int, error). Usa un pool de `workers` goroutines que aplican f a cada trabajo y devuelve los resultados en el mismo orden que trabajos. Si ctx se cancela antes de terminar, devuelve ctx.Err() sin esperar a que se procesen los trabajos que faltan.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

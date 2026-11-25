@@ -1,0 +1,57 @@
+# Salida literal — banco SQLite vs Postgres · vídeo 179
+# Corrida completa: 2026-09-03. Sin retocar.
+
+############ ENTORNO ############
+go version go1.26.5 linux/amd64
+postgres 17.10 (contenedor postgres:17-alpine)
+modernc.org/sqlite (Go puro, sin cgo) · jackc/pgx · cada corrida 4s
+
+############ A · LA TRAMPA: no es un limite, es una opcion sin poner ############
+8 escritores · diario clasico · SIN busy_timeout escrituras/s      254   lecturas/s        0   bloqueos 584718   otros    0
+8 escritores · WAL · SIN busy_timeout          escrituras/s      491   lecturas/s        0   bloqueos 952879   otros    0
+8 escritores · WAL · CON busy_timeout 5s       escrituras/s     1275   lecturas/s        0   bloqueos      0   otros    0
+
+############ B · EL PRAGMA QUE NADIE MENCIONA (synchronous) ############
+8 escritores · WAL · pool 1 · synchronous FULL escrituras/s     1297   lecturas/s        0   bloqueos      0   otros    0
+8 escritores · WAL · pool 1 · synchronous NORMAL escrituras/s    48430   lecturas/s        0   bloqueos      0   otros    0
+8 escritores · WAL · pool 1 · synchronous OFF  escrituras/s   112118   lecturas/s        0   bloqueos      0   otros    0
+
+############ C · CARA A CARA, CON LA MISMA GARANTIA A CADA LADO ############
+-- durabilidad estricta (cada commit al disco) --
+sqlite  WAL · synchronous FULL         · 8 escritores escrituras/s     1305   lecturas/s        0   bloqueos      0   otros    0
+postgres synchronous_commit = on       · 8 escritores escrituras/s     7208   lecturas/s        0   bloqueos      0   otros    0
+-- durabilidad relajada (se puede perder el ultimo commit si cae la maquina) --
+sqlite  WAL · synchronous NORMAL       · 8 escritores escrituras/s    50348   lecturas/s        0   bloqueos      0   otros    0
+postgres synchronous_commit = off      · 8 escritores escrituras/s    87217   lecturas/s        0   bloqueos      0   otros    0
+
+############ D · LEER MIENTRAS ALGUIEN ESCRIBE (4 escriben + 4 leen) ############
+sqlite  diario clasico                         escrituras/s      283   lecturas/s        1   bloqueos      0   otros    0
+sqlite  WAL                                    escrituras/s     1010   lecturas/s   156424   bloqueos      0   otros    0
+postgres                                       escrituras/s     3591   lecturas/s    24952   bloqueos      0   otros    0
+
+############ E · UN SOLO ESCRITOR (el caso de casi todo el mundo) ############
+sqlite  WAL · NORMAL · 1 escritor              escrituras/s    51889   lecturas/s        0   bloqueos      0   otros    0
+postgres synchronous_commit off · 1 escritor   escrituras/s    17709   lecturas/s        0   bloqueos      0   otros    0
+
+############ FIN ############
+############ F · UN PROCESO CONTRA DOS, LA MISMA CARGA TOTAL ############
+-- 1 proceso con 8 escritores --
+1 proceso  · 8 escritores                      escrituras/s    45654   lecturas/s        0   bloqueos      0   otros    0
+-- 2 procesos con 4 escritores cada uno, a la vez --
+2 procesos · proceso A (4 escritores)          escrituras/s    33447   lecturas/s        0   bloqueos      0   otros    0
+2 procesos · proceso B (4 escritores)          escrituras/s    33283   lecturas/s        0   bloqueos      0   otros    0
+############ FIN ############
+############ G · BARRIDA DE ESCRITORES (misma garantia a los dos lados) ############
+sqlite    1 escritores                         escrituras/s    48962   lecturas/s        0   bloqueos      0   otros    0
+postgres  1 escritores                         escrituras/s    16636   lecturas/s        0   bloqueos      0   otros    0
+sqlite    2 escritores                         escrituras/s    48021   lecturas/s        0   bloqueos      0   otros    0
+postgres  2 escritores                         escrituras/s    31018   lecturas/s        0   bloqueos      0   otros    0
+sqlite    4 escritores                         escrituras/s    47411   lecturas/s        0   bloqueos      0   otros    0
+postgres  4 escritores                         escrituras/s    57257   lecturas/s        0   bloqueos      0   otros    0
+sqlite    8 escritores                         escrituras/s    41611   lecturas/s        0   bloqueos      0   otros    0
+postgres  8 escritores                         escrituras/s    89669   lecturas/s        0   bloqueos      0   otros    0
+sqlite   16 escritores                         escrituras/s    49369   lecturas/s        0   bloqueos      0   otros    0
+postgres 16 escritores                         escrituras/s    89220   lecturas/s        0   bloqueos      0   otros    0
+sqlite   32 escritores                         escrituras/s    37293   lecturas/s        0   bloqueos      0   otros    0
+postgres 32 escritores                         escrituras/s    63808   lecturas/s        0   bloqueos      0   otros    0
+############ FIN ############

@@ -1,0 +1,38 @@
+Updating (prod):
+
+    pulumi:pulumi:Stack g680-prod  Compiling the program ...
+@ updating....
+    pulumi:pulumi:Stack g680-prod  Finished compiling
+ +  pulumi:pulumi:Stack g680-prod creating (0s) Finished compiling
+ +  aws:sqs:Queue cola-avisos creating (0s) 
+ +  aws:sqs:Queue cola-pedidos creating (0s) 
+ +  aws:sqs:Queue cola-pagos creating (0s) 
+ +  aws:ssm:Parameter clave creating (0s) 
+ +  aws:s3:Bucket datos creating (0s) 
+@ updating....
+ +  aws:ssm:Parameter clave created (0.79s) 
+ +  aws:s3:Bucket datos created (0.82s) 
+ +  aws:s3:BucketVersioning datos creating (0s) 
+@ updating....
+ +  aws:s3:BucketVersioning datos created (1s) 
+@ updating...........................
+ +  aws:sqs:Queue cola-avisos created (25s) 
+ +  aws:sqs:Queue cola-pedidos created (25s) 
+ +  aws:sqs:Queue cola-pagos created (25s) 
+ +  aws:iam:Policy app creating (0s) 
+ +  aws:iam:Policy app created (0.17s) 
+ +  pulumi:pulumi:Stack g680-prod created (26s) 
+Outputs:
+    bucket  : "g680-datos-prod"
+    colas   : {
+        avisos : "http://moto:5000/123456789012/g680-avisos"
+        pagos  : "http://moto:5000/123456789012/g680-pagos"
+        pedidos: "http://moto:5000/123456789012/g680-pedidos"
+    }
+    politica: "arn:aws:iam::123456789012:policy/g680-app-prod"
+
+Resources:
+    + 8 created
+
+Duration: 28s
+

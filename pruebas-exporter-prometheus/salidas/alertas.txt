@@ -1,0 +1,7 @@
+Prometheus v3.15.1 · Alertmanager v0.34.0 · scrape cada 15 s · for: 30s
+segundos desde que arrancó Prometheus hasta que la alerta llegó a Alertmanager:
+   61.1 s  CertificadoPorVencer   certexp                  g679-srv:9441 vence en 5.0 días
+   61.1 s  SondaTLSFalla          certexp-etiqueta-error   no pude leer el certificado de g679-srv:9999
+   61.1 s  SondaTLSFalla          certexp-etiqueta-error   no pude leer el certificado de g679-srv:9444
+   61.1 s  SondaTLSFalla          certexp                  no pude leer el certificado de g679-srv:9444
+   61.1 s  CertificadoPorVencer   certexp                  g679-srv:9442 vence en -1.0 días

@@ -1,0 +1,30 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Lección 2</title>
+<style>body{font:17px ui-monospace,monospace;background:#0d1117;color:#e6edf3;padding:24px}
+h2{font-family:system-ui;color:#00ADD8;margin:6px 0}td{padding:3px 14px;border-bottom:1px solid #30363d;vertical-align:top}
+.go{color:#7ee787}.js{color:#ffa657}</style>
+<body><h2>Go envió</h2><table id="go"></table><h2>JavaScript recibió</h2><table id="js"></table><h2>Corregido en Go</h2><table id="bien"></table>
+<script>
+const R = s => window.go.main.App.Reportar(s)
+window.onload = async () => {
+  const go = await window.go.main.App.ComoLoVeGo()
+  document.getElementById('go').innerHTML = go.map(l => `<tr><td class=go>${l}</td></tr>`).join('')
+  const p = await window.go.main.App.Pedido()
+  const filas = [
+    ['ID', `${p.ID} (${typeof p.ID}) · ¿igual a 9007199254740993? ${String(p.ID) === '9007199254740993'}`],
+    ['Lineas', `${JSON.stringify(p.Lineas)} · Lineas.length -> ${(() => { try { return p.Lineas.length } catch (e) { return 'ERROR: ' + e.message } })()}`],
+    ['Creado', `${JSON.stringify(p.Creado)} (${typeof p.Creado})`],
+    ['PorPais', `${JSON.stringify(p.PorPais)} · claves: ${Object.keys(p.PorPais).map(k => typeof k).join(', ')}`],
+    ['interno', `${'interno' in p ? p.interno : '(no llegó)'}`],
+  ]
+  document.getElementById('js').innerHTML = filas.map(([k, v]) => `<tr><td>${k}</td><td class=js>${v}</td></tr>`).join('')
+  for (const [k, v] of filas) await R(`  JS recibió  ${k}: ${v}`)
+  const b = await window.go.main.App.PedidoBien()
+  const bien = [
+    ['ID', `${b.ID} (${typeof b.ID}) · ¿igual a 9007199254740993? ${b.ID === '9007199254740993'}`],
+    ['Lineas', `${JSON.stringify(b.Lineas)} · Lineas.length -> ${b.Lineas.length}`],
+    ['Creado', `new Date(...) -> ${new Date(b.Creado).toISOString()}`],
+  ]
+  document.getElementById('bien').innerHTML = bien.map(([k, v]) => `<tr><td>${k}</td><td class=go>${v}</td></tr>`).join('')
+  for (const [k, v] of bien) await R(`  corregido   ${k}: ${v}`)
+}
+</script></body></html>

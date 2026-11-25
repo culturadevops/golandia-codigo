@@ -1,0 +1,4 @@
+# api.github.com/repos/golang-standards/project-layout — 2026-10-20 22:30 UTC
+stargazers_count 56700
+forks_count 5421
+archived False

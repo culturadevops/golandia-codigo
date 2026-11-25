@@ -1,0 +1,9 @@
+FROM ocaml/opam:debian-13-ocaml-5.5 AS build
+RUN opam install -y dune eio_main cohttp-eio mtime
+WORKDIR /home/opam/src
+COPY --chown=opam src /home/opam/src
+RUN opam exec -- dune build --profile release ./servidor.exe && cp _build/default/servidor.exe /home/opam/servidor
+FROM debian:trixie-slim
+COPY --from=build /home/opam/servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

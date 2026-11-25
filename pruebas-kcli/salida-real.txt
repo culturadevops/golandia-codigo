@@ -1,0 +1,99 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== 1. kcli: arbol de subcomandos anidados (como kubectl) ==
+kcli es una CLI de demostracion construida con Cobra y Viper
+
+Usage:
+  kcli [command]
+
+Available Commands:
+  completion  Generate the autocompletion script for the specified shell
+  config      inspecciona la configuracion resuelta
+  help        Help about any command
+  serve       arranca o detiene el servidor de demostracion
+
+Flags:
+      --config string   archivo de configuracion (default ./kcli.yaml)
+  -h, --help            help for kcli
+
+Use "kcli [command] --help" for more information about a command.
+---
+arranca o detiene el servidor de demostracion
+
+Usage:
+  kcli serve [command]
+
+Available Commands:
+  start       arranca el servidor (demostracion, no abre ningun puerto de verdad)
+  stop        detiene el servidor (demostracion)
+
+Flags:
+  -h, --help   help for serve
+
+Global Flags:
+      --config string   archivo de configuracion (default ./kcli.yaml)
+
+Use "kcli serve [command] --help" for more information about a command.
+
+== 2. solo archivo de configuracion (kcli.yaml), sin flags ni env ==
+host=desde-archivo-config puerto=9000
+usando archivo de configuracion: /lab/etapas/01-kcli/kcli.yaml
+
+== 3. con variable de entorno KCLI_SERVER_HOST (con el replacer puesto en root.go) ==
+usando archivo de configuracion: /lab/etapas/01-kcli/kcli.yaml
+host=desde-entorno puerto=9000
+
+== 4. la variable de entorno pierde contra un flag explicito ==
+host=desde-flag puerto=9000
+
+== 4b. el mismo binario, un archivo JSON en vez de YAML, sin tocar el codigo ==
+usando archivo de configuracion: /lab/etapas/01-kcli/kcli.yaml
+usando archivo de configuracion: otro-formato.json
+host=desde-json puerto=7000
+
+== 5. config view: la configuracion ya resuelta ==
+usando archivo de configuracion: /lab/etapas/01-kcli/kcli.yaml
+server = map[host:desde-entorno port:9000]
+
+== 6. autocompletado real generado por cobra (primeras 15 lineas) ==
+usando archivo de configuracion: /lab/etapas/01-kcli/kcli.yaml
+# bash completion V2 for kcli                                 -*- shell-script -*-
+
+__kcli_debug()
+{
+    if [[ -n ${BASH_COMP_DEBUG_FILE-} ]]; then
+        echo "$*" >> "${BASH_COMP_DEBUG_FILE}"
+    fi
+}
+
+# Macs have bash3 for which the bash-completion package doesn't include
+# _init_completion. This is a minimal version of that function.
+__kcli_init_completion()
+{
+    COMPREPLY=()
+    _get_comp_words_by_ref "$@" cur prev words cword
+
+== 7. EL CONTROL: mismo config.yaml, misma variable de entorno, una sola linea de setup distinta ==
+--- con viper.SetEnvKeyReplacer(".", "_") ---
+CON replacer, server.host = desde-entorno
+--- sin esa linea (todo lo demas identico) ---
+SIN replacer, server.host = desde-archivo
+
+== 8. cobra-cli: el generador oficial de estructura ==
+Your Cobra application is ready at
+/tmp/generado
+--- arbol que crea cobra-cli init ---
+./LICENSE
+./cmd/root.go
+./go.mod
+./go.sum
+./main.go
+
+== 9. viper.New(): dos configuraciones a la vez, sin pisarse ==
+global, justo despues de leer a.yaml: service = a
+global, justo despues de leer b.yaml: service = b
+global, preguntado de nuevo mas tarde: service = b
+
+instancia A (viper.New): a
+instancia B (viper.New): b

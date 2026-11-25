@@ -1,0 +1,12 @@
+$ psql -U postgres -f sql/roles.sql
+CREATE ROLE
+CREATE ROLE
+CREATE DATABASE
+CREATE DATABASE
+You are now connected to database "tienda" as user "postgres".
+GRANT
+ALTER DEFAULT PRIVILEGES
+You are now connected to database "tienda_test" as user "postgres".
+GRANT
+ALTER DEFAULT PRIVILEGES
+[código de salida 0]

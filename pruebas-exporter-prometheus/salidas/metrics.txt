@@ -1,0 +1,12 @@
+$ curl -s localhost:9679/metrics | grep ^certexp   (tardó 2.02 s)
+certexp_not_after_timestamp_seconds{objetivo="g679-srv:9441"} 1.793461104e+09
+certexp_not_after_timestamp_seconds{objetivo="g679-srv:9442"} 1.792942704e+09
+certexp_not_after_timestamp_seconds{objetivo="g679-srv:9443"} 1.800805104e+09
+certexp_probe_duration_seconds{objetivo="g679-srv:9441"} 0.001252784
+certexp_probe_duration_seconds{objetivo="g679-srv:9442"} 0.001307184
+certexp_probe_duration_seconds{objetivo="g679-srv:9443"} 0.001248804
+certexp_probe_duration_seconds{objetivo="g679-srv:9444"} 2.000822174
+certexp_probe_success{objetivo="g679-srv:9441"} 1
+certexp_probe_success{objetivo="g679-srv:9442"} 1
+certexp_probe_success{objetivo="g679-srv:9443"} 1
+certexp_probe_success{objetivo="g679-srv:9444"} 0

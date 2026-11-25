@@ -1,0 +1,5 @@
+$ helm template demo 06-required  # bien.yaml + values.yaml
+Error: execution error at (caso/templates/caso.yaml:8:17): falta imagen.repo en values.yaml
+
+Use --debug flag to render out invalid YAML
+[código de salida: 1]

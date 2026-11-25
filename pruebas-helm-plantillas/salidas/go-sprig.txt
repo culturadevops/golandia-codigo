@@ -1,0 +1,4 @@
+$ go run . sprig ../mini
+error: template: deployment.yaml:22: function "toYaml" not defined
+exit status 1
+[código de salida: 1]

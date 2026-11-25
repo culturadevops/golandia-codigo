@@ -1,0 +1,18 @@
+$ (certexp_not_after_timestamp_seconds - time()) / 86400
+  {objetivo="g679-srv:9441"}  5.00
+  {objetivo="g679-srv:9442"}  -1.00
+  {objetivo="g679-srv:9443"}  90.00
+$ certexp_probe_success{job="certexp"}
+  {objetivo="g679-srv:9441"}  1
+  {objetivo="g679-srv:9442"}  1
+  {objetivo="g679-srv:9443"}  1
+  {objetivo="g679-srv:9444"}  0
+$ certexp_probe_duration_seconds{job="certexp"}
+  {objetivo="g679-srv:9441"}  0.001
+  {objetivo="g679-srv:9442"}  0.001
+  {objetivo="g679-srv:9443"}  0.001
+  {objetivo="g679-srv:9444"}  2.002
+$ up · scrape_duration_seconds
+  certexp                up=1  scrape_duration_seconds=2.00
+  certexp-sin-timeout    up=0  scrape_duration_seconds=10.00
+  lastError de certexp-sin-timeout: Get "http://g679-cx-sin:9679/metrics": context deadline exceeded

@@ -1,0 +1,9 @@
+FROM tinygo/tinygo:0.44.0 AS build
+USER root
+WORKDIR /src
+COPY . /src
+RUN tinygo build -no-debug -opt=2 -o /servidor .
+FROM scratch
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

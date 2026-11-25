@@ -1,0 +1,18 @@
+FROM tinygo/tinygo:0.44.0 AS build
+USER root
+WORKDIR /src
+COPY prog /src
+RUN mkdir /out \
+ && CGO_ENABLED=0 go build -ldflags='-s -w' -o /out/go-nativo . \
+ && tinygo build -no-debug -o /out/tinygo-nativo . \
+ && tinygo build -no-debug -opt=2 -o /out/tinygo-nativo-opt2 . \
+ && GOOS=wasip1 GOARCH=wasm go build -ldflags='-s -w' -o /out/go.wasm . \
+ && tinygo build -no-debug -target=wasip1 -o /out/tinygo.wasm . \
+ && tinygo build -no-debug -target=wasip1 -opt=2 -o /out/tinygo-opt2.wasm .
+FROM debian:trixie-slim
+RUN apt-get update && apt-get install -y --no-install-recommends time ca-certificates curl xz-utils file \
+ && curl -sSL https://github.com/bytecodealliance/wasmtime/releases/download/v50.0.1/wasmtime-v50.0.1-x86_64-linux.tar.xz \
+    | tar -xJ -C /opt && ln -s /opt/wasmtime-v50.0.1-x86_64-linux/wasmtime /usr/local/bin/wasmtime \
+ && apt-get purge -y curl xz-utils && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
+COPY --from=build /out /out
+WORKDIR /out

@@ -1,0 +1,8 @@
+# binarios y artefactos: nunca al repo
+dist/
+/bin/
+*.exe
+vigia/vigia
+*.test
+*.out
+__pycache__/

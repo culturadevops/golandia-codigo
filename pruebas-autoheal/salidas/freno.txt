@@ -1,0 +1,24 @@
+$ gh-roto: nginx escucha en el 8080 y el healthcheck pide el 80 → enfermo siempre
+$ vigia -modo eventos -max 3 -ventana 2m
+   0.0s  gh-roto   running  starting   RestartCount=0  arrancó 14:46:06
+   6.0s  gh-roto   running  unhealthy  RestartCount=0  arrancó 14:46:06
+   6.5s  gh-roto   running  starting   RestartCount=0  arrancó 14:46:12
+  12.5s  gh-roto   running  unhealthy  RestartCount=0  arrancó 14:46:12
+  13.0s  gh-roto   running  starting   RestartCount=0  arrancó 14:46:19
+  19.1s  gh-roto   exited   unhealthy  RestartCount=0  arrancó 14:46:19
+  19.6s  gh-roto   running  starting   RestartCount=0  arrancó 14:46:25
+  25.5s  gh-roto   running  unhealthy  RestartCount=0  arrancó 14:46:25
+  70.3s  fin · running unhealthy 0
+--- log del vigía ---
+    0.0s  vigía en modo eventos · etiqueta golandia.autoheal=demo
+    5.9s  evento: gh-roto · health_status: unhealthy
+    5.9s  reinicio gh-roto
+    6.2s  gh-roto reiniciado (la llamada tardó 0.3s)
+   12.4s  evento: gh-roto · health_status: unhealthy
+   12.4s  reinicio gh-roto
+   12.7s  gh-roto reiniciado (la llamada tardó 0.4s)
+   18.8s  evento: gh-roto · health_status: unhealthy
+   18.8s  reinicio gh-roto
+   19.2s  gh-roto reiniciado (la llamada tardó 0.3s)
+   25.3s  evento: gh-roto · health_status: unhealthy
+   25.3s  ⛔ gh-roto: 3 reinicios en 2m0s y sigue enfermo · lo dejo y aviso

@@ -1,0 +1,26 @@
+usage: go fix [build flags] [-fixtool prog] [fix flags] [packages]
+
+Fix runs the Go fix tool (cmd/fix) on the named packages
+and applies suggested fixes.
+
+It supports these flags:
+
+  -diff
+	instead of applying each fix, print the patch as a unified diff;
+	exit with a non-zero status if the diff is not empty
+
+The -fixtool=prog flag selects a different analysis tool with
+alternative or additional fixers; see the documentation for go vet's
+-vettool flag for details.
+
+The default fix tool is 'go tool fix' or cmd/fix.
+For help on its fixers and their flags, run 'go tool fix help'.
+For details of a specific fixer such as 'hostport', see 'go tool fix help hostport'.
+
+For more about specifying packages, see 'go help packages'.
+
+The build flags supported by go fix are those that control package resolution
+and execution, such as -C, -n, -x, -v, -tags, and -toolexec.
+For more about these flags, see 'go help build'.
+
+See also: go fmt, go vet.

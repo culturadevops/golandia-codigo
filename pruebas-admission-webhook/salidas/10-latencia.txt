@@ -1,0 +1,28 @@
+# 300 POST de un pod válido con dryRun=All por kubectl proxy (pasa por toda la admisión, no guarda nada)
+# 5 rondas, el orden rota en cada una; 30 de calentamiento por tanda; antes de medir, un pod :latest comprueba que la regla está puesta
+  ronda 1 · sin nada                    (:latest → 201) cliente: mediana  3.80 ms  p95  5.06 ms  · apiserver, paso validate:     74 µs/pod
+  ronda 1 · webhook en Go               (:latest → 403) cliente: mediana  2.82 ms  p95  4.44 ms  · apiserver, paso validate:    528 µs/pod  · llamada al webhook:    465 µs
+  ronda 1 · ValidatingAdmissionPolicy   (:latest → 422) cliente: mediana  2.99 ms  p95  6.03 ms  · apiserver, paso validate:    294 µs/pod
+  ronda 2 · webhook en Go               (:latest → 403) cliente: mediana  4.00 ms  p95  9.52 ms  · apiserver, paso validate:    879 µs/pod  · llamada al webhook:    765 µs
+  ronda 2 · ValidatingAdmissionPolicy   (:latest → 422) cliente: mediana  2.16 ms  p95  3.39 ms  · apiserver, paso validate:    197 µs/pod
+  ronda 2 · sin nada                    (:latest → 201) cliente: mediana  1.80 ms  p95  2.87 ms  · apiserver, paso validate:     27 µs/pod
+  ronda 3 · ValidatingAdmissionPolicy   (:latest → 422) cliente: mediana  2.50 ms  p95  4.16 ms  · apiserver, paso validate:    221 µs/pod
+  ronda 3 · sin nada                    (:latest → 201) cliente: mediana  2.73 ms  p95  4.60 ms  · apiserver, paso validate:     48 µs/pod
+  ronda 3 · webhook en Go               (:latest → 403) cliente: mediana  3.43 ms  p95  4.72 ms  · apiserver, paso validate:    592 µs/pod  · llamada al webhook:    518 µs
+  ronda 4 · sin nada                    (:latest → 201) cliente: mediana  2.21 ms  p95  3.87 ms  · apiserver, paso validate:     37 µs/pod
+  ronda 4 · webhook en Go               (:latest → 403) cliente: mediana  2.82 ms  p95  4.70 ms  · apiserver, paso validate:    495 µs/pod  · llamada al webhook:    434 µs
+  ronda 4 · ValidatingAdmissionPolicy   (:latest → 422) cliente: mediana  2.08 ms  p95  3.87 ms  · apiserver, paso validate:    195 µs/pod
+  ronda 5 · sin nada                    (:latest → 201) cliente: mediana  1.89 ms  p95  2.76 ms  · apiserver, paso validate:     26 µs/pod
+  ronda 5 · webhook en Go               (:latest → 403) cliente: mediana  2.47 ms  p95  3.68 ms  · apiserver, paso validate:    439 µs/pod  · llamada al webhook:    386 µs
+  ronda 5 · ValidatingAdmissionPolicy   (:latest → 422) cliente: mediana  1.99 ms  p95  3.05 ms  · apiserver, paso validate:    180 µs/pod
+
+  sin nada                    cliente: mediana de las 5 rondas  2.21 ms (+0.00 ms)  · apiserver, paso validate:    37 µs/pod
+  webhook en Go               cliente: mediana de las 5 rondas  2.82 ms (+0.61 ms)  · apiserver, paso validate:   528 µs/pod
+  ValidatingAdmissionPolicy   cliente: mediana de las 5 rondas  2.16 ms (-0.04 ms)  · apiserver, paso validate:   197 µs/pod
+
+# lo que tarda el handler de Go por dentro (últimas 5 líneas del log):
+  62.777µs
+  48.7µs
+  41.398µs
+  50.781µs
+  51.271µs

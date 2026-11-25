@@ -1,0 +1,10 @@
+# configuración SIN caBundle: el apiserver no confía en el certificado autofirmado
+$ kubectl apply -f pod-bien.yaml --dry-run=server
+Error from server (InternalError): error when creating "pod-bien.yaml": Internal error occurred: failed calling webhook "pods.admision.golandia": failed to call webhook: Post "https://admision.admision.svc:443/validar?timeout=10s": tls: failed to verify certificate: x509: certificate signed by unknown authority
+  (código 1, 0.09 s)
+
+# con caBundle = ca.crt en base64
+$ kubectl apply -f pod-bien.yaml --dry-run=server
+pod/web created (server dry run)
+  (código 0, 0.10 s)
+

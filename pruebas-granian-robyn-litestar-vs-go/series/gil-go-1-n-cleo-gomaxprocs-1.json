@@ -1,0 +1,303 @@
+{
+ "contenedor": "srv",
+ "intervalo_s": 0.5,
+ "resumen": {
+  "muestras": 41,
+  "cpu_media": 99.1,
+  "cpu_max": 101.8,
+  "mem_max_mib": 8.79,
+  "hilos_max": 3,
+  "frenadas": 0
+ },
+ "serie": [
+  {
+   "t": 0.0,
+   "cpu_pct": null,
+   "mem_mib": 6.29,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 0.5,
+   "cpu_pct": 61.7,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 1.01,
+   "cpu_pct": 99.7,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 1.51,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 2.02,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 2.52,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 3.03,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 3.53,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 4.04,
+   "cpu_pct": 99.7,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 4.54,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 5.04,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 5.55,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 6.05,
+   "cpu_pct": 101.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 6.56,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 7.06,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 7.57,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 8.08,
+   "cpu_pct": 99.7,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 8.58,
+   "cpu_pct": 101.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 9.09,
+   "cpu_pct": 99.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 9.59,
+   "cpu_pct": 101.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 10.1,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 10.6,
+   "cpu_pct": 101.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 11.11,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 11.61,
+   "cpu_pct": 101.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 12.12,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 12.63,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 13.13,
+   "cpu_pct": 101.7,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 13.64,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 14.14,
+   "cpu_pct": 101.7,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 14.65,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 15.15,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 15.66,
+   "cpu_pct": 99.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 16.16,
+   "cpu_pct": 101.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 16.67,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 17.17,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 17.68,
+   "cpu_pct": 99.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 18.18,
+   "cpu_pct": 100.9,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 18.69,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 19.19,
+   "cpu_pct": 101.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 19.7,
+   "cpu_pct": 99.0,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  },
+  {
+   "t": 20.21,
+   "cpu_pct": 96.8,
+   "mem_mib": 8.79,
+   "hilos": 3,
+   "frenadas": 0
+  }
+ ],
+ "variante": "go, 1 núcleo (GOMAXPROCS=1)",
+ "rps": 7047.2606
+}

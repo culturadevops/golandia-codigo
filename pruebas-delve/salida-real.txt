@@ -1,0 +1,61 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== instalar delve v1.27.2 ==
+Delve Debugger
+Version: 1.27.2
+Build: $Id: 360e7b2181d3da54115aaee4f569954bca95cfe3 $
+
+== el programa, corrido normal, sin debugger (se corta con timeout) ==
+punto de inspeccion: el deadlock ya deberia estar armado aca
+un paso mas, sin correr todo el programa
+tick: el programa sigue vivo
+tick: el programa sigue vivo
+(se colgo: exactamente lo que se espera de un deadlock parcial)
+
+== ahora con dlv: breakpoint justo despues de que las goroutines se traban ==
+Type 'help' for list of commands.
+(dlv) Breakpoint 1 set at 0x4b671d for main.main() ./main.go:42
+(dlv) > [Breakpoint 1] main.main() ./main.go:42 (hits goroutine(1):1 total:1) (PC: 0x4b671d)
+    37:		go trabajadorA()
+    38:		go trabajadorB()
+    39:	
+    40:		mensaje := "el deadlock ya deberia estar armado aca"
+    41:		time.Sleep(500 * time.Millisecond)
+=>  42:		fmt.Println("punto de inspeccion:", mensaje)
+    43:		segundoMensaje := "un paso mas, sin correr todo el programa"
+    44:		fmt.Println(segundoMensaje)
+    45:		time.Sleep(60 * time.Second)
+    46:	}
+(dlv) "el deadlock ya deberia estar armado aca"
+(dlv) punto de inspeccion: el deadlock ya deberia estar armado aca
+> main.main() ./main.go:43 (PC: 0x4b67bd)
+    38:		go trabajadorB()
+    39:	
+    40:		mensaje := "el deadlock ya deberia estar armado aca"
+    41:		time.Sleep(500 * time.Millisecond)
+    42:		fmt.Println("punto de inspeccion:", mensaje)
+=>  43:		segundoMensaje := "un paso mas, sin correr todo el programa"
+    44:		fmt.Println(segundoMensaje)
+    45:		time.Sleep(60 * time.Second)
+    46:	}
+(dlv) > main.main() ./main.go:44 (PC: 0x4b67d2)
+    39:	
+    40:		mensaje := "el deadlock ya deberia estar armado aca"
+    41:		time.Sleep(500 * time.Millisecond)
+    42:		fmt.Println("punto de inspeccion:", mensaje)
+    43:		segundoMensaje := "un paso mas, sin correr todo el programa"
+=>  44:		fmt.Println(segundoMensaje)
+    45:		time.Sleep(60 * time.Second)
+    46:	}
+(dlv) * Goroutine 1 - User: ./main.go:44 main.main (0x4b67d2) (thread 5252)
+  Goroutine 2 - User: /usr/local/go/src/runtime/proc.go:475 runtime.gopark (0x484a91) [force gc (idle)]
+  Goroutine 3 - User: /usr/local/go/src/runtime/proc.go:475 runtime.gopark (0x484a91) [GC sweep wait]
+  Goroutine 4 - User: /usr/local/go/src/runtime/proc.go:475 runtime.gopark (0x484a91) [GC scavenge wait]
+  Goroutine 5 - User: /usr/local/go/src/runtime/proc.go:475 runtime.gopark (0x484a91) [GOMAXPROCS updater (idle)]
+  Goroutine 6 - User: /usr/local/go/src/runtime/proc.go:475 runtime.gopark (0x484a91) [finalizer wait]
+  Goroutine 7 - User: /usr/local/go/src/runtime/time.go:368 time.Sleep (0x48729c) [sleep]
+  Goroutine 8 - User: /usr/local/go/src/sync/mutex.go:46 sync.(*Mutex).Lock (0x4924df) [sync.Mutex.Lock]
+  Goroutine 9 - User: /usr/local/go/src/sync/mutex.go:46 sync.(*Mutex).Lock (0x4924df) [sync.Mutex.Lock]
+[9 goroutines]
+(dlv) 

@@ -1,0 +1,8 @@
+FROM crystallang/crystal:1.22.3-alpine AS build
+WORKDIR /src
+COPY src /src
+RUN crystal build --release --no-debug --static -o /servidor servidor.cr
+FROM scratch
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

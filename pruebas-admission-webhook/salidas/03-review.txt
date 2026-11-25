@@ -1,0 +1,72 @@
+$ kubectl apply -f pod-latest.yaml --dry-run=server
+Error from server: error when creating "pod-latest.yaml": admission webhook "pods.admision.golandia" denied the request: admision: contenedor "web": la imagen "nginx:latest" usa :latest; fija una versión; contenedor "web": falta limits.cpu; contenedor "web": falta limits.memory
+  (código 1, 0.11 s)
+
+log: 2026/10/26 15:40:50 validar ns=default op=CREATE allowed=false en 92.219µs
+── AdmissionReview de ENTRADA (recortado: object.metadata.managedFields fuera) ──
+{
+  "apiVersion": "admission.k8s.io/v1",
+  "kind": "AdmissionReview",
+  "request": {
+    "uid": "569890f0-a470-4111-91d7-d0ae2f86bb5a",
+    "kind": {
+      "group": "",
+      "version": "v1",
+      "kind": "Pod"
+    },
+    "resource": {
+      "group": "",
+      "version": "v1",
+      "resource": "pods"
+    },
+    "namespace": "default",
+    "operation": "CREATE",
+    "userInfo": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "extra": {
+        "authentication.kubernetes.io/credential-id": [
+          "X509SHA256=1867e4804a0411d99ef7f28953324f4aaa4f74b290730f684ab113c8b31191d9"
+        ]
+      }
+    },
+    "dryRun": true
+  }
+}
+object.spec.containers:
+[
+  {
+    "name": "web",
+    "image": "nginx:latest",
+    "resources": {},
+    "volumeMounts": [
+      {
+        "name": "kube-api-access-hvpm5",
+        "readOnly": true,
+        "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount"
+      }
+    ],
+    "terminationMessagePath": "/dev/termination-log",
+    "terminationMessagePolicy": "File",
+    "imagePullPolicy": "Always"
+  }
+]
+bytes del cuerpo completo: 3093
+
+── AdmissionReview de SALIDA ──
+{
+  "apiVersion": "admission.k8s.io/v1",
+  "kind": "AdmissionReview",
+  "response": {
+    "uid": "569890f0-a470-4111-91d7-d0ae2f86bb5a",
+    "allowed": false,
+    "status": {
+      "code": 403,
+      "message": "admision: contenedor \"web\": la imagen \"nginx:latest\" usa :latest; fija una versión; contenedor \"web\": falta limits.cpu; contenedor \"web\": falta limits.memory"
+    }
+  }
+}
+

@@ -1,0 +1,8 @@
+FROM python:3.13.17-slim
+WORKDIR /app
+COPY app/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+COPY app/servidor.py /app/servidor.py
+EXPOSE 8080
+ENV WORKERS=1
+ENTRYPOINT ["sh", "-c", "exec uvicorn servidor:app --host 0.0.0.0 --port 8080 --log-level warning --workers $WORKERS"]

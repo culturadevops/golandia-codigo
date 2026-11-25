@@ -1,0 +1,43 @@
+== 1 · LO PRIMERO QUE MANDA UN CLIENTE DE KAFKA ==
+   (sonda: un socket que NO contesta nada, solo mira lo que llega)
+  peticion 0: largo=49 api=18 (ApiVersions) version=4
+  peticion 1: largo=49 api=18 (ApiVersions) version=4
+  peticion 2: largo=49 api=18 (ApiVersions) version=4
+   ^ 49 bytes preguntando «¿que sabes hacer?». Y hasta que no contestas, reintenta
+     en bucle SIN decir que le pasa.
+
+== 2 · LA NEGOCIACION: yo digo qué versiones hablo, y el cliente baja ==
+pruebas
+   ^ el cliente OFICIAL listando temas de 400 lineas de Go.
+   y en el registro del servidor se ve la negociacion:
+       <- ApiVersions  v4  corr=0   cliente="adminclient-1"
+       <- Metadata     v3  corr=1   cliente="adminclient-1"
+     ^ pide ApiVersions en la v4 y luego manda Metadata en la v3: la mas alta que le dije.
+
+== 3 · PRODUCIR con el productor OFICIAL ==
+   (sin lineas de error arriba = entro bien)
+        guardado en "pruebas": 98 bytes · 3 mensajes · offsets 0..2
+   ^ TRES mensajes en UN solo lote de 98 bytes. La unidad no es el mensaje: es el lote.
+
+== 4 · CONSUMIR con el consumidor OFICIAL ==
+hola
+que tal
+adios
+org.apache.kafka.common.errors.TimeoutException
+Processed a total of 3 messages
+   peticiones de Fetch que le costo: 18
+   ^ con la espera larga puesta. SIN ella fueron 316.000 en diez segundos.
+
+== 5 · 🥇 LA TRAMPA DE METADATA: el 90% de los «no me conecto a Kafka» ==
+   ahora arranco el MISMO servidor pero anunciandome con un nombre que el
+   cliente no puede resolver. Todo lo demas es identico.
+java.net.UnknownHostException: no-existe-este-host: Name does not resolve
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Unknown Source)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(Unknown Source)
+   ^ el cliente se conecta a kafkita PERFECTAMENTE, recibe la respuesta, y a partir de
+     ahi se va al nombre que le dije y se pierde. El puerto estaba abierto todo el rato.
+       <- ApiVersions  v4  corr=0   cliente="console-producer"
+       <- Metadata     v3  corr=1   cliente="console-producer"
+     ^ y en el servidor NO hay ni un error: las dos peticiones entraron bien.
+
+== limpio ==

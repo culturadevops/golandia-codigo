@@ -1,0 +1,12 @@
+$ helm template demo 06-required  # mal.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: required
+spec:
+  containers:
+    - name: web
+      image: ":1.30.5-alpine"
+[código de salida: 0]

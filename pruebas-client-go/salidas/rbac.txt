@@ -1,0 +1,28 @@
+$ kubectl auth can-i list pods -n demo --as system:serviceaccount:demo:sin-permisos
+no
+--- pod kgo-rbac con serviceAccountName: sin-permisos ---
+   0.0s  InClusterConfig(): <nil>
+   0.0s  origen: in-cluster
+   0.0s  host: https://10.96.0.1:443
+   0.0s  QPS=0 Burst=0 (0 = valores por defecto de client-go)
+   0.0s  list pods en demo          403 · IsForbidden=true
+   0.0s    pods is forbidden: User "system:serviceaccount:demo:sin-permisos" cannot list resource "pods" in API group "" in the namespace "demo"
+   0.0s  get deployment web         403 · IsForbidden=true
+   0.0s    deployments.apps "web" is forbidden: User "system:serviceaccount:demo:sin-permisos" cannot get resource "deployments" in API group "apps" in the namespace "demo"
+   0.0s  list pods en kube-system   403 · IsForbidden=true
+   0.0s    pods is forbidden: User "system:serviceaccount:demo:sin-permisos" cannot list resource "pods" in API group "" in the namespace "kube-system"
+$ kubectl apply -f rol.yaml   (Role leer-pods: get, list, watch en pods · RoleBinding a sin-permisos)
+role.rbac.authorization.k8s.io/leer-pods created
+rolebinding.rbac.authorization.k8s.io/sin-permisos-lee-pods created
+$ kubectl auth can-i list pods -n demo --as system:serviceaccount:demo:sin-permisos
+yes
+--- pod kgo-rbac otra vez ---
+   0.0s  InClusterConfig(): <nil>
+   0.0s  origen: in-cluster
+   0.0s  host: https://10.96.0.1:443
+   0.0s  QPS=0 Burst=0 (0 = valores por defecto de client-go)
+   0.0s  list pods en demo          ok
+   0.0s  get deployment web         403 · IsForbidden=true
+   0.0s    deployments.apps "web" is forbidden: User "system:serviceaccount:demo:sin-permisos" cannot get resource "deployments" in API group "apps" in the namespace "demo"
+   0.0s  list pods en kube-system   403 · IsForbidden=true
+   0.0s    pods is forbidden: User "system:serviceaccount:demo:sin-permisos" cannot list resource "pods" in API group "" in the namespace "kube-system"

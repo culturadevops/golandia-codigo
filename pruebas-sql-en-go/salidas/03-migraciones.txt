@@ -1,0 +1,59 @@
+$ goose -dir migrations postgres "$MIG" status
+2026/10/27 12:47:55     Applied At                  Migration
+2026/10/27 12:47:55     =======================================
+2026/10/27 12:47:55     Pending                  -- 0001_crear_productos.sql
+2026/10/27 12:47:55     Pending                  -- 0002_indice_categoria.sql
+[código de salida 0]
+$ goose -dir migrations postgres "$MIG" up
+2026/10/27 12:47:55 OK   0001_crear_productos.sql (4.62ms)
+2026/10/27 12:47:55 OK   0002_indice_categoria.sql (1.67ms)
+2026/10/27 12:47:55 goose: successfully migrated database to version: 2
+[código de salida 0]
+$ goose -dir migrations postgres "$MIG" status
+2026/10/27 12:47:56     Applied At                  Migration
+2026/10/27 12:47:56     =======================================
+2026/10/27 12:47:56     Tue Oct 27 12:47:55 2026 -- 0001_crear_productos.sql
+2026/10/27 12:47:56     Tue Oct 27 12:47:55 2026 -- 0002_indice_categoria.sql
+[código de salida 0]
+$ SELECT * FROM goose_db_version
+ id | version_id | is_applied 
+----+------------+------------
+  1 |          0 | t
+  2 |          1 | t
+  3 |          2 | t
+(3 rows)
+[código de salida 0]
+$ goose -dir migrations postgres "$MIG" down
+2026/10/27 12:47:56 OK   0002_indice_categoria.sql (2.59ms)
+[código de salida 0]
+$ goose -dir migrations postgres "$MIG" status
+2026/10/27 12:47:56     Applied At                  Migration
+2026/10/27 12:47:56     =======================================
+2026/10/27 12:47:56     Tue Oct 27 12:47:55 2026 -- 0001_crear_productos.sql
+2026/10/27 12:47:56     Pending                  -- 0002_indice_categoria.sql
+[código de salida 0]
+$ \d productos (tras el down: sigue la tabla, sin el índice)
+                            Table "public.productos"
+     Column      |  Type   | Collation | Nullable |           Default            
+-----------------+---------+-----------+----------+------------------------------
+ id              | bigint  |           | not null | generated always as identity
+ nombre          | text    |           | not null | 
+ categoria       | text    |           | not null | 
+ precio_centavos | integer |           | not null | 
+Indexes:
+    "productos_pkey" PRIMARY KEY, btree (id)
+Check constraints:
+    "productos_precio_centavos_check" CHECK (precio_centavos >= 0)
+[código de salida 0]
+$ goose -dir migrations postgres "$MIG" up
+2026/10/27 12:47:57 OK   0002_indice_categoria.sql (2.75ms)
+2026/10/27 12:47:57 goose: successfully migrated database to version: 2
+[código de salida 0]
+$ SELECT * FROM goose_db_version
+ id | version_id | is_applied 
+----+------------+------------
+  1 |          0 | t
+  2 |          1 | t
+  4 |          2 | t
+(3 rows)
+[código de salida 0]

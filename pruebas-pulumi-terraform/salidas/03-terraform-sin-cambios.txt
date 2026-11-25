@@ -1,0 +1,12 @@
+aws_ssm_parameter.clave: Refreshing state... [id=/g680/prod/clave]
+aws_sqs_queue.cola["avisos"]: Refreshing state... [id=http://moto:5000/123456789012/g680-avisos]
+aws_sqs_queue.cola["pedidos"]: Refreshing state... [id=http://moto:5000/123456789012/g680-pedidos]
+aws_sqs_queue.cola["pagos"]: Refreshing state... [id=http://moto:5000/123456789012/g680-pagos]
+aws_s3_bucket.datos: Refreshing state... [id=g680-datos-prod]
+aws_s3_bucket_versioning.datos[0]: Refreshing state... [id=g680-datos-prod]
+aws_iam_policy.app: Refreshing state... [id=arn:aws:iam::123456789012:policy/g680-app-prod]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

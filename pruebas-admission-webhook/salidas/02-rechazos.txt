@@ -1,0 +1,24 @@
+$ kubectl apply -f pod-latest.yaml --dry-run=server   # nginx:latest, con limits
+Error from server: error when creating "pod-latest.yaml": admission webhook "pods.admision.golandia" denied the request: admision: contenedor "web": la imagen "nginx:latest" usa :latest; fija una versión
+  (código 1, 0.15 s)
+
+$ kubectl apply -f pod-sin-tag.yaml --dry-run=server   # nginx, sin etiqueta
+Error from server: error when creating "pod-sin-tag.yaml": admission webhook "pods.admision.golandia" denied the request: admision: contenedor "web": la imagen "nginx" usa :latest; fija una versión
+  (código 1, 0.11 s)
+
+$ kubectl apply -f pod-sin-limites.yaml --dry-run=server   # nginx:1.30.5-alpine, sin limits
+Error from server: error when creating "pod-sin-limites.yaml": admission webhook "pods.admision.golandia" denied the request: admision: contenedor "web": falta limits.cpu; contenedor "web": falta limits.memory
+  (código 1, 0.11 s)
+
+$ kubectl apply -f pod-registro.yaml --dry-run=server   # registro con puerto: localhost:5000/app
+Error from server: error when creating "pod-registro.yaml": admission webhook "pods.admision.golandia" denied the request: admision: contenedor "web": la imagen "localhost:5000/app" usa :latest; fija una versión
+  (código 1, 0.10 s)
+
+$ kubectl apply -f pod-bien.yaml --dry-run=server   # nginx:1.30.5-alpine, con limits
+pod/web created (server dry run)
+  (código 0, 0.11 s)
+
+$ kubectl run prueba --image=nginx:latest --dry-run=server
+Error from server: admission webhook "pods.admision.golandia" denied the request: admision: contenedor "prueba": la imagen "nginx:latest" usa :latest; fija una versión; contenedor "prueba": falta limits.cpu; contenedor "prueba": falta limits.memory
+  (código 1, 0.06 s)
+

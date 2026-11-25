@@ -1,0 +1,29 @@
+{
+ "segundos": 5.2,
+ "costo_usd": 0.019647599999999998,
+ "modelos": {
+  "claude-haiku-5-5": 20,
+  "claude-opus-5-5": 362
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "c02-con-timeout",
+ "variante": "A",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Escribe la función ConTimeout(d time.Duration, f func() int) (int, error). Ejecuta f en otra goroutine y devuelve su resultado. Si f tarda más que d, devuelve 0 y un error de timeout sin esperar a f.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

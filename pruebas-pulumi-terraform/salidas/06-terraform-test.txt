@@ -1,0 +1,10 @@
+$ terraform test
+(1.2 s)
+tests/basico.tftest.hcl... in progress
+  run "prod_lleva_versionado"... pass
+  run "dev_sin_versionado"... pass
+  run "la_politica_nombra_cada_cola"... pass
+tests/basico.tftest.hcl... tearing down
+tests/basico.tftest.hcl... pass
+
+Success! 3 passed, 0 failed.

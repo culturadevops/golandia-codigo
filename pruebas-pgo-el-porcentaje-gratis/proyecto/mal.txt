@@ -1,0 +1,12 @@
+goos: linux
+goarch: amd64
+pkg: ejemplo.com/evaluador
+cpu: Intel(R) Core(TM) Ultra 7 270K Plus
+BenchmarkTrabajo-24    	    3469	    339315 ns/op
+BenchmarkTrabajo-24    	    3572	    339027 ns/op
+BenchmarkTrabajo-24    	    3555	    338805 ns/op
+BenchmarkTrabajo-24    	    3457	    339315 ns/op
+BenchmarkTrabajo-24    	    3536	    339075 ns/op
+BenchmarkTrabajo-24    	    3508	    342487 ns/op
+PASS
+ok  	ejemplo.com/evaluador	7.173s

@@ -1,0 +1,24 @@
+# webhook con 0 réplicas · failurePolicy: Fail
+$ kubectl apply -f pod-bien.yaml
+Error from server (InternalError): error when creating "pod-bien.yaml": Internal error occurred: failed calling webhook "pods.admision.golandia": failed to call webhook: Post "https://admision.admision.svc:443/validar?timeout=10s": dial tcp 10.96.243.184:443: connect: connection refused
+  (código 1, 0.10 s)
+
+$ kubectl apply -f pod-latest.yaml
+Error from server (InternalError): error when creating "pod-latest.yaml": Internal error occurred: failed calling webhook "pods.admision.golandia": failed to call webhook: Post "https://admision.admision.svc:443/validar?timeout=10s": dial tcp 10.96.243.184:443: connect: connection refused
+  (código 1, 0.10 s)
+
+POD   IMAGEN
+
+# webhook con 0 réplicas · failurePolicy: Ignore
+$ kubectl apply -f pod-bien.yaml
+pod/bien created
+  (código 0, 0.09 s)
+
+$ kubectl apply -f pod-latest.yaml
+pod/latest created
+  (código 0, 0.09 s)
+
+POD      IMAGEN
+bien     nginx:1.30.5-alpine
+latest   nginx:latest
+

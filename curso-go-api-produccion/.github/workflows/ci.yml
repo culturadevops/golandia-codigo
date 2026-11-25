@@ -1,0 +1,46 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    # El trabajo corre DENTRO de golang:1.27.2: la misma versión que en local y en el
+    # Dockerfile, y la base se alcanza por su nombre («bd») igual en GitHub que con act.
+    container: golang:1.27.2
+    services:
+      bd:
+        image: postgres:18.6-alpine
+        env:
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd "pg_isready -h 127.0.0.1 -U postgres"
+          --health-interval 2s
+          --health-retries 30
+    env:
+      CI: "true" # con CI, un test de integración sin base FALLA en vez de saltarse
+      TEST_BD_URL: postgres://app:app@bd:5432/tareas_test?sslmode=disable
+      TEST_BD_URL_MIGRAR: postgres://migrador:migrador@bd:5432/tareas_test?sslmode=disable
+    steps:
+      # Fijada por SHA: una etiqueta (v7) se puede mover; un SHA no.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: usuarios de la base
+        run: |
+          apt-get update -qq && apt-get install -y -qq postgresql-client >/dev/null
+          psql "postgres://postgres:postgres@bd:5432/postgres" -v ON_ERROR_STOP=1 -q -f sql/roles.sql
+      - name: go vet
+        run: go vet ./...
+      - name: tests (con -race y sin caché)
+        run: go test -race -count=1 ./...
+
+  imagen:
+    runs-on: ubuntu-latest
+    needs: probar
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: construir la imagen
+        run: docker build -t tareas:ci .
+      - name: tamaño
+        run: docker image ls tareas:ci --format '{{.Size}}'

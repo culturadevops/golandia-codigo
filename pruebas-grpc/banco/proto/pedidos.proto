@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package pedidos;
+option go_package = "banco/pb";
+
+// El contrato. Esto NO es documentacion: de aqui salen el cliente y el servidor.
+message Pedido {
+  int64  id       = 1;
+  string cliente  = 2;
+  string articulo = 3;
+  int32  unidades = 4;
+  int64  centimos = 5;   // dinero en centimos, nunca en float
+  string estado   = 6;
+  string creado   = 7;
+}
+
+message Peticion  { int32 cuantos = 1; }
+message Respuesta { repeated Pedido pedidos = 1; }
+
+service Pedidos {
+  rpc Listar(Peticion) returns (Respuesta);
+  // El mismo dato, pero saliendo a medida que se produce.
+  rpc ListarEnStreaming(Peticion) returns (stream Pedido);
+}

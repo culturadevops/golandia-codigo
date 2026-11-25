@@ -1,0 +1,14 @@
+$ kgo pods
+   0.0s  demo                 web-78c5486d8f-g4f46                          Running
+   0.0s  demo                 web-78c5486d8f-jppvl                          Running
+   0.0s  demo                 web-78c5486d8f-mp8mn                          Running
+   0.0s  kube-system          coredns-66bc5c9577-6lb5c                      Running
+   0.0s  kube-system          coredns-66bc5c9577-fmgh5                      Running
+   0.0s  kube-system          etcd-g677-control-plane                       Running
+   0.0s  kube-system          kindnet-22blb                                 Running
+   0.0s  kube-system          kube-apiserver-g677-control-plane             Running
+   0.0s  kube-system          kube-controller-manager-g677-control-plane    Running
+   0.0s  kube-system          kube-proxy-w5lpc                              Running
+   0.0s  kube-system          kube-scheduler-g677-control-plane             Running
+   0.0s  local-path-storage   local-path-provisioner-7b8c8ddbd6-k6s26       Running
+   0.0s  12 pods · resourceVersion de la lista: 2395 · peticiones: GET=1

@@ -1,0 +1,6 @@
+go version go1.27.2 linux/amd64
+kgo 29851808 bytes
+78 módulos en el grafo · 734 paquetes
+k8s.io/client-go v0.37.1
+k8s.io/api v0.37.1
+k8s.io/apimachinery v0.37.1

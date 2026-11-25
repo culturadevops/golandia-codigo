@@ -1,0 +1,12 @@
+$ cd /root && time timeout 60  flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -ingenuo -hosts s48.txt; echo "código de salida: $? (124 = lo mató timeout a los 60 s)"
+
+real	0m59.999s
+user	0m0.001s
+sys	0m0.002s
+código de salida: 124 (124 = lo mató timeout a los 60 s)
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -ingenuo -hosts s49.txt
+s49      0    30.1s  s49 disco 41%
+1 hosts · 1 ok · 0 con código distinto de 0 · 0 sin respuesta · 30.1s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -ingenuo -hosts s50.txt
+s50    ERR     3.0s  dial tcp 10.68.2.60:22: i/o timeout
+1 hosts · 0 ok · 0 con código distinto de 0 · 1 sin respuesta · 3.0s en total

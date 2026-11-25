@@ -1,0 +1,7 @@
+$ \l  (las bases)
+    base     |  duenio  
+-------------+----------
+ tienda      | migrador
+ tienda_test | migrador
+(2 rows)
+[código de salida 0]

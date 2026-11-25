@@ -1,0 +1,30 @@
+services:
+  # Development services
+  postgres:
+    image: ghcr.io/serverpod/postgres:16
+    ports:
+      - "8090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: gs_api
+      POSTGRES_PASSWORD: "clave-local-postgres-test-cambiala"
+    volumes:
+      - gs_api_data:/var/lib/postgresql/data
+
+
+  # Test services
+  postgres_test:
+    image: ghcr.io/serverpod/postgres:16
+    ports:
+      - "9090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: gs_api_test
+      POSTGRES_PASSWORD: "clave-local-postgres-cambiala"
+    volumes:
+      - gs_api_test_data:/var/lib/postgresql/data
+
+
+volumes:
+  gs_api_data:
+  gs_api_test_data:

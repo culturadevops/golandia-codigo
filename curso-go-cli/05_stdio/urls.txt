@@ -1,0 +1,7 @@
+# endpoints del servidor de pruebas (go run ./banco)
+http://127.0.0.1:8080/ok
+http://127.0.0.1:8080/roto
+http://127.0.0.1:8080/lento?ms=300
+
+# las líneas vacías y las que empiezan con # no cuentan
+http://127.0.0.1:8080/ok?de=nuevo

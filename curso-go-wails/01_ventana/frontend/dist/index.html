@@ -1,0 +1,9 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Lección 1</title>
+<style>body{font:22px system-ui,sans-serif;background:#0d1117;color:#e6edf3;padding:40px}h1{color:#00ADD8}</style>
+<body><h1>Mi primera ventana con Wails</h1><p id="s">esperando a Go…</p><p id="ua" style="font-size:15px;color:#8b949e"></p>
+<script>
+window.onload = async () => {
+  document.getElementById('s').innerText = await window.go.main.App.Saludo('Golandia')
+  document.getElementById('ua').innerText = navigator.userAgent
+}
+</script></body></html>

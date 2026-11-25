@@ -1,0 +1,59 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== versiones clavadas ==
+  	github.com/knadh/koanf/parsers/json v1.0.1
+  	github.com/knadh/koanf/parsers/yaml v1.1.1
+  	github.com/knadh/koanf/providers/env v1.1.0
+  	github.com/knadh/koanf/providers/file v1.2.1
+  	github.com/knadh/koanf/providers/posflag v1.0.2
+  	github.com/knadh/koanf/v2 v2.3.7
+  	github.com/spf13/cobra v1.10.2
+  	github.com/knadh/koanf/maps v0.1.2 // indirect
+
+== 1. kcli migrado a koanf: solo archivo kcli.yaml ==
+usando archivo de configuracion: kcli.yaml
+host=desde-archivo-config puerto=9000
+
+== 2. la variable de entorno KCLI_SERVER_HOST gana al archivo ==
+usando archivo de configuracion: kcli.yaml
+host=desde-entorno puerto=9000
+
+== 3. la bandera explicita gana a la variable de entorno ==
+usando archivo de configuracion: kcli.yaml
+host=desde-flag puerto=9000
+
+== 4. el mismo binario con un JSON, sin recompilar ==
+host=desde-json puerto=7000
+usando archivo de configuracion: otro-formato.json
+
+== 5. CONTROL: koanf SIN la funcion de transformacion ==
+   (el equivalente exacto de olvidar SetEnvKeyReplacer en viper)
+host=desde-archivo-config puerto=9000
+   --- y esto es lo que SI se ve al depurar: ---
+usando archivo de configuracion: kcli.yaml
+usando archivo de configuracion: kcli.yaml
+server.port = 9000
+server.host = desde-archivo-config
+KCLI_SERVER_HOST = desde-entorno
+
+== 6. VIPER contra KOANF: que expone cada una cuando falla ==
+== VIPER, sin SetEnvKeyReplacer ==
+  server.host = desde-archivo-config
+  lo que expone AllSettings():
+    server = map[host:desde-archivo-config port:9000]
+
+== KOANF, sin funcion de transformacion ==
+  server.host = desde-archivo-config
+  lo que expone All():
+    KCLI_SERVER_HOST = desde-entorno
+    server.host = desde-archivo-config
+    server.port = 9000
+
+== 7. tamano del binario: koanf contra viper ==
+  koanf: 5698850 bytes
+  viper: 8938550 bytes
+
+== 8. cuantas dependencias arrastra cada una ==
+  koanf: 26 modulos en el grafo
+  viper: 31 modulos en el grafo

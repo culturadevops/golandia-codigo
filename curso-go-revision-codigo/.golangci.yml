@@ -1,0 +1,45 @@
+# Configuración «extendida» del curso: lo que golangci-lint trae por defecto
+# (errcheck, govet, ineffassign, staticcheck, unused) más linters que van
+# a por fallos concretos de revisión. Para correr solo lo de serie: --no-config.
+version: "2"
+
+linters:
+  default: standard
+  enable:
+    - bodyclose     # Body de http.Response sin cerrar
+    - noctx         # peticiones HTTP sin context
+    - contextcheck  # funciones que no pasan el context que reciben
+    - errorlint     # errores comparados con == en vez de errors.Is
+    - gosec         # seguridad: incluye G115, conversiones que desbordan
+    - gocritic      # muchos chequeos; con todos sus grupos activados
+    - revive        # estilo y algunos fallos (defer en bucle, parámetro sin usar)
+    - musttag       # structs que van a JSON sin etiquetas
+    - nilerr        # devolver nil cuando hay un error
+    - wastedassign  # asignaciones que nadie lee
+    - copyloopvar   # copias de la variable de bucle que ya no hacen falta
+    - perfsprint    # fmt.Sprintf donde basta strconv
+  exclusions:
+    presets:
+      - std-error-handling  # no marcar «defer resp.Body.Close()» y compañía
+  settings:
+    govet:
+      enable-all: true      # incluye shadow, que viene apagado por defecto
+      disable:
+        - fieldalignment    # orden de campos por memoria: ruido para este curso
+    gocritic:
+      enable-all: true
+    revive:
+      enable-all-rules: false
+      rules:
+        - name: defer
+        - name: unused-parameter
+        - name: modifies-value-receiver
+        - name: range-val-in-closure
+        - name: range-val-address
+        - name: datarace
+        - name: unhandled-error
+          arguments: ["fmt.Printf", "fmt.Println"]
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0

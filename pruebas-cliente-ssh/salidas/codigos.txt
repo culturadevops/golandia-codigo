@@ -1,0 +1,59 @@
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-50.txt -p 50; echo "código de salida: $?"
+s01      0     1.1s  s01 disco 41%
+s02      0     1.1s  s02 disco 41%
+s03      0     1.1s  s03 disco 41%
+s04      0     1.1s  s04 disco 41%
+s05      0     1.1s  s05 disco 41%
+s06      0     1.1s  s06 disco 41%
+s07      0     1.1s  s07 disco 41%
+s08      0     1.1s  s08 disco 41%
+s09      0     1.1s  s09 disco 41%
+s10      0     1.1s  s10 disco 41%
+s11      0     1.1s  s11 disco 41%
+s12      0     1.1s  s12 disco 41%
+s13      2     1.1s  s13 disco 97%
+s13    stderr        revisar: disco casi lleno
+s14      0     1.1s  s14 disco 41%
+s15      0     1.1s  s15 disco 41%
+s16      0     1.1s  s16 disco 41%
+s17      0     1.1s  s17 disco 41%
+s18      0     1.1s  s18 disco 41%
+s19      0     1.1s  s19 disco 41%
+s20      0     1.1s  s20 disco 41%
+s21      0     1.1s  s21 disco 41%
+s22      0     1.1s  s22 disco 41%
+s23      0     1.1s  s23 disco 41%
+s24      0     1.1s  s24 disco 41%
+s25      0     1.1s  s25 disco 41%
+s26      0     1.1s  s26 disco 41%
+s27      0     1.1s  s27 disco 41%
+s28      0     1.1s  s28 disco 41%
+s29      0     1.1s  s29 disco 41%
+s30      0     1.1s  s30 disco 41%
+s31      0     1.1s  s31 disco 41%
+s32      0     1.1s  s32 disco 41%
+s33      0     1.1s  s33 disco 41%
+s34      0     1.1s  s34 disco 41%
+s35      0     1.1s  s35 disco 41%
+s36      0     1.1s  s36 disco 41%
+s37      0     1.1s  s37 disco 41%
+s38      0     1.1s  s38 disco 41%
+s39      0     1.1s  s39 disco 41%
+s40      0     1.1s  s40 disco 41%
+s41      0     1.1s  s41 disco 41%
+s42      0     1.1s  s42 disco 41%
+s43      0     1.1s  s43 disco 41%
+s44      0     1.1s  s44 disco 41%
+s45      0     1.1s  s45 disco 41%
+s46      0     1.1s  s46 disco 41%
+s47      0     1.1s  s47 disco 41%
+s48    ERR     3.0s  ssh: handshake failed: read tcp 10.68.2.5:54638->10.68.2.58:22: i/o timeout
+s49    ERR    10.0s  el comando no terminó en 10s
+s50    ERR     3.0s  dial tcp 10.68.2.60:22: i/o timeout
+50 hosts · 46 ok · 1 con código distinto de 0 · 3 sin respuesta · 10.0s en total
+código de salida: 2
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s13.txt; echo "código de salida: $?"
+s13      2     1.1s  s13 disco 97%
+s13    stderr        revisar: disco casi lleno
+1 hosts · 0 ok · 1 con código distinto de 0 · 0 sin respuesta · 1.1s en total
+código de salida: 1

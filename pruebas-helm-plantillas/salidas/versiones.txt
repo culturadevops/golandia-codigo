@@ -1,0 +1,6 @@
+$ versiones
+docker 29.6.2
+go version go1.27.2 linux/amd64
+helm version.BuildInfo{Version:"v4.3.1", GitCommit:"c0d08d0d6d9424d4a14febb5e8a3e51b0dd00dff", GitTreeState:"clean", GoVersion:"go1.27.2", KubeClientVersion:"v1.37"}
+kubeconform v0.7.0
+[código de salida: 0]

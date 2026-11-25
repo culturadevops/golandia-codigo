@@ -1,0 +1,29 @@
+{
+ "nota": "Set fijo de 12 tareas concurrentes para el vídeo 705, escrito el 2026-10-29 ANTES de generar ninguna respuesta. Cada tarea tiene su prueba fija en pruebas/<id>_test.go, escrita también antes. Criterio fijado antes: compila con la prueba, la función termina (límite 3 s), fugas = total del perfil goroutineleak de Go 1.27 tras el escenario, races = go test -race, y go vet. Todas se piden a Claude Code (12 x 2 variantes = 24).",
+ "tareas": [
+  {"id": "c01-worker-pool", "claude": true, "patron": "worker pool con cancelación",
+   "enunciado": "Escribe la función ProcesarConWorkers(ctx context.Context, trabajos []int, workers int, f func(int) int) ([]int, error). Usa un pool de `workers` goroutines que aplican f a cada trabajo y devuelve los resultados en el mismo orden que trabajos. Si ctx se cancela antes de terminar, devuelve ctx.Err() sin esperar a que se procesen los trabajos que faltan."},
+  {"id": "c02-con-timeout", "claude": true, "patron": "timeout",
+   "enunciado": "Escribe la función ConTimeout(d time.Duration, f func() int) (int, error). Ejecuta f en otra goroutine y devuelve su resultado. Si f tarda más que d, devuelve 0 y un error de timeout sin esperar a f."},
+  {"id": "c03-con-contexto", "claude": true, "patron": "timeout con context",
+   "enunciado": "Escribe la función LlamarConContexto(ctx context.Context, f func() (string, error)) (string, error). f no recibe contexto. Ejecuta f en otra goroutine y devuelve su resultado, pero si ctx termina antes, devuelve \"\" y ctx.Err() en ese momento."},
+  {"id": "c04-el-mas-rapido", "claude": true, "patron": "el primero que responde",
+   "enunciado": "Escribe la función ElMasRapido(consultas []func() string) string. Lanza todas las consultas a la vez, cada una en su goroutine, y devuelve el resultado de la primera que termine, sin esperar a las demás."},
+  {"id": "c05-fan-out-fan-in", "claude": true, "patron": "fan-out/fan-in",
+   "enunciado": "Escribe la función FanOutFanIn(ctx context.Context, entrada []int, workers int, f func(int) int) <-chan int. Reparte los números de entrada entre `workers` goroutines que aplican f, junta todos los resultados en un solo canal (el orden no importa) y lo cierra cuando terminan todas. Si ctx se cancela, todo debe pararse."},
+  {"id": "c06-generador", "claude": true, "patron": "productor",
+   "enunciado": "Escribe la función Generar(ctx context.Context, n int) <-chan int que devuelve un canal por el que envía los números de 0 a n-1 y luego lo cierra. Si ctx se cancela, deja de enviar."},
+  {"id": "c07-etapa-pipeline", "claude": true, "patron": "pipeline",
+   "enunciado": "Escribe la función Cuadrados(ctx context.Context, in <-chan int) <-chan int, una etapa de pipeline: lee números de in, envía su cuadrado por el canal que devuelve, y lo cierra cuando in se cierra. Si ctx se cancela, debe pararse."},
+  {"id": "c08-unir-canales", "claude": true, "patron": "fan-in de canales",
+   "enunciado": "Escribe la función Unir(ctx context.Context, canales ...<-chan int) <-chan int que junta todos los valores de los canales de entrada en un solo canal de salida, y lo cierra cuando se cierran todos los de entrada. Si ctx se cancela, debe pararse."},
+  {"id": "c09-primer-error", "claude": true, "patron": "primer error",
+   "enunciado": "Escribe la función ProcesarTodos(items []string, f func(string) error) error. Llama a f con cada item en paralelo, una goroutine por item. Devuelve el primer error en cuanto ocurra, sin esperar a las demás, o nil cuando todas terminen bien."},
+  {"id": "c10-cache-aciertos", "claude": true, "patron": "estado compartido",
+   "enunciado": "Escribe el tipo Cache, seguro para varias goroutines, con NuevaCache() *Cache y los métodos Set(clave, valor string), Get(clave string) (string, bool) y Aciertos() int, que devuelve cuántas veces Get encontró la clave. Usa sync.RWMutex para que las lecturas no se bloqueen entre sí."},
+  {"id": "c11-contar-primos", "claude": true, "patron": "contador compartido",
+   "enunciado": "Escribe la función ContarPrimos(nums []int, workers int) int que cuenta cuántos números de nums son primos, repartiendo el trabajo entre `workers` goroutines."},
+  {"id": "c12-consumidores", "claude": true, "patron": "productor/consumidor",
+   "enunciado": "Escribe la función Consumir(ctx context.Context, trabajos <-chan int, consumidores int, f func(int)) error. Arranca `consumidores` goroutines que leen de trabajos y llaman a f con cada uno, hasta que trabajos se cierre o ctx se cancele. Espera a que terminen todas. Devuelve ctx.Err() si se canceló, o nil si trabajos se cerró."}
+ ]
+}

@@ -1,0 +1,42 @@
+== docker 29.6.2 · alpine:3.24.3 · perfil por defecto ==
+CapEff:	00000000a80425fb
+NoNewPrivs:	0
+Seccomp:	2
+Seccomp_filters:	2
+hostname: sethostname: Operation not permitted
+mount: permission denied (are you root?)
+unshare: unshare(0x10000000): Operation not permitted
+core fd full mqueue null ptmx pts random shm stderr stdin stdout tty urandom zero 
+
+== el mismo unshare -U con --security-opt seccomp=unconfined ==
+Seccomp_filters:	1
+unshare -U: permitido
+
+== docker run --memory 64m --pids-limit 20: los mismos archivos de cgroup ==
+memory.max=67108864
+memory.swap.max=67108864
+pids.max=20
+-- con --memory-swap 64m:
+memory.max=67108864
+memory.swap.max=0
+
+== docker image inspect alpine:3.24.3: capas ==
+1 capa(s): [sha256:75c137aedfb2760f88629236cb7b797630aed0c3d91d626d1d1bb694878fc2ba]
+
+== escribir en un contenedor y leer desde otro ==
+escrito
+cat: can't open '/escrito-por-el-primero': No such file or directory
+
+== red por defecto ==
+1: lo    inet 127.0.0.1/8 scope host lo\       valid_lft for
+2: eth0    inet 172.17.0.2/16 brd 172.17.255.255 scope globa
+default via 172.17.0.1 dev eth0 
+
+nameserver 192.168.65.7
+
+
+== arranque: 3 rondas de 10 veces docker run --rm alpine:3.24.3 true (desde Windows, Docker Desktop) ==
+ronda 1: 486 ms por contenedor
+ronda 2: 609 ms por contenedor
+ronda 3: 575 ms por contenedor
+carga de la máquina al terminar (otros agentes trabajando): 59 contenedores corriendo

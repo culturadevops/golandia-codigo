@@ -1,0 +1,12 @@
+kind v0.30.0 go1.26.5 windows/amd64
+kubectl v1.36.1 (cliente) · servidor v1.34.0
+Docker 29.6.2
+$ openssl x509 -in tls.crt -noout -subject -issuer -ext subjectAltName
+subject=CN=admision.admision.svc
+issuer=CN=admision-ca
+X509v3 Subject Alternative Name: 
+    DNS:admision.admision.svc
+
+webhook listo:
+NAME       WEBHOOKS   AGE
+admision   1          0s

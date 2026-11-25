@@ -1,0 +1,326 @@
+
+$ terraform apply -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be created
+  + resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+      + creada    = (known after apply)
+      + etiquetas = [
+          + "casa",
+          + "zeta",
+        ]
+      + id        = (known after apply)
+      + texto     = "pan, café"
+      + titulo    = "Compras"
+      + version   = (known after apply)
+    }
+
+  # notas_nota.ideas will be created
+  + resource "notas_nota" "ideas" {
+      + creada  = (known after apply)
+      + id      = (known after apply)
+      + titulo  = "Ideas para vídeos"
+      + version = (known after apply)
+        # (1 unchanged attribute hidden)
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+notas_nota.ideas: Creating...
+notas_nota.compras: Creating...
+notas_nota.ideas: Creation complete after 0s [id=1]
+notas_nota.compras: Creation complete after 0s [id=2]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+[código de salida 0 · 0.12 s]
+--- llamadas a notas-api ---
+POST /notas 201
+POST /notas 201
+
+== plan número 1 ==
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.compras: Refreshing state... [id=2]
+notas_nota.ideas: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+        id        = "2"
+      ~ version   = 1 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+  # notas_nota.ideas will be updated in-place
+  ~ resource "notas_nota" "ideas" {
+        id      = "1"
+      ~ version = 1 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 2 to change, 0 to destroy.
+[código de salida 0 · 0.08 s]
+
+$ terraform apply -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.compras: Refreshing state... [id=2]
+notas_nota.ideas: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+        id        = "2"
+      ~ version   = 1 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+  # notas_nota.ideas will be updated in-place
+  ~ resource "notas_nota" "ideas" {
+        id      = "1"
+      ~ version = 1 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 2 to change, 0 to destroy.
+notas_nota.ideas: Modifying... [id=1]
+notas_nota.compras: Modifying... [id=2]
+notas_nota.compras: Modifications complete after 0s [id=2]
+notas_nota.ideas: Modifications complete after 0s [id=1]
+
+Apply complete! Resources: 0 added, 2 changed, 0 destroyed.
+[código de salida 0 · 0.11 s]
+--- llamadas a notas-api ---
+GET /notas/2 200
+GET /notas/1 200
+GET /notas/1 200
+GET /notas/2 200
+PUT /notas/1 200
+PUT /notas/2 200
+
+== plan número 2 ==
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.compras: Refreshing state... [id=2]
+notas_nota.ideas: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+        id        = "2"
+      ~ version   = 2 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+  # notas_nota.ideas will be updated in-place
+  ~ resource "notas_nota" "ideas" {
+        id      = "1"
+      ~ version = 2 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 2 to change, 0 to destroy.
+[código de salida 0 · 0.09 s]
+
+$ terraform apply -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.compras: Refreshing state... [id=2]
+notas_nota.ideas: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+        id        = "2"
+      ~ version   = 2 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+  # notas_nota.ideas will be updated in-place
+  ~ resource "notas_nota" "ideas" {
+        id      = "1"
+      ~ version = 2 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 2 to change, 0 to destroy.
+notas_nota.ideas: Modifying... [id=1]
+notas_nota.compras: Modifying... [id=2]
+notas_nota.compras: Modifications complete after 0s [id=2]
+notas_nota.ideas: Modifications complete after 0s [id=1]
+
+Apply complete! Resources: 0 added, 2 changed, 0 destroyed.
+[código de salida 0 · 0.12 s]
+--- llamadas a notas-api ---
+GET /notas/2 200
+GET /notas/1 200
+GET /notas/1 200
+GET /notas/2 200
+PUT /notas/1 200
+PUT /notas/2 200
+
+== plan número 3 ==
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.ideas: Refreshing state... [id=1]
+notas_nota.compras: Refreshing state... [id=2]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+        id        = "2"
+      ~ version   = 3 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+  # notas_nota.ideas will be updated in-place
+  ~ resource "notas_nota" "ideas" {
+        id      = "1"
+      ~ version = 3 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 2 to change, 0 to destroy.
+[código de salida 0 · 0.10 s]
+
+$ terraform apply -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.ideas: Refreshing state... [id=1]
+notas_nota.compras: Refreshing state... [id=2]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+        id        = "2"
+      ~ version   = 3 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+  # notas_nota.ideas will be updated in-place
+  ~ resource "notas_nota" "ideas" {
+        id      = "1"
+      ~ version = 3 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 2 to change, 0 to destroy.
+notas_nota.ideas: Modifying... [id=1]
+notas_nota.compras: Modifying... [id=2]
+notas_nota.compras: Modifications complete after 0s [id=2]
+notas_nota.ideas: Modifications complete after 0s [id=1]
+
+Apply complete! Resources: 0 added, 2 changed, 0 destroyed.
+[código de salida 0 · 0.11 s]
+--- llamadas a notas-api ---
+GET /notas/2 200
+GET /notas/1 200
+GET /notas/1 200
+GET /notas/2 200
+PUT /notas/1 200
+PUT /notas/2 200

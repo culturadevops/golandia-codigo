@@ -1,0 +1,14 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
+
+# Go
+bin/
+*.exe
+*.test
+*.out
+/vendor/

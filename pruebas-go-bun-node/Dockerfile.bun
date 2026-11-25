@@ -1,0 +1,5 @@
+FROM oven/bun:1.4.3-slim
+WORKDIR /app
+COPY servidor.js /app/servidor.js
+EXPOSE 8080
+ENTRYPOINT ["bun", "servidor.js"]

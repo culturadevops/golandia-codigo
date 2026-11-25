@@ -1,0 +1,59 @@
+{
+ "python": {
+  "imagen": null,
+  "segundos": 0.0,
+  "salida": "",
+  "sin_comprimir": 313,
+  "zip": 294
+ },
+ "node": {
+  "imagen": null,
+  "segundos": 0.0,
+  "salida": "",
+  "sin_comprimir": 354,
+  "zip": 338
+ },
+ "go": {
+  "imagen": "golang:1.27.2",
+  "segundos": 4.7,
+  "salida": "go version go1.27.2 linux/amd64\nrequire github.com/aws/aws-lambda-go v1.54.0",
+  "sin_comprimir": 6807712,
+  "zip": 2878957
+ },
+ "java": {
+  "imagen": "eclipse-temurin:25-jdk",
+  "segundos": 0.8,
+  "salida": "openjdk version \"25.0.5\" 2026-10-20 LTS\nOpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS)\nOpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)",
+  "sin_comprimir": 1505,
+  "zip": 982
+ },
+ "rust": {
+  "imagen": "rust:1.99.1-trixie",
+  "segundos": 14.3,
+  "salida": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\ncargo 1.99.1 (5f94df478 2026-08-27)\n   Compiling lambda_runtime v1.5.0\n   Compiling bootstrap v0.1.0 (/tmp/w)\n    Finished `release` profile [optimized] target(s) in 6.88s\nname = \"lambda_runtime\"\nversion = \"1.5.0\"\n--\nname = \"serde\"\nversion = \"1.0.229\"\n--\nname = \"tokio\"\nversion = \"1.54.1\"",
+  "sin_comprimir": 1796648,
+  "zip": 787255
+ },
+ "dotnet-aot": {
+  "imagen": "public.ecr.aws/sam/build-dotnet10:latest-x86_64",
+  "segundos": 56.9,
+  "salida": "10.0.404\nPRETTY_NAME=\"Amazon Linux 2023.12.20261109\"\n  Funcion -> /tmp/w/bin/Release/net10.0/linux-x64/bootstrap.dll\n  Generating native code\n  Funcion -> /tmp/pub/\n   > Amazon.Lambda.Core                                 *             3.4.0   \n   > Amazon.Lambda.RuntimeSupport                       *             2.3.1   \n   > Amazon.Lambda.Serialization.SystemTextJson         *             3.0.1",
+  "sin_comprimir": 7786288,
+  "zip": 3645357
+ },
+ "java-native": {
+  "imagen": "ghcr.io/graalvm/native-image-community:25",
+  "segundos": 15.0,
+  "salida": "openjdk version \"25.0.2\" 2026-01-20\nOpenJDK Runtime Environment GraalVM CE 25.0.2+10.1 (build 25.0.2+10-jvmci-b01)\nOpenJDK 64-Bit Server VM GraalVM CE 25.0.2+10.1 (build 25.0.2+10-jvmci-b01, mixed mode, sharing)\nnative-image 25.0.2 2026-01-20\nGraalVM Runtime Environment GraalVM CE 25.0.2+10.1 (build 25.0.2+10-jvmci-b01)\nSubstrate VM GraalVM CE 25.0.2+10.1 (build 25.0.2+10, serial gc)\nBuild artifacts:\n /out/bootstrap (executable)\n========================================================================================================================\nFinished generating 'bootstrap' in 13.6s.",
+  "sin_comprimir": 17370184,
+  "zip": 5975390
+ },
+ "rust-relleno": {
+  "imagen": null,
+  "segundos": 0,
+  "salida": "",
+  "relleno": 2091702,
+  "sin_comprimir": 3888350,
+  "zip": 2879695
+ }
+}

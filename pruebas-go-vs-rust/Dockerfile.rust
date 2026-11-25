@@ -1,0 +1,9 @@
+FROM rust:1.99.1-trixie AS build
+WORKDIR /build
+COPY Cargo.toml Cargo.lock /build/
+COPY src /build/src
+RUN cargo build --release --locked && cp target/release/servidor /servidor
+FROM debian:trixie-slim
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

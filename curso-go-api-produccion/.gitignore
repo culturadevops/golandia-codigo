@@ -1,0 +1,14 @@
+# binarios
+/api
+/api.exe
+*.exe
+*.test
+*.out
+# secretos locales
+.env
+*.env
+# editor y sistema
+.vscode/
+.idea/
+.DS_Store
+__pycache__/

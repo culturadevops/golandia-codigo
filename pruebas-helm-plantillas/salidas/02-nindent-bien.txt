@@ -1,0 +1,13 @@
+$ helm template demo 02-nindent  # bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: indent
+  labels:
+    app: web
+    equipo: plataforma
+data:
+  a: "1"
+[código de salida: 0]

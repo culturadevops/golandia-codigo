@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: BFF del movil
+  version: "1.0"
+paths:
+  /v1/pantalla:
+    get:
+      operationId: getPantalla
+      summary: Todo lo que la pantalla de inicio del movil necesita, en una llamada
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PantallaMovil'
+components:
+  schemas:
+    PantallaMovil:
+      type: object
+      required: [nombre, plan, saldo, sin_leer]
+      properties:
+        nombre:   { type: string }
+        plan:     { type: string }
+        saldo:    { type: number, format: double }
+        ultimos:  { type: array, items: { type: string } }
+        sin_leer: { type: integer }

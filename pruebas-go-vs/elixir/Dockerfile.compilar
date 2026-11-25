@@ -1,0 +1,8 @@
+# Imagen para MEDIR la compilación de Elixir: la oficial, con hex y las dependencias ya DESCARGADAS (no compiladas),
+# para que el tiempo no dependa de la red. mix compile compila las dependencias y la app, como go build con la caché vacía.
+FROM elixir:1.20.4-otp-29
+ENV MIX_ENV=prod
+WORKDIR /work
+RUN mix local.hex --force && mix local.rebar --force
+COPY mix.exs ./
+RUN mix deps.get --only prod

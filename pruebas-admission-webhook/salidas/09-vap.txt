@@ -1,0 +1,26 @@
+# ValidatingAdmissionPolicy (CEL, dentro del apiserver) · sin webhook
+$ kubectl apply -f pod-latest.yaml --dry-run=server
+The pods "web" is invalid: : ValidatingAdmissionPolicy 'admision-cel' with binding 'admision-cel' denied request: fija una versión: nada de :latest ni imágenes sin etiqueta
+  (código 1, 0.11 s)
+
+$ kubectl apply -f pod-sin-tag.yaml --dry-run=server
+The pods "web" is invalid: : ValidatingAdmissionPolicy 'admision-cel' with binding 'admision-cel' denied request: fija una versión: nada de :latest ni imágenes sin etiqueta
+  (código 1, 0.10 s)
+
+$ kubectl apply -f pod-sin-limites.yaml --dry-run=server
+The pods "web" is invalid: : ValidatingAdmissionPolicy 'admision-cel' with binding 'admision-cel' denied request: cada contenedor necesita limits.cpu y limits.memory
+  (código 1, 0.10 s)
+
+$ kubectl apply -f pod-registro.yaml --dry-run=server
+The pods "web" is invalid: : ValidatingAdmissionPolicy 'admision-cel' with binding 'admision-cel' denied request: fija una versión: nada de :latest ni imágenes sin etiqueta
+  (código 1, 0.10 s)
+
+$ kubectl apply -f pod-bien.yaml --dry-run=server
+pod/web created (server dry run)
+  (código 0, 0.10 s)
+
+# con el Deployment del webhook a 0 réplicas, la política sigue funcionando:
+$ kubectl apply -f pod-latest.yaml --dry-run=server
+The pods "web" is invalid: : ValidatingAdmissionPolicy 'admision-cel' with binding 'admision-cel' denied request: fija una versión: nada de :latest ni imágenes sin etiqueta
+  (código 1, 0.11 s)
+

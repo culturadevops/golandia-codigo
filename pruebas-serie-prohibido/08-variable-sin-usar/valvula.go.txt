@@ -1,0 +1,13 @@
+// La valvula de escape, para cuando de verdad la necesitas:
+package main
+
+import (
+	"fmt"
+	_ "os" // el guion bajo dice "la quiero por su efecto, no la uso"
+)
+
+func main() {
+	contador := 0
+	_ = contador // y esto calla al compilador para la variable
+	fmt.Println("hola")
+}

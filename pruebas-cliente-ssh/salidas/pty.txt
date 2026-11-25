@@ -1,0 +1,7 @@
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s01.txt -cmd 'tty; echo al-stderr >&2'
+s01      0     0.1s  not a tty
+s01    stderr        al-stderr
+1 hosts · 1 ok · 0 con código distinto de 0 · 0 sin respuesta · 0.1s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s01.txt -pty -cmd 'tty; echo al-stderr >&2'
+s01      0     0.1s  /dev/pts/0 | al-stderr
+1 hosts · 1 ok · 0 con código distinto de 0 · 0 sin respuesta · 0.1s en total

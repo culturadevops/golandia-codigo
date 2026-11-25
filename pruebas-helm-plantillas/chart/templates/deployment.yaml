@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "web.nombre" . }}
+  labels:
+    {{- include "web.etiquetas" . | nindent 4 }}
+spec:
+  replicas: {{ hasKey .Values "replicas" | ternary .Values.replicas 1 }}
+  selector:
+    matchLabels:
+      {{- include "web.etiquetas" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "web.etiquetas" . | nindent 8 }}
+    spec:
+      automountServiceAccountToken: {{ .Values.montarToken }}
+      containers:
+        - name: web
+          image: "{{ required "falta imagen.repo" .Values.imagen.repo }}:{{ .Values.imagen.tag }}"
+          ports:
+            {{- range .Values.puertos }}
+            - name: {{ .nombre }}
+              containerPort: {{ .puerto }}
+            {{- end }}
+          env:
+            - name: DB_HOST
+              value: {{ tpl .Values.dbHost . | quote }}
+            {{- range $k, $v := .Values.env }}
+            - name: {{ $k }}
+              value: {{ $v | quote }}
+            {{- end }}
+          {{- with .Values.recursos }}
+          resources:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}

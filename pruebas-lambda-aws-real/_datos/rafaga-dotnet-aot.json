@@ -1,0 +1,284 @@
+{
+ "version": null,
+ "invocaciones": [
+  {
+   "linea": "REPORT RequestId: 8d521a20-e818-4861-bd55-1c62ba97e1da\tDuration: 1503.36 ms\tBilled Duration: 1594 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 90.25 ms",
+   "duracion": 1503.36,
+   "facturada": 1594.0,
+   "memoria": 21.0,
+   "init": 90.25,
+   "e2e": 1825.19,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 01a8ae1a-c271-45a8-9868-cfa3c3ce1af4\tDuration: 1503.12 ms\tBilled Duration: 1600 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 96.73 ms",
+   "duracion": 1503.12,
+   "facturada": 1600.0,
+   "memoria": 21.0,
+   "init": 96.73,
+   "e2e": 7750.15,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 611a6564-f5c3-4b82-982f-66ed68563b43\tDuration: 1504.01 ms\tBilled Duration: 1596 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 91.01 ms",
+   "duracion": 1504.01,
+   "facturada": 1596.0,
+   "memoria": 21.0,
+   "init": 91.01,
+   "e2e": 7722.53,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e96fb4b8-267d-47cb-80d2-2161bb45f012\tDuration: 1503.59 ms\tBilled Duration: 1593 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 88.57 ms",
+   "duracion": 1503.59,
+   "facturada": 1593.0,
+   "memoria": 21.0,
+   "init": 88.57,
+   "e2e": 7703.37,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 17b6f9af-ff2b-4dc6-83f6-acfa8c3208d3\tDuration: 1503.19 ms\tBilled Duration: 1587 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 82.98 ms",
+   "duracion": 1503.19,
+   "facturada": 1587.0,
+   "memoria": 21.0,
+   "init": 82.98,
+   "e2e": 7615.26,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 71f1d091-bb55-4dc8-b409-7e67b5a68d5e\tDuration: 1503.28 ms\tBilled Duration: 1583 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 79.27 ms",
+   "duracion": 1503.28,
+   "facturada": 1583.0,
+   "memoria": 21.0,
+   "init": 79.27,
+   "e2e": 7577.34,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e4b66b6e-44dc-4b88-af46-5cc06ceca25a\tDuration: 1503.34 ms\tBilled Duration: 1600 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 95.79 ms",
+   "duracion": 1503.34,
+   "facturada": 1600.0,
+   "memoria": 21.0,
+   "init": 95.79,
+   "e2e": 7557.85,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cd25d93b-c150-44e7-9715-23ec223e76be\tDuration: 1503.23 ms\tBilled Duration: 1585 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 81.42 ms",
+   "duracion": 1503.23,
+   "facturada": 1585.0,
+   "memoria": 21.0,
+   "init": 81.42,
+   "e2e": 7338.13,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 148e6fcf-1b08-4827-a45a-4513b608c5d3\tDuration: 1503.41 ms\tBilled Duration: 1602 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 98.19 ms",
+   "duracion": 1503.41,
+   "facturada": 1602.0,
+   "memoria": 21.0,
+   "init": 98.19,
+   "e2e": 7428.55,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0eff9bc7-9148-4c69-afc3-963aeb8bcbf6\tDuration: 1502.37 ms\tBilled Duration: 1503 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB",
+   "duracion": 1502.37,
+   "facturada": 1503.0,
+   "memoria": 21.0,
+   "e2e": 6313.84,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e9f39ba6-429a-4991-ae32-c64353a4d27d\tDuration: 1503.51 ms\tBilled Duration: 1603 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 98.92 ms",
+   "duracion": 1503.51,
+   "facturada": 1603.0,
+   "memoria": 21.0,
+   "init": 98.92,
+   "e2e": 6574.47,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 55ac8d16-4dae-41e0-b2ef-32a1ccd246cf\tDuration: 1497.00 ms\tBilled Duration: 1616 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 118.66 ms",
+   "duracion": 1497.0,
+   "facturada": 1616.0,
+   "memoria": 21.0,
+   "init": 118.66,
+   "e2e": 6420.81,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3d18219d-8e76-417b-a00e-8826a958f9a1\tDuration: 1503.42 ms\tBilled Duration: 1603 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB\tInit Duration: 99.25 ms",
+   "duracion": 1503.42,
+   "facturada": 1603.0,
+   "memoria": 22.0,
+   "init": 99.25,
+   "e2e": 6513.1,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3e604611-88b7-4e14-85fa-7a6b2dd9b149\tDuration: 1503.03 ms\tBilled Duration: 1590 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 86.85 ms",
+   "duracion": 1503.03,
+   "facturada": 1590.0,
+   "memoria": 21.0,
+   "init": 86.85,
+   "e2e": 6841.45,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d5f48e72-2d1d-4ee3-8208-1cb2f01a4ed8\tDuration: 1503.26 ms\tBilled Duration: 1593 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 89.17 ms",
+   "duracion": 1503.26,
+   "facturada": 1593.0,
+   "memoria": 21.0,
+   "init": 89.17,
+   "e2e": 6737.43,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aeb56952-e637-4072-bef5-b1df213fd9a6\tDuration: 1503.41 ms\tBilled Duration: 1588 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 84.35 ms",
+   "duracion": 1503.41,
+   "facturada": 1588.0,
+   "memoria": 21.0,
+   "init": 84.35,
+   "e2e": 6732.4,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2dbb9b2a-9185-4b61-8ea9-3d2a5aeda455\tDuration: 1502.96 ms\tBilled Duration: 1573 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 69.65 ms",
+   "duracion": 1502.96,
+   "facturada": 1573.0,
+   "memoria": 21.0,
+   "init": 69.65,
+   "e2e": 6552.58,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6a75f7f9-05b6-47d0-9f1c-3f96d90f1d03\tDuration: 1503.30 ms\tBilled Duration: 1586 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 81.97 ms",
+   "duracion": 1503.3,
+   "facturada": 1586.0,
+   "memoria": 21.0,
+   "init": 81.97,
+   "e2e": 6503.55,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c21398a5-0595-4e45-99dd-21e3edf221d5\tDuration: 1503.17 ms\tBilled Duration: 1595 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 90.86 ms",
+   "duracion": 1503.17,
+   "facturada": 1595.0,
+   "memoria": 21.0,
+   "init": 90.86,
+   "e2e": 6436.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0269cb0a-0e98-4606-9f7e-ab20f3633ea8\tDuration: 1503.70 ms\tBilled Duration: 1586 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 81.58 ms",
+   "duracion": 1503.7,
+   "facturada": 1586.0,
+   "memoria": 21.0,
+   "init": 81.58,
+   "e2e": 6346.59,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  }
+ ]
+}

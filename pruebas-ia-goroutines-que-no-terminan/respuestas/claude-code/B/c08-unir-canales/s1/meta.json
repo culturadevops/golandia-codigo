@@ -1,0 +1,29 @@
+{
+ "segundos": 6.26,
+ "costo_usd": 0.0207003,
+ "modelos": {
+  "claude-haiku-5-5": 21,
+  "claude-opus-5-5": 398
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "c08-unir-canales",
+ "variante": "B",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Asegúrate de que no quede ninguna goroutine bloqueada cuando la función termine.\n\nTarea: Escribe la función Unir(ctx context.Context, canales ...<-chan int) <-chan int que junta todos los valores de los canales de entrada en un solo canal de salida, y lo cierra cuando se cierran todos los de entrada. Si ctx se cancela, debe pararse.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

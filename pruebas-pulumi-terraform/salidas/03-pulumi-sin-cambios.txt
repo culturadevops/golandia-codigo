@@ -1,0 +1,10 @@
+Previewing update (prod):
+
+    pulumi:pulumi:Stack g680-prod  Compiling the program ...
+@ previewing update....
+    pulumi:pulumi:Stack g680-prod  Finished compiling
+    pulumi:pulumi:Stack g680-prod running Finished compiling
+    pulumi:pulumi:Stack g680-prod  
+Resources:
+    8 unchanged
+

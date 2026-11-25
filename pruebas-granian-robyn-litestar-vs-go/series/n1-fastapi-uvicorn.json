@@ -1,0 +1,303 @@
+{
+ "contenedor": "srv",
+ "intervalo_s": 0.5,
+ "resumen": {
+  "muestras": 41,
+  "cpu_media": 192.4,
+  "cpu_max": 197.0,
+  "mem_max_mib": 100.45,
+  "hilos_max": 22,
+  "frenadas": 0
+ },
+ "serie": [
+  {
+   "t": 0.0,
+   "cpu_pct": null,
+   "mem_mib": 95.74,
+   "hilos": 7,
+   "frenadas": 0
+  },
+  {
+   "t": 0.5,
+   "cpu_pct": 115.7,
+   "mem_mib": 100.45,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 1.01,
+   "cpu_pct": 193.2,
+   "mem_mib": 100.39,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 1.51,
+   "cpu_pct": 195.6,
+   "mem_mib": 100.36,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 2.02,
+   "cpu_pct": 192.2,
+   "mem_mib": 100.36,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 2.52,
+   "cpu_pct": 197.0,
+   "mem_mib": 100.32,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 3.03,
+   "cpu_pct": 192.1,
+   "mem_mib": 100.28,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 3.53,
+   "cpu_pct": 195.8,
+   "mem_mib": 99.98,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 4.04,
+   "cpu_pct": 192.4,
+   "mem_mib": 100.23,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 4.54,
+   "cpu_pct": 196.6,
+   "mem_mib": 100.19,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 5.05,
+   "cpu_pct": 192.9,
+   "mem_mib": 100.41,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 5.55,
+   "cpu_pct": 196.9,
+   "mem_mib": 100.38,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 6.06,
+   "cpu_pct": 192.5,
+   "mem_mib": 100.11,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 6.56,
+   "cpu_pct": 196.4,
+   "mem_mib": 100.11,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 7.07,
+   "cpu_pct": 192.9,
+   "mem_mib": 100.11,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 7.57,
+   "cpu_pct": 196.0,
+   "mem_mib": 100.07,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 8.08,
+   "cpu_pct": 192.0,
+   "mem_mib": 100.04,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 8.58,
+   "cpu_pct": 196.2,
+   "mem_mib": 99.74,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 9.09,
+   "cpu_pct": 192.4,
+   "mem_mib": 99.72,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 9.59,
+   "cpu_pct": 196.9,
+   "mem_mib": 99.72,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 10.1,
+   "cpu_pct": 192.0,
+   "mem_mib": 99.72,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 10.6,
+   "cpu_pct": 196.9,
+   "mem_mib": 99.72,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 11.11,
+   "cpu_pct": 192.5,
+   "mem_mib": 99.97,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 11.61,
+   "cpu_pct": 196.6,
+   "mem_mib": 99.96,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 12.12,
+   "cpu_pct": 192.7,
+   "mem_mib": 99.96,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 12.63,
+   "cpu_pct": 193.2,
+   "mem_mib": 99.96,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 13.13,
+   "cpu_pct": 196.7,
+   "mem_mib": 100.17,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 13.64,
+   "cpu_pct": 192.7,
+   "mem_mib": 100.17,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 14.14,
+   "cpu_pct": 196.3,
+   "mem_mib": 100.39,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 14.65,
+   "cpu_pct": 191.9,
+   "mem_mib": 100.36,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 15.15,
+   "cpu_pct": 195.8,
+   "mem_mib": 100.1,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 15.66,
+   "cpu_pct": 191.8,
+   "mem_mib": 100.33,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 16.16,
+   "cpu_pct": 196.5,
+   "mem_mib": 100.28,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 16.67,
+   "cpu_pct": 192.1,
+   "mem_mib": 100.28,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 17.17,
+   "cpu_pct": 196.1,
+   "mem_mib": 100.28,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 17.68,
+   "cpu_pct": 192.2,
+   "mem_mib": 100.27,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 18.18,
+   "cpu_pct": 196.6,
+   "mem_mib": 100.27,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 18.69,
+   "cpu_pct": 192.7,
+   "mem_mib": 100.25,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 19.19,
+   "cpu_pct": 195.6,
+   "mem_mib": 100.22,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 19.7,
+   "cpu_pct": 192.2,
+   "mem_mib": 100.17,
+   "hilos": 22,
+   "frenadas": 0
+  },
+  {
+   "t": 20.2,
+   "cpu_pct": 195.7,
+   "mem_mib": 99.91,
+   "hilos": 22,
+   "frenadas": 0
+  }
+ ],
+ "variante": "fastapi + uvicorn",
+ "rps": 11716.2539
+}

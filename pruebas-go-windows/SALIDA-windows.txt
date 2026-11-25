@@ -1,0 +1,43 @@
+=== windows/amd64 · go go1.26.5 ===
+
+-- 1 · RUTAS --
+  filepath.Separator:                \
+  filepath.Join(a,b,c):              datos\informes\2026.csv
+  path.Join(a,b,c)  (¡URLs!):        datos/informes/2026.csv
+  ¿dan lo mismo?:                    false
+  filepath.Abs("x"):                 <repo>\pruebas-go-windows\x
+  VolumeName del actual:             C:
+  ¿abre con barra inclinada?:        sí
+  ¿abre go.mod escrito GO.MOD?:      sí
+  crear una ruta de ~300 caracteres: sí, 330 caracteres
+
+-- 2 · LA VARIABLE DE DIRECTORIOS --
+  os.PathListSeparator:              ;
+  cuántos directorios trae:          36
+  el primero:                        C:\Program Files\Go\bin
+
+-- 3 · SALTOS DE LÍNEA --
+  escribí 8 bytes, leí:              8
+  ¿hay retorno de carro?:            false
+  os.TempDir():                      C:\Users\tu-usuario\AppData\Local\Temp
+
+-- 4 · PERMISOS --
+  pedí 0600, Stat dice:              -rw-rw-rw-
+  ¿es de solo lectura?:              false
+  os.Getuid():                       -1
+
+-- 5 · /proc, DE DONDE SALE TODO LO QUE SE ENSEÑA --
+  ¿existe /proc/self/status?:        false
+  y el error es:                     GetFileAttributesEx /proc/self/status: El sistema no puede encontrar la ruta especificada.
+
+-- 6 · EJECUTAR OTRO PROGRAMA --
+  LookPath(go):                      C:\Program Files\Go\bin\go.exe
+  LookPath(ls):                      C:\Program Files\Git\usr\bin\ls.exe
+  LookPath(cmd):                     C:\Windows\system32\cmd.exe
+  LookPath(sh):                      C:\Program Files\Git\usr\bin\sh.exe
+  nombre de mi binario:              gowin.exe
+  ¿acaba en .exe?:                   true
+
+-- 7 · SEÑALES --
+  Signal(0) a mí mismo:              RECHAZADA: not supported by windows
+  y SIGUSR1 / SIGHUP:                no existen en Windows: van en un fichero _linux.go

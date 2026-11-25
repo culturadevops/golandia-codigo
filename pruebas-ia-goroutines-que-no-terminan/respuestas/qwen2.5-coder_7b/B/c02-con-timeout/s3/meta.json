@@ -1,0 +1,16 @@
+{
+ "segundos": 2.44,
+ "eval_count": 155,
+ "opciones": {
+  "temperature": 0.7,
+  "seed": 3,
+  "num_predict": 2048
+ },
+ "backend": "ollama",
+ "modelo": "qwen2.5-coder:7b",
+ "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+ "tarea": "c02-con-timeout",
+ "variante": "B",
+ "seed": 3,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Asegúrate de que no quede ninguna goroutine bloqueada cuando la función termine.\n\nTarea: Escribe la función ConTimeout(d time.Duration, f func() int) (int, error). Ejecuta f en otra goroutine y devuelve su resultado. Si f tarda más que d, devuelve 0 y un error de timeout sin esperar a f.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

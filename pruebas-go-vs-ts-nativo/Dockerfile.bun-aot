@@ -1,0 +1,9 @@
+# Bun AOT no está en la versión estable 1.4.4 (acepta --aot y lo ignora): está en canary. Fijada por digest: 1.4.5-canary.1+4ce14ba8b
+FROM oven/bun:canary@sha256:c4574411d90843458c59e19af962df0c1de4f0b2bc82b8a877d8416370e91d32 AS build
+WORKDIR /src
+COPY src/servidor.ts /src/
+RUN bun build --compile --aot servidor.ts --outfile /servidor
+FROM debian:trixie-slim
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

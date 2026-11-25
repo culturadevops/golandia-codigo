@@ -1,0 +1,29 @@
+{
+ "segundos": 6.37,
+ "costo_usd": 0.0162239,
+ "modelos": {
+  "claude-haiku-5-5": 19,
+  "claude-opus-5-5": 205
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "t13-copiar-mapa",
+ "variante": "A",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Escribe la función Mezclar(dst, src map[string]int) que copia todas las entradas de src en dst, sobrescribiendo las claves que ya existan.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

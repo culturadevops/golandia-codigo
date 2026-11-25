@@ -1,0 +1,11 @@
+$ helm template demo 01-guiones  # bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: guiones
+data:
+  modo: produccion
+  debug: "true"
+[código de salida: 0]

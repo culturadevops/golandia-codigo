@@ -1,0 +1,16 @@
+config:
+  g680:entorno: prod
+  g680:colas: ["pedidos", "pagos", "avisos"]
+  aws:region: us-east-1
+  aws:accessKey: test
+  aws:secretKey: test
+  aws:skipCredentialsValidation: true
+  aws:skipRequestingAccountId: true
+  aws:skipMetadataApiCheck: true
+  aws:s3UsePathStyle: true
+  aws:endpoints:
+    - s3: http://moto:5000
+      sqs: http://moto:5000
+      iam: http://moto:5000
+      ssm: http://moto:5000
+      sts: http://moto:5000

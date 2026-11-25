@@ -1,0 +1,8 @@
+FROM oven/bun:1.4.4 AS build
+WORKDIR /src
+COPY src/servidor.ts /src/
+RUN bun build --compile servidor.ts --outfile /servidor
+FROM debian:trixie-slim
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

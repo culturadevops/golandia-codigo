@@ -1,0 +1,26 @@
+$ psql -U app -d tienda -f sql/semilla.sql
+INSERT 0 8
+[código de salida 0]
+$ psql -U app: SELECT count(*) FROM productos
+ count 
+-------
+     8
+(1 row)
+[código de salida 0]
+$ psql -U app: DROP TABLE productos
+ERROR:  must be owner of table productos
+[código de salida 1]
+$ psql -U app: CREATE TABLE copia (id int)
+ERROR:  permission denied for schema public
+LINE 1: CREATE TABLE copia (id int);
+                     ^
+[código de salida 1]
+$ psql -U app: TRUNCATE productos
+ERROR:  permission denied for table productos
+[código de salida 1]
+$ psql -U app: SELECT count(*) FROM productos
+ count 
+-------
+     8
+(1 row)
+[código de salida 0]

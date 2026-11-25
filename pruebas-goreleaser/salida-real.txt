@@ -1,0 +1,71 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== instalar goreleaser v2.18.1 ==
+  ____       ____      _
+ / ___| ___ |  _ \ ___| | ___  __ _ ___  ___ _ __
+| |  _ / _ \| |_) / _ \ |/ _ \/ _` / __|/ _ \ '__|
+| |_| | (_) |  _ <  __/ |  __/ (_| \__ \  __/ |
+ \____|\___/|_| \_\___|_|\___|\__,_|___/\___|_|
+goreleaser: Release engineering, simplified.
+https://goreleaser.com
+
+
+== 1. build normal de Go: un binario, solo para esta maquina ==
+-rwxr-xr-x 1 root root 8938270 Sep 12 16:55 /tmp/kcli-normal
+
+== 2. goreleaser en modo real (release --clean), SIN token ni remoto: falla, y dice por que ==
+  • starting release
+  • cleaning distribution directory
+  • loading environment variables
+  ⨯ release failed after 0s                          error=missing GITHUB_TOKEN, GITLAB_TOKEN and GITEA_TOKEN
+
+== 3. goreleaser en modo snapshot: construye todo, no publica nada ==
+  • snapshotting
+    • building snapshot...                           version=0.0.0-SNAPSHOT-none
+  • ensuring distribution directory
+  • setting up metadata
+  • writing release metadata
+  • loading go mod information
+  • build prerequisites
+  • building binaries
+    • building                                       paths=main.go binaries=kcli target=darwin_arm64_v8.0
+    • building                                       paths=main.go binaries=kcli target=windows_arm64_v8.0
+    • building                                       paths=main.go binaries=kcli target=darwin_amd64_v1
+    • building                                       paths=main.go binaries=kcli target=linux_amd64_v1
+    • building                                       paths=main.go binaries=kcli target=linux_arm64_v8.0
+    • building                                       paths=main.go binaries=kcli target=windows_amd64_v1
+  • archives
+    • archiving                                      name=dist/kcli_darwin_amd64.tar.gz
+    • archiving                                      name=dist/kcli_windows_amd64.zip
+    • archiving                                      name=dist/kcli_linux_arm64.tar.gz
+    • archiving                                      name=dist/kcli_windows_arm64.zip
+    • archiving                                      name=dist/kcli_linux_amd64.tar.gz
+    • archiving                                      name=dist/kcli_darwin_arm64.tar.gz
+  • calculating checksums
+  • writing artifacts metadata
+  • release succeeded after 8s
+  • thanks for using GoReleaser!
+
+== 4. que produjo, archivo por archivo ==
+dist/artifacts.json
+dist/checksums.txt
+dist/config.yaml
+dist/kcli_darwin_amd64.tar.gz
+dist/kcli_darwin_arm64.tar.gz
+dist/kcli_linux_amd64.tar.gz
+dist/kcli_linux_arm64.tar.gz
+dist/kcli_windows_amd64.zip
+dist/kcli_windows_arm64.zip
+dist/metadata.json
+
+== 5. seis binarios reales, para tres sistemas operativos ==
+dist/kcli_darwin_amd64_v1/kcli
+dist/kcli_darwin_arm64_v8.0/kcli
+dist/kcli_linux_amd64_v1/kcli
+dist/kcli_linux_arm64_v8.0/kcli
+dist/kcli_windows_amd64_v1/kcli.exe
+dist/kcli_windows_arm64_v8.0/kcli.exe
+
+== 6. el changelog: por que no aparece en modo snapshot ==
+(no existe CHANGELOG.md: el pipeline de changelog se salta a proposito en snapshot)

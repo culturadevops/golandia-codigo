@@ -1,0 +1,4333 @@
+{
+ "funcion": {
+  "CodeSize": 3645357,
+  "Runtime": "provided.al2023"
+ },
+ "memoria_mb": 512,
+ "arquitectura": "x86_64",
+ "comprobacion": [
+  {
+   "carga": {
+    "n": 200000,
+    "io_ms": 0
+   },
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "carga": {
+    "n": 1000,
+    "io_ms": 0
+   },
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 1000,
+    "suma": 333833500,
+    "io_ms": 0
+   }
+  },
+  {
+   "carga": {
+    "n": 0,
+    "io_ms": 100
+   },
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  }
+ ],
+ "frios": [
+  {
+   "linea": "REPORT RequestId: 988fccdd-cc62-4d61-90f6-ca38fc248d2e\tDuration: 2.84 ms\tBilled Duration: 104 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 100.58 ms",
+   "duracion": 2.84,
+   "facturada": 104.0,
+   "memoria": 21.0,
+   "init": 100.58,
+   "e2e": 346.23,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: b3258b20-f60f-4910-9fc4-f6075489aa4c\tDuration: 2.43 ms\tBilled Duration: 82 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 78.91 ms",
+   "duracion": 2.43,
+   "facturada": 82.0,
+   "memoria": 21.0,
+   "init": 78.91,
+   "e2e": 317.01,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: ed03e162-1031-4c9b-89a3-cc24949078ff\tDuration: 2.59 ms\tBilled Duration: 113 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 109.42 ms",
+   "duracion": 2.59,
+   "facturada": 113.0,
+   "memoria": 21.0,
+   "init": 109.42,
+   "e2e": 386.47,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: f78e6162-f659-42f8-8a9c-80d9062ba498\tDuration: 2.97 ms\tBilled Duration: 89 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 85.69 ms",
+   "duracion": 2.97,
+   "facturada": 89.0,
+   "memoria": 21.0,
+   "init": 85.69,
+   "e2e": 326.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: c0c3c079-cd4c-49cd-a80c-777f2e21b5f4\tDuration: 2.99 ms\tBilled Duration: 161 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 157.84 ms",
+   "duracion": 2.99,
+   "facturada": 161.0,
+   "memoria": 21.0,
+   "init": 157.84,
+   "e2e": 515.34,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: f6360d1c-612d-4fcc-a4ac-0ed180983955\tDuration: 3.19 ms\tBilled Duration: 137 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 133.43 ms",
+   "duracion": 3.19,
+   "facturada": 137.0,
+   "memoria": 21.0,
+   "init": 133.43,
+   "e2e": 426.09,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: edb2dcfc-ce12-4857-9d9f-c34014673c33\tDuration: 3.37 ms\tBilled Duration: 85 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 80.63 ms",
+   "duracion": 3.37,
+   "facturada": 85.0,
+   "memoria": 21.0,
+   "init": 80.63,
+   "e2e": 402.53,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 772624bc-b42c-4ccd-9e99-45d33b4244b9\tDuration: 3.34 ms\tBilled Duration: 96 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 92.14 ms",
+   "duracion": 3.34,
+   "facturada": 96.0,
+   "memoria": 21.0,
+   "init": 92.14,
+   "e2e": 349.95,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 35447835-5be4-4ecd-9c92-ffef4138055c\tDuration: 2.54 ms\tBilled Duration: 91 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 87.88 ms",
+   "duracion": 2.54,
+   "facturada": 91.0,
+   "memoria": 21.0,
+   "init": 87.88,
+   "e2e": 329.8,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 54799620-de6e-4df3-8048-4ebac73cbf19\tDuration: 2.39 ms\tBilled Duration: 91 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 88.40 ms",
+   "duracion": 2.39,
+   "facturada": 91.0,
+   "memoria": 21.0,
+   "init": 88.4,
+   "e2e": 453.34,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: c3246b38-8a23-45cf-8c2d-4c6ea1b0d557\tDuration: 3.31 ms\tBilled Duration: 104 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 100.36 ms",
+   "duracion": 3.31,
+   "facturada": 104.0,
+   "memoria": 21.0,
+   "init": 100.36,
+   "e2e": 346.63,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 77549d86-8d5c-4589-bdd2-7ee3409180de\tDuration: 2.46 ms\tBilled Duration: 93 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 90.42 ms",
+   "duracion": 2.46,
+   "facturada": 93.0,
+   "memoria": 21.0,
+   "init": 90.42,
+   "e2e": 333.52,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 8609317e-bf30-4672-b560-6c1897d98f71\tDuration: 2.10 ms\tBilled Duration: 70 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 67.34 ms",
+   "duracion": 2.1,
+   "facturada": 70.0,
+   "memoria": 21.0,
+   "init": 67.34,
+   "e2e": 308.57,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 0631b779-b48a-4598-9543-b9d62cd15e79\tDuration: 2.60 ms\tBilled Duration: 124 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 120.87 ms",
+   "duracion": 2.6,
+   "facturada": 124.0,
+   "memoria": 21.0,
+   "init": 120.87,
+   "e2e": 425.4,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 5220f5e5-8ff5-470c-9c9f-995986bd99ee\tDuration: 2.69 ms\tBilled Duration: 87 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 84.21 ms",
+   "duracion": 2.69,
+   "facturada": 87.0,
+   "memoria": 21.0,
+   "init": 84.21,
+   "e2e": 313.44,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: d28c8b40-bf6a-4999-af83-f215c3ed912d\tDuration: 2.61 ms\tBilled Duration: 99 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 95.99 ms",
+   "duracion": 2.61,
+   "facturada": 99.0,
+   "memoria": 21.0,
+   "init": 95.99,
+   "e2e": 338.98,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: d4eed613-b5ba-4ddc-b6ee-104379c8d99d\tDuration: 2.79 ms\tBilled Duration: 131 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 127.94 ms",
+   "duracion": 2.79,
+   "facturada": 131.0,
+   "memoria": 21.0,
+   "init": 127.94,
+   "e2e": 416.36,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 94db7890-5cb3-4498-91bd-445ee3a7cba0\tDuration: 2.29 ms\tBilled Duration: 83 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 80.11 ms",
+   "duracion": 2.29,
+   "facturada": 83.0,
+   "memoria": 21.0,
+   "init": 80.11,
+   "e2e": 380.12,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: ebba8e39-ae72-4d20-84d2-82f856293ac1\tDuration: 2.41 ms\tBilled Duration: 83 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 79.86 ms",
+   "duracion": 2.41,
+   "facturada": 83.0,
+   "memoria": 21.0,
+   "init": 79.86,
+   "e2e": 302.77,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 242a2c24-006b-4827-8150-fdf2270806e1\tDuration: 2.12 ms\tBilled Duration: 84 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 81.45 ms",
+   "duracion": 2.12,
+   "facturada": 84.0,
+   "memoria": 21.0,
+   "init": 81.45,
+   "e2e": 317.87,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: be33e234-c18b-4ead-8715-2eade89ba8a2\tDuration: 1.96 ms\tBilled Duration: 77 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 74.35 ms",
+   "duracion": 1.96,
+   "facturada": 77.0,
+   "memoria": 21.0,
+   "init": 74.35,
+   "e2e": 322.14,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: d294cd48-efde-4706-ae4b-2315a2711274\tDuration: 2.42 ms\tBilled Duration: 85 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 82.00 ms",
+   "duracion": 2.42,
+   "facturada": 85.0,
+   "memoria": 21.0,
+   "init": 82.0,
+   "e2e": 318.56,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 321e09b5-fd8a-4e6d-8b08-f63f4e3722cf\tDuration: 2.34 ms\tBilled Duration: 77 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 74.11 ms",
+   "duracion": 2.34,
+   "facturada": 77.0,
+   "memoria": 21.0,
+   "init": 74.11,
+   "e2e": 294.16,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: fddb4244-7ce6-42f3-adf2-83562d1069ed\tDuration: 2.94 ms\tBilled Duration: 95 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 91.91 ms",
+   "duracion": 2.94,
+   "facturada": 95.0,
+   "memoria": 21.0,
+   "init": 91.91,
+   "e2e": 349.13,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 0723a392-cd51-490e-aec1-ec398708318f\tDuration: 2.72 ms\tBilled Duration: 91 ms\tMemory Size: 512 MB\tMax Memory Used: 21 MB\tInit Duration: 87.61 ms",
+   "duracion": 2.72,
+   "facturada": 91.0,
+   "memoria": 21.0,
+   "init": 87.61,
+   "e2e": 323.93,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  }
+ ],
+ "caliente_cpu": [
+  {
+   "linea": "REPORT RequestId: 74ab2967-5399-4f5c-b361-2c7c35a30f4b\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 113.07,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c60fc5e6-ec00-4d81-9fb6-b4441289bdc3\tDuration: 2.15 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 2.15,
+   "facturada": 3.0,
+   "memoria": 22.0,
+   "e2e": 111.58,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d68366a9-6429-4039-a10c-870ed8eac014\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 111.83,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f8831fdc-6429-4b8d-9b4c-55406b502890\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 110.88,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 88be3fa2-c4ef-4131-9b71-3dc36cc2dbc1\tDuration: 1.75 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.75,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.83,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 995a5980-f033-49d7-873e-b86be62f9fb7\tDuration: 2.54 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 2.54,
+   "facturada": 3.0,
+   "memoria": 22.0,
+   "e2e": 109.26,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7c561d5f-98c1-42b6-b484-24b0410291a1\tDuration: 1.63 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.63,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 119.61,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1315867d-ab04-4a66-80da-62033716fff8\tDuration: 2.93 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 2.93,
+   "facturada": 3.0,
+   "memoria": 22.0,
+   "e2e": 113.31,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f5953781-c93f-4c3a-9d3b-46d2852f99c2\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.8,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e62cc86e-d53d-48cf-ae58-ac3fd25e05bf\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.84,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 16528fae-fc77-4479-991d-af526aa0be46\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 112.51,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 861c9b17-0879-4760-96aa-15e292a12425\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 107.67,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7ee0a3f5-c8b5-402b-adfc-5f76f1d2e44b\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.33,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1095222e-52db-4484-b0c4-a0e10edbca57\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 108.58,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 236edba8-1345-48ba-be95-b967d9c4beb8\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 113.39,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 34a5981e-b464-4adf-8503-0a2ce1c43a1a\tDuration: 1.69 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.69,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 113.69,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ed2c41a5-a0f1-47ad-ad16-5a0aca451da3\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.79,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 138ad5e1-a655-465b-a78d-5e316f7c6527\tDuration: 1.73 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.73,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 110.58,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 20262bd8-3a28-4bfb-8b87-d3c73b01770d\tDuration: 1.60 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.6,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 105.77,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b6539d19-e4b1-42bc-aaed-837fa8f215ef\tDuration: 1.58 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.58,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 111.59,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8c2aafb8-6036-4937-8a99-22d9a389c431\tDuration: 1.59 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.59,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.22,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 79676689-a607-427a-8bc2-695b5eef1e34\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 105.78,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c45889df-b9ce-400e-9a8f-af6cc11a79c8\tDuration: 1.75 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.75,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 108.44,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3a008dc2-9260-4d94-8fb7-6e1c4a0d7285\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 108.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2a08f2c7-93fb-4a43-995f-7eb85e056937\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.67,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 04f4ebc4-1f6d-43f3-9b74-7d37317384d3\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 112.01,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bd79785c-e5b5-4a60-8d11-8b1151fdae23\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 103.81,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a31c3d20-c69d-48a0-b854-5163f13c19d5\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 102.04,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 015fb3b8-189f-4832-8889-95de496c582c\tDuration: 2.30 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 2.3,
+   "facturada": 3.0,
+   "memoria": 22.0,
+   "e2e": 104.78,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f9dbb233-e519-4f21-94d3-1bef3a41d80c\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 103.37,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7ce001f0-6f42-4c03-9c1e-06eb3ec391e5\tDuration: 1.56 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.56,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 104.97,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: dfd7eb4b-5cca-4b16-8e12-59156adda55f\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.84,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6e3ca334-d1bf-42a6-b18b-3be7f7879f33\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 103.15,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c6c55586-c5da-4fbe-a999-ef770488c915\tDuration: 1.83 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.83,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 104.04,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2281f5ce-abba-446a-b03d-14a725fe21a9\tDuration: 1.74 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.74,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 104.96,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 62b7f6a1-f20f-4152-9da9-9f4ff31db4d4\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.59,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e7b57270-1f7f-4e28-a023-4de5604dfede\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 124.91,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d53cb375-c769-4686-bd98-20eeccab98fc\tDuration: 1.67 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.67,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 114.4,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 864f75ea-5336-4dbb-ba5f-1b55a23a199d\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.9,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9107746c-2616-4909-abab-509b848a21ef\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 110.14,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aab2f2a1-9b7a-4b45-b21e-c2547de77f68\tDuration: 1.63 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.63,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 113.48,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aedcb04b-07c6-4501-bf46-4ccf2d89d787\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 108.8,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 42df9289-4828-4fbe-84e8-6605bdb1e10f\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 104.95,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a26e9975-e8e0-49fb-80eb-b9ca8a0b30cf\tDuration: 1.68 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.68,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 105.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0121ff94-a78e-490f-a640-ee783adb26bb\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 116.14,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4358e110-7473-41b4-b38f-6b519f016e7b\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 107.32,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ed8bf43d-f065-4b8e-9c6b-e20a01d03063\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 110.16,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8cd2e392-c87d-4e3e-bcf9-2ed2dee18439\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 102.9,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cb9db26a-f936-420a-bd3a-14654ecef7d3\tDuration: 1.66 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.66,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.51,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9ab7224c-2639-435e-b1d8-f3d238a15734\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.18,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e19b483d-8aa1-4f70-88ac-947edd768b00\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 113.71,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9c5c11e2-38b1-4de0-8747-3c3a4d875c3f\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 131.03,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 898b4a6f-bec2-4d89-99eb-446dbe12ea53\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 104.41,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ed5a3e02-ff71-47e3-9a35-97005b3f01a1\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 112.25,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 367c8125-276f-4b80-956f-3503c023f60b\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 102.12,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6148dac0-3b8f-4dbf-aec7-1fe2af7c3152\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 108.02,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4056ae70-df19-4ba2-95a6-3ede13d7951d\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 108.25,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 47d35817-36c0-47cb-885c-d5dc1bcd3a75\tDuration: 1.84 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.84,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 107.69,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3c6100ba-44df-4b51-b46c-6f0da3a51d11\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 107.13,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2cd7aac2-3947-46d7-bdc1-75fd597d9dac\tDuration: 1.90 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.9,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.18,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5fc04461-c182-4cd6-b344-07a01a770d7f\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 103.99,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 05759810-4baa-475d-879e-cb61396ded46\tDuration: 1.56 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.56,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 111.25,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c6807ae7-6b83-4e7d-831f-affe86d85a9a\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 110.27,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 91e7e987-9fa2-43b1-b57d-d85966e62785\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 105.56,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a11f11cd-f73b-4b40-8666-e16b083682d4\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 105.95,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: dd035c16-4d09-4aec-ba63-c8a3b520f4a1\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 104.53,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fe5f02ce-8cfa-4d90-8a45-11ff3a495b7c\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.32,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f0254bab-8b41-43fa-b520-f2e5dc5cf512\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 103.96,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 80e4aac0-9896-44fb-a10e-437a0a1eeabe\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 103.05,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d86c68c3-24fb-40d0-a1b8-81f101be9204\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.41,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 631efd2b-ae60-4e7a-9c37-02ff174e224a\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 106.76,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 899f5d7f-2bb5-4c67-ab79-14e3ba2ec64b\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 102.55,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e937764d-6910-47e4-bde5-23eb7541c0d0\tDuration: 1.75 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.75,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 107.07,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a2ae01c3-247a-4958-b2cf-758b11b86779\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 111.83,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0d454d34-161d-4bec-8eed-85d7b27b6d7f\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 107.69,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d72fd9d1-8342-43b1-90ff-5a595c3249f8\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 105.98,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7a9c4cb2-600d-4475-8d9a-907d6285edff\tDuration: 1.81 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.81,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 109.79,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c25301c1-465d-42c4-89c6-42c2bb155d31\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 114.45,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7ea87f8f-9157-4d95-a535-81183890e70e\tDuration: 1.65 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.65,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 104.1,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a9cac62a-6ee5-4a38-8dc6-d8c0efc67f2e\tDuration: 1.63 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.63,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 108.69,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 74eb1563-b1f4-4f1a-93b5-eec0f34710c8\tDuration: 1.61 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.61,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 105.01,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5eab30df-3247-414d-bdb5-7215ebfcb807\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 22 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 22.0,
+   "e2e": 107.42,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 77d92302-ea2c-472e-b3cd-cefbe4961b2a\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.42,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f69bd6ea-ccc7-4f0f-8a08-c5c350b49e32\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 102.16,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a302d713-2ecd-4baa-8c1e-330d4bedb2c2\tDuration: 1.65 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.65,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.29,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9056cb02-a482-40ca-916b-7db27f2c094e\tDuration: 2.34 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 2.34,
+   "facturada": 3.0,
+   "memoria": 23.0,
+   "e2e": 105.42,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6927fafe-70a8-4bbe-8dfc-f09fd575bd65\tDuration: 1.59 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.59,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 106.04,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 59a4b94a-b437-4587-829e-16da339e54c7\tDuration: 1.59 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.59,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 103.77,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aad487a4-e85e-409e-8f86-704a8dd692a8\tDuration: 1.67 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.67,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.46,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 55e546c6-ad5e-43a5-a235-f254422629c8\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 102.56,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c113541c-c72d-4a97-add4-518598b7b1ef\tDuration: 1.60 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.6,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 103.24,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 206d9f6d-a462-4e81-aaac-cda43b78c7e9\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 102.89,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 808706e6-b772-4e2e-a5be-2b6918410bc1\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 103.91,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 42316ae8-a65e-440e-b9dc-aecbf56a8e9a\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.15,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fad03ab0-6279-42fe-bc01-f1b7b3e70dd9\tDuration: 1.60 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.6,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 104.35,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 43d1507b-7e6a-4b2b-b4fb-e0674d09bc75\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 103.28,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 361c26e6-a30d-48be-a726-e6280f305a6e\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 102.96,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a7756252-a74d-4271-bc5e-13dabdb2547d\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 106.35,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 787a0c53-f26f-4683-85b8-e7ed64548f53\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 100.86,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 70483438-ab81-4140-8ec9-a7d4a7dffe46\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 103.52,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b21acf5a-94ce-417c-8abc-5a6c1bf76985\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 106.87,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 454ba3ce-9075-496c-9e7c-76ba7da02bcd\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 109.14,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bbb9d2d3-b213-42b7-89de-97c43f90a0fb\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 110.15,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1f55d802-44fa-450e-a330-bf8b0b65c988\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 100.46,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8235e736-a01e-4637-91cc-1d81028e6f43\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 115.94,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 53662432-e7a3-4321-a6fb-715d5aa45891\tDuration: 1.80 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.8,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 112.03,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6c3aed33-cb41-46ac-8d1f-e736df6180dd\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.48,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a5854223-a9b9-459f-9498-107e41a92e09\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 101.63,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: da658327-2cae-4326-8421-31e55741691a\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 105.26,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 97f3aa54-5921-4241-93ab-d944ad90e492\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.45,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0743d33a-5f37-458c-9403-0d415d6b57bf\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.05,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9a7239b2-d5c7-4d05-a3cc-9116998b2bd3\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 101.82,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 685a7958-9b61-4748-9e47-be64821d5b2c\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 114.65,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8b0655de-c9a5-415c-8a59-7e69a12fa15b\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 106.48,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 74539e16-6d51-49dc-8913-c0ec782b1082\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.77,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 720d63b8-3034-4693-927c-6eaaef892b98\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 105.39,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4ba3c446-883c-4def-ac47-5a3e67fc9f8d\tDuration: 1.95 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.95,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 114.38,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 71034b94-0649-47f1-a30a-c174619953be\tDuration: 1.70 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.7,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.15,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2bdd28ac-0fab-4537-a74b-6e605f7bb8e1\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 109.05,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ffbb9b76-323f-41fd-a9fd-807c47068e9e\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 103.79,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d867a451-a2d9-4587-88c5-34ca2bb68aba\tDuration: 1.81 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.81,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.05,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 21a3504a-69fa-41b1-af91-f3b80c06ba56\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 110.19,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 19c01aec-3e3b-4d46-a1ad-36b3d5974b41\tDuration: 1.65 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.65,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 105.1,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aef1c917-fc7d-4b1c-87ef-54e20560c482\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 104.7,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d2eda0a2-fddd-446a-abc3-d2ae5b4f76fb\tDuration: 1.63 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.63,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 110.62,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a066689b-abf8-4a4e-9a7b-a73234f7b747\tDuration: 1.91 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.91,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 113.27,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c514b374-5b0f-42ae-b4a4-2d1f651ae376\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 110.59,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5a5d1486-0bd6-4990-99fe-91db18ae5ca4\tDuration: 1.78 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.78,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 111.52,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: da8b4c85-5da3-4433-b632-a1c6cae332a0\tDuration: 1.79 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.79,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.04,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4993d60e-7745-4a8d-9614-ca78a35b4f9e\tDuration: 1.64 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.64,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 114.8,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4f5d5551-4224-430a-ac66-058b2f75db08\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.05,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d8d412f1-ab8a-4a48-a650-da135cd31075\tDuration: 1.61 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.61,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 112.68,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f26b1d35-74df-45ca-b380-8d20e51ff9a3\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 112.73,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 01de881c-7049-4bad-ac15-087c646b1c9c\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 104.32,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2a26726d-9245-43bb-9f4a-ad6044c44000\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.73,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 518da3d2-b810-4219-a179-4b548f8ca25d\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 111.67,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 56f8f7ba-eb29-41b2-b003-29535c9848fa\tDuration: 2.31 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 2.31,
+   "facturada": 3.0,
+   "memoria": 23.0,
+   "e2e": 115.42,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cf847856-af16-43cd-b263-8e5c75aa9082\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 110.34,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5515ec1b-952f-484d-94ac-4182573a1a03\tDuration: 1.96 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.96,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 108.73,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 24d9a9b6-3088-4695-bcb9-f463725b508a\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 104.23,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ed14a288-474a-465e-9071-b8698e89ee55\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 101.11,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 37590cb0-8434-477d-8f02-72c533476357\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 101.74,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d9f568e6-6184-48a4-8c68-cc7fbd6ebe1d\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 101.88,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a2bc21f0-d8a4-4cf5-91ca-96bc6677b51c\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 102.84,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b8cf86db-c45d-4b8d-8f45-7b2b6fb88b3e\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 105.69,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ce3a5530-1d0c-46b3-b3fa-2b4677d7c4d9\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 102.84,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1be1c7a4-719b-4c67-8cd8-9a6e5993b941\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.08,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ae678533-f421-4bc5-a132-d2f2cc0863ba\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 104.73,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 904c67a8-905a-49bd-8395-128c4bc89b7e\tDuration: 1.80 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.8,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 107.77,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e6bd8385-5714-4cfb-a167-d979da1d08bd\tDuration: 1.90 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.9,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 109.01,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8422192d-78cf-4a32-9be2-30247f84d9cc\tDuration: 1.76 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.76,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 111.05,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: eb17860a-8330-46a2-9440-e36bcc281a54\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 111.29,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9a74d1f7-2f28-4a34-9c26-64ee5bb87a8e\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 109.78,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1aa2588f-b1bd-4a0b-9932-d7ad9cb655e4\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 23 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 23.0,
+   "e2e": 104.09,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9c01c273-f0c3-4a15-a1f2-ecf575680d2f\tDuration: 24.17 ms\tBilled Duration: 25 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 24.17,
+   "facturada": 25.0,
+   "memoria": 24.0,
+   "e2e": 128.01,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8bd75c4d-7fcb-47d2-a4fd-01772202594a\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 108.81,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 79b93c61-38d8-417b-b4cf-ac241c9b622e\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 102.37,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 02760f9d-fd17-4bf4-957f-d5fb7b9729fc\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 101.55,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c2b154d2-27f3-409e-a2e9-4133efa88397\tDuration: 1.89 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.89,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 108.35,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7cef00e4-40b0-4b72-83ba-2960dc9b4277\tDuration: 2.43 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 2.43,
+   "facturada": 3.0,
+   "memoria": 24.0,
+   "e2e": 111.02,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d3799660-3d12-463e-bf89-a81ad7f158e0\tDuration: 1.64 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.64,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 108.08,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 70e19f40-e834-493c-87e3-bef1204ddcf7\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 103.6,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 07bc33cc-d776-4413-b2bf-e57be44d35f2\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 102.94,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9f744cad-cc11-4bf2-a659-816c2c8fe3cb\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 106.76,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 32295822-0821-453f-afd8-5a523021873a\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 103.62,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 13b14439-0ece-4a2b-ac84-d1273dade59f\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 110.88,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 56604a19-66dd-4e67-a4cc-10ba18870159\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 105.43,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ef324f3b-1e2f-46b0-bda6-0753958eaf6a\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 106.24,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2c8b6808-6889-4781-a09c-95fa790e7416\tDuration: 3.72 ms\tBilled Duration: 4 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 3.72,
+   "facturada": 4.0,
+   "memoria": 24.0,
+   "e2e": 120.09,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a46f517d-6a19-4b7b-bc67-5f70dae0876f\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 107.5,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5b132373-25e2-4040-b9d0-2f473ca30b08\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 106.63,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 632d66b8-14d3-4af2-ac7b-4f7dd57379ff\tDuration: 1.85 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.85,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 104.71,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f3b9ba97-1b68-490a-a377-9e5851e45890\tDuration: 2.17 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 2.17,
+   "facturada": 3.0,
+   "memoria": 24.0,
+   "e2e": 104.92,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bbac635e-d56a-4401-9691-14d461fe6bd5\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 107.84,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a56359fd-2265-46d5-8b0b-8fa2f2aff12a\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 103.03,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 78a08da5-3da6-46de-975e-bcd63b60a285\tDuration: 1.61 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.61,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 103.57,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 21a30be4-acec-4d02-879c-660b1d3ffcf8\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 105.56,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a8440950-8ed8-45da-805f-57d26c8529ea\tDuration: 2.10 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 2.1,
+   "facturada": 3.0,
+   "memoria": 24.0,
+   "e2e": 111.07,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1b7deef0-6c54-4d77-9e50-210cff816721\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 105.79,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4bcaacec-1e4f-4e95-8e81-08f51365ddd8\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 108.22,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 40731896-3640-424e-8e56-e163a1163486\tDuration: 5.26 ms\tBilled Duration: 6 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 5.26,
+   "facturada": 6.0,
+   "memoria": 24.0,
+   "e2e": 111.34,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4c827917-85f0-4a8c-abf9-febd4fb0f2fb\tDuration: 1.69 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.69,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 108.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4bd955a2-53f6-4d2e-85e5-38b4e5fc45f3\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 106.33,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5a3a5615-f177-42a9-a7e1-3a10352cd54c\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 104.35,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 90fb512d-0a12-4087-b440-d10325e1bae7\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 106.29,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: acad461c-26ff-41bf-9929-f513a8373c4a\tDuration: 2.59 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 2.59,
+   "facturada": 3.0,
+   "memoria": 24.0,
+   "e2e": 111.32,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 54608f9f-6038-45e5-b330-56dc83e8fc84\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 111.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 30341e02-5de4-4668-b9a5-d373e015c10f\tDuration: 2.39 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 2.39,
+   "facturada": 3.0,
+   "memoria": 24.0,
+   "e2e": 111.61,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2010a582-a75e-485d-9b97-bf0c86216ded\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 102.99,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 89d06ef9-c013-4337-ad61-83e8d0433f65\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 104.05,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c97639cc-20a5-4471-9de6-6184aa703cd9\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 105.25,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 07612cc7-155b-471c-a9aa-8044b45d6b05\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 112.99,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2da459d8-149e-452a-b6fe-0c99afddb586\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 104.22,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 74d70d70-e740-45c9-9686-7d781f1bed6c\tDuration: 1.67 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.67,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 130.83,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 51bf662b-8ae9-489b-a5dd-18ef8f7d5364\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 104.45,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b54da229-cd2a-4bc9-ad08-251fe539829f\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 102.1,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d622f437-b0ca-481a-86fb-2be9322b15aa\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 102.51,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2e96ac88-4f67-4d1f-9d1d-35d07b685a82\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 108.67,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6d34edd2-aaba-4c91-a590-70033a38b5d5\tDuration: 1.64 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.64,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 102.32,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e8fe495b-d1de-49f9-b1f4-a399fe40fb2e\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 24.0,
+   "e2e": 106.29,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  }
+ ],
+ "caliente_io": [
+  {
+   "linea": "REPORT RequestId: aa75fd27-6840-497d-9422-3a0dd5181a7a\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 210.53,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e267e78d-cc75-452f-a084-7ef221f08558\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.37,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 260ea7e9-69e8-4c35-9ec6-b8c8e882b8fe\tDuration: 101.41 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.41,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 211.77,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 355c9894-a9ae-48c6-9084-d7518d884e5e\tDuration: 99.55 ms\tBilled Duration: 100 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 99.55,
+   "facturada": 100.0,
+   "memoria": 24.0,
+   "e2e": 216.98,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d405f1c2-45c5-434e-8c88-ee970ebcaf52\tDuration: 101.68 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.68,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.62,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1eed4437-a996-4d45-bc0b-fc666b6723f5\tDuration: 101.58 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.58,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.81,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 90c0d888-740e-4371-943e-6158f75ddd65\tDuration: 101.42 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.42,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 211.69,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cb62eeba-6947-4d47-a8f6-8d33ac9082a8\tDuration: 101.56 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.56,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 210.01,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 26f52b75-a8f6-4520-a657-6a5f686776b2\tDuration: 101.41 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.41,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 210.44,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bd270a81-46bf-43bc-a5ca-ced6ef873f87\tDuration: 100.57 ms\tBilled Duration: 101 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 100.57,
+   "facturada": 101.0,
+   "memoria": 24.0,
+   "e2e": 208.55,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6e2a7382-7dcb-4ad2-87da-352d540eebdf\tDuration: 101.62 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.62,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.98,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9d285257-fe10-4cf3-bf51-3fcac74b7729\tDuration: 101.56 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.56,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.74,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4f12b4fa-fd75-42a7-8e2f-acfe4566ee36\tDuration: 101.48 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.48,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.62,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0e8f758d-def0-42f0-ba30-caffae487f85\tDuration: 101.99 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.99,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 222.31,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ec17c3c7-ecd7-4c87-b2f9-04d42b9cf7cf\tDuration: 101.40 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.4,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.46,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5d7f828c-a689-4a5d-b9fc-21cb20a4feee\tDuration: 101.47 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.47,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.32,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 11e6a51f-0238-447d-8e4c-5f5ee6f3b12c\tDuration: 101.77 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.77,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 209.47,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 68a072af-a558-47e6-a8c4-1b145db44f46\tDuration: 105.39 ms\tBilled Duration: 106 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 105.39,
+   "facturada": 106.0,
+   "memoria": 24.0,
+   "e2e": 216.09,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fdcc0900-7f23-4fd3-8371-b77db2aab0fc\tDuration: 101.42 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.42,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 215.09,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bd374343-b16a-46af-8b9a-322c67c5f9bb\tDuration: 101.50 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.5,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 210.77,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5b0607b0-216f-477e-ae56-4dfa05199d26\tDuration: 101.52 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.52,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.56,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8010e5ca-1137-4bb5-9a70-5d47c7482a2c\tDuration: 101.45 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.45,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 214.08,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 39912b36-2bc3-472c-87ca-2a3160f73b2b\tDuration: 101.33 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.33,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.55,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a8f9ec8f-5136-4311-b9f1-980a11bcc60b\tDuration: 101.36 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.36,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 211.81,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6b89818d-4675-4c5c-9bc8-cda54083c0d9\tDuration: 101.49 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.49,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.74,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5ef50469-4b3c-46c9-b32c-f74d022fd513\tDuration: 97.50 ms\tBilled Duration: 98 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 97.5,
+   "facturada": 98.0,
+   "memoria": 24.0,
+   "e2e": 202.71,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c87871c9-e3d8-4208-82ad-9861ddc21220\tDuration: 101.85 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.85,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 201.68,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a6f9c55f-4f59-4c54-a869-52bbe85d0c35\tDuration: 101.36 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.36,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 201.16,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5a7f87a1-c118-4570-be26-d72baa845dac\tDuration: 104.01 ms\tBilled Duration: 105 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 104.01,
+   "facturada": 105.0,
+   "memoria": 24.0,
+   "e2e": 212.96,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a479936f-893a-425e-86e1-2e6f9d73beed\tDuration: 101.45 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.45,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.34,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6cbd76ed-34a3-4bee-9841-0e40a1d4f0c1\tDuration: 101.36 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.36,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 208.94,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 85aa7581-da76-4aa3-ab1e-7ab5541df08b\tDuration: 101.39 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.39,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 209.54,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 060e4e7c-3d47-4856-b4e8-fd2ed607a29e\tDuration: 101.41 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.41,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.14,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9589591e-dbe4-4e0e-8f52-a3e0607e6972\tDuration: 101.46 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.46,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.44,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d78308e2-a339-417c-80f2-e4ddf75711c5\tDuration: 101.42 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.42,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 212.99,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 451ba780-67bd-4a14-8be9-4026b841178d\tDuration: 101.48 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.48,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.44,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e0f26f1c-7074-47ec-a960-03476c3aa0ca\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.51,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 75a20220-d207-4ca1-b362-1d04c4858144\tDuration: 101.43 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.43,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.13,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2a5b5cc9-722d-4c70-abfd-c344e0d5d2df\tDuration: 101.82 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.82,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 214.51,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f35fd27c-179a-4ea3-b76b-d91f792f8e74\tDuration: 101.31 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.31,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.11,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3f6a0c4c-0d0a-4309-bd48-9364fb1a8da7\tDuration: 101.33 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.33,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 208.21,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a7a97bda-527b-48d7-aed9-80bfe31e37b4\tDuration: 99.57 ms\tBilled Duration: 100 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 99.57,
+   "facturada": 100.0,
+   "memoria": 24.0,
+   "e2e": 204.63,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 69676d11-f916-402c-9259-f994c0154830\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 201.45,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 24211b07-afb8-412d-8728-8bb7f6aa7e66\tDuration: 101.45 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.45,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.12,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 34be6e31-a2fa-417b-ae28-d2ddd0e11499\tDuration: 101.53 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.53,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 201.8,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a0cdcd49-1805-4c3d-9cdb-630c74d371df\tDuration: 102.32 ms\tBilled Duration: 103 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 102.32,
+   "facturada": 103.0,
+   "memoria": 24.0,
+   "e2e": 204.8,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d2471767-a4bc-4694-ad81-2a15009dcfbd\tDuration: 101.31 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.31,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.03,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 060f4a9d-cdad-4491-8d93-0ff9885b054c\tDuration: 101.29 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.29,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.21,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: dad37932-4fe9-4660-bd64-58ba6b058163\tDuration: 101.49 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.49,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.48,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0ec3dad0-a686-4ca9-b84b-72e98e29dd4f\tDuration: 101.30 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.3,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.61,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 06d40ce9-08e3-4f2a-95d7-f1d27d03db6e\tDuration: 101.92 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.92,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 209.78,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f70de24e-85ed-4274-b78e-5cb6e1d27130\tDuration: 100.57 ms\tBilled Duration: 101 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 100.57,
+   "facturada": 101.0,
+   "memoria": 24.0,
+   "e2e": 206.99,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 90bac2ec-9513-4a03-bdcf-6d2005d51780\tDuration: 101.36 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.36,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.63,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 67702579-277f-4432-a228-1eb23294b5dd\tDuration: 101.44 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.44,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.4,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f60934a9-6b6d-4952-b643-b77a33842fe6\tDuration: 101.94 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.94,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.78,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a086fd27-0023-4a78-a2d4-fd0b13e760a2\tDuration: 101.50 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.5,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.51,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aa406a1f-3732-4df4-862b-68c8222b7dbd\tDuration: 101.59 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.59,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.26,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5e53e01b-41b5-4963-b6b8-5e3bca47f035\tDuration: 102.43 ms\tBilled Duration: 103 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 102.43,
+   "facturada": 103.0,
+   "memoria": 24.0,
+   "e2e": 207.0,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5d6d522a-1b52-4122-b565-168e52a114cb\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.03,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 76d8ff11-5439-4e9e-8237-06c162acae6e\tDuration: 101.36 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.36,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 380d8a21-756d-4a45-b028-b9a0b2e632cd\tDuration: 101.68 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.68,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.98,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b07d7d8b-fdee-4bf6-8f96-76ef07bc70de\tDuration: 101.43 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.43,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 200.53,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c39eabc3-7ee0-4b0a-b385-be5fb89ade75\tDuration: 101.38 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.38,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.74,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4f03bc1d-909c-4dc7-a71f-e8f8a57c7ae1\tDuration: 101.41 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.41,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 218.58,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7f0715ff-9bf7-4330-8d9e-dfac9cd50537\tDuration: 101.34 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.34,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.2,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 29e4f1cb-8d61-4a84-bcd3-f8989349eec6\tDuration: 101.31 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.31,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.03,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8b09350a-cbe8-4cad-ba06-4f8f4d84f6fd\tDuration: 101.39 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.39,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.19,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c04d9f7e-cb33-4ee0-970c-fff040b284a1\tDuration: 101.47 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.47,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.38,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 12441efa-9b2f-4cb3-9029-c880581d269f\tDuration: 101.44 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.44,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.93,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4e7d93a4-9328-4428-9ea8-fb3d0b546088\tDuration: 101.48 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.48,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.06,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: acf39819-ad25-470f-8bc3-b14cf307eb75\tDuration: 101.33 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.33,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.33,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b7caf6cd-e017-41cc-9726-cb852970eee9\tDuration: 101.74 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.74,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 213.16,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d72fa66d-3641-43a2-956c-80799537ebdb\tDuration: 101.60 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.6,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.62,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 45d03fee-2a28-49f6-a85e-1333a67a81b2\tDuration: 101.56 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.56,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.47,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0f988f22-686f-4b97-98ac-7d74dcde7f55\tDuration: 101.46 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.46,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.74,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bb759ba5-433f-4623-a4d3-89e6cb83c8c1\tDuration: 101.59 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.59,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.64,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 08afa8e5-a829-4426-ac28-fb5ffc913f37\tDuration: 98.08 ms\tBilled Duration: 99 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 98.08,
+   "facturada": 99.0,
+   "memoria": 24.0,
+   "e2e": 199.51,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7b95f645-15cd-4f1c-8d0f-1a19a06821a2\tDuration: 101.63 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.63,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.36,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2748ed1c-02bc-422c-bf97-66acf78be6d8\tDuration: 101.39 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.39,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.2,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9249173f-4ae3-46e5-a1ca-9ec1571bd29e\tDuration: 101.36 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.36,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.09,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4715abf9-7c66-41c6-b2ce-a89723766d1e\tDuration: 101.50 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.5,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.7,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0c357196-d161-4354-b8d4-34cf4fa90e37\tDuration: 101.28 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.28,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.01,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 18c845ca-9479-4c9d-b5a2-be896f47846c\tDuration: 101.41 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.41,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 212.42,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6c73ce9e-30ec-452d-9421-d275fe959ece\tDuration: 101.35 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.35,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.97,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 52766c74-c95c-4820-bff4-d25ba06be90f\tDuration: 101.38 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.38,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.71,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fe0c7230-ddc5-4e07-94d9-c430d08ab0d3\tDuration: 101.32 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.32,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 209.79,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: be4b6e3b-a7c2-4670-a5db-bcf7e7264fba\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 200.65,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 88526619-b8ea-4e31-8c87-dc47857cf0ee\tDuration: 101.44 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.44,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 200.63,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b72fb4e7-1c36-4dbe-8f78-e20fa26c1839\tDuration: 101.72 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.72,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.73,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f950ad39-026d-4abf-b3ee-f6005f7c7afe\tDuration: 101.49 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.49,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.46,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 947f0cb3-4071-4f40-8f93-4177a1969b73\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.96,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: de9b5efa-7112-410f-9372-78afa7b87ccc\tDuration: 101.40 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.4,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 206.91,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7d884d2f-dfa2-47e3-b432-d45a4ba2f481\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 219.0,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9287e1f9-fd75-4da6-a034-cad63c379d83\tDuration: 101.37 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.37,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.08,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4fa63045-5818-465b-9267-347ac7c7bdeb\tDuration: 101.63 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.63,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.3,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f829486e-8f95-47a0-9b12-2e3f37fc7805\tDuration: 101.42 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.42,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 204.11,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8c42a46c-24a5-4220-a3eb-59b78058775d\tDuration: 101.79 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.79,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 205.14,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f4874b3d-e899-4d24-be54-a5a4a3ef21ca\tDuration: 101.45 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.45,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 207.29,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 68f98eda-f059-4040-9fed-9b34368bf91e\tDuration: 101.62 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.62,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 202.35,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8172867f-c226-4f2d-9e23-534121c5c2ab\tDuration: 101.36 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 24 MB",
+   "duracion": 101.36,
+   "facturada": 102.0,
+   "memoria": 24.0,
+   "e2e": 203.16,
+   "respuesta": {
+    "lang": "dotnet-aot",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  }
+ ],
+ "caliente_cpu_con_arranque": 0,
+ "caliente_io_con_arranque": 0,
+ "fin": "2026-11-18T15:22:54+00:00",
+ "init_start": [
+  "INIT_START Runtime Version: provided:al2023.AmazonLinux2023.v228 Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:506c21b6706a88eca34819d9ab4d17b7861bbbdfd224524eb0cbe85a921582c2"
+ ]
+}

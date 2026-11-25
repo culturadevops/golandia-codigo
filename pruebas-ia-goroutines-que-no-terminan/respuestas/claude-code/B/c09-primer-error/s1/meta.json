@@ -1,0 +1,29 @@
+{
+ "segundos": 5.3,
+ "costo_usd": 0.019508599999999997,
+ "modelos": {
+  "claude-haiku-5-5": 22,
+  "claude-opus-5-5": 338
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "c09-primer-error",
+ "variante": "B",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Asegúrate de que no quede ninguna goroutine bloqueada cuando la función termine.\n\nTarea: Escribe la función ProcesarTodos(items []string, f func(string) error) error. Llama a f con cada item en paralelo, una goroutine por item. Devuelve el primer error en cuanto ocurra, sin esperar a las demás, o nil cuando todas terminen bien.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

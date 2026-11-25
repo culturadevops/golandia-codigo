@@ -1,0 +1,101 @@
+[
+  {
+    "version": "0",
+    "id": "evento-1",
+    "detail-type": "GuardDuty Finding",
+    "source": "aws.guardduty",
+    "account": "<CUENTA>",
+    "time": "2026-09-30T03:02:11Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "schemaVersion": "2.0",
+      "accountId": "<CUENTA>",
+      "region": "us-east-1",
+      "id": "hallazgo-portprobe",
+      "type": "Recon:EC2/PortProbeUnprotectedPort",
+      "severity": 2,
+      "title": "Unprotected port on EC2 instance i-ejemplo is being probed.",
+      "description": "EC2 instance has an unprotected port which is being probed by a known malicious host.",
+      "createdAt": "2026-09-29T21:10:00.000Z",
+      "updatedAt": "2026-09-30T03:02:00.000Z",
+      "resource": {"resourceType": "Instance"},
+      "service": {"resourceRole": "TARGET", "count": 41, "archived": false,
+                  "additionalInfo": {"sample": false}}
+    }
+  },
+  {
+    "version": "0",
+    "id": "evento-2",
+    "detail-type": "GuardDuty Finding",
+    "source": "aws.guardduty",
+    "account": "<CUENTA>",
+    "time": "2026-09-30T03:04:40Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "schemaVersion": "2.0",
+      "accountId": "<CUENTA>",
+      "region": "us-east-1",
+      "id": "hallazgo-exfiltracion",
+      "type": "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS",
+      "severity": 8,
+      "title": "Credentials for instance role used from an external IP address.",
+      "description": "Credentials created exclusively for an EC2 instance\nwere used from an IP address outside AWS.",
+      "createdAt": "2026-09-30T03:04:00.000Z",
+      "updatedAt": "2026-09-30T03:04:00.000Z",
+      "resource": {"resourceType": "AccessKey"},
+      "service": {"resourceRole": "TARGET", "count": 1, "archived": false,
+                  "additionalInfo": {"sample": false}}
+    }
+  },
+  {
+    "version": "0",
+    "id": "evento-3",
+    "detail-type": "GuardDuty Finding",
+    "source": "aws.guardduty",
+    "account": "<CUENTA>",
+    "time": "2026-09-30T03:05:02Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "schemaVersion": "2.0",
+      "accountId": "<CUENTA>",
+      "region": "us-east-1",
+      "id": "hallazgo-muestra",
+      "type": "CryptoCurrency:EC2/BitcoinTool.B!DNS",
+      "severity": 8,
+      "title": "[SAMPLE] EC2 instance is querying a domain name that is associated with Bitcoin-related activity.",
+      "description": "EC2 instance is querying a domain name associated with Bitcoin-related activity.",
+      "createdAt": "2026-09-30T03:05:00.000Z",
+      "updatedAt": "2026-09-30T03:05:00.000Z",
+      "resource": {"resourceType": "Instance"},
+      "service": {"resourceRole": "ACTOR", "count": 1, "archived": false,
+                  "additionalInfo": {"sample": true}}
+    }
+  },
+  {
+    "version": "0",
+    "id": "evento-4",
+    "detail-type": "GuardDuty Finding",
+    "source": "aws.guardduty",
+    "account": "<CUENTA>",
+    "time": "2026-09-30T03:06:30Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "schemaVersion": "2.0",
+      "accountId": "<CUENTA>",
+      "region": "us-east-1",
+      "id": "hallazgo-secuencia",
+      "type": "AttackSequence:IAM/CompromisedCredentials",
+      "severity": 9.2,
+      "title": "Potential credential compromise observed across multiple signals.",
+      "description": "A sequence of signals indicates compromised credentials.",
+      "createdAt": "2026-09-30T03:06:00.000Z",
+      "updatedAt": "2026-09-30T03:06:00.000Z",
+      "resource": {"resourceType": "AccessKey"},
+      "service": {"count": 1, "archived": false, "additionalInfo": {"sample": false}}
+    }
+  }
+]

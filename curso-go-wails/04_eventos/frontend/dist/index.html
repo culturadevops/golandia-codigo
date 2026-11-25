@@ -1,0 +1,11 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Lección 4</title>
+<style>body{font:20px ui-monospace,monospace;background:#0d1117;color:#e6edf3;padding:30px}</style>
+<body><h2 style="font-family:system-ui;color:#00ADD8">Progreso del trabajo</h2><p id="p">recibidos: 0 de 10</p>
+<script>
+let n = 0, de = '?'
+window.onload = async () => {
+  window.runtime.EventsOn('progreso', (etq, i) => { n++; de = etq; document.getElementById('p').innerText = `recibidos: ${n} de 10 · último: ${i}` })
+  window.runtime.EventsOn('fin', async etq => window.go.main.App.Reportar(`  trabajo «${etq}»: la ventana recibió ${n} de 10 avisos de progreso`))
+  await window.go.main.App.Listo()
+}
+</script></body></html>

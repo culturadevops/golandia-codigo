@@ -1,0 +1,8 @@
+# binarios y temporales
+*.exe
+*.test
+*.out
+cover.out
+SALIDA_parcial.md
+# lo que escribe el fuzzing al encontrar un fallo (las demos lo hacen en un temporal)
+07_fuzzing/testdata/fuzz/

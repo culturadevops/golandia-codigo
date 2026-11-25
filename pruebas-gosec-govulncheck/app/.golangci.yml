@@ -1,0 +1,14 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - gosec
+  settings:
+    gosec:
+      excludes:
+        - G104 # errores sin revisar: ya los ve errcheck
+
+issues:
+  max-same-issues: 0 # por defecto 3: esconde el resto de avisos con el mismo texto
+  uniq-by-line: false # por defecto true: si una línea tiene dos reglas, muestra solo una

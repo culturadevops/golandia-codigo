@@ -1,0 +1,4 @@
+FROM eclipse-temurin:25-jre
+COPY _bin/servidor.jar /app/servidor.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/app/servidor.jar"]

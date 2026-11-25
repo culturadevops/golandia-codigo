@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>contador</title>
+<body>
+<div id="n">0</div>
+<button onclick="sumar()">sumar</button>
+<ul id="lista"></ul>
+<script>
+  async function sumar() {
+    document.getElementById('n').innerText = await window.go.main.App.Sumar()
+  }
+  window.onload = async () => {
+    const items = await window.go.main.App.Items()
+    document.getElementById('lista').innerHTML = items.map(i => '<li>' + i + '</li>').join('')
+  }
+</script>
+</body>

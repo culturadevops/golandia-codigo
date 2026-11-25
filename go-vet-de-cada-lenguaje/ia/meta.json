@@ -1,0 +1,140 @@
+{
+  "prompts": {
+    "go": "Escribe un programa en Go (un solo archivo, package main, solo biblioteca estándar) que procese una lista de tareas en paralelo con goroutines, lleve la cuenta de las terminadas en un contador protegido con sync.Mutex, y devuelva los fallos envueltos con fmt.Errorf y %w usando un tipo de error propio. Responde solo con el código, en un único bloque de código.",
+    "python": "Escribe un módulo de Python 3.13 (un solo archivo, solo biblioteca estándar) con anotaciones de tipo en todas las funciones, que lea un archivo CSV de productos y precios y calcule el promedio, la mediana y el producto más caro. Responde solo con el código, en un único bloque de código.",
+    "ts": "Escribe un archivo TypeScript (Node 22, sin dependencias externas) que descargue una lista de usuarios con fetch desde una API JSON, filtre los que tienen rol admin y los guarde en un archivo con una función async. Responde solo con el código, en un único bloque de código.",
+    "bash": "Escribe un script de Bash que reciba un directorio de origen y uno de destino, comprima con gzip los archivos .log del origen modificados hace más de 7 días y los mueva al destino. Responde solo con el código, en un único bloque de código."
+  },
+  "ollama": {
+    "modelo": "qwen2.5:7b",
+    "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+    "temperature": 0.8,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "endpoint": "/api/generate"
+  },
+  "claude": {
+    "version": "2.1.312 (Claude Code)",
+    "flags": "-p --safe-mode --tools \"\" --output-format json --no-session-persistence",
+    "respuestas": [
+      {
+        "lang": "go",
+        "n": 1,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0619897
+      },
+      {
+        "lang": "go",
+        "n": 2,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.030951100000000002
+      },
+      {
+        "lang": "go",
+        "n": 3,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0291311
+      },
+      {
+        "lang": "python",
+        "n": 1,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0566638
+      },
+      {
+        "lang": "python",
+        "n": 2,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.05352590000000001
+      },
+      {
+        "lang": "python",
+        "n": 3,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0444154
+      },
+      {
+        "lang": "ts",
+        "n": 1,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.023014700000000003
+      },
+      {
+        "lang": "ts",
+        "n": 2,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0230476
+      },
+      {
+        "lang": "ts",
+        "n": 3,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0216836
+      },
+      {
+        "lang": "bash",
+        "n": 1,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0202667
+      },
+      {
+        "lang": "bash",
+        "n": 2,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.0217796
+      },
+      {
+        "lang": "bash",
+        "n": 3,
+        "modelos": [
+          "claude-haiku-5-5",
+          "claude-opus-5-5"
+        ],
+        "costo_usd": 0.022940099999999998
+      }
+    ]
+  }
+}

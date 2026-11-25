@@ -1,0 +1,16 @@
+{
+ "segundos": 3.29,
+ "eval_count": 198,
+ "opciones": {
+  "temperature": 0.7,
+  "seed": 4,
+  "num_predict": 2048
+ },
+ "backend": "ollama",
+ "modelo": "qwen2.5-coder:7b",
+ "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+ "tarea": "c12-consumidores",
+ "variante": "A",
+ "seed": 4,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Escribe la función Consumir(ctx context.Context, trabajos <-chan int, consumidores int, f func(int)) error. Arranca `consumidores` goroutines que leen de trabajos y llaman a f con cada uno, hasta que trabajos se cierre o ctx se cancele. Espera a que terminen todas. Devuelve ctx.Err() si se canceló, o nil si trabajos se cerró.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

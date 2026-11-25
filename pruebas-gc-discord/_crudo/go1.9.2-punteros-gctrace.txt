@@ -1,0 +1,17 @@
+gc 1 @0.005s 2%: 0.13+1.9+0.18 ms clock, 0.27+0/4.4/0.81+0.37 ms cpu, 4->4->3 MB, 5 MB goal, 24 P
+gc 2 @0.011s 4%: 0.082+1.0+0.13 ms clock, 0.91+0.052/5.5/3.0+1.5 ms cpu, 6->7->6 MB, 7 MB goal, 24 P
+gc 3 @0.018s 5%: 0.12+3.5+0.23 ms clock, 2.0+0.38/13/0.19+3.6 ms cpu, 12->12->11 MB, 13 MB goal, 24 P
+gc 4 @0.036s 5%: 0.077+13+0.17 ms clock, 1.4+0.15/25/0.27+3.0 ms cpu, 22->22->20 MB, 23 MB goal, 24 P
+gc 5 @0.081s 5%: 0.097+11+0.20 ms clock, 1.9+0.48/44/1.8+4.1 ms cpu, 40->40->37 MB, 41 MB goal, 24 P
+gc 6 @0.143s 4%: 0.088+12+0.15 ms clock, 1.9+0.90/44/83+3.3 ms cpu, 73->75->70 MB, 75 MB goal, 24 P
+gc 7 @0.251s 5%: 0.013+83+0.51 ms clock, 0.33+4.5/286/560+12 ms cpu, 136->139->128 MB, 140 MB goal, 24 P
+gc 8 @0.526s 6%: 0.011+232+0.26 ms clock, 0.28+0.054/688/1.1+6.3 ms cpu, 251->251->249 MB, 257 MB goal, 24 P
+gc 9 @1.041s 7%: 0.017+409+0.80 ms clock, 0.41+2.3/1423/4.5+19 ms cpu, 488->500->479 MB, 499 MB goal, 24 P
+gc 10 @1.996s 8%: 0.013+831+0.51 ms clock, 0.33+0/2938/3.9+12 ms cpu, 765->765->722 MB, 959 MB goal, 24 P (forced)
+LISTO go1.9.2 · modo=punteros · usuarios=3000000 · montón vivo=722 MiB · llenar la caché tardó 2.8 s
+GC forced
+gc 11 @122.828s 0%: 0.075+1409+1.2 ms clock, 1.8+0.51/7717/15628+29 ms cpu, 1153->1158->727 MB, 1444 MB goal, 24 P
+scvg0: inuse: 823, idle: 337, sys: 1161, released: 0, consumed: 1161 (MB)
+GC forced
+gc 12 @244.239s 0%: 0.092+1395+0.91 ms clock, 2.2+0/6615/15031+21 ms cpu, 1160->1165->727 MB, 1454 MB goal, 24 P
+scvg1: inuse: 926, idle: 241, sys: 1168, released: 0, consumed: 1168 (MB)

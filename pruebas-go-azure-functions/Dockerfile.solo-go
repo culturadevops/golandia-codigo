@@ -1,0 +1,10 @@
+# El MISMO handler sin el host de Functions (para ver lo que añade el host): FROM scratch.
+FROM golang:1.27.2 AS build
+WORKDIR /src
+COPY go/ ./
+RUN CGO_ENABLED=0 go build -trimpath -ldflags='-s -w' -o /out/handler .
+
+FROM scratch
+COPY --from=build /out/handler /handler
+ENV FUNCTIONS_CUSTOMHANDLER_PORT=8080
+ENTRYPOINT ["/handler"]

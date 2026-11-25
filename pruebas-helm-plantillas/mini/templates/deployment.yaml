@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-{{ .Values.nombre }}
+  labels:
+    app: {{ .Values.nombre | quote }}
+spec:
+  replicas: {{ .Values.replicas | default 1 }}
+  selector:
+    matchLabels:
+      app: {{ .Values.nombre | quote }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.nombre | quote }}
+    spec:
+      containers:
+        - name: {{ .Values.nombre }}
+          image: "{{ .Values.imagen.repo }}:{{ .Values.imagen.tag }}"
+          {{- with .Values.recursos }}
+          resources:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}

@@ -1,0 +1,15 @@
+# La versión del modelo de 7B, revisada por una persona:
+#  · binario estático (CGO_ENABLED=0), sin rutas de la máquina (-trimpath) y sin tabla de símbolos (-s -w);
+#  · imagen final distroless «static» con usuario sin privilegios: sin shell, sin gestor de paquetes;
+#  · versiones fijadas, nada de :latest.
+FROM golang:1.26.5-alpine AS build
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /servicio .
+
+FROM gcr.io/distroless/static-debian12:nonroot
+COPY --from=build /servicio /servicio
+EXPOSE 8080
+ENTRYPOINT ["/servicio"]

@@ -1,0 +1,11 @@
+$ vigia -modo sondeo -cada 10s -etiqueta golandia.autoheal=demo
+$ (cuelgo nginx: kill -STOP)
+   0.2s  gh-app    running  healthy    RestartCount=0  arrancó 14:45:37
+   8.8s  gh-app    running  unhealthy  RestartCount=0  arrancó 14:45:37
+  20.6s  gh-app    running  starting   RestartCount=0  arrancó 14:46:02
+  22.9s  gh-app    running  healthy    RestartCount=0  arrancó 14:46:02
+  23.0s  sano otra vez
+--- log del vigía (su reloj empieza cuando arranca él, ~2 s antes del cuelgue) ---
+    0.0s  vigía en modo sondeo · etiqueta golandia.autoheal=demo
+   20.0s  reinicio gh-app
+   22.4s  gh-app reiniciado (la llamada tardó 2.4s)

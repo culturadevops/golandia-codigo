@@ -1,0 +1,23 @@
+# los limits de CoreDNS, tal como los trae kind:
+registry.k8s.io/coredns/coredns:v1.12.1 {"limits":{"memory":"170Mi"},"requests":{"cpu":"100m","memory":"70Mi"}}
+
+# namespaceSelector que excluye kube-system y admision · borro el pod coredns-66bc5c9577-fgz8b de CoreDNS y espero 12 s
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+coredns   2/2     2            2           10m
+# namespaceSelector QUITADO · borro el pod coredns-66bc5c9577-mhv2q de CoreDNS y espero 12 s
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+coredns   1/2     1            1           11m
+eventos FailedCreate:
+Error creating: admission webhook "pods.admision.golandia" denied the request: admision: contenedor "coredns": falta limits.cpu
+
+# sin selector + Fail · bajo el webhook a 0 y lo vuelvo a subir a 1 · a los 15 s:
+NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+admision   0/1     0            0           8m47s
+eventos FailedCreate:
+Error creating: Internal error occurred: failed calling webhook "pods.admision.golandia": failed to call webhook: Post "https://admision.admision.svc:443/validar?timeout=10s": dial tcp 10.96.243.184:443: connect: connection refused
+
+# salida: borrar la ValidatingWebhookConfiguration · el webhook vuelve a estar listo en 7.9 s
+NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+admision   1/1     1            1           8m55s
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+coredns   2/2     2            2           12m

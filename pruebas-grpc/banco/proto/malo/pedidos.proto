@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pedidosmalo;   // ver la nota del v2: el nombre del paquete no viaja por el cable
+option go_package = "banco/pbmalo";
+
+// LO QUE NO SE HACE NUNCA: reutilizar un numero de campo para otra cosa.
+// El 2 era `string cliente`. Aqui alguien lo aprovecho para meter un entero.
+message Pedido {
+  int64  id        = 1;
+  int64  descuento = 2;  // <- ERA `string cliente`
+  string articulo  = 3;
+  int32  unidades  = 4;
+  int64  centimos  = 5;
+  string estado    = 6;
+  string creado    = 7;
+}

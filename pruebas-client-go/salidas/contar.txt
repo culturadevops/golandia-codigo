@@ -1,0 +1,7 @@
+$ kgo contar
+  18.0s  A · 100 List seguidos: 18.0s · 100 peticiones · 291.6 KB
+  38.3s  B · sondeo 1/s durante 20 s: 20 peticiones · 58.3 KB
+  38.3s  → WATCH /api/v1/namespaces/demo/pods?allowWatchBookmarks=true&resourceVersionMatch=NotOlderThan&sendInitialEvents=true&timeout=8m40s&timeoutSeconds=520&watch=true
+  38.3s  C · caché sincronizada en 4ms · peticiones: WATCH=1
+  38.3s  C · 100 List del lister: 19.709µs · 1 pods · peticiones nuevas: 0
+  58.3s  C · 20 s más, con escalado 1→3→1 de por medio: 19 eventos recibidos · lister ve 1 pods · peticiones totales: WATCH=1 · 50.5 KB

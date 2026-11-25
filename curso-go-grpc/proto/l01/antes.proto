@@ -1,0 +1,11 @@
+// Lección 1: el mensaje tal como lo tiene el cliente que nadie actualizó.
+syntax = "proto3";
+
+package l01.antes;
+
+option go_package = "curso-grpc/gen/l01/antes;antes";
+
+message Producto {
+  string sku = 1;
+  int32 stock = 2;
+}

@@ -1,0 +1,40 @@
+# PLANTILLA de CI para GitHub Actions. Es la estrategia del curso, en dos trabajos:
+#   rapidos     -> go test con -race y -shuffle, cobertura de tienda/ y resumen de -json
+#   integracion -> los de Postgres con testcontainers (los runners ubuntu traen Docker)
+# Ojo: esta plantilla NO se ha ejecutado en GitHub para el curso; lo ejecutado está en SALIDA.md.
+name: pruebas
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  rapidos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.27.2"
+      - name: vet (también lo que va con etiquetas)
+        run: go vet -tags "integracion trampa" ./...
+      - name: tests
+        # shell: bash pone «-o pipefail»: sin él, el código de salida sería el de resumen.
+        shell: bash
+        run: |
+          go test -json -race -shuffle=on -count=1 \
+            -coverpkg=./tienda/... -coverprofile=cover.out ./... \
+            | go run ./12_ci/resumen -md "$GITHUB_STEP_SUMMARY"
+      - name: cobertura
+        run: go tool cover -func=cover.out | tail -1
+
+  integracion:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.27.2"
+      - name: tests de integración
+        shell: bash
+        run: go test -json -tags integracion -count=1 ./... | go run ./12_ci/resumen -md "$GITHUB_STEP_SUMMARY"

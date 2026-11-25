@@ -1,0 +1,18 @@
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 50 -llegada | head -8
+s38      0     1.1s  s38 disco 41%
+s15      0     1.1s  s15 disco 41%
+s32      0     1.1s  s32 disco 41%
+s23      0     1.1s  s23 disco 41%
+s24      0     1.1s  s24 disco 41%
+s36      0     1.1s  s36 disco 41%
+s39      0     1.1s  s39 disco 41%
+s44      0     1.1s  s44 disco 41%
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 50 | head -8
+s01      0     1.1s  s01 disco 41%
+s02      0     1.1s  s02 disco 41%
+s03      0     1.1s  s03 disco 41%
+s04      0     1.1s  s04 disco 41%
+s05      0     1.1s  s05 disco 41%
+s06      0     1.1s  s06 disco 41%
+s07      0     1.1s  s07 disco 41%
+s08      0     1.1s  s08 disco 41%

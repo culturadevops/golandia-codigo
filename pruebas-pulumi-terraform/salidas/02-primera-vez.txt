@@ -1,0 +1,7 @@
+pulumi plugin install resource aws 7.51.1: 15.1 s
+  902M en disco
+terraform init (baja hashicorp/aws 6.70.0): 15.0 s
+  795M en disco
+go build en frío (GOCACHE vacío): 19.8 s
+go build en caliente:            0.1 s
+  binario del programa: 57096221 bytes

@@ -1,0 +1,29 @@
+{
+ "segundos": 3.56,
+ "costo_usd": 0.015666000000000003,
+ "modelos": {
+  "claude-haiku-5-5": 16,
+  "claude-opus-5-5": 161
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "t21-config-punteros",
+ "variante": "A",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Define el tipo Config struct { Timeout *int; Nombre *string } donde los punteros nil significan \"sin valor\". Escribe la función PorDefecto() Config que devuelve una Config con Timeout apuntando a 30 y Nombre apuntando a \"api\".\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

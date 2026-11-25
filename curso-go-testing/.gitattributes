@@ -1,0 +1,4 @@
+# Los golden files se comparan byte a byte: que git no les cambie los finales de línea
+# (core.autocrlf en Windows los convierte a CRLF y el test falla sin que se vea nada distinto).
+*.golden -text
+testdata/** -text

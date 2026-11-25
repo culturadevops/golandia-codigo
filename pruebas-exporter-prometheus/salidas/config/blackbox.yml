@@ -1,0 +1,15 @@
+modules:
+  tls_connect:
+    prober: tcp
+    timeout: 2s
+    tcp:
+      tls: true
+      tls_config:
+        ca_file: /compartido/ca.pem
+  tls_sin_verificar:
+    prober: tcp
+    timeout: 2s
+    tcp:
+      tls: true
+      tls_config:
+        insecure_skip_verify: true

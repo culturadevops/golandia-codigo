@@ -1,0 +1,3 @@
+FROM scratch
+COPY _bin/hey /hey
+ENTRYPOINT ["/hey"]

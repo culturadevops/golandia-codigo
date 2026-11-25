@@ -1,0 +1,28 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Lección 6</title>
+<style>body{font:17px ui-monospace,monospace;background:#0d1117;color:#e6edf3;padding:24px}td{padding:4px 14px;border-bottom:1px solid #30363d}.si{color:#7ee787}.no{color:#ff7b72}</style>
+<body><h2 style="font-family:system-ui;color:#00ADD8">¿Quién dibuja esta ventana?</h2><p id="ua"></p><table id="t"></table>
+<script>
+const pruebas = [
+  ['CSS: selector :has()', () => CSS.supports('selector(:has(a))')],
+  ['CSS: color-mix()', () => CSS.supports('color', 'color-mix(in srgb, red, blue)')],
+  ['CSS: text-wrap: balance', () => CSS.supports('text-wrap', 'balance')],
+  ['CSS: anidamiento (&)', () => CSS.supports('selector(&)')],
+  ['CSS: container queries', () => CSS.supports('container-type', 'inline-size')],
+  ['JS: Array.prototype.toSorted', () => typeof [].toSorted === 'function'],
+  ['JS: Object.groupBy', () => typeof Object.groupBy === 'function'],
+  ['API: dialog.showModal()', () => typeof document.createElement('dialog').showModal === 'function'],
+  ['API: Popover', () => 'popover' in HTMLElement.prototype],
+]
+window.onload = async () => {
+  const ua = navigator.userAgent
+  document.getElementById('ua').innerText = ua
+  await window.go.main.App.Reportar('  userAgent: ' + ua)
+  let html = ''
+  for (const [n, f] of pruebas) {
+    let r; try { r = f() } catch (e) { r = false }
+    html += `<tr><td>${n}</td><td class=${r ? 'si' : 'no'}>${r ? 'sí' : 'NO'}</td></tr>`
+    await window.go.main.App.Reportar(`  ${n.padEnd(32)} ${r ? 'sí' : 'NO'}`)
+  }
+  document.getElementById('t').innerHTML = html
+}
+</script></body></html>

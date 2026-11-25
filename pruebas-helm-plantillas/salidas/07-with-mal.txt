@@ -1,0 +1,7 @@
+$ helm template demo 07-scope  # with-mal.yaml + values.yaml
+Error: caso/templates/caso.yaml:8:22
+  executing "caso/templates/caso.yaml" at <.Release.Name>:
+    nil pointer evaluating interface {}.Name
+
+Use --debug flag to render out invalid YAML
+[código de salida: 1]

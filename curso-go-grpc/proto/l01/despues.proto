@@ -1,0 +1,12 @@
+// Lección 1: alguien borró `stock` y aprovechó su número para el precio.
+// protoc lo compila sin un aviso.
+syntax = "proto3";
+
+package l01.despues;
+
+option go_package = "curso-grpc/gen/l01/despues;despues";
+
+message Producto {
+  string sku = 1;
+  int32 precio_centavos = 2;
+}

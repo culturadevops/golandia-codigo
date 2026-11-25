@@ -1,0 +1,11 @@
+$ head -c 120 /root/.ssh/known_hosts; echo; grep -vc '^#' /root/.ssh/known_hosts
+# s01:22 SSH-2.0-OpenSSH_10.0
+s01 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDK6oFXxHSlmmYVnDRtddhEs1QZVOkUDjujWYd2ibOmp9sl/D
+150
+$ ssh -o BatchMode=yes admin@s01 revisar; echo "código de salida: $?"
+s01 disco 41%
+código de salida: 0
+$ ssh -o BatchMode=yes admin@s13 revisar; echo "código de salida: $?"
+s13 disco 97%
+revisar: disco casi lleno
+código de salida: 2

@@ -1,0 +1,99 @@
+(apply inicial: 2 notas creadas)
+
+$ curl -X DELETE http://127.0.0.1:8080/notas/1 
+HTTP 204
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.compras: Refreshing state... [id=1]
+notas_nota.ideas: Refreshing state... [id=2]
+
+Planning failed. Terraform encountered an error while generating this plan.
+
+
+Error: Leyendo la nota
+
+  with notas_nota.compras,
+  on main.tf line 9, in resource "notas_nota" "compras":
+   9: resource "notas_nota" "compras" {
+
+la nota no existe (404)
+[código de salida 1 · 0.08 s]
+--- llamadas a notas-api ---
+GET /notas/1 404
+GET /notas/2 200
+
+$ terraform destroy -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.ideas: Refreshing state... [id=2]
+notas_nota.compras: Refreshing state... [id=1]
+
+Error: Leyendo la nota
+
+  with notas_nota.compras,
+  on main.tf line 9, in resource "notas_nota" "compras":
+   9: resource "notas_nota" "compras" {
+
+la nota no existe (404)
+[código de salida 1 · 0.08 s]
+
+== la salida: sacarla del estado a mano ==
+
+$ terraform state rm notas_nota.compras
+Removed notas_nota.compras
+Successfully removed 1 resource instance(s).
+[código de salida 0 · 0.02 s]
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.ideas: Refreshing state... [id=2]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be created
+  + resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+      + creada    = (known after apply)
+      + etiquetas = [
+          + "casa",
+          + "zeta",
+        ]
+      + id        = (known after apply)
+      + texto     = "pan, café"
+      + titulo    = "Compras"
+      + version   = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+[código de salida 0 · 0.08 s]

@@ -1,0 +1,18 @@
+$ DATABASE_URL=postgres://app:…@g684-pg/tienda go run ./cmd/tres
+conectado: ping OK
+== (a) string en Go
+   Café molido 250 g        7400
+   Café soluble 200 g       9900
+   Café molido 500 g       12900
+== (b) .sql con go:embed
+   Café molido 250 g        7400
+   Café soluble 200 g       9900
+   Café molido 500 g       12900
+== (c) sqlc
+   Café molido 250 g        7400
+   Café soluble 200 g       9900
+   Café molido 500 g       12900
+[código de salida 0]
+$ go build -trimpath -ldflags='-s -w' -o /tmp/tres ./cmd/tres && stat -c '%s bytes' /tmp/tres
+10027271 bytes
+[código de salida 0]

@@ -1,0 +1,284 @@
+{
+ "version": null,
+ "invocaciones": [
+  {
+   "linea": "REPORT RequestId: ca7be90a-ac99-4a05-a8b6-f0c4a2801c0a\tDuration: 1607.17 ms\tBilled Duration: 1737 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 129.22 ms",
+   "duracion": 1607.17,
+   "facturada": 1737.0,
+   "memoria": 34.0,
+   "init": 129.22,
+   "e2e": 1961.81,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e77bcfbc-9d9b-4094-9c28-************\tDuration: 1616.68 ms\tBilled Duration: 1748 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 131.13 ms",
+   "duracion": 1616.68,
+   "facturada": 1748.0,
+   "memoria": 34.0,
+   "init": 131.13,
+   "e2e": 7915.93,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d54adcf2-dc42-4d79-95b8-e00373cff895\tDuration: 1595.20 ms\tBilled Duration: 1702 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 106.77 ms",
+   "duracion": 1595.2,
+   "facturada": 1702.0,
+   "memoria": 34.0,
+   "init": 106.77,
+   "e2e": 7407.8,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 933bbc57-c5f0-437a-a1fe-b3c5ca70d76b\tDuration: 1609.05 ms\tBilled Duration: 1720 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 110.00 ms",
+   "duracion": 1609.05,
+   "facturada": 1720.0,
+   "memoria": 34.0,
+   "init": 110.0,
+   "e2e": 7716.69,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f0e3204a-835f-46b0-8979-6066432e736c\tDuration: 1595.64 ms\tBilled Duration: 1709 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 113.10 ms",
+   "duracion": 1595.64,
+   "facturada": 1709.0,
+   "memoria": 34.0,
+   "init": 113.1,
+   "e2e": 7813.78,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7fb2c1a4-e5e3-493f-9e0d-f985f1a9a616\tDuration: 1595.41 ms\tBilled Duration: 1779 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 182.71 ms",
+   "duracion": 1595.41,
+   "facturada": 1779.0,
+   "memoria": 34.0,
+   "init": 182.71,
+   "e2e": 8593.5,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b463b8a1-18ca-4173-89de-edc859fe2043\tDuration: 1600.02 ms\tBilled Duration: 1707 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 106.37 ms",
+   "duracion": 1600.02,
+   "facturada": 1707.0,
+   "memoria": 34.0,
+   "init": 106.37,
+   "e2e": 8489.79,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f75c6c8c-db83-44f1-b868-d0abba259139\tDuration: 1609.66 ms\tBilled Duration: 1773 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 162.44 ms",
+   "duracion": 1609.66,
+   "facturada": 1773.0,
+   "memoria": 34.0,
+   "init": 162.44,
+   "e2e": 8537.53,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 92ca0fb9-84a7-4781-8692-b44b7566f54a\tDuration: 1598.34 ms\tBilled Duration: 1736 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 137.37 ms",
+   "duracion": 1598.34,
+   "facturada": 1736.0,
+   "memoria": 34.0,
+   "init": 137.37,
+   "e2e": 8627.19,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 40c5f8ab-346d-4f94-bb56-ac900be86bd5\tDuration: 1596.48 ms\tBilled Duration: 1711 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 113.68 ms",
+   "duracion": 1596.48,
+   "facturada": 1711.0,
+   "memoria": 34.0,
+   "init": 113.68,
+   "e2e": 8553.01,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7540c4d6-84ab-4575-87d9-3028dbcb3699\tDuration: 1607.15 ms\tBilled Duration: 1706 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 98.24 ms",
+   "duracion": 1607.15,
+   "facturada": 1706.0,
+   "memoria": 34.0,
+   "init": 98.24,
+   "e2e": 8525.37,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c481481d-92d3-46c1-a244-d1c295548ef5\tDuration: 1600.89 ms\tBilled Duration: 1724 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 122.87 ms",
+   "duracion": 1600.89,
+   "facturada": 1724.0,
+   "memoria": 34.0,
+   "init": 122.87,
+   "e2e": 8573.2,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b1986210-d794-46a1-a8b2-1c687f88bcf4\tDuration: 1618.83 ms\tBilled Duration: 1754 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 134.59 ms",
+   "duracion": 1618.83,
+   "facturada": 1754.0,
+   "memoria": 34.0,
+   "init": 134.59,
+   "e2e": 8590.02,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f719bea9-dbee-4851-890d-a58cec0de935\tDuration: 1591.12 ms\tBilled Duration: 1710 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 118.12 ms",
+   "duracion": 1591.12,
+   "facturada": 1710.0,
+   "memoria": 34.0,
+   "init": 118.12,
+   "e2e": 7813.13,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6850f84e-b4e2-45d1-ac68-e09c3e624707\tDuration: 1599.15 ms\tBilled Duration: 1600 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1599.15,
+   "facturada": 1600.0,
+   "memoria": 34.0,
+   "e2e": 6898.78,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e41efd63-81d4-468c-b1d3-f0c7614dd7b1\tDuration: 1600.17 ms\tBilled Duration: 1736 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 134.85 ms",
+   "duracion": 1600.17,
+   "facturada": 1736.0,
+   "memoria": 34.0,
+   "init": 134.85,
+   "e2e": 7457.74,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e45d9bab-9c39-4ebb-acc2-a419b26e5304\tDuration: 1595.46 ms\tBilled Duration: 1724 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 127.99 ms",
+   "duracion": 1595.46,
+   "facturada": 1724.0,
+   "memoria": 34.0,
+   "init": 127.99,
+   "e2e": 7254.03,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bb05496d-eb3b-4b54-afaf-531aadd4749c\tDuration: 1613.52 ms\tBilled Duration: 1741 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 126.89 ms",
+   "duracion": 1613.52,
+   "facturada": 1741.0,
+   "memoria": 34.0,
+   "init": 126.89,
+   "e2e": 8509.14,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 78089719-9178-438f-8fae-e7716c1b474b\tDuration: 1620.92 ms\tBilled Duration: 1746 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 124.47 ms",
+   "duracion": 1620.92,
+   "facturada": 1746.0,
+   "memoria": 34.0,
+   "init": 124.47,
+   "e2e": 8510.08,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3f8f4421-f02c-4ee7-9548-a82fa8fa7b5f\tDuration: 1593.11 ms\tBilled Duration: 1676 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB\tInit Duration: 82.28 ms",
+   "duracion": 1593.11,
+   "facturada": 1676.0,
+   "memoria": 34.0,
+   "init": 82.28,
+   "e2e": 8268.58,
+   "respuesta": {
+    "lang": "python",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  }
+ ]
+}

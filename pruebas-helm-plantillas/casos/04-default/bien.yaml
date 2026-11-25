@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: default
+spec:
+  replicas: {{ hasKey .Values "replicas" | ternary .Values.replicas 3 }}
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      automountServiceAccountToken: {{ hasKey .Values "montarToken" | ternary .Values.montarToken true }}
+      containers:
+        - name: web
+          image: nginx:1.30.5-alpine

@@ -1,0 +1,4 @@
+# Donde se compila: amd64, como tu PC. Con `file` (para ver qué binario sale) y el compilador de C para ARM64 (para cgo).
+FROM golang:1.27.2
+RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends file gcc-aarch64-linux-gnu libc6-dev-arm64-cross \
+ && rm -rf /var/lib/apt/lists/*

@@ -1,0 +1,16 @@
+{
+ "segundos": 1.19,
+ "eval_count": 96,
+ "opciones": {
+  "temperature": 0.7,
+  "seed": 2,
+  "num_predict": 2048
+ },
+ "backend": "ollama",
+ "modelo": "qwen2.5-coder:7b",
+ "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+ "tarea": "t11-sumar-csv",
+ "variante": "C",
+ "seed": 2,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Usa Go 1.27. Usa estos modismos cuando apliquen: `for i := range n` en vez del for de tres partes; las funciones min y max; `any` en vez de `interface{}`; strings.Cut y strings.CutPrefix; strings.FieldsSeq y strings.SplitSeq para recorrer; strings.Builder en vez de +=; maps.Copy y maps.Clone; slices.Contains, slices.ContainsFunc, slices.Sort y slices.Backward; errors.AsType[T](err) en vez de errors.As; new(valor) para punteros a un valor (Go 1.26); wg.Go(f) en vez de wg.Add(1) y wg.Done(); reflect.TypeFor[T](); y los tipos atomic.Int64 de sync/atomic.\n\nTarea: Escribe la función SumarCSV(s string) (int, error) que suma los números enteros separados por comas en s, por ejemplo \"1,2,3\" da 6. Si alguno no es un número, devuelve el error.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

@@ -1,0 +1,8 @@
+FROM denoland/deno:2.9.8 AS build
+WORKDIR /app
+COPY logica.ts servidor.ts /app/
+RUN deno compile --allow-net=0.0.0.0:8080 -o /servidor servidor.ts
+FROM gcr.io/distroless/cc-debian12@sha256:e5d81ddde149641e2a9ba55be4545bc125c67de07508b03ba4c22e6eb0ded5aa
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

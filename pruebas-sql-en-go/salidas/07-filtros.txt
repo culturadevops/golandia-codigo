@@ -1,0 +1,23 @@
+$ go run ./cmd/filtros
+== sin filtros
+   sql:  SELECT nombre FROM productos ORDER BY id
+   args: []
+   filas: 8
+== categoria
+   sql:  SELECT nombre FROM productos WHERE categoria = $1 ORDER BY id
+   args: [cafe]
+   filas: 5
+== categoria + precio + texto
+   sql:  SELECT nombre FROM productos WHERE categoria = $1 AND precio_centavos <= $2 AND nombre ILIKE $3 ORDER BY id
+   args: [cafe 15000 %molido%]
+   filas: 2
+
+== entrada del usuario: ' OR '1'='1
+-- concatenado
+   sql:   SELECT nombre FROM productos WHERE categoria = '' OR '1'='1' ORDER BY id
+   filas: 8  err: <nil>
+-- placeholder
+   sql:   SELECT nombre FROM productos WHERE categoria = $1 ORDER BY id
+   args:  [' OR '1'='1]
+   filas: 0  err: <nil>
+[código de salida 0]

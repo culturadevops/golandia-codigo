@@ -1,0 +1,42 @@
+=== linux/amd64 · go go1.26.5 ===
+
+-- 1 · RUTAS --
+  filepath.Separator:                /
+  filepath.Join(a,b,c):              datos/informes/2026.csv
+  path.Join(a,b,c)  (¡URLs!):        datos/informes/2026.csv
+  ¿dan lo mismo?:                    true
+  filepath.Abs("x"):                 /tmp/w/x
+  VolumeName del actual:             
+  ¿abre con barra inclinada?:        sí
+  ¿abre go.mod escrito GO.MOD?:      no: open ./GO.MOD: no such file or directory
+  crear una ruta de ~300 caracteres: sí, 301 caracteres
+
+-- 2 · LA VARIABLE DE DIRECTORIOS --
+  os.PathListSeparator:              :
+  cuántos directorios trae:          9
+  el primero:                        /usr/local/go/bin
+
+-- 3 · SALTOS DE LÍNEA --
+  escribí 8 bytes, leí:              8
+  ¿hay retorno de carro?:            false
+  os.TempDir():                      /tmp
+
+-- 4 · PERMISOS --
+  pedí 0600, Stat dice:              -rw-------
+  ¿es de solo lectura?:              false
+  os.Getuid():                       0
+
+-- 5 · /proc, DE DONDE SALE TODO LO QUE SE ENSEÑA --
+  ¿existe /proc/self/status?:        true
+
+-- 6 · EJECUTAR OTRO PROGRAMA --
+  LookPath(go):                      /usr/local/go/bin/go
+  LookPath(ls):                      /bin/ls
+  LookPath(cmd):                     no está
+  LookPath(sh):                      /bin/sh
+  nombre de mi binario:              gowin
+  ¿acaba en .exe?:                   false
+
+-- 7 · SEÑALES --
+  Signal(0) a mí mismo:              aceptada (la señal 0 no hace nada: solo comprueba)
+  y SIGUSR1 / SIGHUP:                no existen en Windows: van en un fichero _linux.go

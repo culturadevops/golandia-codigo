@@ -1,0 +1,31 @@
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -inseguro -hosts s07.txt; echo "código de salida: $?"
+s07      0     1.1s  s07 disco 12% · todo bien (soy el impostor)
+1 hosts · 1 ok · 0 con código distinto de 0 · 0 sin respuesta · 1.1s en total
+código de salida: 0
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s07.txt; echo "código de salida: $?"
+s07    ERR     0.0s  ssh: handshake failed: knownhosts: key mismatch
+1 hosts · 0 ok · 0 con código distinto de 0 · 1 sin respuesta · 0.0s en total
+código de salida: 2
+$ ssh -o BatchMode=yes admin@s07 revisar | head -3; echo "código de salida: ${PIPESTATUS[0]}"
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:WfVSHfP6Pp71OYlnDcmAp7jajOcCA9dVV9uhALsuz2Q.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:49
+  remove with:
+  ssh-keygen -f '/root/.ssh/known_hosts' -R 's07'
+Host key for s07 has changed and you have requested strict checking.
+Host key verification failed.
+código de salida: 255
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts_vacio -hosts s01.txt
+s01    ERR     0.0s  ssh: handshake failed: knownhosts: key is unknown
+1 hosts · 0 ok · 0 con código distinto de 0 · 1 sin respuesta · 0.0s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s07.txt
+s07      0     1.1s  s07 disco 41%
+1 hosts · 1 ok · 0 con código distinto de 0 · 0 sin respuesta · 1.1s en total

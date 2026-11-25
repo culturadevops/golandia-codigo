@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quote
+spec:
+  containers:
+    - name: web
+      image: nginx:1.30.5-alpine
+      env:
+        - name: PUERTO
+          value: {{ .Values.puerto | quote }}
+        - name: DEBUG
+          value: {{ .Values.debug | quote }}
+        - name: VERSION
+          value: {{ .Values.version | quote }}

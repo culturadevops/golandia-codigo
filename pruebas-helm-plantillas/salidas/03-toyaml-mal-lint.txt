@@ -1,0 +1,6 @@
+$ helm lint 03-toyaml  # mal.yaml
+==> Linting /chart
+[INFO] Chart.yaml: icon is recommended
+
+1 chart(s) linted, 0 chart(s) failed
+[código de salida: 0]

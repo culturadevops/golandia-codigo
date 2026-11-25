@@ -1,0 +1,25 @@
+== go version ==
+go version go1.27.1 linux/amd64
+== node version (mismo motor que usa Chrome) ==
+v20.19.2
+
+== 1. compilar Go a WebAssembly ==
+-rwxr-xr-x 1 root root 2018021 Sep 12 17:15 main.wasm
+
+== 2. el mismo codigo, compilado normal para linux (esto no deberia andar) ==
+package command-line-arguments
+	imports syscall/js: build constraints exclude all Go files in /usr/local/go/src/syscall/js
+(fallo esperado: syscall/js no existe fuera de js/wasm)
+
+== 3. correr el .wasm en un motor de JavaScript, sin ningun servidor ==
+wasm de Go listo: sumarEnGo y esPrimoEnGo registradas
+sumarEnGo(15, 27) = 42
+esPrimoEnGo(17) = true
+esPrimoEnGo(18) = false
+
+== 4. lo mismo, pero con el binario reducido (sin simbolos de depuracion) ==
+-rwxr-xr-x 1 root root 1980163 Sep 12 17:15 main-reducido.wasm
+
+== 5. lo que de verdad viaja por la red: comprimido ==
+-rw-r--r-- 1 root root 589424 Sep 12 17:15 main-reducido.wasm.gz
+-rw-r--r-- 1 root root 602763 Sep 12 17:15 main.wasm.gz

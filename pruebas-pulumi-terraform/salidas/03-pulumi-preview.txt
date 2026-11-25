@@ -1,0 +1,32 @@
+Previewing update (prod):
+Downloading plugin aws-7.51.1: starting
+@ previewing update...............
+Downloading plugin aws-7.51.1: done
+Installing plugin aws-7.51.1: starting
+@ previewing update.....
+Installing plugin aws-7.51.1: done
+
+    pulumi:pulumi:Stack g680-prod  Compiling the program ...
+@ previewing update.....
+    pulumi:pulumi:Stack g680-prod  Finished compiling
+ +  pulumi:pulumi:Stack g680-prod create Finished compiling
+ +  aws:s3:Bucket datos create 
+ +  aws:sqs:Queue cola-avisos create 
+ +  aws:sqs:Queue cola-pedidos create 
+ +  aws:sqs:Queue cola-pagos create 
+ +  aws:ssm:Parameter clave create 
+ +  aws:s3:BucketVersioning datos create 
+ +  aws:iam:Policy app create 
+ +  pulumi:pulumi:Stack g680-prod create 
+Outputs:
+    bucket  : "g680-datos-prod"
+    colas   : {
+        avisos : [unknown]
+        pagos  : [unknown]
+        pedidos: [unknown]
+    }
+    politica: [unknown]
+
+Resources:
+    + 8 to create
+

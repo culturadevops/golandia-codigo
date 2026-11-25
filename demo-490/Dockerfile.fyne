@@ -1,0 +1,3 @@
+# Imagen para compilar apps de Fyne en Linux: Go oficial + los paquetes que pide la guía oficial de Fyne para Debian/Ubuntu (gcc, OpenGL, X11, Wayland; usa cgo).
+FROM golang:1.27.2
+RUN apt-get update && apt-get install -y --no-install-recommends gcc libgl1-mesa-dev xorg-dev libwayland-dev libxkbcommon-dev && rm -rf /var/lib/apt/lists/*

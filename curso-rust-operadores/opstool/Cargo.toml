@@ -1,0 +1,52 @@
+[package]
+name = "opstool"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libc = "=0.2.191"
+regex = "=1.13.1"
+walkdir = "=2.5.0"
+
+[[bin]]
+name = "ops-du"
+path = "src/bin/du.rs"
+[[bin]]
+name = "ops-grandes"
+path = "src/bin/grandes.rs"
+[[bin]]
+name = "ops-libre"
+path = "src/bin/libre.rs"
+[[bin]]
+name = "ops-borrados"
+path = "src/bin/borrados.rs"
+[[bin]]
+name = "ops-mem"
+path = "src/bin/mem.rs"
+[[bin]]
+name = "ops-comer"
+path = "src/bin/comer.rs"
+[[bin]]
+name = "ops-cpu"
+path = "src/bin/cpu.rs"
+[[bin]]
+name = "ops-quemar"
+path = "src/bin/quemar.rs"
+[[bin]]
+name = "ops-ps"
+path = "src/bin/ps.rs"
+[[bin]]
+name = "ops-matar"
+path = "src/bin/matar.rs"
+[[bin]]
+name = "ops-seguir"
+path = "src/bin/seguir.rs"
+[[bin]]
+name = "ops-filtrar"
+path = "src/bin/filtrar.rs"
+[[bin]]
+name = "ops-capturar"
+path = "src/bin/capturar.rs"
+[[bin]]
+name = "ops-guardia"
+path = "src/bin/guardia.rs"

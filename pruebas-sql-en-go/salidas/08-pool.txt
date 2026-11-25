@@ -1,0 +1,45 @@
+$ ./pool olvido   (go build ./cmd/pool)
+modo olvido · pool de 4 conexiones
+  consulta 1  0.002s  en uso=1  Café molido 500 g
+  consulta 2  0.007s  en uso=2  Café molido 500 g
+  consulta 3  0.004s  en uso=3  Café molido 500 g
+  consulta 4  0.004s  en uso=4  Café molido 500 g
+  consulta 5  sigue esperando a los 5 s  en uso=4  esperando=1
+[código de salida 3]
+(reloj del contenedor: 5.4 s)
+$ ./pool todo   (go build ./cmd/pool)
+modo todo · pool de 4 conexiones
+  consulta 1  0.002s  en uso=0  Café molido 500 g
+  consulta 2  0.000s  en uso=0  Café molido 500 g
+  consulta 3  0.000s  en uso=0  Café molido 500 g
+  consulta 4  0.000s  en uso=0  Café molido 500 g
+  consulta 5  0.000s  en uso=0  Café molido 500 g
+  consulta 6  0.000s  en uso=0  Café molido 500 g
+[código de salida 0]
+(reloj del contenedor: 0.4 s)
+$ ./pool ctx   (go build ./cmd/pool)
+modo ctx · pool de 4 conexiones
+  consulta 1  0.002s  en uso=1  Café molido 500 g
+  consulta 2  0.005s  en uso=1  Café molido 500 g
+  consulta 3  0.000s  en uso=1  Café molido 500 g
+  consulta 4  0.000s  en uso=1  Café molido 500 g
+  consulta 5  0.000s  en uso=1  Café molido 500 g
+  consulta 6  0.000s  en uso=1  Café molido 500 g
+[código de salida 0]
+(reloj del contenedor: 0.4 s)
+$ ./pool bien   (go build ./cmd/pool)
+modo bien · pool de 4 conexiones
+  consulta 1  0.002s  en uso=0  Café molido 500 g
+  consulta 2  0.000s  en uso=0  Café molido 500 g
+  consulta 3  0.000s  en uso=0  Café molido 500 g
+  consulta 4  0.000s  en uso=0  Café molido 500 g
+  consulta 5  0.000s  en uso=0  Café molido 500 g
+  consulta 6  0.000s  en uso=0  Café molido 500 g
+[código de salida 0]
+(reloj del contenedor: 0.4 s)
+$ SELECT count(*) FROM pg_stat_activity WHERE usename = 'app'
+ count 
+-------
+     0
+(1 row)
+[código de salida 0]

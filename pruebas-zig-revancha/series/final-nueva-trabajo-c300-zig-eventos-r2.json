@@ -1,0 +1,252 @@
+{
+ "contenedor": "vzr-srv",
+ "intervalo_s": 0.5,
+ "resumen": {
+  "muestras": 32,
+  "cpu_media": 195.6,
+  "cpu_max": 203.2,
+  "mem_max_mib": 11.5,
+  "hilos_max": 2,
+  "frenadas": 16
+ },
+ "serie": [
+  {
+   "t": 0.0,
+   "cpu_pct": null,
+   "mem_mib": 6.02,
+   "hilos": 2,
+   "frenadas": 0
+  },
+  {
+   "t": 0.5,
+   "cpu_pct": 125.8,
+   "mem_mib": 10.65,
+   "hilos": 2,
+   "frenadas": 1
+  },
+  {
+   "t": 1.01,
+   "cpu_pct": 198.6,
+   "mem_mib": 10.43,
+   "hilos": 2,
+   "frenadas": 4
+  },
+  {
+   "t": 1.51,
+   "cpu_pct": 201.6,
+   "mem_mib": 10.2,
+   "hilos": 2,
+   "frenadas": 4
+  },
+  {
+   "t": 2.02,
+   "cpu_pct": 197.6,
+   "mem_mib": 11.28,
+   "hilos": 2,
+   "frenadas": 4
+  },
+  {
+   "t": 2.52,
+   "cpu_pct": 201.6,
+   "mem_mib": 9.84,
+   "hilos": 2,
+   "frenadas": 4
+  },
+  {
+   "t": 3.03,
+   "cpu_pct": 197.6,
+   "mem_mib": 11.2,
+   "hilos": 2,
+   "frenadas": 4
+  },
+  {
+   "t": 3.53,
+   "cpu_pct": 201.6,
+   "mem_mib": 10.08,
+   "hilos": 2,
+   "frenadas": 4
+  },
+  {
+   "t": 4.03,
+   "cpu_pct": 203.2,
+   "mem_mib": 9.77,
+   "hilos": 2,
+   "frenadas": 4
+  },
+  {
+   "t": 4.54,
+   "cpu_pct": 197.3,
+   "mem_mib": 10.61,
+   "hilos": 2,
+   "frenadas": 6
+  },
+  {
+   "t": 5.04,
+   "cpu_pct": 201.2,
+   "mem_mib": 9.95,
+   "hilos": 2,
+   "frenadas": 8
+  },
+  {
+   "t": 5.55,
+   "cpu_pct": 197.6,
+   "mem_mib": 10.52,
+   "hilos": 2,
+   "frenadas": 8
+  },
+  {
+   "t": 6.05,
+   "cpu_pct": 201.6,
+   "mem_mib": 10.59,
+   "hilos": 2,
+   "frenadas": 8
+  },
+  {
+   "t": 6.56,
+   "cpu_pct": 197.6,
+   "mem_mib": 10.41,
+   "hilos": 2,
+   "frenadas": 8
+  },
+  {
+   "t": 7.06,
+   "cpu_pct": 201.6,
+   "mem_mib": 9.48,
+   "hilos": 2,
+   "frenadas": 8
+  },
+  {
+   "t": 7.57,
+   "cpu_pct": 197.6,
+   "mem_mib": 9.34,
+   "hilos": 2,
+   "frenadas": 8
+  },
+  {
+   "t": 8.07,
+   "cpu_pct": 203.2,
+   "mem_mib": 11.5,
+   "hilos": 2,
+   "frenadas": 8
+  },
+  {
+   "t": 8.58,
+   "cpu_pct": 197.3,
+   "mem_mib": 11.1,
+   "hilos": 2,
+   "frenadas": 10
+  },
+  {
+   "t": 9.08,
+   "cpu_pct": 201.2,
+   "mem_mib": 10.2,
+   "hilos": 2,
+   "frenadas": 12
+  },
+  {
+   "t": 9.59,
+   "cpu_pct": 197.6,
+   "mem_mib": 10.3,
+   "hilos": 2,
+   "frenadas": 12
+  },
+  {
+   "t": 10.09,
+   "cpu_pct": 201.6,
+   "mem_mib": 10.88,
+   "hilos": 2,
+   "frenadas": 12
+  },
+  {
+   "t": 10.59,
+   "cpu_pct": 201.6,
+   "mem_mib": 10.43,
+   "hilos": 2,
+   "frenadas": 12
+  },
+  {
+   "t": 11.1,
+   "cpu_pct": 197.6,
+   "mem_mib": 10.01,
+   "hilos": 2,
+   "frenadas": 12
+  },
+  {
+   "t": 11.6,
+   "cpu_pct": 203.2,
+   "mem_mib": 10.15,
+   "hilos": 2,
+   "frenadas": 12
+  },
+  {
+   "t": 12.11,
+   "cpu_pct": 197.6,
+   "mem_mib": 10.26,
+   "hilos": 2,
+   "frenadas": 12
+  },
+  {
+   "t": 12.61,
+   "cpu_pct": 201.2,
+   "mem_mib": 11.36,
+   "hilos": 2,
+   "frenadas": 14
+  },
+  {
+   "t": 13.12,
+   "cpu_pct": 197.3,
+   "mem_mib": 11.46,
+   "hilos": 2,
+   "frenadas": 16
+  },
+  {
+   "t": 13.62,
+   "cpu_pct": 201.6,
+   "mem_mib": 10.79,
+   "hilos": 2,
+   "frenadas": 16
+  },
+  {
+   "t": 14.13,
+   "cpu_pct": 197.6,
+   "mem_mib": 10.44,
+   "hilos": 2,
+   "frenadas": 16
+  },
+  {
+   "t": 14.63,
+   "cpu_pct": 201.6,
+   "mem_mib": 10.48,
+   "hilos": 2,
+   "frenadas": 16
+  },
+  {
+   "t": 15.13,
+   "cpu_pct": 201.6,
+   "mem_mib": 11.29,
+   "hilos": 2,
+   "frenadas": 16
+  },
+  {
+   "t": 15.64,
+   "cpu_pct": 139.5,
+   "mem_mib": 9.96,
+   "hilos": 2,
+   "frenadas": 16
+  }
+ ],
+ "variante": "zig-eventos",
+ "ruta": "trabajo",
+ "conexiones": 300,
+ "keepalive": false,
+ "hey": {
+  "rps": 962.6463,
+  "p50": 309.40000000000003,
+  "p99": 451.6,
+  "ok": 14832,
+  "no200": 0,
+  "errores": 0,
+  "total_s": 15.4075,
+  "rps_ok": 988.8
+ }
+}

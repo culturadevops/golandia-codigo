@@ -1,0 +1,9 @@
+FROM gradle:9.9.1-jdk21 AS build
+WORKDIR /src
+COPY settings.gradle.kts build.gradle.kts gradle.properties /src/
+COPY src /src/src
+RUN gradle --no-daemon -q jarCompleto && cp build/libs/servidor.jar /servidor.jar
+FROM eclipse-temurin:25-jre
+COPY --from=build /servidor.jar /app/servidor.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/app/servidor.jar"]

@@ -1,0 +1,19 @@
+$ go test -count=1 ./consultas/   (sin TEST_DATABASE_URL)
+=== RUN   TestLasTresFormasDanLoMismo
+    consultas_test.go:53: sin TEST_DATABASE_URL
+--- SKIP: TestLasTresFormasDanLoMismo (0.00s)
+PASS
+ok  	tienda/consultas	0.004s
+[código de salida 0]
+$ TEST_DATABASE_URL=postgres://migrador:…@g684-pg/tienda_test go test -count=1 -v ./consultas/
+=== RUN   TestLasTresFormasDanLoMismo
+--- PASS: TestLasTresFormasDanLoMismo (0.03s)
+PASS
+ok  	tienda/consultas	0.031s
+[código de salida 0]
+$ psql -U app -d tienda: SELECT count(*) FROM productos   (la base de la app, intacta)
+ count 
+-------
+     8
+(1 row)
+[código de salida 0]

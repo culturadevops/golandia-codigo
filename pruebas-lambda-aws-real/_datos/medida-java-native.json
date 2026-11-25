@@ -1,0 +1,4333 @@
+{
+ "funcion": {
+  "CodeSize": 5975390,
+  "Runtime": "provided.al2023"
+ },
+ "memoria_mb": 512,
+ "arquitectura": "x86_64",
+ "comprobacion": [
+  {
+   "carga": {
+    "n": 200000,
+    "io_ms": 0
+   },
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "carga": {
+    "n": 1000,
+    "io_ms": 0
+   },
+   "respuesta": {
+    "lang": "java-native",
+    "n": 1000,
+    "suma": 333833500,
+    "io_ms": 0
+   }
+  },
+  {
+   "carga": {
+    "n": 0,
+    "io_ms": 100
+   },
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  }
+ ],
+ "frios": [
+  {
+   "linea": "REPORT RequestId: c10c63e5-a4b4-42c6-b4c1-fc5d65dc8989\tDuration: 5.45 ms\tBilled Duration: 128 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 121.90 ms",
+   "duracion": 5.45,
+   "facturada": 128.0,
+   "memoria": 26.0,
+   "init": 121.9,
+   "e2e": 373.18,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 239d5d32-3f75-4268-91d9-fd25b23fd5f0\tDuration: 4.92 ms\tBilled Duration: 111 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 106.04 ms",
+   "duracion": 4.92,
+   "facturada": 111.0,
+   "memoria": 26.0,
+   "init": 106.04,
+   "e2e": 390.61,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 321e89d4-6cd4-49c4-b7d2-3b6de711253d\tDuration: 5.23 ms\tBilled Duration: 119 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 113.06 ms",
+   "duracion": 5.23,
+   "facturada": 119.0,
+   "memoria": 26.0,
+   "init": 113.06,
+   "e2e": 366.45,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 63c2331e-aa68-4f78-9493-786c9dea643c\tDuration: 5.23 ms\tBilled Duration: 125 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 119.45 ms",
+   "duracion": 5.23,
+   "facturada": 125.0,
+   "memoria": 26.0,
+   "init": 119.45,
+   "e2e": 450.32,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 886e2a33-6fef-4c64-927f-061b05b4cfd5\tDuration: 5.43 ms\tBilled Duration: 170 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 164.15 ms",
+   "duracion": 5.43,
+   "facturada": 170.0,
+   "memoria": 26.0,
+   "init": 164.15,
+   "e2e": 444.73,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: a8487ccd-ec3a-4848-b39b-900e7a771c2c\tDuration: 4.06 ms\tBilled Duration: 92 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 87.61 ms",
+   "duracion": 4.06,
+   "facturada": 92.0,
+   "memoria": 26.0,
+   "init": 87.61,
+   "e2e": 322.91,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 7c095ae0-e456-4030-9ff3-7f74b1f376a1\tDuration: 6.10 ms\tBilled Duration: 137 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 130.54 ms",
+   "duracion": 6.1,
+   "facturada": 137.0,
+   "memoria": 26.0,
+   "init": 130.54,
+   "e2e": 417.72,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 3ae1d6c2-5675-44d8-8dba-80648146c8ae\tDuration: 5.51 ms\tBilled Duration: 133 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 126.83 ms",
+   "duracion": 5.51,
+   "facturada": 133.0,
+   "memoria": 26.0,
+   "init": 126.83,
+   "e2e": 405.12,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 640dac8d-14b2-458a-b9ea-57abb015e1b2\tDuration: 5.55 ms\tBilled Duration: 135 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 129.13 ms",
+   "duracion": 5.55,
+   "facturada": 135.0,
+   "memoria": 26.0,
+   "init": 129.13,
+   "e2e": 412.18,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: ffd50bd4-d35d-441a-8dc9-dd6ed48eeaeb\tDuration: 5.10 ms\tBilled Duration: 121 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 115.76 ms",
+   "duracion": 5.1,
+   "facturada": 121.0,
+   "memoria": 26.0,
+   "init": 115.76,
+   "e2e": 424.08,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 4ce7f86d-09b2-42b3-91ef-18f5d99c9258\tDuration: 5.26 ms\tBilled Duration: 148 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 142.46 ms",
+   "duracion": 5.26,
+   "facturada": 148.0,
+   "memoria": 26.0,
+   "init": 142.46,
+   "e2e": 518.18,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 4db7bb49-6649-4f90-87d3-1152057419c8\tDuration: 6.06 ms\tBilled Duration: 211 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 203.94 ms",
+   "duracion": 6.06,
+   "facturada": 211.0,
+   "memoria": 26.0,
+   "init": 203.94,
+   "e2e": 483.74,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: f478fa2a-c8a1-48f2-a29c-247fbe909b25\tDuration: 5.56 ms\tBilled Duration: 127 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 120.75 ms",
+   "duracion": 5.56,
+   "facturada": 127.0,
+   "memoria": 26.0,
+   "init": 120.75,
+   "e2e": 395.97,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 5cd26bb2-528e-4bd9-ae6b-13a495a79b55\tDuration: 5.63 ms\tBilled Duration: 125 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 119.05 ms",
+   "duracion": 5.63,
+   "facturada": 125.0,
+   "memoria": 26.0,
+   "init": 119.05,
+   "e2e": 403.34,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 92917ba0-815d-4a4c-a695-c087b5fb41b1\tDuration: 5.50 ms\tBilled Duration: 120 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 113.94 ms",
+   "duracion": 5.5,
+   "facturada": 120.0,
+   "memoria": 26.0,
+   "init": 113.94,
+   "e2e": 398.11,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 64df0517-91cd-4ea9-bc24-fc84e0e1de06\tDuration: 6.55 ms\tBilled Duration: 158 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 151.25 ms",
+   "duracion": 6.55,
+   "facturada": 158.0,
+   "memoria": 26.0,
+   "init": 151.25,
+   "e2e": 432.55,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 0837672b-396a-45f2-9964-d38f261ddc58\tDuration: 6.50 ms\tBilled Duration: 133 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 125.56 ms",
+   "duracion": 6.5,
+   "facturada": 133.0,
+   "memoria": 26.0,
+   "init": 125.56,
+   "e2e": 499.1,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 33aebb3c-8fb0-489b-bfb0-bc9b0323a75f\tDuration: 5.47 ms\tBilled Duration: 148 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 142.17 ms",
+   "duracion": 5.47,
+   "facturada": 148.0,
+   "memoria": 26.0,
+   "init": 142.17,
+   "e2e": 416.98,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 9323b2cd-042e-4d03-ad73-7c1e91bf2c9c\tDuration: 5.56 ms\tBilled Duration: 140 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 134.29 ms",
+   "duracion": 5.56,
+   "facturada": 140.0,
+   "memoria": 26.0,
+   "init": 134.29,
+   "e2e": 427.69,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 63ef79c0-b0e0-45c7-b832-9421527d9fff\tDuration: 4.59 ms\tBilled Duration: 111 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 106.11 ms",
+   "duracion": 4.59,
+   "facturada": 111.0,
+   "memoria": 26.0,
+   "init": 106.11,
+   "e2e": 373.04,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 72bc7409-18f4-4a64-abee-376b16526494\tDuration: 5.45 ms\tBilled Duration: 143 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 137.23 ms",
+   "duracion": 5.45,
+   "facturada": 143.0,
+   "memoria": 26.0,
+   "init": 137.23,
+   "e2e": 417.26,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 89157cb9-9c5c-4a57-b792-a0bf41c045ab\tDuration: 4.96 ms\tBilled Duration: 114 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 108.46 ms",
+   "duracion": 4.96,
+   "facturada": 114.0,
+   "memoria": 26.0,
+   "init": 108.46,
+   "e2e": 384.75,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: 906cc520-bb38-4c65-bbff-6447ef152c5d\tDuration: 5.58 ms\tBilled Duration: 159 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 153.06 ms",
+   "duracion": 5.58,
+   "facturada": 159.0,
+   "memoria": 26.0,
+   "init": 153.06,
+   "e2e": 413.44,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: ddc6c5c7-f252-4dcb-bbe6-279e20584663\tDuration: 5.61 ms\tBilled Duration: 144 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 137.89 ms",
+   "duracion": 5.61,
+   "facturada": 144.0,
+   "memoria": 26.0,
+   "init": 137.89,
+   "e2e": 401.73,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  },
+  {
+   "linea": "REPORT RequestId: eee949e3-c82d-4ce5-9d21-faeb47ab3ef0\tDuration: 5.24 ms\tBilled Duration: 116 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB\tInit Duration: 110.13 ms",
+   "duracion": 5.24,
+   "facturada": 116.0,
+   "memoria": 26.0,
+   "init": 110.13,
+   "e2e": 366.87,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   },
+   "version": null
+  }
+ ],
+ "caliente_cpu": [
+  {
+   "linea": "REPORT RequestId: 2cbff109-e2b3-44aa-8e39-a9a03149592e\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 26.0,
+   "e2e": 113.33,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3a7ecb7a-a78a-4e82-bd42-2555da88f35e\tDuration: 1.33 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 26 MB",
+   "duracion": 1.33,
+   "facturada": 2.0,
+   "memoria": 26.0,
+   "e2e": 112.55,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 600ee6af-4dfa-4fcb-918f-43ed0cb1c11c\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 117.3,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f32f6f17-4504-443f-84ad-3b7a69c8c4a6\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 109.6,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 605b9873-e278-4602-a800-17041df6c35c\tDuration: 1.58 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.58,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 117.9,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6153d9ea-d49c-47fd-8c97-e5a73ffbec5a\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 115.88,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4cba72ee-53b3-48b3-9b8f-5d9550fa71c6\tDuration: 4.21 ms\tBilled Duration: 5 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 4.21,
+   "facturada": 5.0,
+   "memoria": 27.0,
+   "e2e": 127.25,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c2198a89-5158-4bf7-ba7f-3c821cf2985e\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 118.08,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cd39a6b3-4169-4dda-b538-54e454c8ab76\tDuration: 2.70 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 2.7,
+   "facturada": 3.0,
+   "memoria": 27.0,
+   "e2e": 113.7,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 58b1b2e8-79b7-44ff-abc9-cfd499cf1440\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 112.38,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f3f7596d-2ebb-437a-930d-e9dd4ba3ddb6\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 113.68,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 468dca3e-f79c-42a5-bb81-93beb9429b81\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 114.99,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3471d0f9-e4cf-4abd-9d3f-8a956ea1e4dc\tDuration: 1.66 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.66,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 113.11,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 98530efe-74a3-4cc2-949b-1926c0731209\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 118.07,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 96cb8f17-d2bb-43cd-a86a-c20a9da2ae5f\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 27 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 27.0,
+   "e2e": 112.68,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b92025bc-1bc6-4e84-a4e7-133b7432eaf4\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 114.82,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0a64da64-0b65-4901-a930-5316775a3149\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 111.96,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5435b9f8-e3e5-46dc-931f-bac0b8bf9a58\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 115.16,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 17f60084-7c30-489b-b03d-e7e81ff26d32\tDuration: 1.76 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.76,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 110.98,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4407e903-decb-4357-9fcf-b1214c5f758e\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 112.29,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f3d12d93-e1b2-447f-9e2f-b8fb52a9d169\tDuration: 1.56 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.56,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 121.74,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c2dcbaba-0efd-4dbd-8ef7-70c08b21dfb6\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 117.97,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f59e7d71-95fc-4187-95e4-b99718fb25fd\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 113.77,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 12713ca3-515d-41e8-9e13-a310bc4c0b5a\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 113.51,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 043a2863-12cf-4a1b-a1c7-ea9a980df306\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 112.81,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 835f651d-cc9f-4252-8323-7d574432b165\tDuration: 1.71 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 28 MB",
+   "duracion": 1.71,
+   "facturada": 2.0,
+   "memoria": 28.0,
+   "e2e": 110.48,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 535d9f2b-c857-4c0e-9cb3-ff01cde72b21\tDuration: 1.54 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.54,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 110.0,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4a9b5149-5429-4a30-8ac2-8877e9633c56\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 118.81,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a47a1d1f-2007-46e3-a32b-bb4a2a5da123\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 118.05,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0ad1b877-db0c-4498-8727-7c807156cf50\tDuration: 1.86 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.86,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 122.38,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 849598a1-e083-4170-9b4b-68fffac44ab9\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 123.29,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: decd9aad-51b7-4f9c-9daf-db6c399d0070\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 113.1,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e141ba8b-59b4-4b15-8be0-4a1948337304\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 112.05,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0c03df1b-8f83-4d30-b723-437d9bad183a\tDuration: 1.78 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.78,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 114.01,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2bd3b7c0-ae77-47f9-9f70-eee6584742c9\tDuration: 1.27 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.27,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 110.7,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f4cde66c-d948-46ac-9921-3bb418b6ce68\tDuration: 1.65 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.65,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 113.11,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 13068a7e-f10d-417f-8aea-ed7d2fce253e\tDuration: 1.30 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 29 MB",
+   "duracion": 1.3,
+   "facturada": 2.0,
+   "memoria": 29.0,
+   "e2e": 118.39,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 232777fd-e6c5-47ac-9949-813f83402182\tDuration: 1.78 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.78,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 112.35,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4c388c0e-5b6f-404e-8bc1-dc3791f87b2d\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 110.61,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5cad39cc-6731-4a37-b5ae-03f81c260b1e\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 118.45,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 51915164-f706-4e12-92bd-4af54e7fc639\tDuration: 1.30 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.3,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 111.07,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aa73395e-0112-448b-b457-b9d07035efee\tDuration: 1.29 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.29,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 115.09,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 52fa492c-2cab-48d2-af5c-bab4a35fb3db\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 111.8,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 07c784fb-03c8-464e-944e-79a738d80c3d\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 120.07,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0bff988d-8bdb-4918-9973-88b7989c4a09\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 113.28,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6a4bc65f-878c-4a39-ba80-d9d5166f9acf\tDuration: 1.30 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.3,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 118.19,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2dc3546c-180e-4679-b4d9-95bd9b79cfde\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 116.15,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 056f12e4-ee8f-4a4a-be3f-e1fe86224739\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 112.45,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7cebf781-e940-431a-9180-05adf7c7393e\tDuration: 1.31 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 30 MB",
+   "duracion": 1.31,
+   "facturada": 2.0,
+   "memoria": 30.0,
+   "e2e": 113.9,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ebc0172a-9f96-4509-9d99-bdd4f446b3b4\tDuration: 1.23 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.23,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 114.01,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 68f8a056-bbc6-43fc-a011-4579e88735b5\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 118.68,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 69f2a265-7846-4b63-8a87-ddde9df3bbfc\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 114.01,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 86c87e47-b9ab-4f75-b133-bdc096a7500d\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 112.37,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 55e7c68e-cd97-4d5f-a4ea-7569ce41384d\tDuration: 1.31 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.31,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 110.25,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6d5954b2-1fa7-4fa6-9dfa-9b2db213383b\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 115.22,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5581fa3a-c5c6-472d-a832-aa03dc749314\tDuration: 1.33 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.33,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 112.37,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 86903f72-0d23-4bb5-bbda-733769031fe8\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 114.7,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 13e09187-a1da-4063-8577-c79de3604fd6\tDuration: 1.24 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.24,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 111.11,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2e3a96bb-d7e2-4ed8-b888-e980486c4835\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 110.31,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2019a8a8-bd6f-4f27-b85a-87d22c05e8e0\tDuration: 1.25 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.25,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 112.95,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e43ac2d8-6d04-495c-a7da-06a16d61f724\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 31 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 31.0,
+   "e2e": 111.56,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d998b9ad-d4c0-4e81-a3e4-4b58f5c8b6e3\tDuration: 1.31 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.31,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 115.21,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 50dacc8a-3c5d-46d9-9d06-741cd15b1fbe\tDuration: 1.22 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.22,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 110.66,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 684e1e14-6578-41b2-8126-90bda2aadd4f\tDuration: 1.25 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.25,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 113.69,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e14175b4-c32e-4afe-85d1-bb07a15bd829\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 110.31,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 06a00529-a379-4782-b6bb-6fdaffb95adc\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 110.32,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8efbffcb-afdf-4f3c-ade5-c62e63b3d627\tDuration: 1.29 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.29,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 116.47,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 422927b6-bf84-465b-9002-db417d6a123d\tDuration: 1.32 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.32,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 113.77,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f905a336-2a7c-4d08-99a5-4834643510c1\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 106.29,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 826529ab-fa50-4366-a162-ba9c625a9872\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 113.63,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: db1a22bb-9909-4043-b292-efcec76d47dc\tDuration: 1.32 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.32,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 111.99,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 29982848-b655-43f8-b150-7b417ccd7b61\tDuration: 1.29 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.29,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 109.06,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 32a679cd-eb69-421a-9d3e-ea3745af41e3\tDuration: 1.28 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 32 MB",
+   "duracion": 1.28,
+   "facturada": 2.0,
+   "memoria": 32.0,
+   "e2e": 109.77,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 306e4fb3-6ac7-4f25-be5a-834a20cb29fe\tDuration: 1.21 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.21,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 111.47,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ec25e6a8-710f-436d-923f-80ba1ab643be\tDuration: 1.24 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.24,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 108.06,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7ce5beb4-725b-47e4-90ba-0b51f6051136\tDuration: 1.23 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.23,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 112.96,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 08455e79-2553-4349-a85e-5e32181a1a44\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 112.7,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3d06b168-4df3-40ed-b252-a12c22ec8382\tDuration: 1.32 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.32,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 117.86,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e7a784fc-e80c-46df-b987-d820042b00a0\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 122.74,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d425ca91-6f10-44bc-aaec-b9cc12481368\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 114.72,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3788df60-231c-4180-8eda-44e7a3b15052\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 110.66,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a0e17531-f977-446b-ad98-b6981b83754e\tDuration: 1.25 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.25,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 114.12,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3010cdf8-5571-4c9b-9749-6fd2a6c7f1b0\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 116.91,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 91e78669-a5a1-47fc-9991-b6de117e6e0b\tDuration: 1.33 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.33,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 109.63,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d455f246-e07b-4779-b4d4-8f613468d86f\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 33 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 33.0,
+   "e2e": 111.71,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: baf778d8-b036-499d-8835-66ed50be37a4\tDuration: 1.18 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.18,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 110.57,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f4e2c06a-4424-4534-820a-bc376e4268ee\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 114.36,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9db485d4-1168-4b1d-9680-b7b69f6fa877\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 120.08,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1ca64feb-7f85-47e1-9b64-2d0f1d9151d3\tDuration: 1.30 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.3,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 130.41,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6f2398dc-c36a-40e6-8241-f403d0996693\tDuration: 1.31 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.31,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 112.22,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 37d87a00-8d50-4d24-b907-2f5e6002f968\tDuration: 1.32 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.32,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 108.42,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 56641963-d4f5-493b-ab8e-bf9af6409550\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 107.8,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f7a7285c-3788-4d23-8aaf-d9f73f2585ae\tDuration: 1.24 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.24,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 113.53,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a6a6dbcf-37c9-4fa2-8a06-07009ef279ec\tDuration: 2.47 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 2.47,
+   "facturada": 3.0,
+   "memoria": 34.0,
+   "e2e": 120.86,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 15c8993a-cf7d-4eb7-b6c3-a67260bd6a88\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 108.97,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d76c54d2-3d8c-4e8e-b7e3-e6a5a636bc78\tDuration: 1.27 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.27,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 115.12,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3387f1b2-fcd9-4240-b76f-29679484cd3c\tDuration: 1.31 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 34 MB",
+   "duracion": 1.31,
+   "facturada": 2.0,
+   "memoria": 34.0,
+   "e2e": 113.29,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8c0a4cac-e983-440e-8388-728559337cfd\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 113.37,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9bd96873-b42a-4cd3-86a4-d4f4e01f4be4\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 118.49,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6d911465-3fa1-4bbf-8c5b-bab277a31d82\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 112.87,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fd7deb4c-ce35-4c51-b428-c67ce8adf2ff\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 118.85,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bc6f1a57-ab80-47f2-ae04-ee204d9262e7\tDuration: 1.25 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.25,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 117.52,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cb894f6b-36fe-4360-b9d4-0bdf7fed1f4e\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 110.09,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 11d878bb-1c3f-4e8a-9e30-68fff0ba2100\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 110.38,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 48d35712-62d8-4d84-be06-ab2b64bc3546\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 113.56,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e9fa149c-806d-4857-b687-5ebbde333300\tDuration: 1.25 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.25,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 114.8,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bb20b3d2-2bf3-4103-94f0-9a6ad4ce66f2\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 113.42,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 927a2608-7b68-4e82-ba53-51ef7830d2d2\tDuration: 1.25 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 35 MB",
+   "duracion": 1.25,
+   "facturada": 2.0,
+   "memoria": 35.0,
+   "e2e": 115.15,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9092cc12-5fb9-4ca1-b54b-89869ea17463\tDuration: 1.29 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.29,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 109.58,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 10c77e45-6595-447f-81f1-829a985411cd\tDuration: 1.27 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.27,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 107.06,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bc5ed295-7de9-434e-899c-cf063edba0c6\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 107.78,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3ca4069f-7983-470e-98cb-4acc95ebe262\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 112.97,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 42caa819-eb45-42b3-a95d-5fead031b8c1\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 117.47,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a188e1d7-6caf-4610-99b9-51de6e4e35cf\tDuration: 1.22 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.22,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 112.86,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 50af5500-dc22-4e6f-9cb7-2240e819d975\tDuration: 1.21 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.21,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 111.12,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 93154f6b-319a-40d1-950f-fd5f49a45545\tDuration: 1.23 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.23,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 108.58,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ac65b24a-f4fc-4e5d-8d74-6645685db999\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 112.73,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c7378e60-ce99-43f5-95e3-2d7a66f03138\tDuration: 1.21 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.21,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 111.48,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8512b4b7-f401-4b7c-9102-f63a95f06933\tDuration: 1.31 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.31,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 109.75,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1d2365c9-1e5b-48f6-b624-bb105bf0fca7\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 36 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 36.0,
+   "e2e": 111.34,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fa2fca7f-0d45-4c5c-a9a8-241a3ceddfa6\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 111.99,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 780c27c6-0bb0-4d77-846a-855ab8846fdf\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 118.61,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5f0763fb-92d2-408c-9af7-3c6918541fb3\tDuration: 1.30 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.3,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 108.35,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cf5812a9-8ddd-46e7-b828-8721254799c5\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 111.92,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7c2dcdb3-29fe-484a-9bd1-ddd795eee992\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 113.9,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b11e504e-8c4e-4e32-a708-bfa168e748dd\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 113.14,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e4cfc9fd-76a7-4680-bf4c-fde10938dedc\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 110.58,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8c42633e-ff7e-41bb-88aa-fb9b87515746\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 119.72,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b7f41535-13d0-4d90-9980-524d54b3dc2b\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 113.58,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f662d72a-6c93-4aa4-b0b9-70e7563d6b42\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 110.5,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7e7ed9d3-8c8f-4783-bd1a-1f7fa228748c\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 37 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 37.0,
+   "e2e": 108.79,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3fb1a6f7-758a-4c23-846b-6f74a33031db\tDuration: 1.38 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.38,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 112.63,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6b0c4cf6-dcaa-44b9-b97d-ac87033ea070\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 114.08,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: da11e4ba-02f4-4834-b281-a0364fff651b\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 113.66,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d5eff5f7-1964-4754-943c-d52e5e784df6\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 120.26,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 64631195-030f-4bd6-ae5f-3aa35a91bc4b\tDuration: 1.73 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.73,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 113.72,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5c074156-643f-4a54-a25e-d8cdf177328d\tDuration: 1.56 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.56,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 110.22,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 73b974e1-7cde-4986-90b0-2d6c4ea3bccf\tDuration: 1.26 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.26,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 108.06,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 000676d5-27fc-4011-8987-411d8fd16963\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 110.11,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 58cd580a-98f3-4224-b722-4628c1bf74fd\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 113.04,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: abd48a81-c29f-4391-a688-eef1608e0e1b\tDuration: 1.33 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.33,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 109.51,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3d68835a-6300-4c1d-b8e8-29fdeb101bc7\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 109.28,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: dfd5a6c3-b70e-417f-928e-15995a3724dc\tDuration: 1.52 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 38 MB",
+   "duracion": 1.52,
+   "facturada": 2.0,
+   "memoria": 38.0,
+   "e2e": 108.94,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 83ea224e-a555-455d-80a7-d8431a596948\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 111.74,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 831612b2-5381-4aa1-9db5-5bca2a783237\tDuration: 1.24 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.24,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 126.68,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1299bab9-b4d0-4fd0-932f-799bbcbe0c96\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 110.42,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a65a9016-c923-4311-901b-a24e590260aa\tDuration: 1.55 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.55,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 107.76,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6323b867-509c-40bd-b01c-f3c02be208fd\tDuration: 1.48 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.48,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 110.4,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 08ff949d-36ee-479c-bd31-b9db131ddee9\tDuration: 1.59 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.59,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 115.06,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: dfd8c30d-7e5e-4ee4-85e8-77aecaa7a236\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 110.62,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9ad0b893-edc7-445b-96cf-df871c94a3ff\tDuration: 1.32 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.32,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 110.65,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 56423b7d-4b6e-4e19-a28d-40fa99e86fc2\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 107.03,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a7ad955b-cb86-472e-9d8b-800c7a09540d\tDuration: 1.75 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.75,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 112.95,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f1aa8837-24e2-4a1c-9fe8-35bf17191433\tDuration: 1.45 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 39 MB",
+   "duracion": 1.45,
+   "facturada": 2.0,
+   "memoria": 39.0,
+   "e2e": 111.09,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d986d218-b89f-419b-a25f-ffaa27f67638\tDuration: 1.43 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.43,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 108.51,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6b945e39-744e-49e7-b44d-f0e36c798c35\tDuration: 1.62 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.62,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 109.7,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 18dc1960-170a-4fd7-ba73-c334a7ec5fcc\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 113.15,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a74285ef-f74a-4882-a7f2-7a21ae0aa21f\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 113.0,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 627bc7c9-cf1c-436b-b938-6fdb00b10ed5\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 115.43,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: baa20932-75d1-458b-bb37-6d3472db83f0\tDuration: 1.47 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.47,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 114.22,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4eeb1d21-5709-4fa6-9adb-b6054afefc13\tDuration: 1.56 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.56,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 112.25,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3d02a94e-7544-4a32-9290-ef115c7f56e7\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 111.45,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 918dd76d-707b-45e3-bc0e-fec15ab59722\tDuration: 1.29 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.29,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 108.53,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0a7685bb-44b6-46bc-99c9-2dd50702a70c\tDuration: 1.49 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.49,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 109.41,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1a12ff6c-8465-4ec6-b581-883d7f83cd59\tDuration: 1.57 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.57,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 111.66,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7d1013c5-978b-4c25-a57c-bf496b3e9175\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 40 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 40.0,
+   "e2e": 108.95,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fcc5855a-4672-47a7-a610-17f2500fe5a0\tDuration: 2.16 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 2.16,
+   "facturada": 3.0,
+   "memoria": 41.0,
+   "e2e": 115.87,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 04aac611-a339-4d70-9897-3b2139a6eb51\tDuration: 1.32 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.32,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 110.22,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 39c897e9-4553-4e49-ab94-0d31594093bb\tDuration: 1.60 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.6,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 109.5,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 05091b8e-5e92-4983-9f48-8b8f39b796f4\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 123.21,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0319c76a-13ce-414e-8c40-0b17cf0faf34\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 112.67,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b090f775-bb34-49c6-aac4-fc9f620d9ac6\tDuration: 1.62 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.62,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 123.08,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f7091eeb-cc0d-4753-9349-73f4764f122b\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 109.12,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bdaf0e7c-9041-429b-ac53-d029e1a2fe94\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 117.25,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 72568352-075e-4c4d-bacf-41e50278aca0\tDuration: 1.62 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.62,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 111.05,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8fa0201b-20fc-4f37-9496-715c0ab57d13\tDuration: 1.53 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.53,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 109.27,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6f5e57a0-0d8e-4088-983e-6885f9080278\tDuration: 1.44 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 1.44,
+   "facturada": 2.0,
+   "memoria": 41.0,
+   "e2e": 112.95,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ff274142-3e4c-4da6-849c-7da0da172460\tDuration: 2.01 ms\tBilled Duration: 3 ms\tMemory Size: 512 MB\tMax Memory Used: 41 MB",
+   "duracion": 2.01,
+   "facturada": 3.0,
+   "memoria": 41.0,
+   "e2e": 114.42,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 558f464b-f755-41de-8007-163d223f063a\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 109.01,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8c007c7b-0349-4e0c-aa02-d31deb1a5d1f\tDuration: 1.51 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.51,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 113.17,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a34a91eb-c777-4b67-a45c-fb55632bc2c6\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 112.54,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f04a91aa-6e64-42d9-840d-b115c0e83514\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 111.52,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ac0808ce-fbd6-4255-9920-c9c20d8b6997\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 110.71,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e1a13079-e84f-4640-82cb-c8c4a107dc21\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 108.47,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 28158539-9e7c-43a4-aa83-e420832ca254\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 110.99,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 59553446-2496-4770-86f3-30361abdc612\tDuration: 1.35 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.35,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 116.12,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 351a9a34-4b9e-4a74-b1b0-fd37a5d11e6d\tDuration: 1.27 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.27,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 109.8,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a28cb2f4-4eaa-4b75-b764-678f44867fd2\tDuration: 1.39 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.39,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 111.36,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 14f6e241-5648-4178-84c4-2709b9a07e44\tDuration: 1.28 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 42 MB",
+   "duracion": 1.28,
+   "facturada": 2.0,
+   "memoria": 42.0,
+   "e2e": 112.56,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cde135d2-bcd6-4d1b-9e4a-5bf20917f6df\tDuration: 1.33 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.33,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 111.88,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5a170c60-e018-4b10-b515-6169b167cbe1\tDuration: 1.40 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.4,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 107.84,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b121068c-6785-4215-b939-4b12c1aa0789\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 110.92,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 418bc65b-fc59-4ee5-9add-0b03cc016157\tDuration: 1.42 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.42,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 111.57,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0532c7fb-b849-4091-98b4-3b2898fd6f23\tDuration: 1.36 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.36,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 109.23,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3ee4b4b0-e7f0-4455-a04d-004a3ac3cb2e\tDuration: 1.41 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.41,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 107.09,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aea0735b-d7e3-4611-ba27-c229fc8f2b7f\tDuration: 1.33 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.33,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 110.56,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6767f4d5-4c90-4fcd-9711-41c4bf44014f\tDuration: 1.50 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.5,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 113.43,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8fc6f1ac-5f0b-426c-9a4e-50f303a5b22e\tDuration: 1.46 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.46,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 113.05,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c1eb3e5f-d035-47da-93ac-f29bb4cbb1ae\tDuration: 1.37 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.37,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 112.23,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 736eae50-9a6a-47c8-9f40-3ca22c31ba59\tDuration: 1.34 ms\tBilled Duration: 2 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 1.34,
+   "facturada": 2.0,
+   "memoria": 43.0,
+   "e2e": 116.32,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 0
+   }
+  }
+ ],
+ "caliente_io": [
+  {
+   "linea": "REPORT RequestId: f427fd71-cfaf-406e-b97c-eebdffeb6981\tDuration: 104.97 ms\tBilled Duration: 105 ms\tMemory Size: 512 MB\tMax Memory Used: 43 MB",
+   "duracion": 104.97,
+   "facturada": 105.0,
+   "memoria": 43.0,
+   "e2e": 216.33,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: eceb7bbb-e516-4524-9d94-4a128c78e20d\tDuration: 101.54 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.54,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 212.75,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 851a20e7-8dfb-4b91-a37d-1461eb833a40\tDuration: 101.90 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.9,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 219.19,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9268fd86-b556-4f83-865d-80dc66f1848d\tDuration: 101.84 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.84,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 209.55,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 56029ce1-ac6c-451f-a59d-2d08f878ec6d\tDuration: 101.74 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.74,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 211.95,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: aec733a0-33fb-4280-b636-74937ed258ee\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 209.57,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f760695b-f854-4301-ac26-d7ad3a772b5a\tDuration: 101.72 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.72,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 212.09,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 43d85953-67f3-4e5b-8550-ed130970d12b\tDuration: 101.71 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.71,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 214.77,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ba93143c-729d-4501-94b6-150bd3a4eb58\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 213.03,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c87edbaf-ffd2-4b5f-8e09-e36761d6e531\tDuration: 101.76 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.76,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 217.65,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 06e25d2a-6301-49b6-b852-aa5bcc2d4824\tDuration: 101.87 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.87,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 215.6,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1532cd3a-ca25-4e32-b574-4a33cba35972\tDuration: 101.84 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 44 MB",
+   "duracion": 101.84,
+   "facturada": 102.0,
+   "memoria": 44.0,
+   "e2e": 211.27,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7b8b5a3e-bd3a-4122-988f-765c05cea38a\tDuration: 101.64 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.64,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 206.93,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 92c81208-378d-439d-af1a-c3d09bf04625\tDuration: 101.62 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.62,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 209.37,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1d158c9a-9919-43d5-9565-d1a6cb6196fd\tDuration: 101.71 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.71,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 209.73,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 44b82c79-aead-4931-b74e-147b682975d3\tDuration: 101.91 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.91,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 208.92,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 269ba0f1-4a32-408f-aae2-efc5795d7b05\tDuration: 101.76 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.76,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 209.37,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 34ac2c28-16bb-445e-8bf9-345b678e11d5\tDuration: 101.88 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.88,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 211.94,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8a514e67-88b4-4490-a209-0ce3c6ef8732\tDuration: 101.56 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.56,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 207.3,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5b2c58c2-5af3-4afb-b5da-3af8432e37c9\tDuration: 101.84 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.84,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 211.29,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d162836d-3e15-4fd2-a565-e7cae4c97ff3\tDuration: 101.73 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.73,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 211.65,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 65c4886d-f55d-491e-8701-965679c99399\tDuration: 103.69 ms\tBilled Duration: 104 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 103.69,
+   "facturada": 104.0,
+   "memoria": 45.0,
+   "e2e": 214.35,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 887fa678-cb8e-4b57-b834-47fcee71eaab\tDuration: 101.68 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.68,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 225.16,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b1bfd518-7643-4aa1-b25a-8699e82aa5e8\tDuration: 101.70 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 45 MB",
+   "duracion": 101.7,
+   "facturada": 102.0,
+   "memoria": 45.0,
+   "e2e": 210.77,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c3c32e42-7329-4c2e-a829-757cad9eaa1d\tDuration: 101.59 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.59,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 218.05,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d74e24c6-be9d-40df-875f-c3534c425401\tDuration: 101.64 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.64,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 209.88,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d6571e86-29b0-472c-adb1-6de69700400d\tDuration: 101.56 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.56,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 211.26,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 94b6b7ac-2607-4468-a081-5d1be411c368\tDuration: 101.70 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.7,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 209.71,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9430e128-cdcb-4d51-a69d-8ba850f74b6c\tDuration: 101.85 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.85,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 210.5,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 916d725f-2cc9-497f-8da0-5c8494aaf8fd\tDuration: 101.70 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.7,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 207.78,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2b7e5aa0-5d3d-4870-881b-38a70ff228f2\tDuration: 101.86 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.86,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 215.88,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fda5783a-9ea6-4c6c-a9da-54a3a8beede7\tDuration: 101.91 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.91,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 209.95,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a144a77d-67ef-4b32-b1bf-dad43d5e08be\tDuration: 101.85 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.85,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 211.3,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f318daf1-ab21-47cd-b70b-53993ea44c85\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 208.55,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3c3d0984-c47a-4b54-86b7-5bf01c4b045e\tDuration: 101.58 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 46 MB",
+   "duracion": 101.58,
+   "facturada": 102.0,
+   "memoria": 46.0,
+   "e2e": 217.77,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: cdbea4ae-73cd-49ab-afaf-adba06f06f05\tDuration: 101.90 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.9,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 210.43,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ec015109-145b-4315-8df9-01992d57cd20\tDuration: 101.64 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.64,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 215.69,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ba11c69c-91fd-406b-895b-59c958f46aaa\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 209.68,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: af3e2f54-59e8-460c-a3f4-8dc59b926ba8\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 214.74,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1ec9e830-3f07-4ad0-a04c-d6f4838ba17d\tDuration: 101.78 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.78,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 210.81,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: eca49802-36fb-461d-8870-aeb93c3e01c7\tDuration: 101.85 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.85,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 208.36,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 553eb3ff-7d9e-40fb-8331-432743851dcf\tDuration: 101.94 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.94,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 209.03,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b4f2fdcd-46cb-4118-8e71-e88b8db8d7af\tDuration: 101.75 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.75,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 211.09,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fa5296ae-bc85-4af7-b021-cc3ad1bf8147\tDuration: 101.83 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.83,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 211.85,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 78001566-7f04-41a2-a199-50084024c6c5\tDuration: 101.91 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.91,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 221.62,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 30e9ed12-4d15-43f1-8eae-765c44f7b5f4\tDuration: 101.61 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.61,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 207.8,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 63970cac-d33b-4eba-b2f1-8d89b505a95c\tDuration: 101.68 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 47 MB",
+   "duracion": 101.68,
+   "facturada": 102.0,
+   "memoria": 47.0,
+   "e2e": 211.03,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4188f5e0-bd56-4173-b4f9-79cbea90feeb\tDuration: 101.83 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.83,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 210.4,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5a03b5f6-5f62-46a1-9b2a-cb68aefc321d\tDuration: 102.12 ms\tBilled Duration: 103 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 102.12,
+   "facturada": 103.0,
+   "memoria": 48.0,
+   "e2e": 207.51,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0f21175c-91e2-457e-bb71-9bd9940c1a1c\tDuration: 101.65 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.65,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 210.25,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7b5e15f0-92ad-4d84-a3eb-ff75fd3d0af5\tDuration: 101.81 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.81,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 215.75,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b8961359-0961-4749-a359-15c593a80c9d\tDuration: 101.82 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.82,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 212.39,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e1241017-7e8b-4f95-9d14-572f782eaa43\tDuration: 101.59 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.59,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 216.8,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a39de985-18ee-4453-8320-68ade41c1c33\tDuration: 101.77 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.77,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 213.32,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 47116f75-64a7-499b-b2ab-c35d5c8a743d\tDuration: 101.72 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.72,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 212.72,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7bd2dfe0-7bb9-437c-9cd4-8bca32e7f220\tDuration: 102.28 ms\tBilled Duration: 103 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 102.28,
+   "facturada": 103.0,
+   "memoria": 48.0,
+   "e2e": 215.73,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: db89a309-1ae6-4e4c-ac4c-4b5cf5a4d48b\tDuration: 101.75 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.75,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 210.57,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 28e1c94e-35d7-4c04-8bf7-5680c2ac50f8\tDuration: 101.79 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 48 MB",
+   "duracion": 101.79,
+   "facturada": 102.0,
+   "memoria": 48.0,
+   "e2e": 210.87,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d67da6a4-5a34-4a16-8e9c-8e6278663799\tDuration: 101.73 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.73,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 211.0,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 4c3a80cd-6279-4ee9-8068-21d4fb329fc2\tDuration: 101.82 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.82,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 213.86,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 118ade3f-6449-4c8c-8ac9-0880d652fd8c\tDuration: 101.62 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.62,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 210.28,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 7fa3eb77-84be-4dc4-b3b4-27084d9f1463\tDuration: 101.80 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.8,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 212.28,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 35aedfb2-073a-4edc-b923-48e1133cd33f\tDuration: 101.90 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.9,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 208.63,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1def299c-0423-4ac0-a0dd-647e2d8ff7a2\tDuration: 101.86 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.86,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 217.37,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 23429b4e-dc19-40fb-b09f-aac5d3acd6bf\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 214.08,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a3c6d224-258a-4da3-9e23-2e7c28a37935\tDuration: 101.92 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.92,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 209.13,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d85f8248-47dd-488d-97e1-2733c4508fb0\tDuration: 101.80 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.8,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 208.52,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3109c750-eb7d-4a31-bcba-5c1662d61416\tDuration: 101.64 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.64,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 213.24,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: df02e5a9-6a3d-488e-9911-6104b3c72f4b\tDuration: 101.88 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 101.88,
+   "facturada": 102.0,
+   "memoria": 49.0,
+   "e2e": 210.73,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8a515ef9-c0f3-46a7-adf3-ad2255d1000e\tDuration: 102.07 ms\tBilled Duration: 103 ms\tMemory Size: 512 MB\tMax Memory Used: 49 MB",
+   "duracion": 102.07,
+   "facturada": 103.0,
+   "memoria": 49.0,
+   "e2e": 215.73,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 022418f1-bb13-447b-89f6-fbf65d10c521\tDuration: 101.81 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.81,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 213.21,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a7544d42-224d-49e3-89ad-e8a0e58e8bd6\tDuration: 101.67 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.67,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 220.7,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 28193edf-b100-4d6d-b808-ae7432fa808b\tDuration: 101.81 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.81,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 220.27,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: bb10c2fd-6931-4e4d-a6dd-ce5e3721501c\tDuration: 101.65 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.65,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 215.42,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: c29a8411-1feb-43d8-8652-160e6195f8cf\tDuration: 101.69 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.69,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 216.79,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 09c9dd86-24ab-416d-b5be-33bed0717241\tDuration: 101.88 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.88,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 219.56,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 08fefdae-1328-4163-883c-5b261266ac38\tDuration: 101.91 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.91,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 210.32,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e41f7cd2-5c7a-4e6f-8bd0-c1ba817347fd\tDuration: 101.88 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.88,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 211.55,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 740fd0f4-7a7d-44cf-8f12-f37bbf246cbb\tDuration: 102.01 ms\tBilled Duration: 103 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 102.01,
+   "facturada": 103.0,
+   "memoria": 50.0,
+   "e2e": 213.42,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: d2d7426f-7893-4bdb-99f1-3f02e3164565\tDuration: 101.85 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.85,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 215.48,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 64042813-03dc-4d4a-84db-c877affab1e0\tDuration: 101.83 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.83,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 208.46,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: a6c39042-80e3-4845-afed-************\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 50 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 50.0,
+   "e2e": 209.31,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3baa7472-4dfb-4a98-be25-3df544ccd484\tDuration: 102.00 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 102.0,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 209.88,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 5c392f30-f6c0-44b0-8ac1-219549e1f9a2\tDuration: 102.11 ms\tBilled Duration: 103 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 102.11,
+   "facturada": 103.0,
+   "memoria": 51.0,
+   "e2e": 214.91,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 54fd7e67-c3cc-49b6-a2ef-8cc801fc8a27\tDuration: 101.88 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.88,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 208.65,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 855e4f67-1259-4dcf-ab83-a23fea47c2f6\tDuration: 101.72 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.72,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 209.78,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 1f8f2928-530e-4b7e-bcb2-a80ed90cd6c1\tDuration: 101.87 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.87,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 212.81,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 797f87cd-eace-4506-862e-afdae1355039\tDuration: 101.76 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.76,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 206.75,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: e583876a-16cf-40a1-ba8a-6e559f648bf9\tDuration: 101.85 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.85,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 212.33,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f8e6e965-bcdc-4173-b36b-4e885c324ca8\tDuration: 101.94 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.94,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 209.18,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 59d255ab-98ff-4935-bb2e-cc57248d449a\tDuration: 101.91 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.91,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 214.23,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0b801eb2-06fb-4bdc-ac76-cc7ee0fae86b\tDuration: 101.62 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.62,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 212.17,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 43cc55fa-5173-4835-93f2-aa2fa04ebfdb\tDuration: 101.62 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 51 MB",
+   "duracion": 101.62,
+   "facturada": 102.0,
+   "memoria": 51.0,
+   "e2e": 209.62,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ec2975f0-1e49-46ac-96b4-66b64732ed71\tDuration: 101.86 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 52 MB",
+   "duracion": 101.86,
+   "facturada": 102.0,
+   "memoria": 52.0,
+   "e2e": 211.28,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 073bdb36-fae4-4206-8eea-799ebc10d577\tDuration: 101.87 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 52 MB",
+   "duracion": 101.87,
+   "facturada": 102.0,
+   "memoria": 52.0,
+   "e2e": 212.23,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fd03cf99-87b8-4168-965f-f740f57449be\tDuration: 101.66 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 52 MB",
+   "duracion": 101.66,
+   "facturada": 102.0,
+   "memoria": 52.0,
+   "e2e": 208.26,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: decd2a97-8320-4a04-995b-56833348fa74\tDuration: 101.89 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 52 MB",
+   "duracion": 101.89,
+   "facturada": 102.0,
+   "memoria": 52.0,
+   "e2e": 211.14,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ace0900d-0225-4023-a95c-a32f7710c824\tDuration: 101.91 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 52 MB",
+   "duracion": 101.91,
+   "facturada": 102.0,
+   "memoria": 52.0,
+   "e2e": 209.74,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 151881d6-15a7-4cdb-abf8-d761517f5280\tDuration: 101.60 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 52 MB",
+   "duracion": 101.6,
+   "facturada": 102.0,
+   "memoria": 52.0,
+   "e2e": 210.91,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 824eafce-bb96-4cb2-821c-a0c53633d8b8\tDuration: 101.70 ms\tBilled Duration: 102 ms\tMemory Size: 512 MB\tMax Memory Used: 52 MB",
+   "duracion": 101.7,
+   "facturada": 102.0,
+   "memoria": 52.0,
+   "e2e": 213.25,
+   "respuesta": {
+    "lang": "java-native",
+    "n": 0,
+    "suma": 0,
+    "io_ms": 100
+   }
+  }
+ ],
+ "caliente_cpu_con_arranque": 0,
+ "caliente_io_con_arranque": 0,
+ "fin": "2026-11-18T15:22:57+00:00",
+ "init_start": [
+  "INIT_START Runtime Version: provided:al2023.AmazonLinux2023.v228 Runtime Version ARN: arn:aws:lambda:us-east-1::runtime:506c21b6706a88eca34819d9ab4d17b7861bbbdfd224524eb0cbe85a921582c2"
+ ]
+}

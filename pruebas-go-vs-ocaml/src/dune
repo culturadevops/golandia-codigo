@@ -1,0 +1,3 @@
+(executable
+ (name servidor)
+ (libraries eio_main cohttp-eio mtime.clock))

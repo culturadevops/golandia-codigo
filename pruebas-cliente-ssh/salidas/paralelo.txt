@@ -1,0 +1,20 @@
+$ wc -l < /root/hosts-sanos.txt
+47
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 1 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 50.4s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 5 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 10.7s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 5 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 10.7s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 10 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 5.4s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 10 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 5.4s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 25 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 2.2s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 25 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 2.2s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 50 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 1.1s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-sanos.txt -p 50 | tail -1
+47 hosts · 46 ok · 1 con código distinto de 0 · 0 sin respuesta · 1.1s en total

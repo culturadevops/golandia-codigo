@@ -1,0 +1,40 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== 1. benchmark: generico vs a mano vs interface{} ==
+goos: linux
+goarch: amd64
+pkg: bench
+cpu: Intel(R) Core(TM) Ultra 7 270K Plus
+BenchmarkSumInt-24          	  200000	       776.4 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSumGeneric-24      	  200000	       786.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSumInterface-24    	  200000	      3779 ns/op	       0 B/op	       0 allocs/op
+BenchmarkDoubleInts-24      	  200000	      8774 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkMapGeneric-24      	  200000	      8304 ns/op	   81920 B/op	       1 allocs/op
+BenchmarkBoxingSolo-24      	  200000	         5.936 ns/op	       8 B/op	       1 allocs/op
+PASS
+ok  	bench	4.496s
+
+== 1b. slices: la libreria estandar de Go, escrita con generics ==
+slices.Sort: [1 2 5 8 9]
+slices.Contains(8): true
+slices.Max: 9
+slices.Compact (quita repetidos seguidos): [go generics]
+
+== 2. seguridad de tipos: la version buena, corre ==
+SumGeneric con []int: 60
+SumGeneric con []float64: 4
+SumInterface con un string colado: 30 (debería ser un error, no 30)
+
+== 3. seguridad de tipos: string en SumGeneric, NO compila ==
+# seguridad/mal
+./main.go:12:30: string does not satisfy comun.Number (string missing in ~int | ~int64 | ~float64)
+
+== 4. la virgulilla (~): con ella, un tipo nombrado tambien sirve ==
+SumConTilde con []Celsius: 61
+SumConTilde con []float64: 4
+SumSinTilde con []float64: 4
+
+== 5. sin la virgulilla: el mismo tipo nombrado, y NO compila ==
+# tilde/mal
+./main.go:12:31: comun.Celsius does not satisfy comun.SinTilde (possibly missing ~ for float64 in comun.SinTilde)

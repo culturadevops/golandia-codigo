@@ -1,0 +1,7 @@
+# Lección 9, para comparar: una sola etapa. Funciona... y se lleva el compilador entero.
+#   docker build -f lecciones/09_docker/Dockerfile.ingenuo -t tareas:ingenuo .
+FROM golang:1.27.2
+WORKDIR /src
+COPY . .
+RUN go build -o /api ./cmd/api
+ENTRYPOINT ["/api"]

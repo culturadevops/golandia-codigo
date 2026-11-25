@@ -1,0 +1,12 @@
+blackbox_exporter v0.29.0 · módulo tls_connect (tcp + tls, ca_file con nuestra CA)
+  g679-srv:9441    probe_success=1  días=5.00  probe_duration_seconds=0.022
+  g679-srv:9442    probe_success=0  días=sin serie  probe_duration_seconds=0.003
+  g679-srv:9443    probe_success=1  días=90.00  probe_duration_seconds=0.004
+  g679-srv:9444    probe_success=0  días=sin serie  probe_duration_seconds=2.001
+$ curl 'localhost:9115/probe?module=tls_connect&target=g679-srv:9442&debug=true' | grep -i -E 'error|expir'
+  time=2026-10-26T15:40:27.532Z level=ERROR source=tcp.go:92 msg="Error dialing TCP" module=tls_connect target=g679-srv:9442 err="tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2026-10-26T15:40:27Z is after 2026-10-25T15:38:24Z"
+  time=2026-10-26T15:40:27.532Z level=ERROR source=handler.go:140 msg="Probe failed" module=tls_connect target=g679-srv:9442 duration_seconds=0.003030717
+$ curl 'localhost:9115/probe?module=tls_sin_verificar&target=g679-srv:9442'  (insecure_skip_verify: true)
+  probe_ssl_earliest_cert_expiry 1.792942704e+09
+  probe_success 1
+  una sonda tls_connect sana expone 13 series: probe_dns_lookup_time_seconds, probe_duration_seconds, probe_failed_due_to_bytes, probe_failed_due_to_regex, probe_ip_addr_hash, probe_ip_protocol, probe_ssl_earliest_cert_expiry, probe_ssl_last_chain_expiry_timestamp_seconds, probe_ssl_last_chain_info, probe_success, probe_timeout_seconds, probe_tls_cipher_info, probe_tls_version_info

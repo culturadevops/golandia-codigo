@@ -1,0 +1,12 @@
+{{- range .Values.puertos }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.nombre }}-{{ .nombre }}
+spec:
+  selector:
+    app: web
+  ports:
+    - port: {{ .puerto }}
+{{- end }}

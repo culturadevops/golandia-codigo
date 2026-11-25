@@ -1,0 +1,21 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+*.log
+
+# Go
+bin/
+*.exe
+*.test
+*.out
+/vendor/
+
+# Datos que generan los contenedores
+datos/
+volumes/
+
+# De este curso
+/nubecita

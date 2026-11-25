@@ -1,0 +1,56 @@
+$ cd /root; printf '[flota]\n' > inv-sanos; cat hosts-sanos.txt >> inv-sanos; printf '[flota]\n' > inv-50; cat hosts-50.txt >> inv-50;  ansible --version | head -1
+ansible [core 2.21.5]
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (ansible flota -i inv-sanos -u admin -m raw -a revisar -f 5 -o | grep -c 'rc=0')
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: The '-o' argument is deprecated. This feature will be removed from ansible-core version 2.23. Use callback configuration to enable the oneline callback instead.
+[DEPRECATION WARNING]: oneline has been deprecated. Use another callback plugin, or vendor and/or move the oneline callback to a collection. This feature will be removed from ansible-core version 2.23.
+Origin: <unknown>
+
+oneline
+
+46
+tiempo: 11.858s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (ansible flota -i inv-sanos -u admin -m raw -a revisar -f 10 -o | grep -c 'rc=0')
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: The '-o' argument is deprecated. This feature will be removed from ansible-core version 2.23. Use callback configuration to enable the oneline callback instead.
+[DEPRECATION WARNING]: oneline has been deprecated. Use another callback plugin, or vendor and/or move the oneline callback to a collection. This feature will be removed from ansible-core version 2.23.
+Origin: <unknown>
+
+oneline
+
+46
+tiempo: 5.481s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (ansible flota -i inv-sanos -u admin -m raw -a revisar -f 50 -o | grep -c 'rc=0')
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: The '-o' argument is deprecated. This feature will be removed from ansible-core version 2.23. Use callback configuration to enable the oneline callback instead.
+[DEPRECATION WARNING]: oneline has been deprecated. Use another callback plugin, or vendor and/or move the oneline callback to a collection. This feature will be removed from ansible-core version 2.23.
+Origin: <unknown>
+
+oneline
+
+46
+tiempo: 1.617s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (ansible flota -i inv-sanos -u admin -m raw -a revisar -f 50 -o | grep -c 'rc=0')
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: The '-o' argument is deprecated. This feature will be removed from ansible-core version 2.23. Use callback configuration to enable the oneline callback instead.
+[DEPRECATION WARNING]: oneline has been deprecated. Use another callback plugin, or vendor and/or move the oneline callback to a collection. This feature will be removed from ansible-core version 2.23.
+Origin: <unknown>
+
+oneline
+
+46
+tiempo: 1.562s
+$ TIMEFORMAT='tiempo: %Rs'; cd /root; time (timeout 120 ansible flota -i inv-50 -u admin -m raw -a revisar -f 50 -T 3 -o | grep -v 'rc=0' | cut -c1-120)
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: The '-o' argument is deprecated. This feature will be removed from ansible-core version 2.23. Use callback configuration to enable the oneline callback instead.
+[DEPRECATION WARNING]: oneline has been deprecated. Use another callback plugin, or vendor and/or move the oneline callback to a collection. This feature will be removed from ansible-core version 2.23.
+Origin: <unknown>
+
+oneline
+
+s13 | FAILED | rc=2 | (stdout) s13 disco 97%\r\nrevisar: disco casi lleno\r\n (stderr) Shared connection to s13 closed.\
+s13 | FAILED! => {"changed": true,"msg": "non-zero return code","rc": 2,"stderr": "Shared connection to s13 closed.\r\n"
+s48 | UNREACHABLE!: Task failed: Failed to connect to the host via ssh: Connection timed out during banner exchange
+Connection to 10.68.2.58 port 22 timed out
+s50 | UNREACHABLE!: Task failed: Failed to connect to the host via ssh: ssh: connect to host s50 port 22: Connection tim
+tiempo: 30.700s

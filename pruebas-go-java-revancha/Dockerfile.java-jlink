@@ -1,0 +1,7 @@
+FROM eclipse-temurin:25-jdk AS jre
+RUN jlink --add-modules java.base,jdk.httpserver --strip-debug --no-man-pages --no-header-files --compress zip-6 --output /jre
+FROM debian:trixie-slim
+COPY --from=jre /jre /opt/jre
+COPY _bin/servidor.jar /app/servidor.jar
+EXPOSE 8080
+ENTRYPOINT ["/opt/jre/bin/java", "-jar", "/app/servidor.jar"]

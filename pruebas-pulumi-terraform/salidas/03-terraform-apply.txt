@@ -1,0 +1,32 @@
+aws_sqs_queue.cola["pagos"]: Creating...
+aws_sqs_queue.cola["pedidos"]: Creating...
+aws_sqs_queue.cola["avisos"]: Creating...
+aws_ssm_parameter.clave: Creating...
+aws_s3_bucket.datos: Creating...
+aws_ssm_parameter.clave: Creation complete after 1s [id=/g680/prod/clave]
+aws_s3_bucket.datos: Creation complete after 1s [id=g680-datos-prod]
+aws_s3_bucket_versioning.datos[0]: Creating...
+aws_s3_bucket_versioning.datos[0]: Creation complete after 1s [id=g680-datos-prod]
+aws_sqs_queue.cola["pagos"]: Still creating... [00m10s elapsed]
+aws_sqs_queue.cola["avisos"]: Still creating... [00m10s elapsed]
+aws_sqs_queue.cola["pedidos"]: Still creating... [00m10s elapsed]
+aws_sqs_queue.cola["avisos"]: Still creating... [00m20s elapsed]
+aws_sqs_queue.cola["pagos"]: Still creating... [00m20s elapsed]
+aws_sqs_queue.cola["pedidos"]: Still creating... [00m20s elapsed]
+aws_sqs_queue.cola["avisos"]: Creation complete after 26s [id=http://moto:5000/123456789012/g680-avisos]
+aws_sqs_queue.cola["pedidos"]: Creation complete after 26s [id=http://moto:5000/123456789012/g680-pedidos]
+aws_sqs_queue.cola["pagos"]: Creation complete after 26s [id=http://moto:5000/123456789012/g680-pagos]
+aws_iam_policy.app: Creating...
+aws_iam_policy.app: Creation complete after 0s [id=arn:aws:iam::123456789012:policy/g680-app-prod]
+
+Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+bucket = "g680-datos-prod"
+colas = {
+  "avisos" = "http://moto:5000/123456789012/g680-avisos"
+  "pagos" = "http://moto:5000/123456789012/g680-pagos"
+  "pedidos" = "http://moto:5000/123456789012/g680-pedidos"
+}
+politica = "arn:aws:iam::123456789012:policy/g680-app-prod"

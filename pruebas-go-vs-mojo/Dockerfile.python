@@ -1,0 +1,6 @@
+FROM python:3.13.17-slim AS final
+COPY py-computo/computo.py /computo.py
+ENTRYPOINT ["python", "/computo.py"]
+FROM final AS medir
+RUN apt-get update -qq && apt-get install -y -qq time >/dev/null && rm -rf /var/lib/apt/lists/*
+ENTRYPOINT []

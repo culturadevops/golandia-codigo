@@ -1,0 +1,29 @@
+{
+ "segundos": 8.63,
+ "costo_usd": 0.0285012,
+ "modelos": {
+  "claude-haiku-5-5": 22,
+  "claude-opus-5-5": 769
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "c12-consumidores",
+ "variante": "B",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Asegúrate de que no quede ninguna goroutine bloqueada cuando la función termine.\n\nTarea: Escribe la función Consumir(ctx context.Context, trabajos <-chan int, consumidores int, f func(int)) error. Arranca `consumidores` goroutines que leen de trabajos y llaman a f con cada uno, hasta que trabajos se cierre o ctx se cancele. Espera a que terminen todas. Devuelve ctx.Err() si se canceló, o nil si trabajos se cerró.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

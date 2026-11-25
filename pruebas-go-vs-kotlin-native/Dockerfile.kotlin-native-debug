@@ -1,0 +1,9 @@
+FROM gradle:9.9.1-jdk21 AS build
+WORKDIR /src
+COPY settings.gradle.kts build.gradle.kts gradle.properties /src/
+COPY src /src/src
+RUN gradle --no-daemon -q linkDebugExecutableLinuxX64 && cp build/bin/linuxX64/debugExecutable/servidor.kexe /servidor-debug
+FROM debian:trixie-slim
+COPY --from=build /servidor-debug /servidor-debug
+EXPOSE 8080
+ENTRYPOINT ["/servidor-debug"]

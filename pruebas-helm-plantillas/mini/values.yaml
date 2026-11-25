@@ -1,0 +1,11 @@
+nombre: web
+replicas: 2
+imagen:
+  repo: nginx
+  tag: 1.30.5-alpine
+recursos:
+  limits:
+    cpu: 200m
+    memory: 128Mi
+  requests:
+    cpu: 50m

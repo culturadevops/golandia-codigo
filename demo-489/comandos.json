@@ -1,0 +1,5 @@
+[
+  {"name": "hola", "description": "El bot te saluda", "type": 1},
+  {"name": "dado", "description": "Tira un dado", "type": 1,
+   "options": [{"name": "lados", "description": "Cuántos lados", "type": 4, "required": false}]}
+]

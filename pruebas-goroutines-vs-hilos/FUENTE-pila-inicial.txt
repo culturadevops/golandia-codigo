@@ -1,0 +1,3 @@
+$ grep -n "stackMin =" $(go env GOROOT)/src/runtime/stack.go
+78:	stackMin = 2048
+go version go1.27.2 linux/amd64

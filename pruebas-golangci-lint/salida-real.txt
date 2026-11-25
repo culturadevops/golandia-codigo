@@ -1,0 +1,47 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== instalar golangci-lint v2.13.2 ==
+golangci-lint has version 2.13.2 built with go1.27.1 from (unknown, modified: ?, mod sum: "h1:bCyq3E4vo9qwzifjpzJqYndEt7Ncva80qkk8G2B4TXU=") on (unknown)
+
+== 1. golangci-lint contra el codigo real de kcli (el proyecto del video anterior) ==
+cmd/serve_start.go:25:17: Error return value of `viper.BindPFlag` is not checked (errcheck)
+	viper.BindPFlag("server.host", serveStartCmd.Flags().Lookup("host"))
+	               ^
+cmd/serve_start.go:26:17: Error return value of `viper.BindPFlag` is not checked (errcheck)
+	viper.BindPFlag("server.port", serveStartCmd.Flags().Lookup("port"))
+	               ^
+2 issues:
+* errcheck: 2
+
+== 2. el mismo repo, con el error ya comprobado ==
+0 issues.
+0 issues.
+
+== 1b. si BindPFlag falla de verdad (nombre de bandera con un error de tipeo) ==
+BindPFlag fallo de verdad: flag for "server.host" is nil
+usando archivo de configuracion: /lab/repo-falla-real/kcli.yaml
+host=desde-archivo-config puerto=9000
+
+== 2b. mas alla de errcheck: una funcion sin usar y una asignacion que se pisa ==
+cmd/extra.go:9:2: ineffectual assignment to total (ineffassign)
+	total := base * 2
+	^
+cmd/extra.go:4:6: func funcionAuxiliar is unused (unused)
+func funcionAuxiliar() int {
+     ^
+cmd/extra.go:8:6: func calculoConBugDeAsignacion is unused (unused)
+func calculoConBugDeAsignacion(base int) int {
+     ^
+3 issues:
+* ineffassign: 1
+* unused: 2
+
+== 3. cuantos linters hay, y cuantos vienen activos por defecto ==
+activos por defecto:
+errcheck: Errcheck is a program for checking for unchecked errors in Go code. These unchecked errors can be critical bugs in some cases.
+govet: Vet examines Go source code and reports suspicious constructs. It is roughly the same as 'go vet' and uses its passes. [auto-fix]
+ineffassign: Detects when assignments to existing variables are not used. [fast]
+staticcheck: It's the set of rules from staticcheck. [auto-fix]
+unused: Checks Go code for unused constants, variables, functions and types.
+total de linters disponibles: 112

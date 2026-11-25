@@ -1,0 +1,48 @@
+# GoReleaser v2 para vigia (lección 12). Se prueba en modo snapshot: construye todo y no
+# publica nada, así que no hace falta token ni remoto.
+#
+#   goreleaser release --snapshot --clean
+version: 2
+project_name: vigia
+
+builds:
+  - id: vigia
+    main: ./vigia
+    binary: vigia
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w -X main.version={{ .Version }} -X main.commit={{ .ShortCommit }} -X main.fecha={{ .CommitDate }}
+    # la fecha de los binarios es la del commit, no la de ahora: builds reproducibles
+    mod_timestamp: "{{ .CommitTimestamp }}"
+    goos: [linux, windows, darwin]
+    goarch: [amd64, arm64]
+
+archives:
+  - formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+    files:
+      - README.md
+
+checksum:
+  name_template: checksums.txt
+
+snapshot:
+  # sin esto, la versión de un snapshot es algo como 0.0.1-SNAPSHOT-a1b2c3d
+  version_template: "1.0.0"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+
+release:
+  # en el curso no se publica en ningún sitio
+  disable: true

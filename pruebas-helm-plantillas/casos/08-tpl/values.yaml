@@ -1,0 +1,1 @@
+dbHost: "{{ .Release.Name }}-db.{{ .Release.Namespace }}.svc"

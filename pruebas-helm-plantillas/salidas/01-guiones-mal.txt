@@ -1,0 +1,5 @@
+$ helm template demo 01-guiones  # mal.yaml + values.yaml
+Error: YAML parse error on caso/templates/caso.yaml: error converting YAML to JSON: yaml: line 6: mapping values are not allowed in this context
+
+Use --debug flag to render out invalid YAML
+[código de salida: 1]

@@ -1,0 +1,284 @@
+{
+ "version": null,
+ "invocaciones": [
+  {
+   "linea": "REPORT RequestId: a3f63796-667a-445a-9741-8b70e9339a63\tDuration: 1637.73 ms\tBilled Duration: 1974 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 335.76 ms",
+   "duracion": 1637.73,
+   "facturada": 1974.0,
+   "memoria": 87.0,
+   "init": 335.76,
+   "e2e": 2228.12,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 9e7f0b1d-7fc5-4edb-99ba-e173c22e0324\tDuration: 1613.25 ms\tBilled Duration: 2028 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 414.03 ms",
+   "duracion": 1613.25,
+   "facturada": 2028.0,
+   "memoria": 87.0,
+   "init": 414.03,
+   "e2e": 8055.61,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 8b25aed9-b7a3-4711-a8f3-923565bab68d\tDuration: 1618.95 ms\tBilled Duration: 2023 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 403.15 ms",
+   "duracion": 1618.95,
+   "facturada": 2023.0,
+   "memoria": 87.0,
+   "init": 403.15,
+   "e2e": 7627.18,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 3507623b-e70e-4fba-b4ac-e2b2e3511095\tDuration: 1505.13 ms\tBilled Duration: 1506 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB",
+   "duracion": 1505.13,
+   "facturada": 1506.0,
+   "memoria": 87.0,
+   "e2e": 6928.03,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ec4d2207-0629-4e21-9b84-055eb787f7b8\tDuration: 1611.63 ms\tBilled Duration: 1906 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 293.64 ms",
+   "duracion": 1611.63,
+   "facturada": 1906.0,
+   "memoria": 87.0,
+   "init": 293.64,
+   "e2e": 8059.59,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 57747a6f-39b9-48e5-ab75-de479e2c17cb\tDuration: 1616.64 ms\tBilled Duration: 1895 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 277.77 ms",
+   "duracion": 1616.64,
+   "facturada": 1895.0,
+   "memoria": 87.0,
+   "init": 277.77,
+   "e2e": 8371.35,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 6b7f9ff8-64d7-491c-8f9e-9310bd2082a4\tDuration: 1639.13 ms\tBilled Duration: 1897 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 257.36 ms",
+   "duracion": 1639.13,
+   "facturada": 1897.0,
+   "memoria": 87.0,
+   "init": 257.36,
+   "e2e": 8622.77,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: b0afbfe7-8e74-4685-b42a-31d6d1700d22\tDuration: 1653.66 ms\tBilled Duration: 1943 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 288.90 ms",
+   "duracion": 1653.66,
+   "facturada": 1943.0,
+   "memoria": 87.0,
+   "init": 288.9,
+   "e2e": 8674.98,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: dc7ba187-6fa5-48fe-aa52-c5bba2b9f70a\tDuration: 1632.75 ms\tBilled Duration: 1876 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 243.05 ms",
+   "duracion": 1632.75,
+   "facturada": 1876.0,
+   "memoria": 87.0,
+   "init": 243.05,
+   "e2e": 8494.53,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 2940bc41-67ea-49fb-b7ad-a8f36de11b0a\tDuration: 1650.92 ms\tBilled Duration: 1930 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 278.30 ms",
+   "duracion": 1650.92,
+   "facturada": 1930.0,
+   "memoria": 87.0,
+   "init": 278.3,
+   "e2e": 8539.73,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: ef5a5005-5bb0-42ff-a334-fda5d3982091\tDuration: 1615.21 ms\tBilled Duration: 1884 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 268.38 ms",
+   "duracion": 1615.21,
+   "facturada": 1884.0,
+   "memoria": 87.0,
+   "init": 268.38,
+   "e2e": 8340.93,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: f194ab67-3cab-4d69-9138-aa8a0e4c210a\tDuration: 1616.61 ms\tBilled Duration: 1876 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 259.12 ms",
+   "duracion": 1616.61,
+   "facturada": 1876.0,
+   "memoria": 87.0,
+   "init": 259.12,
+   "e2e": 8104.36,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 322dab4a-7949-40d2-a899-b7a9c6fef726\tDuration: 1638.83 ms\tBilled Duration: 1896 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 257.16 ms",
+   "duracion": 1638.83,
+   "facturada": 1896.0,
+   "memoria": 87.0,
+   "init": 257.16,
+   "e2e": 8371.37,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 47a0a32c-1d27-4b85-939c-767167fdd884\tDuration: 1655.04 ms\tBilled Duration: 1923 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 267.00 ms",
+   "duracion": 1655.04,
+   "facturada": 1923.0,
+   "memoria": 87.0,
+   "init": 267.0,
+   "e2e": 7807.05,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 846db022-af17-4b7d-9c5a-a34014c6d19b\tDuration: 1634.05 ms\tBilled Duration: 1890 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 255.91 ms",
+   "duracion": 1634.05,
+   "facturada": 1890.0,
+   "memoria": 87.0,
+   "init": 255.91,
+   "e2e": 7513.39,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: af54d35b-3349-4254-84d1-dd0860b1607d\tDuration: 1642.70 ms\tBilled Duration: 1948 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 304.55 ms",
+   "duracion": 1642.7,
+   "facturada": 1948.0,
+   "memoria": 87.0,
+   "init": 304.55,
+   "e2e": 8009.31,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 559298ca-334c-4423-b08e-c03f0959fb4c\tDuration: 1633.49 ms\tBilled Duration: 1930 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 296.43 ms",
+   "duracion": 1633.49,
+   "facturada": 1930.0,
+   "memoria": 87.0,
+   "init": 296.43,
+   "e2e": 8435.08,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 0add2486-293d-43d1-84c6-d82c87463524\tDuration: 1653.04 ms\tBilled Duration: 1911 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 257.81 ms",
+   "duracion": 1653.04,
+   "facturada": 1911.0,
+   "memoria": 87.0,
+   "init": 257.81,
+   "e2e": 7845.89,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: 24acd1c9-3338-483e-82a1-4b1bb16f5bc8\tDuration: 1638.63 ms\tBilled Duration: 1981 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 341.38 ms",
+   "duracion": 1638.63,
+   "facturada": 1981.0,
+   "memoria": 87.0,
+   "init": 341.38,
+   "e2e": 7940.57,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  },
+  {
+   "linea": "REPORT RequestId: fc1d9f85-0fe4-4ebc-9e9e-5c3c6fd80104\tDuration: 1618.55 ms\tBilled Duration: 1918 ms\tMemory Size: 512 MB\tMax Memory Used: 87 MB\tInit Duration: 299.36 ms",
+   "duracion": 1618.55,
+   "facturada": 1918.0,
+   "memoria": 87.0,
+   "init": 299.36,
+   "e2e": 7685.23,
+   "respuesta": {
+    "lang": "java",
+    "n": 200000,
+    "suma": 99863963591,
+    "io_ms": 1500
+   }
+  }
+ ]
+}

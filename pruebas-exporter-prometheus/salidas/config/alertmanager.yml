@@ -1,0 +1,5 @@
+route:
+  receiver: nadie
+  group_wait: 5s
+receivers:
+  - name: nadie

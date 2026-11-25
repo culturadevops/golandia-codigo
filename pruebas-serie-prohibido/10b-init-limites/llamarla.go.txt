@@ -1,0 +1,4 @@
+// Y si intentas llamarla tu, esto es lo que dice el compilador.
+func main() {
+	init()   // <-
+}

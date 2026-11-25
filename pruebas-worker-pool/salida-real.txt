@@ -1,0 +1,24 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== sin control vs worker pool, corrido 3 veces ==
+total de tareas: 300, capacidad real del servicio: 5
+
+SIN CONTROL   -> pico de llamadas simultaneas: 300 | errores: 295 | goroutines lanzadas de golpe: 301 | duro: 11ms
+WORKER POOL   -> pico de llamadas simultaneas: 5 | errores: 0 | goroutines fijas: 5           | duro: 630ms
+
+FAN-IN         -> 5 productores, 200 valores esperados, 200 recibidos, 200 unicos
+---
+total de tareas: 300, capacidad real del servicio: 5
+
+SIN CONTROL   -> pico de llamadas simultaneas: 300 | errores: 295 | goroutines lanzadas de golpe: 301 | duro: 11ms
+WORKER POOL   -> pico de llamadas simultaneas: 5 | errores: 0 | goroutines fijas: 5           | duro: 628ms
+
+FAN-IN         -> 5 productores, 200 valores esperados, 200 recibidos, 200 unicos
+---
+total de tareas: 300, capacidad real del servicio: 5
+
+SIN CONTROL   -> pico de llamadas simultaneas: 300 | errores: 295 | goroutines lanzadas de golpe: 301 | duro: 11ms
+WORKER POOL   -> pico de llamadas simultaneas: 5 | errores: 0 | goroutines fijas: 5           | duro: 618ms
+
+FAN-IN         -> 5 productores, 200 valores esperados, 200 recibidos, 200 unicos

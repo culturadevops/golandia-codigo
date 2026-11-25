@@ -1,0 +1,9 @@
+$ go run ./global
+canal local:   goroutineleak profile: total 1 | goroutines vivas: 2
+canal global:  goroutineleak profile: total 1 | goroutines vivas: 3
+
+$ go run ./http
+goroutineleak profile: total 5
+5 @ 0x48c1ca 0x418cdc 0x4188d7 0x6b5616 0x4930a1
+#	0x6b5615	main.buscar.func1+0x35	/d/http/main.go:18
+

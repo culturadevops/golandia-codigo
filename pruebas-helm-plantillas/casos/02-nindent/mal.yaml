@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: indent
+  labels:
+    {{ include "etiquetas" . | indent 4 }}
+data:
+  a: "1"

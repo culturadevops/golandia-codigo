@@ -1,0 +1,8 @@
+$ kgo conflicto
+   0.0s  a y b leídos · replicas=1 · resourceVersion 2687
+   0.0s  Update(a) replicas=2: ok · resourceVersion ahora 2710
+   0.0s  Update(b) con la copia vieja: IsConflict=true
+   0.0s    Operation cannot be fulfilled on deployments.apps "web": the object has been modified; please apply your changes to the latest version and try again
+   0.0s  Update(b) sin resourceVersion: ok · replicas=1 (a había puesto 2)
+   0.0s  Patch(labels): ok · replicas=2 · equipo=datos
+   0.4s  RetryOnConflict: ok en 2 intentos

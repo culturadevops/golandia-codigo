@@ -1,0 +1,10 @@
+$ go run . vacios
+a_false  → DEFAULT
+b_cero   → DEFAULT
+c_vacio  → DEFAULT
+d_lista  → DEFAULT
+e_nil    → DEFAULT
+f_texto  → hola
+g_true   → true
+h_uno    → 1
+[código de salida: 0]

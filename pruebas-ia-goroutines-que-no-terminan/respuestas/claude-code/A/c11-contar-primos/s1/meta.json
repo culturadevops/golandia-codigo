@@ -1,0 +1,29 @@
+{
+ "segundos": 6.73,
+ "costo_usd": 0.0233872,
+ "modelos": {
+  "claude-haiku-5-5": 24,
+  "claude-opus-5-5": 559
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "c11-contar-primos",
+ "variante": "A",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Escribe la función ContarPrimos(nums []int, workers int) int que cuenta cuántos números de nums son primos, repartiendo el trabajo entre `workers` goroutines.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

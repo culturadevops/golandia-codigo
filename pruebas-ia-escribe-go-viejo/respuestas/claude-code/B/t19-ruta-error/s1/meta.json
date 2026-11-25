@@ -1,0 +1,29 @@
+{
+ "segundos": 4.56,
+ "costo_usd": 0.0170634,
+ "modelos": {
+  "claude-haiku-5-5": 20,
+  "claude-opus-5-5": 234
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "t19-ruta-error",
+ "variante": "B",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Usa Go 1.27.\n\nTarea: Escribe la función RutaDelError(err error) (string, bool) que, si en la cadena de errores de err hay un *fs.PathError (paquete io/fs), devuelve su campo Path y true; si no, \"\" y false.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

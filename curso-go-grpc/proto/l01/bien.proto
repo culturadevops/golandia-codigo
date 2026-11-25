@@ -1,0 +1,14 @@
+// Lección 1: lo correcto. El número viejo queda reservado, el campo nuevo estrena número,
+// y `optional` distingue «no vino» de «vale 0».
+syntax = "proto3";
+
+package l01.bien;
+
+option go_package = "curso-grpc/gen/l01/bien;bien";
+
+message Producto {
+  reserved 2;
+  reserved "stock";
+  string sku = 1;
+  optional int32 precio_centavos = 3;
+}

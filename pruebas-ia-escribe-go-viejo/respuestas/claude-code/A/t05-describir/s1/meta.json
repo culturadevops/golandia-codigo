@@ -1,0 +1,29 @@
+{
+ "segundos": 3.68,
+ "costo_usd": 0.0149573,
+ "modelos": {
+  "claude-haiku-5-5": 17,
+  "claude-opus-5-5": 132
+ },
+ "is_error": false,
+ "flags": [
+  "-p",
+  "--safe-mode",
+  "--tools",
+  "",
+  "--strict-mcp-config",
+  "--permission-prompts",
+  "none",
+  "--no-session-persistence",
+  "--output-format",
+  "json",
+  "--max-budget-usd",
+  "0.50"
+ ],
+ "backend": "claude",
+ "claude_code": "2.1.312",
+ "tarea": "t05-describir",
+ "variante": "A",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Escribe la función Describir que recibe una cantidad variable de valores de cualquier tipo y devuelve un []string con el tipo de cada uno, por ejemplo \"int\" o \"string\", usando fmt.Sprintf con %T.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

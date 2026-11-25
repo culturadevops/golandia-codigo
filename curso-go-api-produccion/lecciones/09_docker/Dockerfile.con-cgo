@@ -1,0 +1,14 @@
+# Lección 9, para comparar: el Dockerfile bueno SIN CGO_ENABLED=0.
+# En golang:1.27.2 cgo viene activado: el binario enlaza con la libc y en scratch no arranca.
+#   docker build -f lecciones/09_docker/Dockerfile.con-cgo -t tareas:con-cgo .
+FROM golang:1.27.2 AS compilar
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN go build -trimpath -ldflags="-s -w" -o /api ./cmd/api
+
+FROM scratch
+COPY --from=compilar /api /api
+USER 65532:65532
+ENTRYPOINT ["/api"]

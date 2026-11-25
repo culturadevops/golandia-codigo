@@ -1,0 +1,3 @@
+imagen:
+  repo: nginx
+  tag: 1.30.5-alpine

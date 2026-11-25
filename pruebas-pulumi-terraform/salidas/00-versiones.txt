@@ -1,0 +1,7 @@
+go version go1.27.2 linux/amd64
+pulumi v3.272.0
+Terraform v1.16.2
+go.mod: github.com/pulumi/pulumi-aws/sdk/v7 v7.51.1
+go.mod: github.com/pulumi/pulumi/sdk/v3 v3.272.0
+provider hashicorp/aws 6.70.0 (main.tf)
+moto: 5.2.4.dev (motoserver/moto:latest)

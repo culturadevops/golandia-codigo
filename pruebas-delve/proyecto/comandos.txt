@@ -1,0 +1,7 @@
+break main.go:42
+continue
+print mensaje
+next
+next
+goroutines
+quit

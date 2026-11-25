@@ -1,0 +1,15 @@
+$ gh-app (con la etiqueta) y gh-ajeno (sin ella): cuelgo los dos
+   0.2s  gh-app    running  healthy    RestartCount=0  arrancó 14:47:17
+   0.3s  gh-ajeno  running  healthy    RestartCount=0  arrancó 14:47:18
+   9.0s  gh-app    running  unhealthy  RestartCount=0  arrancó 14:47:17
+   9.1s  gh-ajeno  running  unhealthy  RestartCount=0  arrancó 14:47:18
+  11.4s  gh-app    exited   unhealthy  RestartCount=0  arrancó 14:47:17
+  12.0s  gh-app    running  starting   RestartCount=0  arrancó 14:47:34
+  14.4s  gh-app    running  healthy    RestartCount=0  arrancó 14:47:34
+  40.3s  fin · gh-app running healthy 0 · gh-ajeno running unhealthy 0
+--- log del vigía ---
+    0.0s  vigía en modo eventos · etiqueta golandia.autoheal=demo
+   10.5s  evento: gh-app · health_status: unhealthy
+   10.5s  reinicio gh-app
+   13.7s  gh-app reiniciado (la llamada tardó 3.2s)
+   15.8s  evento: gh-app · health_status: healthy

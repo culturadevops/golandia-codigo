@@ -1,0 +1,65 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== version de decimal ==
+  require github.com/shopspring/decimal v1.4.0
+
+== 1. el desvio acumulado, medido ==
+=== RUN   TestDesvioAcumulado
+  sumando 0.10, 100000 veces
+  float64 : 10000.0000000188
+  decimal : 10000
+  exacto  : 10000
+  desvio de float64: 0.000000018848
+--- PASS: TestDesvioAcumulado (0.00s)
+PASS
+ok  	dinero	0.006s
+
+== 2. NewFromFloat ya viene roto ==
+=== RUN   TestNewFromFloatYaVieneRoto
+  NewFromFloat(0.1+0.2) = 0.3
+  NewFromString("0.3")  = 0.3
+  ¿son iguales? true
+--- PASS: TestNewFromFloatYaVieneRoto (0.00s)
+PASS
+ok  	dinero	0.002s
+
+== 3. la division no termina ==
+=== RUN   TestDivisionNoTermina
+  1/3 con Div (por defecto): 0.3333333333333333
+  1/3 con DivRound a 2:      0.33
+  DivisionPrecision global:  16
+--- PASS: TestDivisionNoTermina (0.00s)
+PASS
+ok  	dinero	0.001s
+
+== 4. el reparto que no cuadra ==
+=== RUN   TestRepartoQueNoCuadra
+  10.00 entre 3 = 3.33 cada uno
+  y 3 x 3.33 = 9.99  (faltan 0.01)
+--- PASS: TestRepartoQueNoCuadra (0.00s)
+PASS
+ok  	dinero	0.001s
+
+== 5. EL PRECIO: float64 contra decimal contra centimos ==
+goos: linux
+goarch: amd64
+pkg: dinero
+cpu: Intel(R) Core(TM) Ultra 7 270K Plus
+BenchmarkSumaFloat64-24           	1000000000	         0.09876 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSumaDecimal-24           	43550368	        26.75 ns/op	      80 B/op	       2 allocs/op
+BenchmarkSumaEnteroCentimos-24    	1000000000	         0.09720 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	dinero	1.420s
+
+== 6. ¿cuando duele NewFromFloat de verdad? ==
+=== RUN   TestNewFromFloatCuandoSiDuele
+  float64 0.2999999999999999889 -> decimal 0.3
+  float64 1.0049999999999998934 -> decimal 1.005
+  float64 2.6749999999999998224 -> decimal 2.675
+  float64 0.61499999999999999112 -> decimal 0.615
+  float64 100000000000000000 -> decimal 100000000000000000
+  float64 0.2999999999999999889 -> decimal 0.3
+--- PASS: TestNewFromFloatCuandoSiDuele (0.00s)
+PASS
+ok  	dinero	0.002s

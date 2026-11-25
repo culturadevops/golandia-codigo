@@ -1,0 +1,5 @@
+[micronaut.application]
+name = 'banco'
+
+[micronaut.server]
+port = 8080

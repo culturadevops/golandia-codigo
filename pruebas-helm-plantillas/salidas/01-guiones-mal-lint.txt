@@ -1,0 +1,7 @@
+$ helm lint 01-guiones  # mal.yaml
+==> Linting /chart
+[INFO] Chart.yaml: icon is recommended
+[ERROR] templates/caso.yaml: unable to parse YAML: error converting YAML to JSON: yaml: line 6: mapping values are not allowed in this context
+
+Error: 1 chart(s) linted, 1 chart(s) failed
+[código de salida: 1]

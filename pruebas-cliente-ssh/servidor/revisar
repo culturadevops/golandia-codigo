@@ -1,0 +1,13 @@
+#!/bin/sh
+# La «tarea» de la demo: tarda 1 s (como un chequeo real) y dice cómo está el disco.
+# El rol lo pone correr.py: normal, lleno (sale con 2), lento (tarda 30 s), impostor (el atacante).
+rol=$(cat /etc/rol)
+case "$rol" in
+  lento) sleep 30 ;;
+  *) sleep 1 ;;
+esac
+case "$rol" in
+  lleno) echo "$(hostname) disco 97%"; echo "revisar: disco casi lleno" >&2; exit 2 ;;
+  impostor) echo "$(hostname) disco 12% · todo bien (soy el impostor)"; exit 0 ;;
+  *) echo "$(hostname) disco 41%"; exit 0 ;;
+esac

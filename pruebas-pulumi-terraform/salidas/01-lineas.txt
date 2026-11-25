@@ -1,0 +1,5 @@
+Pulumi (Go):   main.go 90 · Pulumi.yaml 2 · Pulumi.prod.yaml 16
+               total 108
+Terraform:     main.tf 82
+Tests:         main_test.go 63 · basico.tftest.hcl 32
+go.mod: 121 líneas, 112 dependencias · go.sum: 342 líneas

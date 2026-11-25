@@ -1,0 +1,97 @@
+aws_sqs_queue.por_nombre["avisos"]: Refreshing state... [id=http://moto:5000/123456789012/g680-f-avisos]
+aws_sqs_queue.por_posicion[0]: Refreshing state... [id=http://moto:5000/123456789012/g680-c-pedidos]
+aws_sqs_queue.por_nombre["pagos"]: Refreshing state... [id=http://moto:5000/123456789012/g680-f-pagos]
+aws_sqs_queue.por_posicion[1]: Refreshing state... [id=http://moto:5000/123456789012/g680-c-pagos]
+aws_sqs_queue.por_posicion[2]: Refreshing state... [id=http://moto:5000/123456789012/g680-c-avisos]
+aws_sqs_queue.por_nombre["pedidos"]: Refreshing state... [id=http://moto:5000/123456789012/g680-f-pedidos]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # aws_sqs_queue.por_nombre["pedidos"] will be destroyed
+  # (because key ["pedidos"] is not in for_each map)
+  - resource "aws_sqs_queue" "por_nombre" {
+      - arn                               = "arn:aws:sqs:us-east-1:123456789012:g680-f-pedidos" -> null
+      - content_based_deduplication       = false -> null
+      - delay_seconds                     = 0 -> null
+      - fifo_queue                        = false -> null
+      - id                                = "http://moto:5000/123456789012/g680-f-pedidos" -> null
+      - kms_data_key_reuse_period_seconds = 300 -> null
+      - max_message_size                  = 262144 -> null
+      - message_retention_seconds         = 345600 -> null
+      - name                              = "g680-f-pedidos" -> null
+      - receive_wait_time_seconds         = 0 -> null
+      - region                            = "us-east-1" -> null
+      - sqs_managed_sse_enabled           = true -> null
+      - tags                              = {} -> null
+      - tags_all                          = {} -> null
+      - url                               = "http://moto:5000/123456789012/g680-f-pedidos" -> null
+      - visibility_timeout_seconds        = 30 -> null
+        # (7 unchanged attributes hidden)
+    }
+
+  # aws_sqs_queue.por_posicion[0] must be replaced
+-/+ resource "aws_sqs_queue" "por_posicion" {
+      ~ arn                               = "arn:aws:sqs:us-east-1:123456789012:g680-c-pedidos" -> (known after apply)
+      + deduplication_scope               = (known after apply)
+      + fifo_throughput_limit             = (known after apply)
+      ~ id                                = "http://moto:5000/123456789012/g680-c-pedidos" -> (known after apply)
+      ~ kms_data_key_reuse_period_seconds = 300 -> (known after apply)
+      ~ name                              = "g680-c-pedidos" -> "g680-c-pagos" # forces replacement
+      + name_prefix                       = (known after apply)
+      + policy                            = (known after apply)
+      + redrive_allow_policy              = (known after apply)
+      + redrive_policy                    = (known after apply)
+      ~ sqs_managed_sse_enabled           = true -> (known after apply)
+      - tags                              = {} -> null
+      ~ tags_all                          = {} -> (known after apply)
+      ~ url                               = "http://moto:5000/123456789012/g680-c-pedidos" -> (known after apply)
+        # (9 unchanged attributes hidden)
+    }
+
+  # aws_sqs_queue.por_posicion[1] must be replaced
+-/+ resource "aws_sqs_queue" "por_posicion" {
+      ~ arn                               = "arn:aws:sqs:us-east-1:123456789012:g680-c-pagos" -> (known after apply)
+      + deduplication_scope               = (known after apply)
+      + fifo_throughput_limit             = (known after apply)
+      ~ id                                = "http://moto:5000/123456789012/g680-c-pagos" -> (known after apply)
+      ~ kms_data_key_reuse_period_seconds = 300 -> (known after apply)
+      ~ name                              = "g680-c-pagos" -> "g680-c-avisos" # forces replacement
+      + name_prefix                       = (known after apply)
+      + policy                            = (known after apply)
+      + redrive_allow_policy              = (known after apply)
+      + redrive_policy                    = (known after apply)
+      ~ sqs_managed_sse_enabled           = true -> (known after apply)
+      - tags                              = {} -> null
+      ~ tags_all                          = {} -> (known after apply)
+      ~ url                               = "http://moto:5000/123456789012/g680-c-pagos" -> (known after apply)
+        # (9 unchanged attributes hidden)
+    }
+
+  # aws_sqs_queue.por_posicion[2] will be destroyed
+  # (because index [2] is out of range for count)
+  - resource "aws_sqs_queue" "por_posicion" {
+      - arn                               = "arn:aws:sqs:us-east-1:123456789012:g680-c-avisos" -> null
+      - content_based_deduplication       = false -> null
+      - delay_seconds                     = 0 -> null
+      - fifo_queue                        = false -> null
+      - id                                = "http://moto:5000/123456789012/g680-c-avisos" -> null
+      - kms_data_key_reuse_period_seconds = 300 -> null
+      - max_message_size                  = 262144 -> null
+      - message_retention_seconds         = 345600 -> null
+      - name                              = "g680-c-avisos" -> null
+      - receive_wait_time_seconds         = 0 -> null
+      - region                            = "us-east-1" -> null
+      - sqs_managed_sse_enabled           = true -> null
+      - tags                              = {} -> null
+      - tags_all                          = {} -> null
+      - url                               = "http://moto:5000/123456789012/g680-c-avisos" -> null
+      - visibility_timeout_seconds        = 30 -> null
+        # (7 unchanged attributes hidden)
+    }
+
+Plan: 2 to add, 0 to change, 4 to destroy.

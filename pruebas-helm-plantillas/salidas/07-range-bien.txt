@@ -1,0 +1,25 @@
+$ helm template demo 07-scope  # bien.yaml + values.yaml
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-http
+spec:
+  selector:
+    app: web
+  ports:
+    - port: 80
+
+---
+# Source: caso/templates/caso.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-metricas
+spec:
+  selector:
+    app: web
+  ports:
+    - port: 9090
+[código de salida: 0]

@@ -1,0 +1,63 @@
+== Terraform: terraform.tfstate
+recursos en el estado: 7
+tamaño: 11569 bytes
+¿la clave en texto plano?  grep -c s3cr3to-de-prod → 1
+308:            "value": "s3cr3to-de-prod",
+== Pulumi: pulumi stack export (backend file://)
+recursos en el estado: 9 (incluye la pila y el provider)
+tamaño: 36804 bytes
+¿la clave en texto plano?  grep -c s3cr3to-de-prod → 0
+{"4dabf18193072939515e22adb298388d":"1b47061264138c4ac30d75fd1eb44270","ciphertext":"v1:Gb
+archivos del backend:
+  ./.pulumi/backups/g680/prod/prod.1793030115237920979.json
+  ./.pulumi/backups/g680/prod/prod.1793030115237920979.json.attrs
+  ./.pulumi/backups/g680/prod/prod.1793030159955725874.json
+  ./.pulumi/backups/g680/prod/prod.1793030159955725874.json.attrs
+  ./.pulumi/backups/g680/prod/prod.1793030272445181206.json
+  ./.pulumi/backups/g680/prod/prod.1793030272445181206.json.attrs
+  ./.pulumi/backups/g680/prod/prod.1793030316642320760.json
+  ./.pulumi/backups/g680/prod/prod.1793030316642320760.json.attrs
+  ./.pulumi/backups/g680/prod/prod.1793030428075429097.json
+  ./.pulumi/backups/g680/prod/prod.1793030428075429097.json.attrs
+  ./.pulumi/backups/g680/prod/prod.1793030472562417603.json
+  ./.pulumi/backups/g680/prod/prod.1793030472562417603.json.attrs
+  ./.pulumi/backups/g680/prod/prod.1793030584428577769.json
+  ./.pulumi/backups/g680/prod/prod.1793030584428577769.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030115237237044.checkpoint.json
+  ./.pulumi/history/g680/prod/prod-1793030115237237044.checkpoint.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030115237237044.history.json
+  ./.pulumi/history/g680/prod/prod-1793030115237237044.history.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030159955313268.checkpoint.json
+  ./.pulumi/history/g680/prod/prod-1793030159955313268.checkpoint.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030159955313268.history.json
+  ./.pulumi/history/g680/prod/prod-1793030159955313268.history.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030272444747824.checkpoint.json
+  ./.pulumi/history/g680/prod/prod-1793030272444747824.checkpoint.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030272444747824.history.json
+  ./.pulumi/history/g680/prod/prod-1793030272444747824.history.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030316642017312.checkpoint.json
+  ./.pulumi/history/g680/prod/prod-1793030316642017312.checkpoint.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030316642017312.history.json
+  ./.pulumi/history/g680/prod/prod-1793030316642017312.history.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030428074958091.checkpoint.json
+  ./.pulumi/history/g680/prod/prod-1793030428074958091.checkpoint.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030428074958091.history.json
+  ./.pulumi/history/g680/prod/prod-1793030428074958091.history.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030472562075240.checkpoint.json
+  ./.pulumi/history/g680/prod/prod-1793030472562075240.checkpoint.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030472562075240.history.json
+  ./.pulumi/history/g680/prod/prod-1793030472562075240.history.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030584427786066.checkpoint.json
+  ./.pulumi/history/g680/prod/prod-1793030584427786066.checkpoint.json.attrs
+  ./.pulumi/history/g680/prod/prod-1793030584427786066.history.json
+  ./.pulumi/history/g680/prod/prod-1793030584427786066.history.json.attrs
+  ./.pulumi/meta.yaml
+  ./.pulumi/meta.yaml.attrs
+  ./.pulumi/stacks/g680/prod.json
+  ./.pulumi/stacks/g680/prod.json.attrs
+  ./.pulumi/stacks/g680/prod.json.bak
+  ./.pulumi/stacks/g680/prod.json.bak.attrs
+== Terraform con value_wo (solo escritura)
+apply: Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+¿la clave en texto plano?  grep -c s3cr3to-de-prod → 0
+valor en moto: s3cr3to-de-prod

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "web.nombre" . }}
+  labels:
+    {{- include "web.etiquetas" . | nindent 4 }}
+spec:
+  selector:
+    {{- include "web.etiquetas" . | nindent 4 }}
+  ports:
+    {{- range .Values.puertos }}
+    - name: {{ .nombre }}
+      port: {{ .puerto }}
+      targetPort: {{ .nombre }}
+      {{- /* dentro de range, el punto es el puerto: lo de arriba se alcanza con $ */}}
+      appProtocol: {{ $.Values.protocolo | default "http" }}
+    {{- end }}

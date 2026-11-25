@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: guiones
+data:
+  modo: produccion
+  {{ if .Values.debug }}
+  debug: "true"
+  {{ end }}

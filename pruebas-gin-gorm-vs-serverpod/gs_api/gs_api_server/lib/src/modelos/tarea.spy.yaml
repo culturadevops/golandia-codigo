@@ -1,0 +1,6 @@
+class: Tarea
+table: tarea
+fields:
+  titulo: String
+  hecha: bool
+  autor: Autor?, relation(name=autor_tareas)

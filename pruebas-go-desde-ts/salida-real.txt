@@ -1,0 +1,54 @@
+# Salida literal — pruebas «vengo de TypeScript, ¿qué me va a doler en Go?»
+# Corrida: 2026-09-03. Sin retocar.
+
+
+############ ENTORNO TYPESCRIPT ############
+v22.23.2
+`-- typescript@5.9.2
+
+############ TS 1 · la excepcion que el tipo NO cuenta ############
+== compila? ==
+   tsc: SIN ERRORES (rc=0)
+== y al ejecutarlo? ==
+/pruebas/ts/t1_excepciones.ts:7
+    throw new Error("saldo insuficiente");
+    ^
+
+
+############ TS 2 · uniones de literales: el compilador conoce los valores ############
+ts/t2_uniones.ts(9,23): error TS2345: Argument of type '"activa"' is not assignable to parameter of type 'Estado'.
+
+############ TS 3 · no hay valor cero: hay 'todavia no vale nada' ############
+ts/t3_valor_cero.ts(3,26): error TS2454: Variable 'intentos' is used before being assigned.
+
+############ TS 4 · strictNullChecks: null es parte del tipo ############
+ts/t4_null.ts(9,13): error TS18047: 'c' is possibly 'null'.
+
+############ ENTORNO GO ############
+go version go1.26.5 linux/amd64
+
+############ GO 1 · el error es un valor, y el compilador te obliga a recogerlo ############
+== ignorar el error, como se ignora una excepcion en TS ==
+# command-line-arguments
+go/g1_errores.go:22:14: assignment mismatch: 1 variable but cobrar returns 2 values
+== y asi es como se escribe de verdad ==
+no se pudo cobrar: saldo insuficiente
+
+############ GO 2 · aqui NO hay uniones de literales ############
+el cliente esta activo
+el cliente esta activa
+el cliente esta cualquier cosa que se me ocurra
+
+############ GO 3 · el valor cero, y por que duele en JSON ############
+sin inicializar -> intentos=0 nombre="" lista=[] (nil? true)
+sin el campo -> descuento=0
+con cero     -> descuento=0
+son iguales? true   <- y son dos cosas DISTINTAS
+con puntero: sin el campo -> <nil> (nil? true)
+con puntero: con cero     -> 0 (nil? false)
+
+############ GO 4 · nil no es null, y no se porta igual segun el tipo ############
+leer de un mapa nil:         0 (y no revienta)
+escribir en un mapa nil:     PANIC: assignment to entry in nil map
+append a un slice nil:       [1 2 3] (largo 3)
+leer un puntero nil:         PANIC: runtime error: invalid memory address or nil pointer dereference

@@ -1,0 +1,91 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== version de goleak ==
+  require go.uber.org/goleak v1.3.0
+
+== 1. el test con la fuga, SIN goleak: pasa ==
+=== RUN   TestConFuga_SinGoleak
+--- PASS: TestConFuga_SinGoleak (0.05s)
+PASS
+ok  	fuga	0.052s
+
+== 2. el MISMO test con goleak: falla, y dice donde ==
+=== RUN   TestConFuga_ConGoleak
+    vigilante_test.go:34: found unexpected goroutines:
+        [Goroutine 34 in state chan receive, with fuga.(*VigilanteConFuga).Arrancar.func1 on top of the stack:
+        fuga.(*VigilanteConFuga).Arrancar.func1()
+        	/lab/etapas/01-fuga/vigilante.go:21 +0x4d
+        created by fuga.(*VigilanteConFuga).Arrancar in goroutine 33
+        	/lab/etapas/01-fuga/vigilante.go:19 +0x67
+        ]
+--- FAIL: TestConFuga_ConGoleak (0.49s)
+FAIL
+exit status 1
+FAIL	fuga	0.495s
+
+== 3. la version sana con goleak: pasa ==
+=== RUN   TestSano_ConGoleak
+--- PASS: TestSano_ConGoleak (0.07s)
+PASS
+ok  	fuga	0.072s
+
+== 4. CODIGO REAL DEL CANAL: el chequeo de salud del video de goroutines ==
+   --- la version concurrente, que el video dio por buena ---
+=== RUN   TestConcurrente
+--- PASS: TestConcurrente (0.24s)
+PASS
+ok  	chequeo	0.238s
+   --- la del limite de tiempo, donde estaba la sospecha ---
+=== RUN   TestConTimeout
+2026/09/26 14:40:42 httptest.Server blocked in Close after 5 seconds, waiting for connections:
+  *net.TCPConn 0x3555ede820f0 127.0.0.1:41690 in state active
+--- PASS: TestConTimeout (30.23s)
+=== RUN   TestConTimeout_GoleakPrimero
+    chequeo_test.go:59: found unexpected goroutines:
+        [Goroutine 453 in state IO wait, with internal/poll.runtime_pollWait on top of the stack:
+        internal/poll.runtime_pollWait(0x715d12245a00, 0x72)
+        	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+        internal/poll.(*pollDesc).wait(0x3555edea7380?, 0x3555edef6000?, 0x0)
+        	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+        internal/poll.(*pollDesc).waitRead(...)
+        	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+        internal/poll.(*FD).Read(0x3555edea7380, {0x3555edef6000, 0x1000, 0x1000})
+        	/usr/local/go/src/internal/poll/fd_unix.go:170 +0x2a8
+        net.(*netFD).Read(0x3555edea7380, {0x3555edef6000?, 0x3555ee126280?, 0x7?})
+        	/usr/local/go/src/net/fd_posix.go:68 +0x25
+        net.(*conn).Read(0x3555ede82168, {0x3555edef6000?, 0x0?, 0x72?})
+        	/usr/local/go/src/net/net.go:196 +0x45
+        net/http.(*connReader).Read(0x3555edeb4dc0, {0x3555edef6000, 0x1000, 0x1000})
+        	/usr/local/go/src/net/http/server.go:856 +0x150
+        bufio.(*Reader).fill(0x3555edeb6480)
+        	/usr/local/go/src/bufio/bufio.go:113 +0x103
+        bufio.(*Reader).Peek(0x3555edeb6480, 0x4)
+        	/usr/local/go/src/bufio/bufio.go:152 +0x52
+        net/http.(*conn).serve(0x3555ede93cb0, {0xaa9fd8, 0x3555ede95a70})
+
+== 5. el MISMO test, con goleak mirando ANTES del Close ==
+=== RUN   TestConTimeout_GoleakPrimero
+    chequeo_test.go:59: found unexpected goroutines:
+        [Goroutine 9 in state IO wait, with internal/poll.runtime_pollWait on top of the stack:
+        internal/poll.runtime_pollWait(0x74ad0f060a00, 0x72)
+        	/usr/local/go/src/runtime/netpoll.go:351 +0x85
+        internal/poll.(*pollDesc).wait(0x3aa5bf99c300?, 0x100?, 0x0)
+        	/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27
+        internal/poll.(*pollDesc).waitRead(...)
+        	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+        internal/poll.(*FD).Accept(0x3aa5bf99c300)
+        	/usr/local/go/src/internal/poll/fd_unix.go:618 +0x27d
+        net.(*netFD).accept(0x3aa5bf99c300)
+        	/usr/local/go/src/net/fd_unix.go:149 +0x29
+        net.(*TCPListener).accept(0x3aa5bfa42b80)
+        	/usr/local/go/src/net/tcpsock_posix.go:159 +0x1b
+        net.(*TCPListener).Accept(0x3aa5bfa42b80)
+        	/usr/local/go/src/net/tcpsock.go:387 +0x30
+        net/http.(*Server).Serve(0x3aa5bfb24140, {0xaa9d80, 0x3aa5bfa42b80})
+        	/usr/local/go/src/net/http/server.go:3551 +0x379
+        net/http/httptest.(*Server).goServe.func1()
+        	/usr/local/go/src/net/http/httptest/server.go:586 +0x55
+        created by net/http/httptest.(*Server).goServe in goroutine 8
+        	/usr/local/go/src/net/http/httptest/server.go:584 +0x92
+         Goroutine 132 in state IO wait, with internal/poll.runtime_pollWait on top of the stack:

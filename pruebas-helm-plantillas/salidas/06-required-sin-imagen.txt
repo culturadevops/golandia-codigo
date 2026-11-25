@@ -1,0 +1,7 @@
+$ helm template demo 06-required  # mal.yaml + values-sin-imagen.yaml
+Error: caso/templates/caso.yaml:8:24
+  executing "caso/templates/caso.yaml" at <.Values.imagen.repo>:
+    nil pointer evaluating interface {}.repo
+
+Use --debug flag to render out invalid YAML
+[código de salida: 1]

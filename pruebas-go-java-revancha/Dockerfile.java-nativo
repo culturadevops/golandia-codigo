@@ -1,0 +1,4 @@
+FROM debian:trixie-slim
+COPY _bin/servidor-nativo /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

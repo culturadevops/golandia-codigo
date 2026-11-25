@@ -1,0 +1,151 @@
+(apply inicial: 2 notas creadas)
+
+$ curl -X PUT http://127.0.0.1:8080/notas/2 -d '{"titulo":"Cambiado a mano","texto":"pan, café","etiquetas":["casa","zeta"]}'
+{"id":"2","titulo":"Cambiado a mano","texto":"pan, café","etiquetas":["casa","zeta"],"creada":"2026-10-26T15:36:33Z","version":2}
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/bien
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.ideas: Refreshing state... [id=1]
+notas_nota.compras: Refreshing state... [id=2]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+        id        = "2"
+      ~ titulo    = "Cambiado a mano" -> "Compras"
+      ~ version   = 2 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+[código de salida 0 · 0.08 s]
+--- llamadas a notas-api ---
+GET /notas/1 200
+GET /notas/2 200
+
+$ terraform plan -refresh-only
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/bien
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.ideas: Refreshing state... [id=1]
+notas_nota.compras: Refreshing state... [id=2]
+
+Note: Objects have changed outside of Terraform
+
+Terraform detected the following changes made outside of Terraform since the
+last "terraform apply" which may have affected this plan:
+
+  # notas_nota.compras has changed
+  ~ resource "notas_nota" "compras" {
+        id        = "2"
+      ~ titulo    = "Compras" -> "Cambiado a mano"
+      ~ version   = 1 -> 2
+        # (4 unchanged attributes hidden)
+    }
+
+
+This is a refresh-only plan, so Terraform will not take any actions to undo
+these. If you were expecting these changes then you can apply this plan to
+record the updated values in the Terraform state without changing any remote
+objects.
+[código de salida 0 · 0.08 s]
+
+$ terraform apply -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/bien
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.ideas: Refreshing state... [id=1]
+notas_nota.compras: Refreshing state... [id=2]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be updated in-place
+  ~ resource "notas_nota" "compras" {
+        id        = "2"
+      ~ titulo    = "Cambiado a mano" -> "Compras"
+      ~ version   = 2 -> (known after apply)
+        # (4 unchanged attributes hidden)
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+notas_nota.compras: Modifying... [id=2]
+notas_nota.compras: Modifications complete after 0s [id=2]
+
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+[código de salida 0 · 0.11 s]
+--- llamadas a notas-api ---
+GET /notas/2 200
+GET /notas/1 200
+GET /notas/1 200
+GET /notas/2 200
+PUT /notas/2 200
+
+$ curl -X DELETE http://127.0.0.1:8080/notas/1 
+HTTP 204
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/bien
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.compras: Refreshing state... [id=2]
+notas_nota.ideas: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # notas_nota.ideas will be created
+  + resource "notas_nota" "ideas" {
+      + creada  = (known after apply)
+      + id      = (known after apply)
+      + titulo  = "Ideas para vídeos"
+      + version = (known after apply)
+        # (1 unchanged attribute hidden)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+[código de salida 0 · 0.09 s]
+--- llamadas a notas-api ---
+GET /notas/2 200
+GET /notas/1 404

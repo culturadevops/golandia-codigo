@@ -1,0 +1,19 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Lección 3</title>
+<style>body{font:18px ui-monospace,monospace;background:#0d1117;color:#e6edf3;padding:24px}p{margin:8px 0}.e{color:#ff7b72}.b{color:#7ee787}</style>
+<body><h2 style="font-family:system-ui;color:#00ADD8">Errores por el puente</h2><div id="o"></div>
+<script>
+const R = s => window.go.main.App.Reportar(s)
+const pon = (t, c) => { document.getElementById('o').innerHTML += `<p class=${c}>${t}</p>`; return R('  ' + t) }
+window.onload = async () => {
+  const A = window.go.main.App
+  await pon(`Comprar("taza", 2) -> ${await A.Comprar('taza', 2)}`, 'b')
+  try { await A.Comprar('taza', 5) } catch (e) {
+    await pon(`Comprar("taza", 5) -> rechazada: ${JSON.stringify(e)} · typeof ${typeof e}`, 'e')
+    await pon(`¿es «sin stock»? e === "sin stock": ${e === 'sin stock'} · e.includes("sin stock"): ${String(e).includes('sin stock')}`, 'e')
+  }
+  const plazo = new Promise(ok => setTimeout(() => ok('3 s después: ni respuesta ni error'), 3000))
+  const r = await Promise.race([A.Romper().then(v => 'devolvió ' + v, e => 'rechazada: ' + String(e).slice(0, 80)), plazo])
+  await pon(`Romper() (entra en pánico) -> ${r}`, 'e')
+  await pon('la ventana sigue viva después del pánico', 'b')
+}
+</script></body></html>

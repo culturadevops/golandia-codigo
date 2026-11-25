@@ -1,0 +1,49 @@
+# El webhook dentro del clúster: su namespace, el Deployment y el Service (443 → 8443).
+# El Secret admision-tls lo crea correr.py con el certificado que genera.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: admision
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admision
+  namespace: admision
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: admision}
+  template:
+    metadata:
+      labels: {app: admision}
+    spec:
+      containers:
+      - name: admision
+        image: admision:0.1
+        imagePullPolicy: IfNotPresent
+        args: ["-volcar"]
+        ports:
+        - containerPort: 8443
+        readinessProbe:
+          httpGet: {path: /healthz, port: 8443, scheme: HTTPS}
+          periodSeconds: 2
+        resources:
+          requests: {cpu: 50m, memory: 32Mi}
+          limits: {cpu: 500m, memory: 64Mi}
+        volumeMounts:
+        - {name: certs, mountPath: /certs, readOnly: true}
+      volumes:
+      - name: certs
+        secret: {secretName: admision-tls}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: admision
+  namespace: admision
+spec:
+  selector: {app: admision}
+  ports:
+  - port: 443
+    targetPort: 8443

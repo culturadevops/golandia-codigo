@@ -1,0 +1,12 @@
+$ go run ./cmd/tres   (sin DATABASE_URL)
+error al arrancar: falta DATABASE_URL
+exit status 1
+[código de salida 1]
+$ DATABASE_URL=postgres://app:MAL@g684-pg/tienda go run ./cmd/tres
+error al arrancar: no llegó a la base: failed to connect to `user=app database=tienda`: 192.168.192.2:5432 (g684-pg): failed SASL auth: FATAL: password authentication failed for user "app" (SQLSTATE 28P01)
+exit status 1
+[código de salida 1]
+$ DATABASE_URL=postgres://app:app@g684-pg:5433/tienda go run ./cmd/tres   (puerto equivocado)
+error al arrancar: no llegó a la base: failed to connect to `user=app database=tienda`: 192.168.192.2:5433 (g684-pg): dial error: dial tcp 192.168.192.2:5433: connect: connection refused
+exit status 1
+[código de salida 1]

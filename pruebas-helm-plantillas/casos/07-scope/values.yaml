@@ -1,0 +1,8 @@
+nombre: web
+puertos:
+  - nombre: http
+    puerto: 80
+  - nombre: metricas
+    puerto: 9090
+base:
+  host: db.default.svc

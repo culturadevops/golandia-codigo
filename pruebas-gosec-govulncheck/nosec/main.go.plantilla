@@ -1,0 +1,19 @@
+// Publica el archivo de estado que elige el operador en la carpeta de nginx.
+// correr.py genera tres variantes de este archivo: sin anotación, con la anotación pelada y con la anotación justificada.
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+	origen := os.Args[1]
+
+	datos, err := os.ReadFile(origen) MARCA_LEER
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	os.WriteFile("/usr/share/nginx/html/estado.json", datos, 0o644) MARCA_ESCRIBIR
+}

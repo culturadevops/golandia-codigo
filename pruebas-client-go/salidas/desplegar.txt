@@ -1,0 +1,6 @@
+$ kgo desplegar
+   0.0s  creado demo/web · resourceVersion 2340
+   1.3s  1/1 listas en 1.3s
+   1.3s  escalado a 3
+   3.3s  3/3 listas en 2.0s
+   3.3s  peticiones: GET=16 POST=1 PUT=1

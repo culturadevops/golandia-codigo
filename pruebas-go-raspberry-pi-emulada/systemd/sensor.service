@@ -1,0 +1,15 @@
+[Unit]
+Description=Sensor de Golandia (Go)
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/sensor -gpio=sim
+Restart=always
+RestartSec=2
+DynamicUser=yes
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target

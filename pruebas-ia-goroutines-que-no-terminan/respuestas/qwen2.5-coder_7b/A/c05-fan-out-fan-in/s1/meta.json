@@ -1,0 +1,16 @@
+{
+ "segundos": 2.93,
+ "eval_count": 201,
+ "opciones": {
+  "temperature": 0.7,
+  "seed": 1,
+  "num_predict": 2048
+ },
+ "backend": "ollama",
+ "modelo": "qwen2.5-coder:7b",
+ "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+ "tarea": "c05-fan-out-fan-in",
+ "variante": "A",
+ "seed": 1,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Escribe la función FanOutFanIn(ctx context.Context, entrada []int, workers int, f func(int) int) <-chan int. Reparte los números de entrada entre `workers` goroutines que aplican f, junta todos los resultados en un solo canal (el orden no importa) y lo cierra cuando terminan todas. Si ctx se cancela, todo debe pararse.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

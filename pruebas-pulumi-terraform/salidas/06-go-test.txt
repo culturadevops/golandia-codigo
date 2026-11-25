@@ -1,0 +1,11 @@
+$ go test -count=1 -v -run 'Prod|Dev|Politica' .
+(compilación de los tests incluida: 2.1 s)
+(otra vez, con caché: 1.3 s)
+=== RUN   TestProdLlevaVersionado
+--- PASS: TestProdLlevaVersionado (0.00s)
+=== RUN   TestDevSinVersionado
+--- PASS: TestDevSinVersionado (0.00s)
+=== RUN   TestLaPoliticaNombraCadaCola
+--- PASS: TestLaPoliticaNombraCadaCola (0.00s)
+PASS
+ok  	g680	0.015s

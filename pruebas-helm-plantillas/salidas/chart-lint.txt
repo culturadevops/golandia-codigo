@@ -1,0 +1,5 @@
+$ helm lint chart
+==> Linting /chart
+
+1 chart(s) linted, 0 chart(s) failed
+[código de salida: 0]

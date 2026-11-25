@@ -1,0 +1,8 @@
+checks:
+  - nombre: api
+    url: https://api.ejemplo.com/health
+    intervalo_s: 30
+    timeout_ms: 1500
+  - nombre: web
+    url: https://www.ejemplo.com
+    intervalo_s: 60

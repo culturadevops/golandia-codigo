@@ -1,0 +1,16 @@
+{
+ "segundos": 0.62,
+ "eval_count": 89,
+ "opciones": {
+  "temperature": 0.7,
+  "seed": 3,
+  "num_predict": 2048
+ },
+ "backend": "ollama",
+ "modelo": "qwen2.5-coder:7b",
+ "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+ "tarea": "t11-sumar-csv",
+ "variante": "A",
+ "seed": 3,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: Escribe la función SumarCSV(s string) (int, error) que suma los números enteros separados por comas en s, por ejemplo \"1,2,3\" da 6. Si alguno no es un número, devuelve el error.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

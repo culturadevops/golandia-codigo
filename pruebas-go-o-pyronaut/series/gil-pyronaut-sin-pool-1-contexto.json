@@ -1,0 +1,303 @@
+{
+ "contenedor": "srv",
+ "intervalo_s": 0.5,
+ "resumen": {
+  "muestras": 41,
+  "cpu_media": 112.4,
+  "cpu_max": 136.7,
+  "mem_max_mib": 465.3,
+  "hilos_max": 41,
+  "frenadas": 1
+ },
+ "serie": [
+  {
+   "t": 0.0,
+   "cpu_pct": null,
+   "mem_mib": 426.04,
+   "hilos": 40,
+   "frenadas": 0
+  },
+  {
+   "t": 0.51,
+   "cpu_pct": 106.3,
+   "mem_mib": 457.48,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 1.01,
+   "cpu_pct": 133.2,
+   "mem_mib": 458.71,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 1.52,
+   "cpu_pct": 115.7,
+   "mem_mib": 459.18,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 2.02,
+   "cpu_pct": 120.2,
+   "mem_mib": 459.12,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 2.53,
+   "cpu_pct": 108.7,
+   "mem_mib": 459.36,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 3.03,
+   "cpu_pct": 110.9,
+   "mem_mib": 459.33,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 3.53,
+   "cpu_pct": 136.7,
+   "mem_mib": 464.32,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 4.04,
+   "cpu_pct": 116.9,
+   "mem_mib": 465.3,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 4.54,
+   "cpu_pct": 114.5,
+   "mem_mib": 465.29,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 5.05,
+   "cpu_pct": 111.9,
+   "mem_mib": 465.26,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 5.55,
+   "cpu_pct": 113.9,
+   "mem_mib": 465.23,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 6.06,
+   "cpu_pct": 112.3,
+   "mem_mib": 465.23,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 6.56,
+   "cpu_pct": 114.3,
+   "mem_mib": 465.21,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 7.07,
+   "cpu_pct": 107.5,
+   "mem_mib": 465.18,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 7.57,
+   "cpu_pct": 108.0,
+   "mem_mib": 465.15,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 8.07,
+   "cpu_pct": 108.3,
+   "mem_mib": 465.12,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 8.58,
+   "cpu_pct": 106.6,
+   "mem_mib": 465.11,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 9.08,
+   "cpu_pct": 111.2,
+   "mem_mib": 465.09,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 9.59,
+   "cpu_pct": 107.8,
+   "mem_mib": 465.07,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 10.09,
+   "cpu_pct": 111.5,
+   "mem_mib": 465.04,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 10.6,
+   "cpu_pct": 110.5,
+   "mem_mib": 465.01,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 11.1,
+   "cpu_pct": 111.8,
+   "mem_mib": 465.0,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 11.61,
+   "cpu_pct": 107.9,
+   "mem_mib": 464.99,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 12.11,
+   "cpu_pct": 111.6,
+   "mem_mib": 464.95,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 12.62,
+   "cpu_pct": 109.3,
+   "mem_mib": 464.94,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 13.12,
+   "cpu_pct": 111.3,
+   "mem_mib": 464.91,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 13.62,
+   "cpu_pct": 111.2,
+   "mem_mib": 464.89,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 14.13,
+   "cpu_pct": 109.4,
+   "mem_mib": 464.86,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 14.63,
+   "cpu_pct": 110.7,
+   "mem_mib": 464.84,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 15.14,
+   "cpu_pct": 108.8,
+   "mem_mib": 464.8,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 15.64,
+   "cpu_pct": 110.1,
+   "mem_mib": 464.79,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 16.15,
+   "cpu_pct": 108.7,
+   "mem_mib": 464.77,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 16.65,
+   "cpu_pct": 112.4,
+   "mem_mib": 464.73,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 17.16,
+   "cpu_pct": 109.9,
+   "mem_mib": 431.35,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 17.66,
+   "cpu_pct": 111.4,
+   "mem_mib": 431.34,
+   "hilos": 40,
+   "frenadas": 1
+  },
+  {
+   "t": 18.17,
+   "cpu_pct": 111.0,
+   "mem_mib": 433.56,
+   "hilos": 41,
+   "frenadas": 1
+  },
+  {
+   "t": 18.67,
+   "cpu_pct": 121.0,
+   "mem_mib": 456.8,
+   "hilos": 41,
+   "frenadas": 1
+  },
+  {
+   "t": 19.17,
+   "cpu_pct": 112.3,
+   "mem_mib": 456.79,
+   "hilos": 41,
+   "frenadas": 1
+  },
+  {
+   "t": 19.68,
+   "cpu_pct": 110.7,
+   "mem_mib": 456.79,
+   "hilos": 41,
+   "frenadas": 1
+  },
+  {
+   "t": 20.18,
+   "cpu_pct": 109.7,
+   "mem_mib": 457.04,
+   "hilos": 41,
+   "frenadas": 1
+  }
+ ],
+ "variante": "pyronaut, sin pool (1 contexto)",
+ "rps": 4986.6088
+}

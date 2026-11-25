@@ -1,0 +1,6 @@
+$ go run . cuenta
+text/template trae: 19 funciones
+Sprig v3.3.0 agrega: 211
+¿Sprig tiene env? true · ¿y toYaml? false · ¿required? false · ¿include? false · ¿tpl? false
+Helm v4.3.1 quita env y expandenv, declara 27 propias ( 24 nuevas, 3 pisan a Sprig) → total 252
+[código de salida: 0]

@@ -1,0 +1,15 @@
+groups:
+  - name: certificados
+    rules:
+      - alert: CertificadoPorVencer
+        expr: (certexp_not_after_timestamp_seconds - time()) / 86400 < 14
+        for: 30s
+        labels: {severity: aviso}
+        annotations:
+          summary: "{{ $labels.objetivo }} vence en {{ $value | printf \"%.1f\" }} días"
+      - alert: SondaTLSFalla
+        expr: certexp_probe_success == 0
+        for: 30s
+        labels: {severity: aviso}
+        annotations:
+          summary: "no pude leer el certificado de {{ $labels.objetivo }}"

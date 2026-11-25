@@ -1,0 +1,21 @@
+$ kgo watch-reintento
+   0.0s  lista inicial: 1 pods · resourceVersion 2497
+   0.0s  → WATCH /api/v1/namespaces/demo/pods?labelSelector=app%3Dweb&resourceVersion=2497&timeout=5s&timeoutSeconds=5&watch=true
+   1.0s  [escalador] replicas=3 ok
+   1.0s  ADDED    web-78c5486d8f-nlpcw
+   1.0s  ADDED    web-78c5486d8f-fthdv
+   5.0s  canal cerrado · reabro desde resourceVersion 2526
+   5.0s  → WATCH /api/v1/namespaces/demo/pods?labelSelector=app%3Dweb&resourceVersion=2526&timeout=5s&timeoutSeconds=5&watch=true
+   8.0s  [escalador] replicas=1 ok
+   9.0s  DELETED  web-78c5486d8f-nlpcw
+   9.0s  DELETED  web-78c5486d8f-fthdv
+  10.0s  canal cerrado · reabro desde resourceVersion 2560
+  10.0s  → WATCH /api/v1/namespaces/demo/pods?labelSelector=app%3Dweb&resourceVersion=2560&timeout=5s&timeoutSeconds=5&watch=true
+  15.0s  canal cerrado · reabro desde resourceVersion 2560
+  15.0s  → WATCH /api/v1/namespaces/demo/pods?labelSelector=app%3Dweb&resourceVersion=2560&timeout=5s&timeoutSeconds=5&watch=true
+  20.0s  canal cerrado · reabro desde resourceVersion 2560
+  20.0s  → WATCH /api/v1/namespaces/demo/pods?labelSelector=app%3Dweb&resourceVersion=2560&timeout=5s&timeoutSeconds=5&watch=true
+  25.0s  canal cerrado · reabro desde resourceVersion 2560
+  25.0s  5 watch abiertos · 14 MODIFIED · peticiones: GET=3 PUT=2 WATCH=5
+  25.0s  → WATCH /api/v1/namespaces/demo/pods?labelSelector=app%3Dweb&resourceVersion=1&timeout=5s&timeoutSeconds=5&watch=true
+  25.0s  watch desde resourceVersion 1: too old resource version: 1 (2146) · código 410 · IsResourceExpired=true

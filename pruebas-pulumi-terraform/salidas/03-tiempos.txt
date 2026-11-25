@@ -1,0 +1,7 @@
+ronda  herramienta  preview/plan  up/apply  sin-cambios  destroy
+1      pulumi       16.9          27.7      2.0        42.7
+1      terraform    3.3          27.3      4.6        48.8
+2      pulumi       1.7          26.7      1.7        42.5
+2      terraform    3.1          27.1      4.3        48.4
+3      pulumi       1.7          26.7      1.9        42.6
+3      terraform    3.3          27.2      4.5        (se queda para el estado)

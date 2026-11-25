@@ -1,0 +1,12 @@
+# Binarios, perfiles y trazas: se generan en un directorio temporal del contenedor,
+# pero por si los creas a mano al seguir el curso.
+*.test
+*.prof
+*.out
+*.exe
+/svc
+/carga
+/memoria
+/traza
+/gc
+__pycache__/

@@ -1,0 +1,12 @@
+```go
+package tarea
+
+func EsAdmin(roles []string) bool {
+    for _, role := range roles {
+        if role == "admin" {
+            return true
+        }
+    }
+    return false
+}
+```

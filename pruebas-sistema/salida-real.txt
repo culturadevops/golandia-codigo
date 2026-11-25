@@ -1,0 +1,71 @@
+Unable to find image 'golang:alpine' locally
+alpine: Pulling from library/golang
+6563b0ba6ce9: Pulling fs layer
+cea3d467f844: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+56bd32640bdf: Pulling fs layer
+4f4fb700ef54: Already exists
+cea3d467f844: Already exists
+e788521f9ebc: Download complete
+accb3d404831: Download complete
+56bd32640bdf: Download complete
+6563b0ba6ce9: Download complete
+6563b0ba6ce9: Pull complete
+4f4fb700ef54: Pull complete
+cea3d467f844: Pull complete
+56bd32640bdf: Pull complete
+Digest: sha256:0178a641fbb4858c5f1b48e34bdaabe0350a330a1b1149aabd498d0699ff5fb2
+Status: Downloaded newer image for golang:alpine
+############ ENTORNO ############
+go version go1.26.5 linux/amd64
+NAME="Alpine Linux"
+
+############ 1 · PROCESOS (os/exec + context) ############
+a) el sistema dice: Linux 6.18.33.2-microsoft-standard-WSL2
+b) pedi 30 segundos de sleep y volvi en 1.0s
+   el error que devuelve: signal: killed
+   motivo del contexto:   context deadline exceeded
+
+############ 2 · SENALES (apagado ordenado) ############
+servidor arrancado, PID 1188 — esperando trabajo
+[el sistema manda SIGTERM]
+recibida la senal: dejo de aceptar peticiones nuevas
+terminando las peticiones en vuelo...
+cerrada la base de datos
+adios limpiamente
+
+############ 3 · LEER EL SISTEMA (/proc, cero dependencias) ############
+carga (1, 5 y 15 minutos): 0.00  0.00  0.00
+procesos ejecutandose:     1/501
+memoria total:             15.4 GiB
+memoria disponible:        14.0 GiB (91%)
+nucleos que ve el proceso: 24
+
+############ 4 · EL BINARIO ESTATICO ############
+== a) compilar para esta maquina ==
+   servidor: 8345950 bytes
+
+== b) que necesita para arrancar? ==
+/lib/ld-musl-x86_64.so.1: servidor: Not a valid dynamic program
+
+== c) compilar para OTRA maquina, sin salir de esta ==
+   (un Raspberry Pi de 64 bits, y un servidor Windows, desde Linux x86)
+   servidor-arm64     7777885 bytes
+   servidor-mac       7933938 bytes
+   servidor.exe       8395776 bytes
+
+== d) cuantos destinos sabe hacer este compilador, sin instalar nada ==
+47
+== construyendo la imagen ==
+
+== lo que pesa el microservicio entero, en disco ==
+golandia/micro:scratch  8.32MB
+
+== con que se compara ==
+python:3.13-alpine (imagen BASE, sin tu codigo)  70.1MB
+node:22-alpine (imagen BASE, sin tu codigo)  232MB
+
+== y arranca? ==
+   GET /salud -> vivo
+   mandando SIGTERM (lo mismo que hace docker stop / kubernetes)...
+   parado limpiamente

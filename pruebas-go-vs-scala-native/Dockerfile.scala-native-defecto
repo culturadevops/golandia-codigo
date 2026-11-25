@@ -1,0 +1,9 @@
+# Lo que sale si no pides modo: scala-cli package --native sin --native-mode.
+FROM virtuslab/scala-cli:1.18.0 AS build
+WORKDIR /src
+COPY src/Servidor.scala /src/
+RUN scala-cli --power package --server=false --scala 3.10.0 --native --native-version 0.5.12 Servidor.scala -o /servidor-defecto
+FROM debian:trixie-slim
+COPY --from=build /servidor-defecto /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

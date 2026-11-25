@@ -1,0 +1,17 @@
+# Integración continua: en cada push, las mismas comprobaciones que se ejecutan en el vídeo.
+name: ci
+on: [push, pull_request]
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version: "1.26"
+      - run: go vet ./...
+      - run: go test -race -cover ./...
+      - uses: golangci/golangci-lint-action@v8
+        with:
+          version: v2.15.0
+      - run: docker build -t escaner .

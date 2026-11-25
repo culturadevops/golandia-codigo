@@ -1,0 +1,7 @@
+$ go build -trimpath -ldflags='-s -w' ./cmd/...
+go version go1.27.2 linux/amd64
+github.com/prometheus/client_golang v1.25.0
+total 25480
+-rwxr-xr-x 1 root root 9244832 Oct 26 15:38 certexp
+-rwxr-xr-x 1 root root 9293984 Oct 26 15:38 gauge-global
+-rwxr-xr-x 1 root root 7543255 Oct 26 15:38 servidores

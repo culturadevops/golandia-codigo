@@ -1,0 +1,9 @@
+# Igual que Dockerfile.scala-native, recompilado con SCALANATIVE_GC_TRAP_BASED_YIELDPOINTS=0 (el arreglo que propone el changelog de 0.5.12).
+FROM virtuslab/scala-cli:1.18.0 AS build
+WORKDIR /src
+COPY src/Servidor.scala /src/
+RUN SCALANATIVE_GC_TRAP_BASED_YIELDPOINTS=0 scala-cli --power package --server=false --scala 3.10.0 --native --native-version 0.5.12 --native-mode release-full Servidor.scala -o /servidor
+FROM debian:trixie-slim
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

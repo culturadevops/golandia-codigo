@@ -1,0 +1,5 @@
+$ eval $(ssh-agent -s) >/dev/null; ssh-add /root/.ssh/id_ed25519; ssh-add -l | cut -c1-30; cd /root && flota -agente -clave /no/existe -known /root/.ssh/known_hosts -hosts s01.txt; ssh-agent -k >/dev/null
+Identity added: /root/.ssh/id_ed25519 (flota-682)
+256 SHA256:luHFcEu/WtYWl8tyx7x
+s01      0     1.1s  s01 disco 41%
+1 hosts · 1 ok · 0 con código distinto de 0 · 0 sin respuesta · 1.1s en total

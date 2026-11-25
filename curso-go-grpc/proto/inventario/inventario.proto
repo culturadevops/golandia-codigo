@@ -1,0 +1,57 @@
+// El servicio de todo el curso: el inventario de una tienda.
+syntax = "proto3";
+
+package inventario.v1;
+
+option go_package = "curso-grpc/gen/inventario;inventario";
+
+service Inventario {
+  // Unaria: un pedido, una respuesta.
+  rpc Consultar(ConsultarPedido) returns (Producto);
+  // Del servidor al cliente: un flujo de eventos.
+  rpc Vigilar(VigilarPedido) returns (stream Evento);
+  // La lista entera de una vez (lección 6: el límite de tamaño).
+  rpc Listar(ListarPedido) returns (Catalogo);
+  // La misma lista, a trozos.
+  rpc ListarPorTrozos(ListarPedido) returns (stream Catalogo);
+  // Quién contesta (lección 7: el balanceo).
+  rpc Quien(Vacio) returns (Replica);
+}
+
+message Vacio {}
+
+message ConsultarPedido {
+  string sku = 1;
+  // Lo que el servidor tarda a propósito, para las lecciones de plazos.
+  int32 retraso_ms = 2;
+}
+
+message Producto {
+  string sku = 1;
+  string nombre = 2;
+  int32 stock = 3;
+  int64 precio_centavos = 4;
+}
+
+message VigilarPedido {
+  int32 eventos = 1;
+  int32 bytes_por_evento = 2;
+}
+
+message Evento {
+  int32 n = 1;
+  bytes relleno = 2;
+}
+
+message ListarPedido {
+  int32 productos = 1;
+  int32 por_trozo = 2;
+}
+
+message Catalogo {
+  repeated Producto productos = 1;
+}
+
+message Replica {
+  string nombre = 1;
+}

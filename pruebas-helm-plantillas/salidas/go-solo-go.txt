@@ -1,0 +1,4 @@
+$ go run . solo-go ../mini
+error: template: deployment.yaml:6: function "quote" not defined
+exit status 1
+[código de salida: 1]

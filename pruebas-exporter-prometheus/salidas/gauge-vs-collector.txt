@@ -1,0 +1,21 @@
+== con g679-srv2 vivo
+[gauge-global]
+  certexp_not_after_timestamp_seconds{objetivo="g679-srv2:9441"} 1.793461104e+09
+  certexp_not_after_timestamp_seconds{objetivo="g679-srv2:9443"} 1.800805104e+09
+[certexp (Collector)]
+  certexp_not_after_timestamp_seconds{objetivo="g679-srv2:9441"} 1.793461104e+09
+  certexp_not_after_timestamp_seconds{objetivo="g679-srv2:9443"} 1.800805104e+09
+  certexp_probe_duration_seconds{objetivo="g679-srv2:9441"} 0.001317409
+  certexp_probe_duration_seconds{objetivo="g679-srv2:9443"} 0.001356411
+  certexp_probe_success{objetivo="g679-srv2:9441"} 1
+  certexp_probe_success{objetivo="g679-srv2:9443"} 1
+== docker stop g679-srv2 · 5.0 s después
+[gauge-global]
+  certexp_not_after_timestamp_seconds{objetivo="g679-srv2:9441"} 1.793461104e+09
+  certexp_not_after_timestamp_seconds{objetivo="g679-srv2:9443"} 1.800805104e+09
+[certexp (Collector)]
+  certexp_probe_duration_seconds{objetivo="g679-srv2:9441"} 2.000499285
+  certexp_probe_duration_seconds{objetivo="g679-srv2:9443"} 2.000573903
+  certexp_probe_success{objetivo="g679-srv2:9441"} 0
+  certexp_probe_success{objetivo="g679-srv2:9443"} 0
+(gauge-global con promhttp.Handler() expone además go_* y process_*: 132 líneas en total)

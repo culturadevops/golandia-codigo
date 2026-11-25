@@ -1,0 +1,10 @@
+version: "2"
+sql:
+  - engine: postgresql
+    schema: esquema.sql
+    queries: query.sql
+    gen:
+      go:
+        package: bd
+        out: ../app/bd
+        sql_package: pgx/v5

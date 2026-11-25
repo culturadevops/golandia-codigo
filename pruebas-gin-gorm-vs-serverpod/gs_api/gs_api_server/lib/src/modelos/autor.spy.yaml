@@ -1,0 +1,5 @@
+class: Autor
+table: autor
+fields:
+  nombre: String
+  tareas: List<Tarea>?, relation(name=autor_tareas)

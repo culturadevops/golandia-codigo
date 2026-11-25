@@ -1,0 +1,6 @@
+# Para comparar: una sola etapa. La imagen final lleva Go entero.
+FROM golang:1.27.2
+WORKDIR /src
+COPY . .
+RUN go build -o /tareas .
+ENTRYPOINT ["/tareas"]

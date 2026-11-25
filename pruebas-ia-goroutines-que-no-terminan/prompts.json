@@ -1,0 +1,9 @@
+{
+ "nota": "Plantillas del 705. Una sola variable cambia entre A y B: la frase sobre goroutines bloqueadas. Fijadas el 2026-10-29 antes de generar.",
+ "variantes": {
+  "A": {"nombre": "sin aviso",
+        "plantilla": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar.\n\nTarea: {TAREA}\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."},
+  "B": {"nombre": "pide «que no queden goroutines bloqueadas»",
+        "plantilla": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Asegúrate de que no quede ninguna goroutine bloqueada cuando la función termine.\n\nTarea: {TAREA}\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."}
+ }
+}

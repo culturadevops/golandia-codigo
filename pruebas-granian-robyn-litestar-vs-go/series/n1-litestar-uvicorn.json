@@ -1,0 +1,303 @@
+{
+ "contenedor": "srv",
+ "intervalo_s": 0.5,
+ "resumen": {
+  "muestras": 41,
+  "cpu_media": 198.0,
+  "cpu_max": 203.0,
+  "mem_max_mib": 91.81,
+  "hilos_max": 24,
+  "frenadas": 199
+ },
+ "serie": [
+  {
+   "t": 0.0,
+   "cpu_pct": null,
+   "mem_mib": 88.01,
+   "hilos": 9,
+   "frenadas": 0
+  },
+  {
+   "t": 0.5,
+   "cpu_pct": 117.8,
+   "mem_mib": 91.71,
+   "hilos": 24,
+   "frenadas": 2
+  },
+  {
+   "t": 1.01,
+   "cpu_pct": 198.3,
+   "mem_mib": 91.81,
+   "hilos": 24,
+   "frenadas": 7
+  },
+  {
+   "t": 1.52,
+   "cpu_pct": 198.6,
+   "mem_mib": 91.75,
+   "hilos": 24,
+   "frenadas": 12
+  },
+  {
+   "t": 2.02,
+   "cpu_pct": 201.9,
+   "mem_mib": 91.7,
+   "hilos": 24,
+   "frenadas": 17
+  },
+  {
+   "t": 2.53,
+   "cpu_pct": 198.3,
+   "mem_mib": 91.4,
+   "hilos": 24,
+   "frenadas": 22
+  },
+  {
+   "t": 3.03,
+   "cpu_pct": 201.8,
+   "mem_mib": 91.37,
+   "hilos": 24,
+   "frenadas": 27
+  },
+  {
+   "t": 3.54,
+   "cpu_pct": 198.6,
+   "mem_mib": 91.56,
+   "hilos": 24,
+   "frenadas": 32
+  },
+  {
+   "t": 4.04,
+   "cpu_pct": 201.9,
+   "mem_mib": 91.27,
+   "hilos": 24,
+   "frenadas": 37
+  },
+  {
+   "t": 4.55,
+   "cpu_pct": 198.5,
+   "mem_mib": 91.24,
+   "hilos": 24,
+   "frenadas": 42
+  },
+  {
+   "t": 5.05,
+   "cpu_pct": 201.6,
+   "mem_mib": 91.21,
+   "hilos": 24,
+   "frenadas": 47
+  },
+  {
+   "t": 5.56,
+   "cpu_pct": 199.5,
+   "mem_mib": 91.17,
+   "hilos": 24,
+   "frenadas": 52
+  },
+  {
+   "t": 6.06,
+   "cpu_pct": 201.9,
+   "mem_mib": 91.11,
+   "hilos": 24,
+   "frenadas": 57
+  },
+  {
+   "t": 6.57,
+   "cpu_pct": 198.0,
+   "mem_mib": 91.05,
+   "hilos": 24,
+   "frenadas": 62
+  },
+  {
+   "t": 7.07,
+   "cpu_pct": 201.6,
+   "mem_mib": 91.02,
+   "hilos": 24,
+   "frenadas": 67
+  },
+  {
+   "t": 7.58,
+   "cpu_pct": 198.5,
+   "mem_mib": 91.22,
+   "hilos": 24,
+   "frenadas": 72
+  },
+  {
+   "t": 8.08,
+   "cpu_pct": 202.6,
+   "mem_mib": 90.93,
+   "hilos": 24,
+   "frenadas": 77
+  },
+  {
+   "t": 8.59,
+   "cpu_pct": 196.7,
+   "mem_mib": 91.14,
+   "hilos": 24,
+   "frenadas": 82
+  },
+  {
+   "t": 9.09,
+   "cpu_pct": 201.0,
+   "mem_mib": 91.12,
+   "hilos": 24,
+   "frenadas": 88
+  },
+  {
+   "t": 9.6,
+   "cpu_pct": 198.1,
+   "mem_mib": 91.12,
+   "hilos": 24,
+   "frenadas": 93
+  },
+  {
+   "t": 10.1,
+   "cpu_pct": 203.0,
+   "mem_mib": 91.12,
+   "hilos": 24,
+   "frenadas": 98
+  },
+  {
+   "t": 10.61,
+   "cpu_pct": 198.7,
+   "mem_mib": 91.1,
+   "hilos": 24,
+   "frenadas": 103
+  },
+  {
+   "t": 11.11,
+   "cpu_pct": 201.0,
+   "mem_mib": 91.09,
+   "hilos": 24,
+   "frenadas": 108
+  },
+  {
+   "t": 11.62,
+   "cpu_pct": 198.8,
+   "mem_mib": 91.04,
+   "hilos": 24,
+   "frenadas": 113
+  },
+  {
+   "t": 12.12,
+   "cpu_pct": 201.7,
+   "mem_mib": 91.02,
+   "hilos": 24,
+   "frenadas": 118
+  },
+  {
+   "t": 12.63,
+   "cpu_pct": 198.1,
+   "mem_mib": 90.98,
+   "hilos": 24,
+   "frenadas": 123
+  },
+  {
+   "t": 13.13,
+   "cpu_pct": 201.5,
+   "mem_mib": 90.95,
+   "hilos": 24,
+   "frenadas": 128
+  },
+  {
+   "t": 13.64,
+   "cpu_pct": 198.6,
+   "mem_mib": 90.88,
+   "hilos": 24,
+   "frenadas": 133
+  },
+  {
+   "t": 14.14,
+   "cpu_pct": 202.2,
+   "mem_mib": 90.85,
+   "hilos": 24,
+   "frenadas": 138
+  },
+  {
+   "t": 14.65,
+   "cpu_pct": 198.1,
+   "mem_mib": 90.6,
+   "hilos": 24,
+   "frenadas": 143
+  },
+  {
+   "t": 15.15,
+   "cpu_pct": 202.6,
+   "mem_mib": 90.82,
+   "hilos": 24,
+   "frenadas": 148
+  },
+  {
+   "t": 15.66,
+   "cpu_pct": 197.8,
+   "mem_mib": 90.78,
+   "hilos": 24,
+   "frenadas": 153
+  },
+  {
+   "t": 16.16,
+   "cpu_pct": 201.9,
+   "mem_mib": 90.78,
+   "hilos": 24,
+   "frenadas": 158
+  },
+  {
+   "t": 16.67,
+   "cpu_pct": 197.8,
+   "mem_mib": 90.77,
+   "hilos": 24,
+   "frenadas": 163
+  },
+  {
+   "t": 17.17,
+   "cpu_pct": 202.5,
+   "mem_mib": 90.77,
+   "hilos": 24,
+   "frenadas": 168
+  },
+  {
+   "t": 17.68,
+   "cpu_pct": 198.4,
+   "mem_mib": 90.77,
+   "hilos": 24,
+   "frenadas": 173
+  },
+  {
+   "t": 18.18,
+   "cpu_pct": 201.1,
+   "mem_mib": 90.75,
+   "hilos": 24,
+   "frenadas": 178
+  },
+  {
+   "t": 18.69,
+   "cpu_pct": 197.7,
+   "mem_mib": 90.75,
+   "hilos": 24,
+   "frenadas": 184
+  },
+  {
+   "t": 19.19,
+   "cpu_pct": 201.8,
+   "mem_mib": 90.75,
+   "hilos": 24,
+   "frenadas": 189
+  },
+  {
+   "t": 19.7,
+   "cpu_pct": 198.3,
+   "mem_mib": 90.75,
+   "hilos": 24,
+   "frenadas": 194
+  },
+  {
+   "t": 20.2,
+   "cpu_pct": 201.4,
+   "mem_mib": 90.75,
+   "hilos": 24,
+   "frenadas": 199
+  }
+ ],
+ "variante": "litestar + uvicorn",
+ "rps": 14104.4061
+}

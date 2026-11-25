@@ -1,0 +1,16 @@
+{
+ "segundos": 4.0,
+ "eval_count": 283,
+ "opciones": {
+  "temperature": 0.7,
+  "seed": 3,
+  "num_predict": 2048
+ },
+ "backend": "ollama",
+ "modelo": "qwen2.5-coder:7b",
+ "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+ "tarea": "c11-contar-primos",
+ "variante": "B",
+ "seed": 3,
+ "prompt": "Escribe código Go para esta tarea. Va en un archivo del paquete `tarea` (package tarea), sin función main y solo con la biblioteca estándar. Asegúrate de que no quede ninguna goroutine bloqueada cuando la función termine.\n\nTarea: Escribe la función ContarPrimos(nums []int, workers int) int que cuenta cuántos números de nums son primos, repartiendo el trabajo entre `workers` goroutines.\n\nResponde solo con el archivo Go completo en un bloque ```go, sin explicación."
+}

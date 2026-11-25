@@ -1,0 +1,5 @@
+name: servidor
+description: El servidor de la revancha en Dart (golandia 805).
+publish_to: none
+environment:
+  sdk: ^3.13.0

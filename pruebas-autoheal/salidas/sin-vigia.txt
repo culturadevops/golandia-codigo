@@ -1,0 +1,5 @@
+$ docker run -d --name gh-app --restart unless-stopped --init --health-cmd wget -q -T 1 -O /dev/null http://127.0.0.1/ || exit 1 … nginx:1.30.5-alpine
+$ (cuelgo nginx: kill -STOP)
+   0.2s  gh-app    running  healthy    RestartCount=0  arrancó 14:43:49
+   9.4s  gh-app    running  unhealthy  RestartCount=0  arrancó 14:43:49
+  60.6s  fin de la observación · running unhealthy 0

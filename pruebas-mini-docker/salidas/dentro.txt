@@ -1,0 +1,104 @@
+
+== 0 · versiones ==
+go version go1.27.2 linux/amd64
+6.18.33.2-microsoft-standard-WSL2
+cgroup: cgroup2fs
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+
+== 0 · rootfs: alpine-minirootfs-3.24.3 ==
+alp.tgz: OK
+rootfs: 8.7M, 516 entradas
+
+== 0 · compilo mini y comer ==
+main.go: 158 líneas · binario mini (-s -w): 2023584 bytes
+dependencias externas: 0
+
+== 0 · cgroup v2: activo memory y pids para los hijos (el truco de docker:dind) ==
+subtree_control: memory pids
+
+== 1 · UTS: hostname propio ==
+fuera:  668f731b9f82
+caja
+[mini] memory.peak=2359296 oom_kill=0 pids.peak=5 pids.max_rechazos=0
+fuera, después: 668f731b9f82
+
+== 2 · PID: el comando es el PID 1 ==
+dentro, mi PID: 1
+PID   COMMAND
+    1 ps -o pid,args
+[mini] memory.peak=2359296 oom_kill=0 pids.peak=5 pids.max_rechazos=0
+fuera, el mismo sleep:
+   1195 ./mini.bin run rootfs /bin/sleep 2
+   1202 /bin/sleep 2
+fuera, procesos visibles: 6
+
+== 3 · mount: otra raíz y un /proc propio ==
+fuera:  PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+dentro: PRETTY_NAME="Alpine Linux v3.24"
+ls /: bin dev etc home lib media mnt opt proc root run sbin srv sys tmp usr var 
+montajes:
+overlay / overlay rw,relatime,lowerdir=/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/24536/fs:/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/12835/fs:/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/12834/fs:/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/12833/fs:/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/12832/fs:/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/12831/fs:/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/12830/fs:/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/12829/fs,upperdir=/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/24537/fs,workdir=/var/lib/desktop-containerd/daemon/io.containerd.snapshotter.v1.overlayfs/snapshots/24537/work 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /dev tmpfs rw,nosuid,relatime,mode=755 0 0
+procesos en /proc: /proc/1 /proc/11 /proc/12 /proc/13 
+[mini] memory.peak=3182592 oom_kill=0 pids.peak=5 pids.max_rechazos=0
+fuera, montajes del contenedor en mi tabla: 0
+
+== 4 · cgroups: memoria sin límite ==
+[mini] memory.peak=541507584 oom_kill=0 pids.peak=11 pids.max_rechazos=0
+reservados 512 MB
+terminé: nadie me paró
+
+== 5 · cgroups: memory.max=64M (y memory.swap.max=0) ==
+[mini] el proceso murió por la señal killed
+[mini] memory.peak=67108864 oom_kill=1 pids.peak=10 pids.max_rechazos=0
+reservados 40 MB
+reservados 48 MB
+reservados 56 MB
+código de salida: 137 · tardó 196 ms
+[  594.623196] Memory cgroup out of memory: Killed process 16897 (comer) total-vm:1294556kB, anon-rss:64320kB, file-rss:1420kB, shmem-rss:0kB, UID:0 pgtables:228kB oom_score_adj:0
+
+== 6 · cgroups: memory.max=64M SIN memory.swap.max=0 (cgroup hecho a mano) ==
+Filename				Type		Size		Used		Priority
+/dev/sdc                                partition	4194304		63500		-2
+reservados 512 MB
+terminé: nadie me paró
+memory.peak=67108864 memory.swap.peak=475865088 oom_kill=0
+
+== 7 · cgroups: bomba fork con pids.max=20 (vive 5 s) ==
+a los 2 s: pids.current=20 · rechazos=11
+fuera, ls / mientras tanto: 1 ms
+fuera, procesos totales: 25
+[mini] memory.peak=5111808 oom_kill=0 pids.peak=20 pids.max_rechazos=11
+después: cgroups mini que quedan: 0
+
+== 8 · red: sin namespace de red (ve la red del anfitrión) ==
+1: lo    inet 127.0.0.1/8 scope host lo\       valid_lft for
+2: eth0    inet 172.17.0.2/16 brd 172.17.255.255 scope globa
+1 packets transmitted, 1 packets received, 0% packet loss
+round-trip min/avg/max = 5.397/5.397/5.397 ms
+
+== 9 · red: con -red (CLONE_NEWNET) ==
+1: lo: <LOOPBACK> mtu 65536 qdisc noop state DOWN qlen 1000\    link/l
+PING 1.1.1.1 (1.1.1.1): 56 data bytes
+ping: sendto: Network unreachable
+ping salió con 1
+
+== 10 · la raíz es una carpeta compartida: lo que escribe un contenedor lo ve el siguiente ==
+hola
+fuera, en la carpeta del rootfs: escrito-por-el-primero
+
+== 11 · capabilities y seccomp dentro de mini ==
+fuera (el contenedor --privileged): Seccomp_filters:	1
+CapEff:	000001ffffffffff
+NoNewPrivs:	0
+Seccomp:	2
+Seccomp_filters:	1
+hostname otro: permitido
+mount tmpfs: permitido
+unshare -U (namespace de usuario): permitido
+
+== 12 · arranque: 3 rondas de 20 veces mini run /bin/true ==
+ronda 1: 3 ms por contenedor
+ronda 2: 2 ms por contenedor
+ronda 3: 3 ms por contenedor

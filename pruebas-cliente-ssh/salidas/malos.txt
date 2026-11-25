@@ -1,0 +1,14 @@
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s48.txt
+s48    ERR     3.0s  ssh: handshake failed: read tcp 10.68.2.5:35498->10.68.2.58:22: i/o timeout
+1 hosts · 0 ok · 0 con código distinto de 0 · 1 sin respuesta · 3.0s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s49.txt
+s49    ERR    10.0s  el comando no terminó en 10s
+1 hosts · 0 ok · 0 con código distinto de 0 · 1 sin respuesta · 10.0s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts s50.txt
+s50    ERR     3.0s  dial tcp 10.68.2.60:22: i/o timeout
+1 hosts · 0 ok · 0 con código distinto de 0 · 1 sin respuesta · 3.0s en total
+$ cd /root && flota -clave /root/.ssh/id_ed25519 -known /root/.ssh/known_hosts -hosts hosts-50.txt -p 1 | tail -4
+s48    ERR     3.0s  ssh: handshake failed: read tcp 10.68.2.5:36780->10.68.2.58:22: i/o timeout
+s49    ERR    10.0s  el comando no terminó en 10s
+s50    ERR     3.0s  dial tcp 10.68.2.60:22: i/o timeout
+50 hosts · 46 ok · 1 con código distinto de 0 · 3 sin respuesta · 66.5s en total

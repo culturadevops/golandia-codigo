@@ -1,0 +1,39 @@
+{
+ "cuando": "2026-11-18T15:44:55+00:00",
+ "hecho": [
+  "lambda delete-function gl-lambda-go",
+  "lambda delete-function gl-lambda-rust",
+  "lambda delete-function gl-lambda-dotnet-aot",
+  "lambda delete-function gl-lambda-java-native",
+  "lambda delete-function gl-lambda-java",
+  "lambda delete-function gl-lambda-java-snap",
+  "lambda delete-function gl-lambda-python",
+  "lambda delete-function gl-lambda-node",
+  "lambda delete-function gl-lambda-rust-relleno",
+  "iam detach-role-policy gl-lambda-rol AWSLambdaBasicExecutionRole",
+  "iam delete-role gl-lambda-rol",
+  "logs delete-log-group /aws/lambda/gl-lambda-dotnet-aot",
+  "logs delete-log-group /aws/lambda/gl-lambda-go",
+  "logs delete-log-group /aws/lambda/gl-lambda-java",
+  "logs delete-log-group /aws/lambda/gl-lambda-java-native",
+  "logs delete-log-group /aws/lambda/gl-lambda-java-snap",
+  "logs delete-log-group /aws/lambda/gl-lambda-node",
+  "logs delete-log-group /aws/lambda/gl-lambda-python",
+  "logs delete-log-group /aws/lambda/gl-lambda-rust",
+  "logs delete-log-group /aws/lambda/gl-lambda-rust-relleno"
+ ],
+ "fallos": [],
+ "quedan_funciones": [],
+ "rol_get_role": "NoSuchEntity",
+ "quedan_roles": [],
+ "quedan_log_groups": [],
+ "verificaciones": [
+  {
+   "cuando": "2026-11-18T15:47:17+00:00",
+   "quedan_funciones": [],
+   "rol_get_role": "NoSuchEntity",
+   "quedan_roles": [],
+   "quedan_log_groups": []
+  }
+ ]
+}

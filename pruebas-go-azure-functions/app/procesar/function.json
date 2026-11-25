@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "direction": "in",
+      "name": "pedido",
+      "queueName": "pedidos",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "factura",
+      "path": "facturas/{rand-guid}.json",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

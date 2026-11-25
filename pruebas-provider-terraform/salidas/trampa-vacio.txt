@@ -1,0 +1,94 @@
+
+$ terraform apply -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # notas_nota.compras will be created
+  + resource "notas_nota" "compras" {
+      + clave     = (sensitive value)
+      + creada    = (known after apply)
+      + etiquetas = [
+          + "casa",
+          + "zeta",
+        ]
+      + id        = (known after apply)
+      + texto     = "pan, café"
+      + titulo    = "Compras"
+      + version   = (known after apply)
+    }
+
+  # notas_nota.ideas will be created
+  + resource "notas_nota" "ideas" {
+      + creada  = (known after apply)
+      + id      = (known after apply)
+      + titulo  = "Ideas para vídeos"
+      + version = (known after apply)
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+notas_nota.ideas: Creating...
+notas_nota.compras: Creating...
+notas_nota.compras: Creation complete after 0s [id=2]
+
+Error: Provider produced inconsistent result after apply
+
+When applying changes to notas_nota.ideas, provider
+"provider[\"registry.terraform.io/golandia/notas\"]" produced an unexpected
+new value: .texto: was null, but now cty.StringVal("").
+
+This is a bug in the provider, which should be reported in the provider's own
+issue tracker.
+[código de salida 1 · 0.10 s]
+--- llamadas a notas-api ---
+POST /notas 201
+POST /notas 201
+
+$ terraform state list
+notas_nota.compras
+notas_nota.ideas
+[código de salida 0 · 0.02 s]
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/trampa
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.compras: Refreshing state... [id=2]
+notas_nota.ideas: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # notas_nota.ideas is tainted, so must be replaced
+-/+ resource "notas_nota" "ideas" {
+      ~ creada  = "2026-10-26T15:36:44Z" -> (known after apply)
+      ~ id      = "1" -> (known after apply)
+      ~ version = 1 -> (known after apply)
+        # (2 unchanged attributes hidden)
+    }
+
+Plan: 1 to add, 0 to change, 1 to destroy.
+[código de salida 0 · 0.07 s]

@@ -1,0 +1,13 @@
+FROM node:24-trixie AS build
+RUN apt-get update -qq && apt-get install -y -qq clang lld >/dev/null && rm -rf /var/lib/apt/lists/*
+RUN curl -sL -o /tmp/s.tgz https://github.com/vercel-labs/scriptc/releases/download/v0.4.14/scriptc-0.4.14-linux-x64-gnu.tar.gz \
+ && echo "578f9cb8460a4827fdc8c75e1c12c546011caab6fc4b2929aa5a0aec788a6a46  /tmp/s.tgz" | sha256sum -c - \
+ && mkdir /opt/scriptc && tar xzf /tmp/s.tgz -C /opt/scriptc
+ENV PATH=/opt/scriptc/bin:$PATH
+WORKDIR /src
+COPY src/servidor.ts /src/
+RUN scriptc build servidor.ts -o /servidor
+FROM debian:trixie-slim
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

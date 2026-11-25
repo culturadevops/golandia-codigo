@@ -1,0 +1,7 @@
+$ helm template demo 09-include  # template-tubo.yaml + values.yaml
+Error: caso/templates/caso.yaml:6:41
+  executing "caso/templates/caso.yaml" at <4>:
+    wrong type for value; expected string; got common.Values
+
+Use --debug flag to render out invalid YAML
+[código de salida: 1]

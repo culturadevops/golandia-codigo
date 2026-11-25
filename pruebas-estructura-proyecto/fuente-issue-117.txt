@@ -1,0 +1,7 @@
+this is not a standard Go project layout | rsc | 2021-04-09T17:59:57Z | closed
+The README makes clear that this is not official, but even the claim "it is a set of common historical and emerging project layout patterns in the Go ecosystem" is not accurate.
+
+For example, the _vast_ majority of packages in the Go ecosystem do _not_ put the importable packages in a `pkg` subdirectory. More generally what is described here is just very complex, and Go repos tend to be much simpler.
+
+It is unfortunate that this is being put forth as "golang-standards" when it really is not. I'm commenting here because I am starting to see people say things like "you are not using the standard Go project layout" and linking to this repo.
+

@@ -1,0 +1,6 @@
+=== RUN   TestTrampaOutput
+    trampa_test.go:20: fmt.Sprintf   → "{0x1799c1b42000}/*"
+    trampa_test.go:23: pulumi.Sprintf → "arn:aws:mock:::datos/*"
+--- PASS: TestTrampaOutput (0.00s)
+PASS
+ok  	g680	0.013s

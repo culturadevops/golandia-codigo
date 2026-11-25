@@ -1,0 +1,4 @@
+FROM scratch
+COPY _bin/servidor-slices /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

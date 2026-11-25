@@ -1,0 +1,5 @@
+$ comparar helm template con go run . helm
+helm template (sin las 2 líneas de cabecera): 439 bytes
+go run . helm: 439 bytes
+¿idénticos? sí
+[código de salida: 0]

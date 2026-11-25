@@ -1,0 +1,185 @@
+
+$ curl -X POST http://127.0.0.1:8080/notas -d '{"titulo":"Hecha a mano","texto":"antes de Terraform","etiquetas":["vieja"],"clave":"secreta"}'
+{"id":"1","titulo":"Hecha a mano","texto":"antes de Terraform","etiquetas":["vieja"],"creada":"2026-10-26T15:36:35Z","version":1}
+
+$ cat main.tf
+terraform {
+  required_providers {
+    notas = { source = "golandia/notas" }
+  }
+}
+
+provider "notas" {}
+
+import {
+  to = notas_nota.vieja
+  id = "1"
+}
+
+resource "notas_nota" "vieja" {
+  titulo    = "Hecha a mano"
+  texto     = "antes de Terraform"
+  etiquetas = ["vieja"]
+  clave     = "secreta"
+}
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/bien
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.vieja: Preparing import... [id=1]
+notas_nota.vieja: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.vieja will be updated in-place
+  # (imported from "1")
+  ~ resource "notas_nota" "vieja" {
+      + clave     = (sensitive value)
+        creada    = "2026-10-26T15:36:35Z"
+        etiquetas = [
+            "vieja",
+        ]
+        id        = "1"
+        texto     = "antes de Terraform"
+        titulo    = "Hecha a mano"
+      ~ version   = 1 -> (known after apply)
+    }
+
+Plan: 1 to import, 0 to add, 1 to change, 0 to destroy.
+[código de salida 0 · 0.07 s]
+--- llamadas a notas-api ---
+GET /notas/1 200
+
+$ terraform apply -auto-approve
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/bien
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.vieja: Preparing import... [id=1]
+notas_nota.vieja: Refreshing state... [id=1]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # notas_nota.vieja will be updated in-place
+  # (imported from "1")
+  ~ resource "notas_nota" "vieja" {
+      + clave     = (sensitive value)
+        creada    = "2026-10-26T15:36:35Z"
+        etiquetas = [
+            "vieja",
+        ]
+        id        = "1"
+        texto     = "antes de Terraform"
+        titulo    = "Hecha a mano"
+      ~ version   = 1 -> (known after apply)
+    }
+
+Plan: 1 to import, 0 to add, 1 to change, 0 to destroy.
+notas_nota.vieja: Importing... [id=1]
+notas_nota.vieja: Import complete [id=1]
+notas_nota.vieja: Modifying... [id=1]
+notas_nota.vieja: Modifications complete after 0s [id=1]
+
+Apply complete! Resources: 1 imported, 0 added, 1 changed, 0 destroyed.
+[código de salida 0 · 0.10 s]
+--- llamadas a notas-api ---
+GET /notas/1 200
+PUT /notas/1 200
+
+$ terraform plan
+
+Warning: Provider development overrides are in effect
+
+The following provider development overrides are set in the CLI
+configuration:
+ - golandia/notas in /build/bien
+
+The behavior may therefore not match any released version of the provider and
+applying changes may cause the state to become incompatible with published
+releases.
+notas_nota.vieja: Refreshing state... [id=1]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
+[código de salida 0 · 0.09 s]
+
+== y con el comando terraform import (sin bloque import) ==
+
+$ terraform import notas_nota.vieja 1
+notas_nota.vieja: Importing from ID "1"...
+notas_nota.vieja: Import prepared!
+  Prepared notas_nota for import
+notas_nota.vieja: Refreshing state... [id=1]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your Terraform state and will henceforth be managed by Terraform.
+
+[código de salida 0 · 0.08 s]
+--- llamadas a notas-api ---
+GET /notas/1 200
+GET /notas/1 200
+
+$ terraform state show notas_nota.vieja
+# notas_nota.vieja:
+resource "notas_nota" "vieja" {
+    creada    = "2026-10-26T15:36:35Z"
+    etiquetas = [
+        "vieja",
+    ]
+    id        = "1"
+    texto     = "antes de Terraform"
+    titulo    = "Hecha a mano"
+    version   = 2
+}
+[código de salida 0 · 0.04 s]
+
+== importar un id que no existe ==
+
+$ terraform state rm notas_nota.vieja
+Removed notas_nota.vieja
+Successfully removed 1 resource instance(s).
+[código de salida 0 · 0.02 s]
+
+$ terraform import notas_nota.vieja 99
+notas_nota.vieja: Importing from ID "99"...
+notas_nota.vieja: Import prepared!
+  Prepared notas_nota for import
+notas_nota.vieja: Refreshing state... [id=99]
+
+Error: Cannot import non-existent remote object
+
+While attempting to import an existing object to "notas_nota.vieja", the
+provider detected that no object exists with the given id. Only pre-existing
+objects can be imported; check that the id is correct and that it is
+associated with the provider's configured region or endpoint, or use
+"terraform apply" to create a new remote object for this resource.
+
+[código de salida 1 · 0.06 s]
+--- llamadas a notas-api ---
+GET /notas/99 404

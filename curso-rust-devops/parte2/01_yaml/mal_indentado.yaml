@@ -1,0 +1,4 @@
+checks:
+  - nombre: api
+    url: https://api.ejemplo.com/health
+   intervalo_s: 30

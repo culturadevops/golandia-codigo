@@ -1,0 +1,4 @@
+job certexp-etiqueta-error: objetivos g679-srv:9443 (sano), :9444 (lento), :9999 (cerrado) · scrape cada 5 s
+  ahora: {objetivo="g679-srv:9444", error="context deadline exceeded"}
+  ahora: {objetivo="g679-srv:9999", error="dial tcp 192.168.208.2:9999: connect: connection refused"}
+  series distintas en 1m: certexp_probe_error=2 · certexp_probe_success=3

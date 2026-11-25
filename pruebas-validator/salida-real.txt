@@ -1,0 +1,77 @@
+== go version ==
+go version go1.27.1 linux/amd64
+
+== version ==
+  require github.com/go-playground/validator/v10 v10.30.5
+
+== 1. que atrapa ==
+=== RUN   TestLoQueAtrapa
+  fallos detectados: 6
+    campo=Nombre   regla=min        valor=A
+    campo=Correo   regla=email      valor=esto-no-es-correo
+    campo=Edad     regla=gte        valor=-3
+    campo=Rol      regla=oneof      valor=jefe
+    campo=Activo   regla=required   valor=false
+    campo=Tags[1]  regla=min        valor=x
+--- PASS: TestLoQueAtrapa (0.00s)
+PASS
+ok  	validar	0.004s
+
+== 2. el error CRUDO, tal cual sale ==
+=== RUN   TestElErrorCrudoEsIlegible
+  --- lo que sale si haces fmt.Println(err) ---
+  Key: 'Alta.Nombre' Error:Field validation for 'Nombre' failed on the 'min' tag
+Key: 'Alta.Correo' Error:Field validation for 'Correo' failed on the 'email' tag
+Key: 'Alta.Edad' Error:Field validation for 'Edad' failed on the 'gte' tag
+Key: 'Alta.Rol' Error:Field validation for 'Rol' failed on the 'oneof' tag
+--- PASS: TestElErrorCrudoEsIlegible (0.00s)
+PASS
+ok  	validar	0.003s
+
+== 3. lo mismo, traducido a mano ==
+=== RUN   TestMensajesDecentes
+  --- lo mismo, traducido a mano ---
+   · Nombre necesita al menos 2
+   · Correo no parece un correo valido
+   · Edad tiene que ser 18 o mas
+   · Rol debe ser uno de: admin editor lector
+--- PASS: TestMensajesDecentes (0.00s)
+PASS
+ok  	validar	0.003s
+
+== 4. la trampa: required contra el valor cero ==
+=== RUN   TestRequiredContraElValorCero
+  con false, 0 y cadena vacia -> 3 fallos
+    Booleano falla 'required' con valor false
+    Entero falla 'required' con valor 0
+    Texto falla 'required' con valor 
+--- PASS: TestRequiredContraElValorCero (0.00s)
+PASS
+ok  	validar	0.002s
+
+== 5. una etiqueta MAL ESCRITA ==
+=== RUN   TestEtiquetaMalEscrita
+  PANIC en tiempo de EJECUCION: Undefined validation function 'emial' on field 'Correo'
+--- PASS: TestEtiquetaMalEscrita (0.00s)
+PASS
+ok  	validar	0.002s
+
+== 6. un validador propio (RUC) ==
+=== RUN   TestValidadorPropio
+    20123456789  -> true
+    10123456789  -> true
+    30123456789  -> false
+    2012345678   -> false
+    2012345678X  -> false
+--- PASS: TestValidadorPropio (0.00s)
+PASS
+ok  	validar	0.002s
+
+== 7. cuanto cuesta validar ==
+goos: linux
+goarch: amd64
+pkg: validar
+cpu: Intel(R) Core(TM) Ultra 7 270K Plus
+BenchmarkValidarStruct-24    	 1776823	       668.8 ns/op	     275 B/op	       9 allocs/op
+PASS
+ok  	validar	1.879s

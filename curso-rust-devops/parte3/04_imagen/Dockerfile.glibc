@@ -1,0 +1,11 @@
+# Imagen "normal": compila con glibc y corre sobre debian slim.
+FROM rust:1.99.1-trixie AS build
+WORKDIR /src
+COPY Cargo.toml Cargo.lock ./
+COPY src ./src
+RUN cargo build --release --locked --bin servicio
+
+FROM debian:trixie-slim
+COPY --from=build /src/target/release/servicio /servicio
+EXPOSE 8090
+ENTRYPOINT ["/servicio"]

@@ -1,0 +1,24 @@
+# Todo arriba: código 0, el resultado por stdout y el progreso por stderr.
+exec vigia revisar $SRV/ok
+stdout '^ARRIBA  200'
+! stdout 'revisando'
+stderr 'revisando 1 endpoints'
+
+# Uno caído: código distinto de cero, y el aviso por stderr.
+! exec vigia revisar $SRV/ok $SRV/roto
+stdout '^CAIDO   500'
+stderr '1 de 2 caídos'
+
+# Las URLs por stdin, con comentarios y líneas vacías. Los archivos de un txtar no
+# expanden $SRV, así que la lista se escribe con el shell.
+exec sh -c 'printf "# produccion\n%s/ok\n\n%s/ok?otra=vez\n" $SRV $SRV > urls.txt'
+stdin urls.txt
+exec vigia revisar -
+stdout -count=2 '^ARRIBA'
+
+# -json: stdout es JSON y nada más.
+exec vigia revisar -json -solo-caidos $SRV/ok
+cmp stdout vacio.json
+
+-- vacio.json --
+[]
