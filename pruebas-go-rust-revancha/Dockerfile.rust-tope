@@ -1,0 +1,10 @@
+# golandia 958 · ¿Go o Rust? La revancha · release + LTO fat + codegen-units=1 + panic=abort, glibc
+FROM rust:1.99.1-trixie AS build
+WORKDIR /build
+COPY axum/Cargo.toml axum/Cargo.lock /build/
+COPY axum/src /build/src
+RUN cargo build --profile tope --locked && cp target/tope/servidor /servidor
+FROM debian:trixie-slim
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

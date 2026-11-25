@@ -1,0 +1,26 @@
+[package]
+name = "servidor"
+version = "0.1.0"
+edition = "2024"
+
+# El MISMO servidor del 698 (axum 0.8.9 sobre tokio 1.54.1, versiones fijadas con =). Lo nuevo de la revancha:
+#  · dos repartidores de memoria opcionales (features), para musl y para glibc;
+#  · el perfil «tope»: release + LTO completo + una sola unidad de código + panic=abort.
+[dependencies]
+axum = "=0.8.9"
+tokio = { version = "=1.54.1", features = ["rt-multi-thread", "macros", "net", "time"] }
+mimalloc = { version = "0.1", optional = true, default-features = false }
+tikv-jemallocator = { version = "0.6", optional = true }
+
+[features]
+mimalloc = ["dep:mimalloc"]
+jemalloc = ["dep:tikv-jemallocator"]
+
+[profile.release]
+strip = true
+
+[profile.tope]
+inherits = "release"
+lto = "fat"
+codegen-units = 1
+panic = "abort"

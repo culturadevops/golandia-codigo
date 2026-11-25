@@ -1,0 +1,10 @@
+# golandia 958 · ¿Go o Rust? La revancha · actix-web 4.20 en vez de axum: release, glibc
+FROM rust:1.99.1-trixie AS build
+WORKDIR /build
+COPY actix/Cargo.toml actix/Cargo.lock /build/
+COPY actix/src /build/src
+RUN cargo build --release --locked && cp target/release/servidor /servidor
+FROM debian:trixie-slim
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

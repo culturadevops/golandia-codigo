@@ -174,6 +174,7 @@ Si el vídeo es para **miembros del canal**, la carpeta lo dice en su README y e
 | [`pruebas-go-vs-mojo`](pruebas-go-vs-mojo/) | ¿Go o Mojo? Lo medí: rápido para calcular, pero sin servidor web (2026) | [dbbpy_H6LLc](https://youtu.be/dbbpy_H6LLc) |
 | [`pruebas-go-vs-ocaml`](pruebas-go-vs-ocaml/) | ¿Go o OCaml 5? Lo medí: dominios en varios núcleos contra gorrutinas (2026) | [Ap4SJfWCKkU](https://youtu.be/Ap4SJfWCKkU) |
 | [`pruebas-go-vs-odin`](pruebas-go-vs-odin/) | ¿Go o Odin? Lo medí: el C moderno sin recolector contra Go (2026) | [bqnLK1d-JzM](https://youtu.be/bqnLK1d-JzM) |
+| [`pruebas-go-rust-revancha`](pruebas-go-rust-revancha/) | ¿Go o Rust? La revancha: LTO, musl, mimalloc, actix y el modo debug (lo medí) | [kGKGZ4n5SCw](https://youtu.be/kGKGZ4n5SCw) |
 | [`pruebas-go-vs-php`](pruebas-go-vs-php/) | ¿Go o PHP? Lo medí con PHP 8.5 y FrankenPHP (y el modo worker no ganó) | [xaqTZ6v9Po8](https://youtu.be/xaqTZ6v9Po8) |
 | [`pruebas-go-vs-python`](pruebas-go-vs-python/) | ¿Go o Python? Lo medí: velocidad, memoria y FastAPI (de 3 a 134 veces) | [G7Ghf7UNhiQ](https://youtu.be/G7Ghf7UNhiQ) |
 | [`pruebas-go-vs-ruby`](pruebas-go-vs-ruby/) | ¿Go o Ruby? Lo medí con Ruby 4, YJIT y ZJIT (2026) | [5K0stB0oSQU](https://youtu.be/5K0stB0oSQU) |

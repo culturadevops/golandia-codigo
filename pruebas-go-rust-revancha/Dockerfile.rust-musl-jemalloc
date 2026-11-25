@@ -1,0 +1,11 @@
+# golandia 958 · ¿Go o Rust? La revancha · release + jemalloc, musl estático
+FROM rust:1.99.1-alpine AS build
+RUN apk add --no-cache make
+WORKDIR /build
+COPY axum/Cargo.toml axum/Cargo.lock /build/
+COPY axum/src /build/src
+RUN cargo build --release --locked --features jemalloc && cp target/release/servidor /servidor
+FROM scratch
+COPY --from=build /servidor /servidor
+EXPOSE 8080
+ENTRYPOINT ["/servidor"]

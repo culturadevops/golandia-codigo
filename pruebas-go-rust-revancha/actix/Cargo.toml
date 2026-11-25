@@ -1,0 +1,11 @@
+[package]
+name = "servidor"
+version = "0.1.0"
+edition = "2024"
+
+# El mismo contrato del 698 con OTRO framework: actix-web 4 (cada hilo de trabajo es su propio runtime de un hilo).
+[dependencies]
+actix-web = { version = "4", default-features = false, features = ["macros"] }
+
+[profile.release]
+strip = true
