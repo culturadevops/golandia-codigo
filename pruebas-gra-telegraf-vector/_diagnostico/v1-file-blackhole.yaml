@@ -1,0 +1,5 @@
+data_dir: /tmp/vector
+sources:
+  entrada: {type: file, include: ["/datos/eventos.json"], read_from: beginning, ignore_checkpoints: true}
+sinks:
+  salida: {type: blackhole, inputs: ["entrada"], print_interval_secs: 1}

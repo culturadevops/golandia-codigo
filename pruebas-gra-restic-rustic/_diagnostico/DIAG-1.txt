@@ -1,0 +1,30 @@
+[candado] tomado para humo: docker run --rm --ulimit core=1 --name gl-gra-diag-backup --cpus 2 --memory 1g - tras 0 s
+## vuelta 1
+restic (auto, por defecto) seg=4.16 user=4.32 sys=0.84 rss_kb=128712
+   repo 355 MiB · Added to the repository: 854.489 MiB (352.956 MiB stored)
+rustic (por defecto) seg=7.90 user=7.09 sys=8.49 rss_kb=139356
+   repo 353 MiB · [INFO] Added to the repo: 349.6 MiB (raw: 854.5 MiB)
+rustic --set-extra-verify false seg=6.78 user=6.16 sys=7.19 rss_kb=139392
+   repo 352 MiB · [INFO] Added to the repo: 349.3 MiB (raw: 854.5 MiB)
+rustic extra-verify false + compresión 1 seg=4.19 user=5.48 sys=2.71 rss_kb=139132
+   repo 351 MiB · [INFO] Added to the repo: 347.7 MiB (raw: 854.5 MiB)
+restic --compression max seg=9.00 user=13.70 sys=0.91 rss_kb=242016
+   repo 351 MiB · Added to the repository: 854.485 MiB (348.456 MiB stored)
+## vuelta 2
+restic (auto, por defecto) seg=4.16 user=4.40 sys=1.03 rss_kb=128856
+   repo 355 MiB · Added to the repository: 854.487 MiB (352.891 MiB stored)
+rustic (por defecto) seg=8.11 user=7.20 sys=8.80 rss_kb=139272
+   repo 353 MiB · [INFO] Added to the repo: 349.7 MiB (raw: 855.3 MiB)
+rustic --set-extra-verify false seg=6.79 user=5.88 sys=7.48 rss_kb=139504
+   repo 352 MiB · [INFO] Added to the repo: 349.2 MiB (raw: 854.5 MiB)
+rustic extra-verify false + compresión 1 seg=4.11 user=5.32 sys=2.66 rss_kb=139380
+   repo 351 MiB · [INFO] Added to the repo: 347.7 MiB (raw: 854.5 MiB)
+restic --compression max seg=9.19 user=14.02 sys=0.95 rss_kb=241316
+   repo 351 MiB · Added to the repository: 854.487 MiB (348.493 MiB stored)
+## lo que guarda rustic en su config por defecto
+{
+  "version": 2,
+  "id": "c8c47e12b17feedbe2ab67b583e41bb79b842e57520ec971b1bd71f32504061d",
+  "chunker_polynomial": "26cc5a34294847"
+}
+[candado] suelto

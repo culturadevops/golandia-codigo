@@ -1,0 +1,14 @@
+data_dir: /tmp/vector
+sources:
+  entrada: {type: stdin}
+transforms:
+  limpiar:
+    type: remap
+    inputs: ["entrada"]
+    source: |
+      . = parse_json!(.message)
+      if .nivel == "debug" { abort }
+      .entorno = "prod"
+      .duracion_ms = del(.ms)
+sinks:
+  salida: {type: file, inputs: ["limpiar"], path: /salida/out.json, encoding: {codec: json}}

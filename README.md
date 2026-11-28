@@ -175,6 +175,12 @@ Si el vídeo es para **miembros del canal**, la carpeta lo dice en su README y e
 | [`pruebas-go-vs-ocaml`](pruebas-go-vs-ocaml/) | ¿Go o OCaml 5? Lo medí: dominios en varios núcleos contra gorrutinas (2026) | [Ap4SJfWCKkU](https://youtu.be/Ap4SJfWCKkU) |
 | [`pruebas-go-vs-odin`](pruebas-go-vs-odin/) | ¿Go o Odin? Lo medí: el C moderno sin recolector contra Go (2026) | [bqnLK1d-JzM](https://youtu.be/bqnLK1d-JzM) |
 | [`pruebas-go-rust-revancha`](pruebas-go-rust-revancha/) | ¿Go o Rust? La revancha: LTO, musl, mimalloc, actix y el modo debug (lo medí) | [kGKGZ4n5SCw](https://youtu.be/kGKGZ4n5SCw) |
+| [`pruebas-gra-restic-rustic`](pruebas-gra-restic-rustic/) | restic (Go) contra rustic (Rust) (lo medí) | [2QQm41xmn30](https://youtu.be/2QQm41xmn30) |
+| [`pruebas-gra-telegraf-vector`](pruebas-gra-telegraf-vector/) | Telegraf (Go) contra Vector (Rust) (lo medí) | [MASx0qWCxCQ](https://youtu.be/MASx0qWCxCQ) |
+| [`pruebas-gra-proxy`](pruebas-gra-proxy/) | Proxy inverso: Caddy y Traefik (Go) contra Pingap y Sōzu (Rust) (lo medí) | [cov3H4rElgY](https://youtu.be/cov3H4rElgY) |
+| [`pruebas-fzf-skim`](pruebas-fzf-skim/) | fzf (Go) contra skim (Rust) (lo medí) | [Ui0DY3bbPeA](https://youtu.be/Ui0DY3bbPeA) |
+| [`pruebas-hugo-zola`](pruebas-hugo-zola/) | Hugo (Go) contra Zola (Rust) (lo medí) | [4W0jmww5wBw](https://youtu.be/4W0jmww5wBw) |
+| [`pruebas-lazygit-gitui`](pruebas-lazygit-gitui/) | lazygit (Go) contra gitui (Rust) (lo medí) | [q9SluTP6igE](https://youtu.be/q9SluTP6igE) |
 | [`pruebas-go-vs-php`](pruebas-go-vs-php/) | ¿Go o PHP? Lo medí con PHP 8.5 y FrankenPHP (y el modo worker no ganó) | [xaqTZ6v9Po8](https://youtu.be/xaqTZ6v9Po8) |
 | [`pruebas-go-vs-python`](pruebas-go-vs-python/) | ¿Go o Python? Lo medí: velocidad, memoria y FastAPI (de 3 a 134 veces) | [G7Ghf7UNhiQ](https://youtu.be/G7Ghf7UNhiQ) |
 | [`pruebas-go-vs-ruby`](pruebas-go-vs-ruby/) | ¿Go o Ruby? Lo medí con Ruby 4, YJIT y ZJIT (2026) | [5K0stB0oSQU](https://youtu.be/5K0stB0oSQU) |

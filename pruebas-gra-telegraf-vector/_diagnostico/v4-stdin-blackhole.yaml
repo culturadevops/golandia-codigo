@@ -1,0 +1,5 @@
+data_dir: /tmp/vector
+sources:
+  entrada: {type: stdin}
+sinks:
+  salida: {type: blackhole, inputs: ["entrada"], print_interval_secs: 1}

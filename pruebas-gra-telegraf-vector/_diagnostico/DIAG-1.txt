@@ -1,0 +1,7 @@
+[candado] tomado para humo: docker run --rm --ulimit core=1 --name gl-gra-diag --cpus 2 --memory 1g -v gl-gr tras 653 s
+v4-stdin-blackhole seg=0.65 cpu=0.67+0.09 rss_kb=97012
+v3-stdin-remap-file seg=22.97 cpu=8.92+7.74 rss_kb=113992
+   salida: 900000 líneas
+v1-file-blackhole seg~2.0 cpu=1s events=1000000
+v2-file-remap-blackhole seg~2.0 cpu=2s events=900000
+[candado] suelto

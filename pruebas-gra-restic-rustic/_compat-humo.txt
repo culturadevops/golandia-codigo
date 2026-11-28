@@ -1,0 +1,29 @@
+## A · repo de restic
+restic init rc=0
+restic backup rc=0
+rustic snapshots rc=0
+   rustic ve: 1 snapshot
+rustic check --read-data rc=0
+rustic restore rc=0
+   diferencias tras restaurar con rustic: 0 (archivos 461 de 461)
+rustic backup (en repo de restic) rc=0
+restic snapshots rc=0
+   restic ve: 2 snapshots
+restic check --read-data rc=0
+restic restore (snapshot de rustic) rc=0
+   diferencias tras restaurar con restic: 0
+## B · repo de rustic
+rustic init rc=0
+rustic backup rc=0
+restic snapshots rc=0
+   restic ve: 1 snapshots
+restic check --read-data rc=0
+restic restore rc=0
+   diferencias tras restaurar con restic: 0
+restic backup (en repo de rustic) rc=0
+rustic snapshots rc=0
+   rustic ve: 2 snapshot
+rustic check --read-data rc=0
+## config de cada repo
+   restic init → {"version":2,"id":"120e0c3e520941682462f1794f25be965cffc37cc5b890c92342370cf6d37463","chunker_polynomial":"282d6a20d30cfd"}
+   rustic init → {"version":2,"id":"f0062cb10dc169e08a994ae473419d439ed817b22edbe5d23c4a587c277f25f5","chunker_polynomial":"231bfa73964bd9"}

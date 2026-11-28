@@ -1,0 +1,16 @@
+[basic]
+log_level = "ERROR"
+name = "pingap"
+pid_file = "/tmp/pingap.pid"
+threads = 2
+
+[locations.todo]
+path = "/"
+upstream = "backend"
+
+[servers.web]
+addr = "0.0.0.0:8080"
+locations = ["todo"]
+
+[upstreams.backend]
+addrs = ["10.95.0.10:80"]

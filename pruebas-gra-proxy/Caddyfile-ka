@@ -1,0 +1,12 @@
+{
+	admin off
+	auto_https off
+}
+:8080 {
+	reverse_proxy 10.95.0.10:80 {
+		transport http {
+			# por defecto 32: con más clientes que eso, Caddy abre y cierra conexiones al backend sin parar
+			keepalive_idle_conns_per_host 1024
+		}
+	}
+}

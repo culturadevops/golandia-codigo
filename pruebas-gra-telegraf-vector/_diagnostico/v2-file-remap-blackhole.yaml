@@ -1,0 +1,14 @@
+data_dir: /tmp/vector
+sources:
+  entrada: {type: file, include: ["/datos/eventos.json"], read_from: beginning, ignore_checkpoints: true}
+transforms:
+  limpiar:
+    type: remap
+    inputs: ["entrada"]
+    source: |
+      . = parse_json!(.message)
+      if .nivel == "debug" { abort }
+      .entorno = "prod"
+      .duracion_ms = del(.ms)
+sinks:
+  salida: {type: blackhole, inputs: ["limpiar"], print_interval_secs: 1}

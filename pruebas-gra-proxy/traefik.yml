@@ -1,0 +1,8 @@
+entryPoints:
+  web:
+    address: ":8080"
+providers:
+  file:
+    filename: /conf/traefik-dinamico.yml
+log:
+  level: ERROR

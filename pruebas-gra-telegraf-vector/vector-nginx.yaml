@@ -1,0 +1,21 @@
+# B · log de acceso de nginx en texto: leer → separar los campos → JSON a archivo
+data_dir: /tmp/vector
+sources:
+  entrada:
+    type: file
+    include: ["/datos/access.log"]
+    read_from: beginning
+    ignore_checkpoints: true
+transforms:
+  separar:
+    type: remap
+    inputs: ["entrada"]
+    source: |
+      . = parse_nginx_log!(.message, "combined")
+sinks:
+  salida:
+    type: file
+    inputs: ["separar"]
+    path: /salida/out.json
+    encoding:
+      codec: json

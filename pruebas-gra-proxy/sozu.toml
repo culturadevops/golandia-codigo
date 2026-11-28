@@ -1,0 +1,23 @@
+log_level = "error"
+log_target = "stdout"
+command_socket = "/tmp/sozu.sock"
+worker_count = 2
+handle_process_affinity = false
+max_connections = 10_000
+max_buffers = 20_000
+buffer_size = 16_393
+activate_listeners = true
+
+[[listeners]]
+protocol = "http"
+address = "0.0.0.0:8080"
+
+[clusters.backend]
+protocol = "http"
+load_balancing = "ROUND_ROBIN"
+frontends = [
+    { address = "0.0.0.0:8080", hostname = "banco.local" },
+]
+backends = [
+    { address = "10.95.0.10:80", backend_id = "nginx" },
+]
